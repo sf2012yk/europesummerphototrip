@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- リンクするcss -->
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/photo.css">
+<link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/leaflet_popup.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/speechBubble.css">
+<!-- リンクするjs -->
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<!-- オープンストリートマップのスクリプト -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- マーカーの色を変更するスクリプト -->
+<script src="js/leaflet.sprite.js"></script>
+<!-- FontawesomeのVersion6.7.2（最新） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- 国旗のcss -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<title>
+Europe Photo Best
+</title>
+<body>
+<!-- sectionのスタート -->
+<!-- ヘッダー -->
+<header>
+<!-- ヘッダー用コンテナ --> 
+<!-- containerのスタート -->
+<div class="container header_container">
+<!-- ヘッダーはここ --> 
+<div class="header-inner">
+<a href="index.html">
+<h1>
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span>Europe Summer Photo Trip
+</h1>
+</a>
+</div>
+<!-- サブメニューはここ --> 
+<nav class="header_nav">
+<ul class="header_list">
+<li class="header_item">
+<a href="London.html" target="_blank">Country</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">United Kingdom</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">France</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Belgium</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Netherlands</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Germany</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Italy</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Switzerland</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Austria</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Main City</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">London</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Paris</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Amsterdam</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Cologne</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Vienna</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Brugge</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Genre</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Train / Station</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Cathedral</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Foods</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Mountain</a>
+</li>
+</ul>
+</div>
+</li> 
+<li class="header_item">
+<a href="#Best Views">Best Views</a>
+</li>      
+</ul>
+</nav>
+<!-- スマホ専用ナビゲーション(Sp_navigation) -->
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="globalMenuSp">
+<ul>
+<li><a href="index.html">Place list</a></li>
+<li><a href="index.html">Genre</a></li>
+<li><a href="index.html">Best Photo</a></li>
+</ul>
+</nav>
+</div>
+</header> 
+<section class="pagebody">
+<!-- TOP画像＋背景文字はここ --> 
+<div class="Top_image">
+<div>
+<img loading="eager" src="image/top/lyon.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
+<div class="Top_caption scroll fadeLeftSlide">
+<h1>Lyon</h1>
+<p>- City Infomation -</p>
+</div>  
+</div>
+</div>
+<div class="container">
+<!-- エディタcssを適用する -->
+<div class="site_body editorcss">
+<!-- 導入の文章 -->
+<div class="Read_text">
+<h4>
+古代ローマから栄えた、歴史と美食の街
+</h4>
+<p class="mb_1em">
+パリに次ぐフランス第2の都市であるリヨン。<br/>
+</p>
+</div>
+<!-- スポット情報（リヨン） -->
+<h2 class="scroll fadeLeftSlide">
+Spot's
+</h2>
+<div class="uk_item_info_1" style="margin-bottom: 3em;">
+<div class="info_left_item">
+<div class="uk_picture_frame_1">
+<img src="https://lh3.googleusercontent.com/pw/AP1GczNDwxTscuvROTNMfUelO_iB2wBhIDlOa6E_FXP_thG1rD-EiEEGJLer0OQrNkczDeBKVirN7zpha-SBRo4oYfuou0AXuDf6pbGOqaC78roUrkCh54bizidwjN5ilqgOQZ7NsK7QDCS6PXgB3E90LrhH6w=w1159-h869-s-no-gm?authuser=0" alt="サンジョルジュ教会" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+</div>
+</div>
+<div class="info_right_item">
+<div class="text_side">
+<h3 class="city_title">
+Église Saint-Georges
+</h3>
+<div class="text_font"> 
+<p class="mb_1em">
+サンジョルジュ協会
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="uk_item_info_1" style="margin-bottom: 3em;">
+<div class="uk_left_item">
+<div class="uk_picture_frame_1">
+<img src="https://lh3.googleusercontent.com/pw/AP1GczPz_IuFLpQWrKouOFnGn7CFJBZO3gU5elJ_4YTYM4M2H7NMtHoXIKMaye_FyAtIfth0lUtbtwt2hbNE3-A4umQi09yfboiLsE__VZ1D0zqrqs6BZkwW0R8RcY9YBibm_ANCbRV0QISVu5NpP41ufuDxJA=w1159-h869-s-no-gm?authuser=0" alt=ローマ劇場" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+</div>
+</div>
+<div class="uk_right_item">
+<div class="text_side">
+<h3 class="city_title">
+Théâtre Gallo Romain
+</h3>
+<div class="text_font"> 
+<p class="mb_1em">
+市の北西部にあるフルヴィエールの丘。その一角に古代ローマ劇場があります。現在もこの劇場は使われており、夏になると「フルヴィエールの夜」というイベントが開催され、コンサートやダンスなどが上演されます。
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ギャラリー（リヨン） -->
+<h2 class="scroll fadeLeftSlide">
+Photo Gallery
+</h2>
+<div class="photo_container">
+<div class="photo_wrap">
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczPfMtjzZMFnlgpTk9APNsnfHrRbMqO-BVMeCmOIjUwKmGowUaAEWcfBVSp0a37SgqMLKsl3NdOwABo9x66W9tG7jV6IXX1sqpQjO5ifr1pK2NfzOy44OwnigekL9ghXhynb-TqboOjBEBDLo4QxFHv0kw=w1159-h869-s-no-gm?authuser=0" alt="リヨン"  width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>  
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczPukDmuFIQDdEB1ios8ln94htcJWlgPaPVM1eG46fsxnNW0EgtNyy6Q0CkiedUUlX-pXFqcLMfo4A1MJjD4iDsGFYhsw9Yqjd7Bh2HCCeKt_565RskoRHP1UepVPvybtj7pvGiG3bXBXMnk7Z86ybrA8w=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>旧市街にあるヴィクトル・ユゴー通り。歩行者天国として散策やショッピングが楽しめる。</p><p class='text'>Day：2024/8/12</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczPukDmuFIQDdEB1ios8ln94htcJWlgPaPVM1eG46fsxnNW0EgtNyy6Q0CkiedUUlX-pXFqcLMfo4A1MJjD4iDsGFYhsw9Yqjd7Bh2HCCeKt_565RskoRHP1UepVPvybtj7pvGiG3bXBXMnk7Z86ybrA8w=w1159-h869-s-no-gm?authuser=0" alt="ヴィクトル・ユゴー通り"  width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>    
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczNjLfrmf-JObMKcJbQ44uG1d5MRR0KKjuG7H0KydUMNUxWs1_ADbg6E3wgjSSD7UOcXlW06tWfVJsCiogO1ZUAxGGe8jiZ-HvLUKhppriod-ipK2-mRHPnnDrqVpWBagfyRL9GgKTiwXRu-KW-9aySsmw=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>リヨン出身の作家・サンテグジュペリの像。星の王子様が代表作として有名。</p><p class='text'>Day：2024/8/12</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNjLfrmf-JObMKcJbQ44uG1d5MRR0KKjuG7H0KydUMNUxWs1_ADbg6E3wgjSSD7UOcXlW06tWfVJsCiogO1ZUAxGGe8jiZ-HvLUKhppriod-ipK2-mRHPnnDrqVpWBagfyRL9GgKTiwXRu-KW-9aySsmw=w1159-h869-s-no-gm?authuser=0" alt="サンテグジュペリ像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
+</a>
+</a> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczNsY5Y4RwL3GPS8jTqvAbWgR1ouM3xXtGmTCE6FuFlO4hvBtwy7DEc41-BfHhCRZeoXV-OdnDzgLouv4D8F6FOh7skdk9fHSNCEsfa7Gefbp4fkdpKvyX_1c8ms0PW7oZyZIkwt1OBagEs-0vRSiany5g=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>リヨン旧市街の大通り。奥にはノートルダム大聖堂がそびえ立っている。</p><p class='text'>Day：2024/8/12</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNsY5Y4RwL3GPS8jTqvAbWgR1ouM3xXtGmTCE6FuFlO4hvBtwy7DEc41-BfHhCRZeoXV-OdnDzgLouv4D8F6FOh7skdk9fHSNCEsfa7Gefbp4fkdpKvyX_1c8ms0PW7oZyZIkwt1OBagEs-0vRSiany5g=w1159-h869-s-no-gm?authuser=0" alt="リヨン旧市街"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczOTO6RTuf7E_lnR0gwP2p2blde_nLj59rM4-dB49l7dADJrQg9J8VN-vCOwauK8Xn7kHjSDAc1kCnZLTJXABwKq6EreZVZ_q9CDysVWYXI_WcCFYxOMACAoGr_yhs-lxNEajl_FvOoB6K8zHhT2ln9MKQ=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>リヨン旧市街の一角。まるでイタリア・フィレンツェに迷い込んでしまったかのようだ。</p><p class='text'>Day：2024/8/12</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczOTO6RTuf7E_lnR0gwP2p2blde_nLj59rM4-dB49l7dADJrQg9J8VN-vCOwauK8Xn7kHjSDAc1kCnZLTJXABwKq6EreZVZ_q9CDysVWYXI_WcCFYxOMACAoGr_yhs-lxNEajl_FvOoB6K8zHhT2ln9MKQ=w1159-h869-s-no-gm?authuser=0" alt="リヨン旧市街"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</a>  
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczNiwRmah2KBHzl6Lzo8CIgpYo8Lq2iNvYAOim0k5TGIPyfl8ibj7HJpPHK3rr-QKnYttUNfYwuUN9Hi3JR7xJkJe5VaMWXJIwDRf4HEBOldRrmBOqtjZ-vBsFwrNkcjSMSP6t45MsF9J6lc-5WGbWeodw=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>フルヴィエールの丘より望むリヨン旧市街。イタリア建築、テラコッタ色の屋根が目立つ。</p><p class='text'>Day：2024/8/12</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNiwRmah2KBHzl6Lzo8CIgpYo8Lq2iNvYAOim0k5TGIPyfl8ibj7HJpPHK3rr-QKnYttUNfYwuUN9Hi3JR7xJkJe5VaMWXJIwDRf4HEBOldRrmBOqtjZ-vBsFwrNkcjSMSP6t45MsF9J6lc-5WGbWeodw=w1159-h869-s-no-gm?authuser=0" alt="リヨン旧市街"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+</a>
+</div>
+</div>
+</div>
+<!-- マップ（リヨン） -->
+<h2 class="scroll fadeLeftSlide">
+Map
+</h2>
+<div class="street_map" id="maplyon" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
+<!-- 次はどこへ行く？ -->
+<h2 class="scroll fadeLeftSlide">
+Next Area ?
+</h2>
+<div class="city_item_info">
+<div class="image_caption">
+<a href="Paris.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Paris</span><span class="ja">パリ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Geneve.html">
+<h5><span class="flag-icon flag-icon-ch"></span><span class="en">Geneve</span><span class="ja">ジュネーブ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Marselie.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Marselie</span><span class="ja">マルセイユ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Evian.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Evian</span><span class="ja">エビアン</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Lausanne.html">
+<h5><span class="flag-icon flag-icon-ch"></span><span class="en">Lausanne</span><span class="ja">ローザンヌ</span></h5>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<!-- TOPに戻れる矢印（back_top) -->
+<div id="back_top">
+<a href="#top">
+<i class="fa-solid fa-chevron-up"></i>
+</a>
+</div>
+</section>
+<!-- コピーライト（copy_right) -->
+<footer>
+<div class="footer_upper">
+<div>
+<div class="footer_logo">
+<h1 style="margin-bottom: 2em;">
+Europe Summer Photo Trip
+</h1>
+</div>
+<div class="flex">
+<div class="footer_menu">
+<h3>
+Country
+</h3>
+<div class="accordion_body">
+<ul>
+<li>United Kingdom</li>
+<li>France</li>
+<li>Belgium</li>
+<li>Netherlands</li>
+<li>Germany</li>
+<li>Italy</li>
+<li>Switzerland</li>
+<li>Austria</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Main City
+</h3>
+<div class="accordion_body">
+<ul>
+<li>London</li>
+<li>Paris</li>
+<li>Amsterdam</li>
+<li>Netherlands</li>
+<li>Cologne</li>
+<li>Vienna</li>
+<li>Brugge</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Genre
+</h3>
+<div class="accordion_body">
+<ul>
+<li>Trains / Station</li>
+<li>Cathedral</li>
+<li>Food / Sweets</li>
+<li>Nature</li>
+<li>Art</li>
+<li>Flight</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3 style="margin-bottom: 2em;">
+Best Photo
+</h3>
+<h3>
+Europe Map
+</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer_copy">
+<p class="copy_light" style="color: aliceblue;">
+&copy;2019-2025 by Shinsaku Fujio PHOTOGRAPHY.All Rights Reserved.
+</p>
+</div>
+</footer>  
+<!-- オープンストリートマップのスクリプト -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/megamenu.js"></script>
+<!-- ユーティリティ関数（最初に読み込む） -->
+<script src="js/utils.js"></script>
+<!-- 都市別専用のJS -->
+<script src="js/map/lyon.js"></script>
+<!-- ※ここから下は共通 -->
+<!-- 都市のアイコン(※現在の都市を除く) -->
+<script src="js/icons/cities/london.js"></script>
+<script src="js/icons/cities/cambridge.js"></script>
+<script src="js/icons/cities/ely"></script>
+<script src="js/icons/cities/birmingham.js"></script>
+<script src="js/icons/cities/manchester.js"></script>
+<script src="js/icons/cities/york.js"></script>
+<script src="js/icons/cities/durham.js"></script>
+<script src="js/icons/cities/newcastle.js"></script>
+<script src="js/icons/cities/edinburgh.js"></script>
+<script src="js/icons/cities/bristol.js"></script>
+<script src="js/icons/cities/plymouth.js"></script>
+<script src="js/icons/cities/paris.js"></script>
+<script src="js/icons/cities/marselie"></script>
+<script src="js/icons/cities/geneva.js"></script>
+<script src="js/icons/cities/lausanne.js"></script>
+<script src="js/icons/cities/basel.js"></script>
+<script src="js/icons/cities/zurich.js"></script>
+<script src="js/icons/cities/innsbruck.js"></script>
+<script src="js/icons/cities/salzburg.js"></script>
+<script src="js/icons/cities/vienna.js"></script>
+<!-- 名所アイコン（※現在の都市だけにする） -->
+<script src="js/icons/places/lyon.js"></script>
+<!-- 駅アイコン -->
+<script src="js/icons/station/uk/lner.js"></script>
+<script src="js/icons/station/uk/gwr.js"></script>
+<script src="js/icons/station/uk/awc.js"></script>
+<script src="js/icons/station/uk/es.js"></script>
+<script src="js/icons/station/uk/tpe.js"></script>
+<script src="js/icons/station/uk/scr.js"></script>
+<script src="js/icons/station/uk/gnh.js"></script>
+<script src="js/icons/station/france/france.js"></script>
+<script src="js/icons/station/belgium/belgium.js"></script>
+<script src="js/icons/station/netherland/netherland.js"></script>
+<script src="js/icons/station/swiss/swiss.js"></script>
+<script src="js/icons/station/austria/austria.js"></script>
+<script src="js/icons/station/germany/germany.js"></script>
+<!-- 鉄道ルート -->
+<script src="js/routes/LNER/london-york.js"></script>
+<script src="js/routes/LNER/york-newcastle.js"></script>
+<script src="js/routes/LNER/newcastle-edinburgh.js"></script>
+<script src="js/routes/GNH/london-cambridge.js"></script>
+<script src="js/routes/GRA/peterborough-cambridge.js"></script>
+<script src="js/routes/XCC/peterborough-birmingham.js"></script>
+<script src="js/routes/XCC/birmingham-bristol.js"></script>
+<script src="js/routes/XCC/bristol-plymouth.js"></script>
+<script src="js/routes/GWR/london-bristol.js"></script>
+<script src="js/routes/GWR/london-plymouth.js"></script>
+<script src="js/routes/GWR/plymouth-penzance.js"></script>
+<script src="js/routes/GWR/windsorLine.js"></script>
+<script src="js/routes/AWC/london-birmingham.js"></script>
+<script src="js/routes/AWC/birmingham-manchester.js"></script>
+<script src="js/routes/AWC/london-edinburgh.js"></script>
+<script src="js/routes/SCR/edinburgh-aberdeen.js"></script>
+<script src="js/routes/TPE/york-leeds.js"></script>
+<script src="js/routes/TPE/leeds-manchester.js"></script>
+<script src="js/routes/NTH/leeds-carlisle.js"></script>
+<script src="js/routes/NTH/newcastle-carlisle.js"></script>
+<script src="js/routes/NTH/manchester-windermere.js"></script>
+<script src="js/routes/ES/london-brussel.js"></script>
+<script src="js/routes/ES/brussel-amsterdam.js"></script>
+<script src="js/routes/ICE/brussel-cologne.js"></script>
+<script src="js/routes/ICE/cologne-basel.js"></script>
+<script src="js/routes/SBB/basel-zurich.js"></script>
+<script src="js/routes/SBB/zurich-geneva.js"></script>
+<script src="js/routes/OBB/zurich-innsbruck.js"></script>
+<script src="js/routes/OBB/innsbruck-salzburg.js"></script>
+<script src="js/routes/OBB/salzburg-vienna.js"></script>
+<script src="js/routes/SNCF/geneva-lyon.js"></script>
+<script src="js/routes/TGV/paris-lyon.js"></script>
+<script src="js/routes/TGV/paris-marselie.js"></script>
+<script src="js/routes/TGV/paris-basel.js"></script>
+<script src="js/routes/TGV/lyon-marsellie.js"></script>
+<!-- ポップアップ操作 -->
+<script src="js/popup/popup.js"></script>
+<!-- コントロール -->
+<script src="js/control/zoom.js"></script>
+<script src="js/control/click.js"></script>
+</body>
+</html>

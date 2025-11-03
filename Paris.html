@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- リンクするcss -->
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/photo.css">
+<link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/leaflet_popup.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/speechBubble.css">
+<!-- リンクするjs -->
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<!-- オープンストリートマップのスクリプト -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- FontawesomeのVersion6.7.2（最新） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- マーカーの色を変更するスクリプト -->
+<script src="js/leaflet.sprite.js"></script>
+<!-- 国旗のcss -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<title>
+Europe Photo Best
+</title>
+<body>
+<!-- sectionのスタート -->
+<!-- ヘッダー -->
+<header>
+<!-- ヘッダー用コンテナ --> 
+<!-- containerのスタート -->
+<div class="container header_container">
+<!-- ヘッダーはここ --> 
+<div class="header-inner">
+<a href="index.html">
+<h1>
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span>Europe Summer Photo Trip
+</h1>
+</a>
+</div>
+<!-- サブメニューはここ --> 
+<nav class="header_nav">
+<ul class="header_list">
+<li class="header_item">
+<a href="London.html" target="_blank">Country</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">United Kingdom</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">France</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Belgium</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Netherlands</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Germany</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Italy</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Switzerland</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Austria</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Main City</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">London</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Paris</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Amsterdam</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Cologne</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Vienna</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Brugge</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Genre</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Train / Station</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Cathedral</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Foods</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Mountain</a>
+</li>
+</ul>
+</div>
+</li> 
+<li class="header_item">
+<a href="#Best Views">Best Views</a>
+</li>      
+</ul>
+</nav>
+<!-- スマホ専用ナビゲーション(Sp_navigation) -->
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="globalMenuSp">
+<ul>
+<li><a href="index.html">Place list</a></li>
+<li><a href="index.html">Genre</a></li>
+<li><a href="index.html">Best Photo</a></li>
+</ul>
+</nav>
+</div>
+</header> 
+<section class="pagebody">
+<!-- TOP画像＋背景文字はここ --> 
+<div class="Top_image">
+<div>
+<img loading="eager" src="image/top/paris.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
+<div class="Top_caption scroll fadeLeftSlide">
+<h1>Paris</h1>
+<p>- City Infomation -</p>
+</div>  
+</div>
+</div>
+<div class="container">
+<!-- エディタcssを適用する -->
+<div class="site_body editorcss">
+<!-- 導入の文章 -->
+<div class="Read_text">
+<h4>
+芸術、文化、ファッションの中心地
+</h4>
+<p class="mb_1em">
+フランスの首都であり、イルドフランス地域圏の中心を担うパリ。<br/>
+</p>
+</div>
+<!-- スポット情報（パリ） -->
+<h2 class="scroll fadeLeftSlide">
+Spot's
+</h2>
+<div class="uk_item_info_1" style="margin-bottom: 3em;">
+<div class="info_left_item">
+<div class="uk_picture_frame_1">
+<img src="https://lh3.googleusercontent.com/pw/AP1GczOzMgwA-PTbqJ1dvDDhxuEQ0bbZri9QXL9ZJpbVultLDMShhImOmhxIsPJZAItc4kgPoR5sLK1IN-7nkESutHeo1lTHv4oEZBy2QIy6FqmHiMgcvJWneZLPU6b44Fx5g5BiXNQReiC3S-89mLowcx0w5g=w1159-h869-s-no-gm?authuser=0" alt="凱旋門" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+</div>
+</div>
+<div class="info_right_item">
+<div class="text_side">
+<h3 class="city_title">
+Arc de Triomphe
+</h3>
+<div class="text_font"> 
+<p class="mb_1em">
+凱旋門についての説明
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="uk_item_info_1" style="margin-bottom: 3em;">
+<div class="info_left_item">
+<div class="uk_picture_frame_1">
+<img src="https://lh3.googleusercontent.com/pw/AP1GczMiArhKPvocexHGZKAkf3NW31VdzQ042v5EFwUVdlBoRpwI94AVsqv3hy9Cl0gwXeZ0COfG1fiNVB7IslFMrK984Yzz-H_vxTPl_bpegUius3lcdeXyHs61949V9Sz0aBoZQrHZObFfnkzv_yhUtLGLAA=w1159-h869-s-no-gm?authuser=0" alt="ベルサイユ" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+</div>
+</div>
+<div class="info_right_item">
+<div class="text_side">
+<h3 class="city_title">
+Versailles
+</h3>
+<div class="text_font"> 
+<p class="mb_1em">
+ベルサイユについての説明
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- マップ（パリ） -->
+<h2 class="scroll fadeLeftSlide">
+Map
+</h2>
+<div class="street_map" id="maparis" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
+<!-- フォトギャラリー（パリ） -->
+<h2 class="scroll fadeLeftSlide">
+Photo Gallery
+</h2>
+<div class="photo_container">
+<div class="photo_wrap">
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNwJnJWHY3YBuzsMvC98KwZyEP5rOx8lbvoAUDl6IeziV_gocoLTrhdMGLkoZlAMtDbrbfHDnRqDM1O85mGdBwIJMTw74Sst7_pTVRb8NpT00k8yG6PO1pCSrgHKZktTDdpl6jqz03nfjM9qmRC1k1olg=w1159-h869-s-no-gm?authuser=0" alt="オルセー"  width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>  
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczMiArhKPvocexHGZKAkf3NW31VdzQ042v5EFwUVdlBoRpwI94AVsqv3hy9Cl0gwXeZ0COfG1fiNVB7IslFMrK984Yzz-H_vxTPl_bpegUius3lcdeXyHs61949V9Sz0aBoZQrHZObFfnkzv_yhUtLGLAA=w1159-h869-s-no-gm?authuser=0" alt="ベルサイユ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>    
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczMKfRG6uThmF7RrArJzXaTsSI-zWDPMdL5-4Zc-j2UEdafEzncJUkGRTcxKhhKcT_h6Mb7JeMuTWiPLUCbzLGQ5IxZfPUurohZiZHEDEMw4JgBpVcv9Jgtl6BgUVot45vf-1txLfIQWRqavosVV1vHtKw=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>パリオリンピック旗と凱旋門。次にこの光景が見られるのは100年後だろうか。</p><p class='text'>Day：2024/8/15</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczMKfRG6uThmF7RrArJzXaTsSI-zWDPMdL5-4Zc-j2UEdafEzncJUkGRTcxKhhKcT_h6Mb7JeMuTWiPLUCbzLGQ5IxZfPUurohZiZHEDEMw4JgBpVcv9Jgtl6BgUVot45vf-1txLfIQWRqavosVV1vHtKw=w1159-h869-s-no-gm?authuser=0" alt="凱旋門"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
+</a> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczNsZILQLvx8I7KrBCGavPvmtopTTdJrJTR3JWzWp-TLiCn6NQu83oU41_28eMcaqMA9RmdILikuBTYddhwOvLEqlEfRRkkMOXtM95RbYTzxRCFdaWWdKR38cFGq__E1trP4tSWChDZJobBzaSgRPyp2Fw=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>ルーブル美術館の中でも超人気のモナリザ。いざとなったらDS越しに撮影しよう。</p><p class='text'>Day：2024/8/14</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNsZILQLvx8I7KrBCGavPvmtopTTdJrJTR3JWzWp-TLiCn6NQu83oU41_28eMcaqMA9RmdILikuBTYddhwOvLEqlEfRRkkMOXtM95RbYTzxRCFdaWWdKR38cFGq__E1trP4tSWChDZJobBzaSgRPyp2Fw=w1159-h869-s-no-gm?authuser=0" alt="モナリザ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+</a>  
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczNdGonEBYfKLZi4u_m4gA8UOdQGB6V-FqqELavgmcmqnDsnjwiDQmKgXI13qqfHvqK35slVGQkQiIk78CT02mJGzHKD2JVotdrbxGyLsBZ0yLda3nlXqN2hsbXXYyQvJr3r55euNKJ6jjKhCHJQG1kZ1w=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>近年はそれなりに暑い、夏のパリ。道から噴き出すスプリンクラーが気持ちよさそうだ。</p><p class='text'>Day：2024/8/14</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNdGonEBYfKLZi4u_m4gA8UOdQGB6V-FqqELavgmcmqnDsnjwiDQmKgXI13qqfHvqK35slVGQkQiIk78CT02mJGzHKD2JVotdrbxGyLsBZ0yLda3nlXqN2hsbXXYyQvJr3r55euNKJ6jjKhCHJQG1kZ1w=w1159-h869-s-no-gm?authuser=0" alt="ルクセンブルク地区"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczP6Nht0sPKU8F3Y1AMr3pjicf8UzuqAeIO-upVH8FSNzgiP0zM8q1BH8IPuekWqDUzVX8dOjaHiVzFrE7ydWGQchC9UNwDGHOVgVoVfeUgA9WaNHH1BynbQs5_4ly0_a28k0vHhokvkqwyMUKO3xaFpbA=w1159-h869-s-no-gm?authuser=0" alt="ルーブル"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczPxt-nHXJHCEpbQ4ZIgOqfkb876SMIb1iyaUabyDn3TisdYwt7SiK2_M_IfhSiy5TL8Gc7EwA4lFvCmuyMo1d5izZOc_EfTW_FLX5wNgGQC8BlgrTv52szbED7Yu4V4xLUgTnxtwcgxAERK-usZ0EQMxQ=w1159-h869-s-no-gm?authuser=0" alt="路上アート"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczNdrDJ0m9C5GQnyp3bg5HGbxZ-wRTXkYXLNOhM9mFAjlM_NTZhtvEnEFU5dOXOpNkFPGqh9AyB1wn8sBRMfSth_Bkara3wWEto06z7awshT34-ox_AVpWoncEFbfzwDwKbTLdoxWPW4eFtNTI7s2hS9gA=w1159-h869-s-no-gm?authuser=0" alt="エッフェル塔"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="https://lh3.googleusercontent.com/pw/AP1GczM1wB6NsdXs53fDhGFNlRnnu3WMP5YbcV0pUVPURT60oxC7brPujI6GONd2lrMYZbjNIsX4EJ-kvtgDrpVWl_iLVmXO_qM-JS0j5c8CfV6tCbGxm3lCE3qPppbKzGo_kJA5MTGqBO4tZEHOyhVg2z9u6A=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="<p class='title'>近年はそれなりに暑い、夏のパリ。道から噴き出すスプリンクラーが気持ちよさそうだ。</p><p class='text'>Day：2024/8/14</p>">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczM1wB6NsdXs53fDhGFNlRnnu3WMP5YbcV0pUVPURT60oxC7brPujI6GONd2lrMYZbjNIsX4EJ-kvtgDrpVWl_iLVmXO_qM-JS0j5c8CfV6tCbGxm3lCE3qPppbKzGo_kJA5MTGqBO4tZEHOyhVg2z9u6A=w1159-h869-s-no-gm?authuser=0" alt="ルーブルアート"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
+</a> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img class="item-img" src="https://lh3.googleusercontent.com/pw/AP1GczN2cOPxjzhLMgcZxsd9abDr6p9iMl1DZH0BwS-V3lSgQ_jILe_wJ1DsZps4OyY0leeVOE0fJrjNLaSV7pNJtJO32aCo2PrJwZGVI5uxCF5hFWBcfgxd6EPdZu5nK4QcsZIGbOJr0TIMyZFEKxhudTolYg=w1159-h869-s-no-gm?authuser=0" alt="ルクセンブルク公園"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+</div>
+</div>
+</div>
+<!-- 次はどこへ行きたい？ -->
+<h2 class="scroll fadeLeftSlide">
+Next Area ?
+</h2>
+<div class="city_item_info">
+<div class="image_caption">
+<a href="Lyon.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Lyon</span><span class="ja">リヨン</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="London.html">
+<h5><span class="flag-icon flag-icon-gb-eng"></span><span class="en">London</span><span class="ja">ロンドン</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Geneva.html">
+<h5><span class="flag-icon flag-icon-ch"></span><span class="en">Geneva</span><span class="ja">ジュネーブ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="Marselie.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Marselie</span><span class="ja">マルセイユ</span></h5>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- TOPに戻れる矢印（back_top) -->
+<div id="back_top">
+<a href="#top">
+<i class="fa-solid fa-chevron-up"></i>
+</a>
+</div>
+</section>
+<!-- コピーライト（copy_right) -->
+<footer>
+<div class="footer_upper">
+<div>
+<div class="footer_logo">
+<h1 style="margin-bottom: 2em;">
+Europe Summer Photo Trip
+</h1>
+</div>
+<div class="flex">
+<div class="footer_menu">
+<h3>
+Country
+</h3>
+<div class="accordion_body">
+<ul>
+<li>United Kingdom</li>
+<li>France</li>
+<li>Belgium</li>
+<li>Netherlands</li>
+<li>Germany</li>
+<li>Italy</li>
+<li>Switzerland</li>
+<li>Austria</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Main City
+</h3>
+<div class="accordion_body">
+<ul>
+<li>London</li>
+<li>Paris</li>
+<li>Amsterdam</li>
+<li>Netherlands</li>
+<li>Cologne</li>
+<li>Vienna</li>
+<li>Brugge</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Genre
+</h3>
+<div class="accordion_body">
+<ul>
+<li>Trains / Station</li>
+<li>Cathedral</li>
+<li>Food / Sweets</li>
+<li>Nature</li>
+<li>Art</li>
+<li>Flight</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3 style="margin-bottom: 2em;">
+Best Photo
+</h3>
+<h3>
+Europe Map
+</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer_copy">
+<p class="copy_light" style="color: aliceblue;">
+&copy;2019-2025 by Shinsaku Fujio PHOTOGRAPHY.All Rights Reserved.
+</p>
+</div>
+</footer>  
+<!-- オープンストリートマップのスクリプト -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/megamenu.js"></script>
+<!-- ユーティリティ関数（最初に読み込む） -->
+<script src="js/utils.js"></script>
+<!-- 都市別専用のJS -->
+<script src="js/map/paris.js"></script>
+<!-- ※ここから下は共通 -->
+<!-- 都市のアイコン(※現在の都市を除く) -->
+<script src="js/icons/cities/london.js"></script>
+<script src="js/icons/cities/cambridge.js"></script>
+<script src="js/icons/cities/ely"></script>
+<script src="js/icons/cities/birmingham.js"></script>
+<script src="js/icons/cities/manchester.js"></script>
+<script src="js/icons/cities/york.js"></script>
+<script src="js/icons/cities/durham.js"></script>
+<script src="js/icons/cities/newcastle.js"></script>
+<script src="js/icons/cities/edinburgh.js"></script>
+<script src="js/icons/cities/bristol.js"></script>
+<script src="js/icons/cities/plymouth.js"></script>
+<script src="js/icons/cities/lyon.js"></script>
+<script src="js/icons/cities/marselie"></script>
+<script src="js/icons/cities/geneva.js"></script>
+<script src="js/icons/cities/lausanne.js"></script>
+<script src="js/icons/cities/basel.js"></script>
+<script src="js/icons/cities/zurich.js"></script>
+<script src="js/icons/cities/innsbruck.js"></script>
+<script src="js/icons/cities/salzburg.js"></script>
+<script src="js/icons/cities/vienna.js"></script>
+<!-- 名所アイコン（※現在の都市だけにする） -->
+<script src="js/icons/places/paris.js"></script>
+<!-- 駅アイコン -->
+<script src="js/icons/station/uk/lner.js"></script>
+<script src="js/icons/station/uk/gwr.js"></script>
+<script src="js/icons/station/uk/awc.js"></script>
+<script src="js/icons/station/uk/es.js"></script>
+<script src="js/icons/station/uk/tpe.js"></script>
+<script src="js/icons/station/uk/scr.js"></script>
+<script src="js/icons/station/uk/gnh.js"></script>
+<script src="js/icons/station/france/france.js"></script>
+<script src="js/icons/station/belgium/belgium.js"></script>
+<script src="js/icons/station/netherland/netherland.js"></script>
+<script src="js/icons/station/swiss/swiss.js"></script>
+<script src="js/icons/station/austria/austria.js"></script>
+<script src="js/icons/station/germany/germany.js"></script>
+<!-- 鉄道ルート -->
+<script src="js/routes/LNER/london-york.js"></script>
+<script src="js/routes/LNER/york-newcastle.js"></script>
+<script src="js/routes/LNER/newcastle-edinburgh.js"></script>
+<script src="js/routes/GNH/london-cambridge.js"></script>
+<script src="js/routes/GRA/peterborough-cambridge.js"></script>
+<script src="js/routes/XCC/peterborough-birmingham.js"></script>
+<script src="js/routes/XCC/birmingham-bristol.js"></script>
+<script src="js/routes/XCC/bristol-plymouth.js"></script>
+<script src="js/routes/GWR/london-bristol.js"></script>
+<script src="js/routes/GWR/london-plymouth.js"></script>
+<script src="js/routes/GWR/plymouth-penzance.js"></script>
+<script src="js/routes/GWR/windsorLine.js"></script>
+<script src="js/routes/AWC/london-birmingham.js"></script>
+<script src="js/routes/AWC/birmingham-manchester.js"></script>
+<script src="js/routes/AWC/london-edinburgh.js"></script>
+<script src="js/routes/SCR/edinburgh-aberdeen.js"></script>
+<script src="js/routes/TPE/york-leeds.js"></script>
+<script src="js/routes/TPE/leeds-manchester.js"></script>
+<script src="js/routes/NTH/leeds-carlisle.js"></script>
+<script src="js/routes/NTH/newcastle-carlisle.js"></script>
+<script src="js/routes/NTH/manchester-windermere.js"></script>
+<script src="js/routes/ES/london-brussel.js"></script>
+<script src="js/routes/ES/brussel-amsterdam.js"></script>
+<script src="js/routes/ICE/brussel-cologne.js"></script>
+<script src="js/routes/ICE/cologne-basel.js"></script>
+<script src="js/routes/SBB/basel-zurich.js"></script>
+<script src="js/routes/SBB/zurich-geneva.js"></script>
+<script src="js/routes/OBB/zurich-innsbruck.js"></script>
+<script src="js/routes/OBB/innsbruck-salzburg.js"></script>
+<script src="js/routes/OBB/salzburg-vienna.js"></script>
+<script src="js/routes/SNCF/geneva-lyon.js"></script>
+<script src="js/routes/TGV/paris-lyon.js"></script>
+<script src="js/routes/TGV/paris-marselie.js"></script>
+<script src="js/routes/TGV/paris-basel.js"></script>
+<script src="js/routes/TGV/lyon-marsellie.js"></script>
+<!-- ポップアップ操作 -->
+<script src="js/popup/popup.js"></script>
+<!-- コントロール -->
+<script src="js/control/zoom.js"></script>
+<script src="js/control/click.js"></script>
+</body>
+</html>

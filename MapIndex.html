@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- リンクするcss -->
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/photo.css">
+<link rel="stylesheet" href="css/maplegend.css">
+<link rel="stylesheet" href="css/leaflet_popup.css">
+<link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/speechBubble.css">
+<!-- リンクするjs -->
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<!-- オープンストリートマップのスクリプト -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<!-- マーカーの色を変更するスクリプト -->
+<script src="js/leaflet.sprite.js"></script>
+<!-- FontawesomeのVersion6.7.2（最新） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- 国旗のcss -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<title>
+Europe Photo Best
+</title>
+<body>
+<!-- sectionのスタート -->
+<!-- ヘッダー -->
+<header>
+<!-- ヘッダー用コンテナ --> 
+<!-- containerのスタート -->
+<div class="container header_container">
+<!-- ヘッダーはここ --> 
+<div class="header-inner">
+<a href="index.html">
+<h1>
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span>Europe Summer Photo Trip
+</h1>
+</a>
+</div>
+<!-- サブメニューはここ --> 
+<nav class="header_nav">
+<ul class="header_list">
+<li class="header_item">
+<a href="London.html" target="_blank">Country</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">United Kingdom</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">France</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Belgium</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Netherlands</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Germany</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Italy</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Switzerland</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Austria</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Main City</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">London</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Paris</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Amsterdam</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Cologne</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Vienna</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Brugge</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a href="London.html">Genre</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Train / Station</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Cathedral</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Foods</a>
+</li>
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">Mountain</a>
+</li>
+</ul>
+</div>
+</li> 
+<li class="header_item">
+<a href="#Best Views">Best Views</a>
+</li>      
+</ul>
+</nav>
+<!-- スマホ専用ナビゲーション(Sp_navigation) -->
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="globalMenuSp">
+<ul>
+<li><a href="index.html">Place list</a></li>
+<li><a href="index.html">Genre</a></li>
+<li><a href="index.html">Best Photo</a></li>
+</ul>
+</nav>
+</div>
+</header> 
+<section class="pagebody">
+<!-- TOP画像＋背景文字はここ --> 
+<div class="Top_image">
+<div>
+<img loading="eager" src="image/top/london.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
+<div class="Top_caption scroll fadeLeftSlide">
+<h1>Map Index</h1>
+<p>- Europe & UK map -</p>
+</div>  
+</div>
+</div>
+<div class="container">
+<!-- エディタcssを適用する -->
+<div class="site_body editorcss">
+<!-- 導入の文章 -->
+<div class="Read_text">
+<h4>
+地図に関して
+</h4>
+<p class="mb_1em">
+地図の説明
+</p>
+</div>
+<div style="margin-bottom: 4em;">
+<div class="street_map" id="mapindex">
+<!-- 凡例 -->
+<div class="LegendArea">
+<a onclick="toggleSection2('MapLegendSection')" class="popup_link" style="font-size: 1.5em;">▼ Legend</a>
+<div id="MapLegendSection" class="legend_content">
+<!-- 都市一覧（写真・名前・リンク・地図表示ボタン） -->
+<div class="flex_images_2">
+<div class="icon_area">
+<img class="Legend_icon" src="image/icon/maincity@2x.png"><span>City Now</span>
+</div>
+<div class="icon_area">
+<img class="Legend_icon" src="image/icon/train@2x.png"><span>Main Station</span>
+</div>
+<div class="icon_area">
+<img class="Legend_icon" src="image/icon/train_2@2x.png"><span>Other Station</span>
+</div>
+<div class="icon_area">
+<img class="Legend_icon" src="image/icon/place@2x.png"><span>Main Place</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- フォトギャラリー（ロンドン） -->
+<h2 class="scroll fadeLeftSlide">
+Index
+</h2>
+<div class="map_item_info">
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a onclick="map('London')">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span class="en" style="margin-left: 15px;">London</span><span class="ja" style="margin-left: 15px;">ロンドン</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Birmingham.html">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span class="en" style="margin-left: 15px;">Birmingham</span><span class="ja" style="margin-left: 15px;">バーミンガム</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Manchester.html">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span class="en" style="margin-left: 15px;">Manchester</span><span class="ja" style="margin-left: 15px;">マンチェスター</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Bristol.html">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span class="en" style="margin-left: 15px;">Bristol</span><span class="ja" style="margin-left: 15px;">ブリストル</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Paris.html">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-fr"></span><span class="en" style="margin-left: 15px;">Paris</span><span class="ja" style="margin-left: 15px;">パリ</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_3" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Amsterdam.html">
+<img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMi2nZvn4wVPWvfhdizCFcXjHYU-Tj9yv7dsjTPT0YWhNE7trKjrUO6vJd0rNwnW_8aKOKe_F8KD5vHqebiong6F2-AKYZsjQT4PCx97KgwTUFUIjFoI_N-kmB0SWM8C8xaOBQP-711bErju_451CEn=w1159-h869-s-no-gm?authuser=0" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-nl"></span><span class="en" style="margin-left: 15px;">Amsterdam</span><span class="ja" style="margin-left: 15px;">アムステルダム</span>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- TOPに戻れる矢印（back_top) -->
+<div id="back_top">
+<a href="#top">
+<i class="fa-solid fa-chevron-up"></i>
+</a>
+</div>
+</section>
+<!-- コピーライト（copy_right) -->
+<footer>
+<div class="footer_upper">
+<div>
+<div class="footer_logo">
+<h1 style="margin-bottom: 2em;">
+Europe Summer Photo Trip
+</h1>
+</div>
+<div class="flex">
+<div class="footer_menu">
+<h3>
+Country
+</h3>
+<div class="accordion_body">
+<ul>
+<li>United Kingdom</li>
+<li>France</li>
+<li>Belgium</li>
+<li>Netherlands</li>
+<li>Germany</li>
+<li>Italy</li>
+<li>Switzerland</li>
+<li>Austria</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Main City
+</h3>
+<div class="accordion_body">
+<ul>
+<li>London</li>
+<li>Paris</li>
+<li>Amsterdam</li>
+<li>Netherlands</li>
+<li>Cologne</li>
+<li>Vienna</li>
+<li>Brugge</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Genre
+</h3>
+<div class="accordion_body">
+<ul>
+<li>Trains / Station</li>
+<li>Cathedral</li>
+<li>Food / Sweets</li>
+<li>Nature</li>
+<li>Art</li>
+<li>Flight</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3 style="margin-bottom: 2em;">
+Best Photo
+</h3>
+<h3>
+Europe Map
+</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer_copy">
+<p class="copy_light" style="color: aliceblue;">
+&copy;2019-2025 by Shinsaku Fujio PHOTOGRAPHY.All Rights Reserved.
+</p>
+</div>
+</footer>
+<!-- オープンストリートマップのスクリプト -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/megamenu.js"></script>
+<!-- ★オープンストリートマップ -->
+<!-- ユーティリティ関数（最初に読み込む） -->
+<script src="js/utils.js"></script>
+<!-- 都市別専用のJS -->
+<script src="js/map/mapindex.js"></script>
+<!-- ※ここから下は共通 -->
+<!-- 空港アイコン -->
+ <script src="js/icons/airport/airport.js"></script>
+<!-- 都市のアイコン(※全都市掲載) -->
+<script src="js/icons/cities/london.js"></script>
+<script src="js/icons/cities/cambridge.js"></script>
+<script src="js/icons/cities/ely"></script>
+<script src="js/icons/cities/birmingham.js"></script>
+<script src="js/icons/cities/manchester.js"></script>
+<script src="js/icons/cities/york.js"></script>
+<script src="js/icons/cities/durham.js"></script>
+<script src="js/icons/cities/newcastle.js"></script>
+<script src="js/icons/cities/edinburgh.js"></script>
+<script src="js/icons/cities/bristol.js"></script>
+<script src="js/icons/cities/plymouth.js"></script>
+<script src="js/icons/cities/paris.js"></script>
+<script src="js/icons/cities/lyon.js"></script>
+<script src="js/icons/cities/marselie"></script>
+<script src="js/icons/cities/geneva.js"></script>
+<script src="js/icons/cities/lausanne.js"></script>
+<script src="js/icons/cities/basel.js"></script>
+<script src="js/icons/cities/zurich.js"></script>
+<script src="js/icons/cities/innsbruck.js"></script>
+<script src="js/icons/cities/salzburg.js"></script>
+<script src="js/icons/cities/vienna.js"></script>
+<!-- 名所アイコンは掲載しない -->
+<!-- 駅アイコン -->
+<script src="js/icons/station/uk/lner.js"></script>
+<script src="js/icons/station/uk/gwr.js"></script>
+<script src="js/icons/station/uk/awc.js"></script>
+<script src="js/icons/station/uk/es.js"></script>
+<script src="js/icons/station/uk/tpe.js"></script>
+<script src="js/icons/station/uk/scr.js"></script>
+<script src="js/icons/station/uk/gnh.js"></script>
+<script src="js/icons/station/france/france.js"></script>
+<script src="js/icons/station/belgium/belgium.js"></script>
+<script src="js/icons/station/netherland/netherland.js"></script>
+<script src="js/icons/station/swiss/swiss.js"></script>
+<script src="js/icons/station/austria/austria.js"></script>
+<script src="js/icons/station/germany/germany.js"></script>
+<!-- 鉄道ルート -->
+<script src="js/routes/LNER/london-york.js"></script>
+<script src="js/routes/LNER/york-newcastle.js"></script>
+<script src="js/routes/LNER/newcastle-edinburgh.js"></script>
+<script src="js/routes/GNH/london-cambridge.js"></script>
+<script src="js/routes/GRA/peterborough-cambridge.js"></script>
+<script src="js/routes/XCC/peterborough-birmingham.js"></script>
+<script src="js/routes/XCC/birmingham-bristol.js"></script>
+<script src="js/routes/XCC/bristol-plymouth.js"></script>
+<script src="js/routes/GWR/london-bristol.js"></script>
+<script src="js/routes/GWR/london-plymouth.js"></script>
+<script src="js/routes/GWR/plymouth-penzance.js"></script>
+<script src="js/routes/GWR/windsorLine.js"></script>
+<script src="js/routes/AWC/london-birmingham.js"></script>
+<script src="js/routes/AWC/birmingham-manchester.js"></script>
+<script src="js/routes/AWC/london-edinburgh.js"></script>
+<script src="js/routes/SCR/edinburgh-aberdeen.js"></script>
+<script src="js/routes/TPE/york-leeds.js"></script>
+<script src="js/routes/TPE/leeds-manchester.js"></script>
+<script src="js/routes/NTH/leeds-carlisle.js"></script>
+<script src="js/routes/NTH/newcastle-carlisle.js"></script>
+<script src="js/routes/NTH/manchester-windermere.js"></script>
+<script src="js/routes/ES/london-brussel.js"></script>
+<script src="js/routes/ES/brussel-amsterdam.js"></script>
+<script src="js/routes/ICE/brussel-cologne.js"></script>
+<script src="js/routes/ICE/cologne-basel.js"></script>
+<script src="js/routes/SBB/basel-zurich.js"></script>
+<script src="js/routes/SBB/zurich-geneva.js"></script>
+<script src="js/routes/OBB/zurich-innsbruck.js"></script>
+<script src="js/routes/OBB/innsbruck-salzburg.js"></script>
+<script src="js/routes/OBB/salzburg-vienna.js"></script>
+<script src="js/routes/SNCF/geneva-lyon.js"></script>
+<script src="js/routes/TGV/paris-lyon.js"></script>
+<script src="js/routes/TGV/paris-basel.js"></script>
+<script src="js/routes/TGV/lyon-marsellie.js"></script>
+<!-- 飛行機ルート -->
+ <script src="js/routes/Flight/heathrow-geneva.js"></script>
+<!-- ポップアップ・凡例操作 -->
+<script src="js/popup/popup.js"></script>
+<!-- コントロール -->
+<script src="js/control/zoom.js"></script>
+<script src="js/control/click.js"></script>
+</body>
+</html>
