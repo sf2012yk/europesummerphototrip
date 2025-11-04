@@ -387,7 +387,7 @@ function goToNewcastle() {
   // ✅ 距離に応じてフレーム間隔を調整
   const totalDistance = calculateTotalDistance(pathToNewcastle); // メートル
   const targetDuration = 15000; // 全体移動時間（ミリ秒）
-  const frameInterval = Math.max(1, targetDuration / totalFrames); // 最低5ms
+  const frameInterval = Math.max(16, targetDuration / totalFrames); // 最低5ms
 
   let frame = 0;
 
@@ -445,7 +445,7 @@ function goToDarlington() {
 
   const trainMarker = L.marker(York_LNER2, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_YkNc , 60);// ← 数字が少ないほどスピードアップ
+  const fullPath = interpolatePolyline(LNER_YkNc , 30);// ← 数字が少ないほどスピードアップ
 
   const DarlingtonIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - Darlington[0]) < 0.0001 && 
@@ -455,6 +455,11 @@ function goToDarlington() {
   const pathToDarlington = fullPath.slice(0, DarlingtonIndex + 1);
   // ✅ ここに animatePath を定義
   const totalFrames = pathToDarlington.length;
+
+  // ✅ 距離に応じてフレーム間隔を調整
+  const totalDistance = calculateTotalDistance(pathToDarlington); // メートル
+  const targetDuration = 15000; // 全体移動時間（ミリ秒）
+  const frameInterval = Math.max(16, targetDuration / totalFrames); // 最低5ms
   let frame = 0;
 
   function animate() {
