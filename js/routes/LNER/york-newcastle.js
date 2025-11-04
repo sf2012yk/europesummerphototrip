@@ -68,7 +68,7 @@ const Cn_DaltononTees = [
 ];
 const DaltononTees_n = [54.47572088370006,-1.5536386208968476];
 const CP_DaltononTees = adaptiveBezierCurve(DaltononTees_s,Cn_DaltononTees,DaltononTees_n,1);
-const CP_DaltononTees_Un = resamplePath(CP_DaltononTees, 4);
+const CP_DaltononTees_Un = resamplePath(CP_DaltononTees, 6);
 //カーブ南東//
 const CroftonTees_s = [54.47915465026166,-1.5517116305875982];
 const Cn_CroftonTees = [
@@ -77,7 +77,7 @@ const Cn_CroftonTees = [
 ];
 const CroftonTees_n = [54.48289055912525,-1.5503847145552818];
 const CP_CroftonTees = adaptiveBezierCurve(CroftonTees_s,Cn_CroftonTees,CroftonTees_n,1);
-const CP_CroftonTees_Un = resamplePath(CP_CroftonTees, 2);
+const CP_CroftonTees_Un = resamplePath(CP_CroftonTees, 4);
 const ComfortCow = [54.498120881642706, -1.5484105968744926];
 const UK_A66_DL = [54.5053396877626, -1.5485346532177628];
 const Darlington = [54.521126434342825, -1.5460040570133933];//Darlington駅
@@ -92,7 +92,7 @@ const Cn_SaltersLn = [
 ];
 const SaltersLn_n = [54.56043286182098,-1.5408493167144799];
 const CP_SaltersLn = adaptiveBezierCurve(SaltersLn_s,Cn_SaltersLn,SaltersLn_n,1);
-const CP_SaltersLn_Un = resamplePath(CP_SaltersLn, 4);
+const CP_SaltersLn_Un = resamplePath(CP_SaltersLn, 5);
 
 //カーブ北東//
 const Brafferton_s = [54.57699099872808,-1.5454980168039103];
@@ -111,7 +111,7 @@ const Cn_LimeLnDr = [
 ];
 const LimeLnDr_n = [54.59220730013532,-1.5601961637580506];
 const CP_LimeLnDr = adaptiveBezierCurve(LimeLnDr_s,Cn_LimeLnDr,LimeLnDr_n,1);
-const CP_LimeLnDr_Un = resamplePath(CP_LimeLnDr, 3);
+const CP_LimeLnDr_Un = resamplePath(CP_LimeLnDr, 4);
 //カーブ北西//
 const AycliffeVl_s = [54.596686434717306,-1.5585785049980763];
 const Cn_AycliffeVl = [
@@ -119,7 +119,7 @@ const Cn_AycliffeVl = [
 (-1.5585785049980763 + -1.555359854154742) / 2 + 0.0004 //北//
 ];
 const AycliffeVl_n = [54.601782840900604,-1.555359854154742];
-const CP_AycliffeVl = adaptiveBezierCurve(AycliffeVl_s,Cn_AycliffeVl,AycliffeVl_n,0.2);
+const CP_AycliffeVl = adaptiveBezierCurve(AycliffeVl_s,Cn_AycliffeVl,AycliffeVl_n,1);
 const CP_AycliffeVl_Un = resamplePath(CP_AycliffeVl, 3);
 //カーブ北東//
 const RicknallLn_s = [54.60431837613244,-1.5532570021970975];
@@ -129,7 +129,7 @@ const Cn_RicknallLn = [
 ];
 const RicknallLn_n = [54.611103884661894,-1.537721647655835];
 const CP_RicknallLn = adaptiveBezierCurve(RicknallLn_s,Cn_RicknallLn,RicknallLn_n,1);
-const CP_RicknallLn_Un = resamplePath(CP_RicknallLn, 4);
+const CP_RicknallLn_Un = resamplePath(CP_RicknallLn, 3);
 //カーブ南東//
 const PrestonLeSkerne_s = [54.61194888714131,-1.5292673246779274];
 const Cn_PrestonLeSkerne = [
@@ -138,7 +138,7 @@ const Cn_PrestonLeSkerne = [
 ];
 const PrestonLeSkerne_n = [54.62320251249372,-1.5114591958332786];
 const CP_PrestonLeSkerne = adaptiveBezierCurve(PrestonLeSkerne_s,Cn_PrestonLeSkerne,PrestonLeSkerne_n,1);
-const CP_PrestonLeSkerne_Un = resamplePath(CP_PrestonLeSkerne, 3);
+const CP_PrestonLeSkerne_Un = resamplePath(CP_PrestonLeSkerne, 5);
 //カーブ北東//
 const Bradbury_s = [54.65256720472936,-1.501932132993153];
 const Cn_Bradbury = [
@@ -156,7 +156,7 @@ const Cn_ThrundleFarm = [
 ];
 const ThrundleFarm_n = [54.665559081857566,-1.5128606924781516];
 const CP_ThrundleFarm = adaptiveBezierCurve(ThrundleFarm_s,Cn_ThrundleFarm,ThrundleFarm_n,1);
-const CP_ThrundleFarm_Un = resamplePath(CP_ThrundleFarm, 4);
+const CP_ThrundleFarm_Un = resamplePath(CP_ThrundleFarm, 3);
 //カーブ北西//
 const GhipslyLn_s = [54.66669825890965,-1.5160677350937006];
 const Cn_GhipslyLn = [
@@ -195,7 +195,7 @@ const Cn_HettNorth = [
 ];
 const HettNorth_n = [54.729221050070386,-1.574899028789216];
 const CP_HettNorth = adaptiveBezierCurve(HettNorth_s,Cn_HettNorth,HettNorth_n,0.2);
-const CP_HettNorth_Un = resamplePath(CP_HettNorth, 4);
+const CP_HettNorth_Un = resamplePath(CP_HettNorth, 3);
 const Croxdale = [54.729642326524434, -1.5818513146067439];
 //カーブ北西//
 const BrowneyLn_s = [54.73376241637099,-1.596187215059845];
@@ -218,16 +218,9 @@ const Cn_NevillesCross = [
 const NevillesCross_n = [54.77268804162755,-1.6016658156678945];
 const CP_NevillesCross = adaptiveBezierCurve(NevillesCross_s,Cn_NevillesCross,NevillesCross_n,1);
 const CP_NevillesCross_Un = resamplePath(CP_NevillesCross, 4);
-
 //カーブ南東//
-const Durham_s = [54.77661768310598,-1.586925124941394];
-const Cn_Durham = [
-(54.77661768310598 + 54.77930274046284) / 2 - 0.0009, //東//
-(-1.586925124941394 + -1.581922873864593) / 2 - 0.0004 //南//
-];
-const Durham_n = [54.77930274046284,-1.581922873864593];
-const CP_Durham = adaptiveBezierCurve(Durham_s,Cn_Durham,Durham_n,1);
-const CP_Durham_Un = resamplePath(CP_Durham, 3);
+const Durham_s = [54.77684044105925, -1.5862169994524649];
+const Durham_c = [54.77815227386161, -1.5836420788490948];
 const Durham = [54.77983780775699, -1.5814880478633844]; //ダラム駅
 const AykleyHeads = [54.79327136120881, -1.5686552140590326];
 //カーブ北東//
@@ -238,7 +231,7 @@ const Cn_NewtonHall = [
 ];
 const NewtonHall_n = [54.806155438647565,-1.563489338968832];
 const CP_NewtonHall = adaptiveBezierCurve(NewtonHall_s,Cn_NewtonHall,NewtonHall_n,1);
-const CP_NewtonHall_Un = resamplePath(CP_NewtonHall, 3);
+const CP_NewtonHall_Un = resamplePath(CP_NewtonHall, 4);
 const BurdonPl = [54.81274933106201, -1.571746634863563];
 const Plawsworth_s = [54.82284467571255, -1.5801723926020352];
 const Plawsworth_n = [54.826917473062494, -1.5817326411975456];
@@ -251,7 +244,7 @@ const Cn_ChesterMoor = [
 ];
 const ChesterMoor_n = [54.83609615449198,-1.5815885292271454];
 const CP_ChesterMoor = adaptiveBezierCurve(ChesterMoor_s,Cn_ChesterMoor,ChesterMoor_n,1);
-const CP_ChesterMoor_Un = resamplePath(CP_ChesterMoor, 3);
+const CP_ChesterMoor_Un = resamplePath(CP_ChesterMoor, 4);
 
 //カーブ北東//
 const Waldridge_s = [54.84654953902549,-1.5773828254977365];
@@ -261,7 +254,7 @@ const Cn_Waldridge = [
 ];
 const Waldridge_n = [54.85151558893752,-1.5773059682707373];
 const CP_Waldridge = adaptiveBezierCurve(Waldridge_s,Cn_Waldridge,Waldridge_n,1);
-const CP_Waldridge_Un = resamplePath(CP_Waldridge, 3);
+const CP_Waldridge_Un = resamplePath(CP_Waldridge, 4);
 const ChesterleStreet = [54.85450328396147, -1.5783317766117124];
 const NBurns_s = [54.856896139271065,-1.5790368540879731];
 const NBurns_n = [54.859601022209986,-1.5791012270945686];
@@ -282,7 +275,7 @@ const Cn_Birtley = [
 ];
 const Birtley_n = [54.89490333398965,-1.5850264284760878];
 const CP_Birtley = adaptiveBezierCurve(Birtley_s,Cn_Birtley,Birtley_n,0.1);
-const CP_Birtley_Un = resamplePath(CP_Birtley, 4);
+const CP_Birtley_Un = resamplePath(CP_Birtley, 3);
 const Lamesley_s = [54.91995714993537, -1.603741845926646];
 const Lamesley_n = [54.92806183524937, -1.6080984336460882];
 //カーブ北東//
@@ -293,7 +286,7 @@ const Cn_Saltwell = [
 ];
 const Saltwell_n = [54.945952965754984,-1.614684721010228];
 const CP_Saltwell = adaptiveBezierCurve(Saltwell_s,Cn_Saltwell,Saltwell_n,0.1);
-const CP_Saltwell_Un = resamplePath(CP_Saltwell, 4);
+const CP_Saltwell_Un = resamplePath(CP_Saltwell, 3);
 //カーブ北西//
 const Gateshead_s = [54.9505941666716,-1.6185268622493083];
 const Cn_Gateshead = [
@@ -302,7 +295,7 @@ const Cn_Gateshead = [
 ];
 const Gateshead_n = [54.95485527344649,-1.6194398151333023];
 const CP_Gateshead = adaptiveBezierCurve(Gateshead_s,Cn_Gateshead,Gateshead_n,0.01);
-const CP_Gateshead_Un = resamplePath(CP_Gateshead, 6);
+const CP_Gateshead_Un = resamplePath(CP_Gateshead, 4);
 const Tyne_Rd_NC = [54.958593191695414, -1.6172818841657346];
 //カーブ北西//
 const KingEdward_Bd_s = [54.96045355192529,-1.6152741252638652];
@@ -312,7 +305,7 @@ const Cn_KingEdward_Bd = [
 ];
 const KingEdward_Bd_n = [54.962401114879036,-1.6153462999806965];
 const CP_KingEdward_Bd = adaptiveBezierCurve(KingEdward_Bd_s,Cn_KingEdward_Bd,KingEdward_Bd_n,0.4);
-const CP_KingEdward_Bd_Un = resamplePath(CP_KingEdward_Bd, 6);
+const CP_KingEdward_Bd_Un = resamplePath(CP_KingEdward_Bd, 4);
 
 //カーブ北西//
 const PotteryLn_s = [54.965366935721256,-1.618701106879188];
@@ -322,7 +315,7 @@ const Cn_PotteryLn = [
 ];
 const PotteryLn_n = [54.967566644288254,-1.618788844937472];
 const CP_PotteryLn = adaptiveBezierCurve(PotteryLn_s,Cn_PotteryLn,PotteryLn_n,0.01);
-const CP_PotteryLn_Un = resamplePath(CP_PotteryLn, 5);
+const CP_PotteryLn_Un = resamplePath(CP_PotteryLn, 4);
 const Newcastle_LNER1 = [54.96814759160355, -1.6176357599706133];
 
 
@@ -339,7 +332,7 @@ Darlington,ParkgateDr_s,ParkgateDr_n,UK_B6279,...CP_SaltersLn_Un,...CP_Brafferto
 ...CP_RicknallLn_Un,...CP_PrestonLeSkerne_Un,
 ...CP_Bradbury_Un,...CP_ThrundleFarm_Un,...CP_GhipslyLn_Un,...CP_Mainsforth_Un,
 EastHowle_s,EastHowle_n,MetalBridge,...CP_HettSouth_Un,...CP_HettNorth_Un,Croxdale,...CP_BrowneyLn_Un,
-LangleyMoor_s,LangleyMoor,GroveTeracce,...CP_NevillesCross_Un,...CP_Durham_Un,
+LangleyMoor_s,LangleyMoor,GroveTeracce,...CP_NevillesCross_Un,Durham_s,Durham_c,
 Durham,AykleyHeads,...CP_NewtonHall_Un,BurdonPl,Plawsworth_s,Plawsworth_n,...CP_ChesterMoor_Un,...CP_Waldridge_Un,
 ChesterleStreet,NBurns_s,NBurns_n,...CP_HighFlatts_Un,...CP_Birtley_Un,
 Lamesley_s,Lamesley_n,...CP_Saltwell_Un,...CP_Gateshead_Un,Tyne_Rd_NC,...CP_KingEdward_Bd_Un,...CP_PotteryLn_Un,
@@ -393,30 +386,30 @@ function goToNewcastle() {
 
   // ✅ 距離に応じてフレーム間隔を調整
   const totalDistance = calculateTotalDistance(pathToNewcastle); // メートル
-  const targetDuration = 60000; // 全体移動時間（ミリ秒） 10000=10秒
-  const frameInterval = Math.max(1, targetDuration / totalFrames); // 最低5ms
+  const targetDuration = 20000; // 全体移動時間（ミリ秒）
+  const frameInterval = Math.max(3, targetDuration / totalFrames); // 最低5ms
 
- let startTime = performance.now();
+  let frame = 0;
 
   function animate() {
-  const elapsed = performance.now() - startTime;
-  const progress = Math.min(1, elapsed / targetDuration); // 0〜1の進行率
-  const index = Math.floor(progress * pathToNewcastle.length);
+   
+   const index = frame;
 
-  trainMarker.setLatLng(pathToNewcastle[index]);
-  map.panTo(pathToNewcastle[index], { animate: true, duration: 0.03 });
+    if (index < pathToNewcastle.length) {
+      trainMarker.setLatLng(pathToNewcastle[index]); // ← マーカーを移動
+      map.panTo(pathToNewcastle[index], { animate: true, duration: 0.03 });
+      frame++
+      setTimeout(animate, frameInterval); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerNewcastle.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 200);
 
-  if (index < pathToNewcastle.length - 1) {
-    requestAnimationFrame(animate);
-  } else {
-    setTimeout(() => {
-      markerNewcastle.openPopup();
-      map.removeLayer(trainMarker);
-      animationRunning = false;
-    }, 200);
+    }
   }
-}
-requestAnimationFrame(animate);
+  animate();
 }
 
 // York → Darlington へ滑らかに移動する関数
@@ -462,32 +455,27 @@ function goToDarlington() {
   const pathToDarlington = fullPath.slice(0, DarlingtonIndex + 1);
   // ✅ ここに animatePath を定義
   const totalFrames = pathToDarlington.length;
-  // ✅ 距離に応じてフレーム間隔を調整
-  const totalDistance = calculateTotalDistance(pathToDarlington); // メートル
-  const targetDuration = 20000; // 全体移動時間（ミリ秒） 10000=10秒
-  const frameInterval = Math.max(1, targetDuration / totalFrames); // 最低5ms
-
- let startTime = performance.now();
+  let frame = 0;
 
   function animate() {
-  const elapsed = performance.now() - startTime;
-  const progress = Math.min(1, elapsed / targetDuration); // 0〜1の進行率
-  const index = Math.floor(progress * pathToDarlington.length);
+   
+   const index = frame;
 
-  trainMarker.setLatLng(pathToDarlington[index]);
-  map.panTo(pathToDarlington[index], { animate: true, duration: 0.03 });
+    if (index < pathToDarlington.length) {
+      trainMarker.setLatLng(pathToDarlington[index]); // ← マーカーを移動
+      map.panTo(pathToDarlington[index], { animate: true, duration: 0.01 });
+      frame++;
+      setTimeout(animate, 0.1); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerDarlington.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
 
-  if (index < pathToDarlington.length - 1) {
-    requestAnimationFrame(animate);
-  } else {
-    setTimeout(() => {
-      markerDarlington.openPopup();
-      map.removeLayer(trainMarker);
-      animationRunning = false;
-    }, 200);
+    }
   }
-}
-requestAnimationFrame(animate);
+  animate();
 }
 
 // Darlington → Durham（途中駅→途中駅）
@@ -548,22 +536,18 @@ function goToDarlingtonToDurham() {
     return;
   }
 
+  
+
   map.panTo(pathToDarlingtontoDurham[0], { animate: false });
 
-  // ✅ 時間ベース制御の設定
-  const targetDuration = 15000; // ← ここで移動時間（ms）を調整（例：8秒）
-  const startTime = performance.now();
+  let frame = 0;
 
   function animate() {
-    const elapsed = performance.now() - startTime;
-    const progress = Math.min(1, elapsed / targetDuration);
-    const index = Math.floor(progress * pathToDarlingtontoDurham.length);
-
-    trainMarker.setLatLng(pathToDarlingtontoDurham[index]);
-    map.panTo(pathToDarlingtontoDurham[index], { animate: true, duration: 0.25 });
-
-    if (index < pathToDarlingtontoDurham.length - 1) {
-      requestAnimationFrame(animate);
+    if (frame < pathToDarlingtontoDurham.length) {
+      trainMarker.setLatLng(pathToDarlingtontoDurham[frame]);
+      map.panTo(pathToDarlingtontoDurham[frame], { animate: true, duration: 0.25 });
+      frame++;
+      setTimeout(animate, 5);
     } else {
       setTimeout(() => {
         markerDurham.openPopup();
@@ -573,7 +557,7 @@ function goToDarlingtonToDurham() {
     }
   }
 
-  requestAnimationFrame(animate);
+  animate();
 }
 
 // Durham → Newcastle（途中駅→終着駅）
@@ -608,7 +592,7 @@ function DurhamtoNewcastle() {
 
   const trainMarker = L.marker(Durham, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_YkNc, 40);
+  const fullPath = interpolatePolyline(LNER_YkNc, 30);
 
   const DurhamIndex = fullPath.findIndex(p =>
     Math.abs(p[0] - Durham[0]) < 0.0001 &&
