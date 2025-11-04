@@ -405,7 +405,7 @@ function goToNewcastle() {
         markerNewcastle.openPopup();
         map.removeLayer(trainMarker); // アイコンを削除
         animationRunning = false;
-      }, 200);
+      }, 100);
 
     }
   }
