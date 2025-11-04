@@ -373,7 +373,7 @@ function goToNewcastle() {
 
   const trainMarker = L.marker(York_LNER2, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_YkNc, 100);// ← 数字が少ないほどスピードアップ
+  const fullPath = interpolatePolyline(LNER_YkNc, 30);// ← 数字が少ないほどスピードアップ
 
   const newcastleIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - Newcastle_LNER1[0]) < 0.0001 && 
@@ -397,7 +397,7 @@ function goToNewcastle() {
 
     if (index < pathToNewcastle.length) {
       trainMarker.setLatLng(pathToNewcastle[index]); // ← マーカーを移動
-      map.panTo(pathToNewcastle[index], { animate: true, duration: 0.03 });
+      map.panTo(pathToNewcastle[index], { animate: true, duration: 0.1 });
       frame++
       requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
@@ -445,7 +445,7 @@ function goToDarlington() {
 
   const trainMarker = L.marker(York_LNER2, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_YkNc , 40);// ← 数字が少ないほどスピードアップ
+  const fullPath = interpolatePolyline(LNER_YkNc , 60);// ← 数字が少ないほどスピードアップ
 
   const DarlingtonIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - Darlington[0]) < 0.0001 && 
@@ -463,9 +463,9 @@ function goToDarlington() {
 
     if (index < pathToDarlington.length) {
       trainMarker.setLatLng(pathToDarlington[index]); // ← マーカーを移動
-      map.panTo(pathToDarlington[index], { animate: true, duration: 0.01 });
+      map.panTo(pathToDarlington[index], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerDarlington.openPopup();
@@ -545,9 +545,9 @@ function goToDarlingtonToDurham() {
   function animate() {
     if (frame < pathToDarlingtontoDurham.length) {
       trainMarker.setLatLng(pathToDarlingtontoDurham[frame]);
-      map.panTo(pathToDarlingtontoDurham[frame], { animate: true, duration: 0.01 });
+      map.panTo(pathToDarlingtontoDurham[frame], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerDurham.openPopup();
@@ -626,9 +626,9 @@ function DurhamtoNewcastle() {
   function animate() {
     if (frame < pathToNewcastle.length) {
       trainMarker.setLatLng(pathToNewcastle[frame]);
-      map.panTo(pathToNewcastle[frame], { animate: true, duration: 0.03 });
+      map.panTo(pathToNewcastle[frame], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerNewcastle.openPopup();
@@ -696,9 +696,9 @@ function NewcastleToYork() {
 
     if (index < pathToNewcastleToYork.length) {
       trainMarker.setLatLng(pathToNewcastleToYork[index]); // ← マーカーを移動
-      map.panTo(pathToNewcastleToYork[index], { animate: true, duration: 0.01 });
+      map.panTo(pathToNewcastleToYork[index], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerYork.openPopup();
@@ -765,7 +765,7 @@ function NewcastleToDurham() {
 
     if (index < pathToNewcastleToDurham.length) {
       trainMarker.setLatLng(pathToNewcastleToDurham[index]); // ← マーカーを移動
-      map.panTo(pathToNewcastleToDurham[index], { animate: true, duration: 0.03 });
+      map.panTo(pathToNewcastleToDurham[index], { animate: true, duration: 0.1 });
       frame++;
       requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
@@ -847,9 +847,9 @@ function goToDurhamToDarlington() {
   function animate() {
     if (frame < pathToDurhamtoDarlington.length) {
       trainMarker.setLatLng(pathToDurhamtoDarlington[frame]);
-      map.panTo(pathToDurhamtoDarlington[frame], { animate: true, duration: 0.03 });
+      map.panTo(pathToDurhamtoDarlington[frame], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerDarlington.openPopup();
@@ -928,9 +928,9 @@ function DarlingtontoYork() {
   function animate() {
     if (frame < pathToYork.length) {
       trainMarker.setLatLng(pathToYork[frame]);
-      map.panTo(pathToYork[frame], { animate: true, duration: 0.03 });
+      map.panTo(pathToYork[frame], { animate: true, duration: 0.1 });
       frame++;
-      requestAnimationFrame(animate); // ← 滑らかなアニメーション
+      setTimeout(animate, 5); 
     } else {
       setTimeout(() => {
         markerYork.openPopup();
