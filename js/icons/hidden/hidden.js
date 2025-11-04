@@ -35,4 +35,29 @@ var marker = L.marker([51.501073829838674, -0.127194699081446], {
   .openPopup()
   .addTo(map);
 
+//ワイン畑でほほ笑む少女
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNtEOw7wkv6XSq3aGN73eNjlsmfbJB-eJZNC7rXjRei9peGK0fGYV3fxJcyqo_03pVW2FWQZXSAD4p-x3HN932lyxR0N3NohLvTIHJVjE0mO-2Hk3JtmQX9hf4s2wesC2CUrI0tTNoe2rm_WK-E6pPjzQ=w1216-h913-s-no-gm?authuser=0" alt="場所名">
+    <a href="Hidden.html" class="popup_link">ワイン畑でほほ笑む少女</a>
+    <div class="popup_caption">
+    <p>
+    ワイン畑でほほ笑む少女
+    </p>
+    </div>
+  </div>
+`;
+var marker = L.marker([46.494551269807005, 6.727661990211627], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+
+
 //ここから下に掲載//
