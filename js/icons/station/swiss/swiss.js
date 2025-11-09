@@ -30,13 +30,13 @@
 //  Basel SBB
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" 
        data-lightbox="image" 
        data-title="Basel SBB">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Basel SBB Station">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" alt="Basel SBB Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
     <p>
     駅の説明
     </p>
@@ -44,13 +44,13 @@
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
     <div class="next_card" id="BaselSBBToZurichCard">
-    <p class="next_text">▶ Zurich（aakm）</span>
+    <p class="next_text">▶ Zurich（90km）</span>
     </div>
     <div class="next_card" id="BaselSBBToBernCard">
-    <p class="next_text">▶ Bern（bbkm）</span>
+    <p class="next_text">▶ Bern（100km）</span>
     </div>
-    <div class="next_card" id="BaselSBBToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <div class="next_card" id="BaselSBBToCologneCard">
+    <p class="next_text">▶ Cologne（480km）</span>
     </div>
     </div>
   </div>
@@ -81,14 +81,14 @@ var markerBaselSBB = L.marker([47.54717812533671, 7.5890015703746885], {
     </div>
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="ZurichToZurichCard">
-    <p class="next_text">▶ Zurich（aakm）</span>
+    <div class="next_card" id="ZurichToBaselCard">
+    <p class="next_text">▶ Basel（90km）</span>
     </div>
     <div class="next_card" id="ZurichToBernCard">
-    <p class="next_text">▶ Bern（bbkm）</span>
+    <p class="next_text">▶ Bern（100km）</span>
     </div>
-    <div class="next_card" id="ZurichToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <div class="next_card" id="ZurichToGenevaCard">
+    <p class="next_text">▶ Geneva（270km）</span>
     </div>
     </div>
   </div>
@@ -158,13 +158,13 @@ var markerOlten = L.marker([47.35196790659258, 7.907783649218526], {
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
     <div class="next_card" id="BernToZurichCard">
-    <p class="next_text">▶ Zurich（aakm）</span>
+    <p class="next_text">▶ Zurich（100km）</span>
     </div>
-    <div class="next_card" id="BernToBernCard">
-    <p class="next_text">▶ Bern（bbkm）</span>
+    <div class="next_card" id="BernToGenevaCard">
+    <p class="next_text">▶ Geneva（170km）</span>
     </div>
-    <div class="next_card" id="BernToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <div class="next_card" id="BernToInterlakenCard">
+    <p class="next_text">▶ Interlaken（60km）</span>
     </div>
     </div>
   </div>
@@ -197,13 +197,13 @@ var markerBern = L.marker([46.948380752911675, 7.43530795120567], {
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
     <div class="next_card" id="LausanneToZurichCard">
-    <p class="next_text">▶ Zurich（aakm）</span>
+    <p class="next_text">▶ Zurich（210km）</span>
     </div>
     <div class="next_card" id="LausanneToBernCard">
-    <p class="next_text">▶ Bern（bbkm）</span>
+    <p class="next_text">▶ Bern（110km）</span>
     </div>
-    <div class="next_card" id="LausanneToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <div class="next_card" id="LausanneToGenevaCard">
+    <p class="next_text">▶ Geneva（60km）</span>
     </div>
     </div>
   </div>
@@ -235,14 +235,14 @@ var markerLausanne = L.marker([46.51675788314949, 6.6288213303053105], {
     </div>
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="GenevaToGenevaCard">
+    <p class="next_text">▶ Lausanne（60km）</span>
+    </div>
+    <div class="next_card" id="GenevaToLyonCard">
+    <p class="next_text">◀ Lyon（150km）</span>
+    </div>
     <div class="next_card" id="GenevaToZurichCard">
-    <p class="next_text">▶ Zurich（aakm）</span>
-    </div>
-    <div class="next_card" id="GenevaToBernCard">
-    <p class="next_text">▶ Bern（bbkm）</span>
-    </div>
-    <div class="next_card" id="GenevaToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <p class="next_text">▶ Zurich（270km）</span>
     </div>
     </div>
   </div>
