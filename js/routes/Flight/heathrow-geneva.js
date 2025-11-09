@@ -211,8 +211,8 @@ function goToGeneva() {
 
   // 🚄 アイコン付きマーカーを表示（初期位置）
   const trainIcon = L.icon({
-    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
-    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconUrl: "image/icon/airplane.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/airplane@2x.png",
     iconSize: [40, 40],
     iconAnchor: [25, 25],
     className: "icon-train"
@@ -279,8 +279,8 @@ function GenevaToLondon() {
 
   // 🚄 アイコン付きマーカーを表示（初期位置）
   const trainIcon = L.icon({
-    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
-    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconUrl: "image/icon/airplane.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/airplane@2x.png",
     iconSize: [40, 40],
     iconAnchor: [25, 25],
     className: "icon-train"
