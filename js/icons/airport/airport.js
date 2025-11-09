@@ -30,6 +30,9 @@ className: "icon-airport"
     <div class="next_card" id="HeathrowToDubaiCard">
     <p class="next_text">&#x2708; Dubai（5000km）</span>
     </div>
+    <div class="next_card" id="HeathrowToViennaCard">
+    <p class="next_text">&#x2708; Vienna（1200km）</span>
+    </div>
     <div class="next_card" id="HeathrowTerminal3ToPaddingtonCard">
     <p class="next_text">London City（23km）</span>
     </div>
@@ -96,12 +99,6 @@ var markerHeathrowTerminal4 = L.marker([51.460130701266216, -0.44843566368321325
     <div class="next_card" id="HeathrowToGenevaCard">
     <p class="next_text">&#x2708; Geneva（600km）</span>
     </div>
-    <div class="next_card" id="HeathrowToViennaCard">
-    <p class="next_text">&#x2708; Vienna（1200km）</span>
-    </div>
-    <div class="next_card" id="HeathrowToJFKCard">
-    <p class="next_text">&#x2708; New York（5000km）</span>
-    </div>
     <div class="next_card" id="HeathrowTerminal5ToPaddingtonCard">
     <p class="next_text">London City（25km）</span>
     </div>
@@ -135,13 +132,13 @@ var markerHeathrowTerminal5 = L.marker([51.47259800120853, -0.4859364875464297],
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Airport</a>
     <div id="nextVisitSection" class="popup_section">
     <div class="next_card" id="GenevaToHeathrowCard">
-    <p class="next_text">▶ London（aakm）</span>
+    <p class="next_text">&#x2708; London（600km）</span>
     </div>
     <div class="next_card" id="GenevaToViennaCard">
-    <p class="next_text">▶ Vienna（bbkm）</span>
+    <p class="next_text">&#x2708; Vienna（bbkm）</span>
     </div>
     <div class="next_card" id="GenevaToDubaiCard">
-    <p class="next_text">▶ Dubai（5000km）</span>
+    <p class="next_text">&#x2708; Dubai（5000km）</span>
     </div>
     </div>
   </div>
@@ -156,17 +153,54 @@ var markerGenevaAirport = L.marker([46.2314339144919, 6.10746786781946], {
 })
   .addTo(map);
 
+//  Vienna
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" 
+       data-lightbox="image" 
+       data-title="Vienna">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" alt="Vienna Airport">
+    </a>
+    <div class="popup_caption">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Vienna Airport" class="popup_link">Vienna Airport</a>
+    <p>
+    Viennaの説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Airport</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="ViennaToGenevaCard">
+    <p class="next_text">&#x2708; Geneva（800km）</span>
+    </div>
+    <div class="next_card" id="ViennaToHeathrowCard">
+    <p class="next_text">&#x2708; London（1200km）</span>
+    </div>
+    <div class="next_card" id="ViennaToDubaiCard">
+    <p class="next_text">&#x2708; Dubai（5000km）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerViennaAirport = L.marker([48.11851237806887, 16.566266743122807], {
+  icon: AirportIcon 
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+
 
 //  Dubai
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczP2tYXenesUh0lNLxK9NLDpkldkmcxIriEipbHICpM-Kwll-DhtvmxJ4U5lKASlZcwHsFZ2c5PT0gkId54ukfS6mLG3cvXJMzF6hnRVloXbjjG2JVNUWmS_kfVBALYOtXtEoD9zrjuRwykS0a9JU_olGQ=w1216-h913-s-no-gm?authuser=0" 
-       data-lightbox="image" 
-       data-title="Dubai">
+    <a href="Dubai.html">
       <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczP2tYXenesUh0lNLxK9NLDpkldkmcxIriEipbHICpM-Kwll-DhtvmxJ4U5lKASlZcwHsFZ2c5PT0gkId54ukfS6mLG3cvXJMzF6hnRVloXbjjG2JVNUWmS_kfVBALYOtXtEoD9zrjuRwykS0a9JU_olGQ=w1216-h913-s-no-gm?authuser=0" alt="Dubai Airport">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczP2tYXenesUh0lNLxK9NLDpkldkmcxIriEipbHICpM-Kwll-DhtvmxJ4U5lKASlZcwHsFZ2c5PT0gkId54ukfS6mLG3cvXJMzF6hnRVloXbjjG2JVNUWmS_kfVBALYOtXtEoD9zrjuRwykS0a9JU_olGQ=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Dubai Airport" class="popup_link">Dubai Airport</a>
+    <a href="Dubai.html" class="popup_link">Dubai Airport</a>
     <p>
     Dubai空港の説明
     </p>
