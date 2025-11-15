@@ -1,4 +1,4 @@
-// Paris Lyon module
+// Paris Paris module
 
 // 鉄道ルート　パリ⇔マルセイユ//
 const ParisLyon = [48.84423772852879, 2.3753086448157688];
@@ -171,14 +171,14 @@ const FR_D6 = [45.95245838169289, 4.865342241340893];
 const FR_D4_Pouilleux = [45.93799837012788, 4.867605426603351];
 const FR_D66E = [45.92053695429386, 4.871692821500412];
 const FR_A46 = [45.90184296706831, 4.874685317807498];
-const LyonCityJC = [45.882760703301294, 4.880043976295247]; //リヨン市内行き分岐
+const ParisCityJC = [45.882760703301294, 4.880043976295247]; //リヨン市内行き分岐
 const Pusignan_n = [45.765916240278884, 5.083008091287786];
 const Pusignan_c = [45.75495808404763, 5.081119816156579];
 const Pusignan_s = [45.74232059893727, 5.078802387615244];
-const LyonSaintExupéryTGV = [45.72101458757908, 5.075797652990846];
-const GrenayLyonJn_n = [45.66064102771943, 5.072478513317339];
-const GrenayLyonJn_c = [45.65256950221472, 5.077530743615432];
-const GrenayLyonJn_s = [45.63909755353669, 5.085975185454711];
+const ParisSaintExupéryTGV = [45.72101458757908, 5.075797652990846];
+const GrenayParisJn_n = [45.66064102771943, 5.072478513317339];
+const GrenayParisJn_c = [45.65256950221472, 5.077530743615432];
+const GrenayParisJn_s = [45.63909755353669, 5.085975185454711];
 const LaForêt = [45.56516653902248, 5.104658524776694];
 const CombeQuartier = [45.41745709910109, 5.01563875530614];
 const Primarette = [45.406703402212784, 5.009811293609299];
@@ -260,8 +260,8 @@ LeCreusot,FR_D974,FR_M80,FR_D18,FR_D977,FR_D28,FR_D28_3,FR_D236,FR_D28_4,FR_D983
 Cortevaix,FR_D117_3,FR_D981_2,FR_D15_Cluny,FR_D980_Cluny,FR_N79,FR_E62,
 Sologny,FR_D212,FR_D85,FR_D45,FR_D209,FR_D89,FR_D54,MaconLoche,FR_E15_Macon,FR_D906_Macon,SaoneRiver,MaconTGVJC,
 Macon_D51,FR_D51B,FR_D933_2,FR_D96A,FR_D96A,FR_D66A,FR_D64,FR_D7,FR_D75D,FR_D100,
-FR_D17_Chaneins,FR_D75,FR_D27,FR_D75B,FR_D936,FR_D70_2,FR_D904,FR_D88,FR_D6,FR_D4_Pouilleux,FR_D66E,FR_A46,LyonCityJC,
-Pusignan_n,Pusignan_c,Pusignan_s,LyonSaintExupéryTGV,GrenayLyonJn_n,GrenayLyonJn_c,GrenayLyonJn_s,
+FR_D17_Chaneins,FR_D75,FR_D27,FR_D75B,FR_D936,FR_D70_2,FR_D904,FR_D88,FR_D6,FR_D4_Pouilleux,FR_D66E,FR_A46,ParisCityJC,
+Pusignan_n,Pusignan_c,Pusignan_s,ParisSaintExupéryTGV,GrenayParisJn_n,GrenayParisJn_c,GrenayParisJn_s,
 LaForêt,CombeQuartier,Primarette,BoisVieux,LapeyrouseMornay,
 MorasenValloire,LaMeyerie,LesMoillés_n,LesMoillés,
 ValanceTGV,LaBergère,RuedesBarrys,LesPetitsEynards,RuedesBouviers,
@@ -273,3 +273,141 @@ AixenProvenceTGV,FermedesPlaines,LesGiraudets,LesMatelots,
 ...CP_PiconBusserine_Un,StadePhilibert,EVJFMarseille,
 BdGuigou,RueFrançoisSimon,RueBénédit,BdNational,
 Marseille], { color: '#000000', smoothFactor: '1.0'}).addTo(map);
+
+
+// Paris → Marseille へ滑らかに移動する関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const ParisToMarseilleBtn = document.getElementById('ParisToMarseilleCard');
+  if (ParisToMarseilleBtn) {
+    const newBtn = ParisToMarseilleBtn.cloneNode(true);
+    ParisToMarseilleBtn.parentNode.replaceChild(newBtn, ParisToMarseilleBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        ParisToMarseille();
+      }
+    });
+  }
+  })
+
+function ParisToMarseille() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerParisLyon.closePopup(); // ← 移動前にParis（始発）のポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(ParisLyon, { icon: trainIcon }).addTo(map);
+
+  const fullPath = interpolatePolyline(LGV_PRML , 50);// ← 数字が少ないほどスピードアップ
+
+  const ParisToMarseilleIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Marseille[0]) < 0.0001 && 
+    Math.abs(p[1] - Marseille[1]) < 0.0001
+  );
+
+  const pathToParisToMarseille = fullPath.slice(0, ParisToMarseilleIndex + 1);
+  // ✅ ここに animatePath を定義
+  const totalFrames = pathToParisToMarseille.length;
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToParisToMarseille.length) {
+      trainMarker.setLatLng(pathToParisToMarseille[index]); // ← マーカーを移動
+      map.panTo(pathToParisToMarseille[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerMarseille.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
+// Marseille　→　Parisへ滑らかに戻る関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const MarseilleToParisBtn = document.getElementById('MarseilleToParisCard');
+  if (MarseilleToParisBtn) {
+    const newBtn = MarseilleToParisBtn.cloneNode(true);
+    MarseilleToParisBtn.parentNode.replaceChild(newBtn, MarseilleToParisBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        MarseilleToParis();
+      }
+    });
+  }
+  })
+
+function MarseilleToParis() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerMarseille.closePopup(); // ← 移動前にMarseilleのポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Marseille, { icon: trainIcon }).addTo(map);
+
+  const fullPath = [...interpolatePolyline(LGV_PRML, 50)].reverse();// ← 数字が少ないほどスピードアップ
+
+  const MarseilleToParisIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - ParisLyon[0]) < 0.0001 && 
+    Math.abs(p[1] - ParisLyon[1]) < 0.0001
+  );
+
+  const pathToMarseilleToParis = fullPath.slice(0, MarseilleToParisIndex + 1);
+  
+// 最初にジャンプを防ぐ
+  map.panTo(pathToMarseilleToParis[0], { animate: false });
+
+
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToMarseilleToParis.length) {
+      trainMarker.setLatLng(pathToMarseilleToParis[index]); // ← マーカーを移動
+      map.panTo(pathToMarseilleToParis[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）
+    } else {
+      setTimeout(() => {
+        markerParisLyon.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+

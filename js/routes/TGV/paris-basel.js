@@ -227,7 +227,7 @@ function ParisToBasel() {
 // Basel　→　Parisへ滑らかに戻る関数
 //イベント登録を無制限制限
 map.on('popupopen', function (e) {
-  const BaselToParisBtn = document.getElementById('BaselToParisCard');
+  const BaselToParisBtn = document.getElementById('BaselSBBToParisCard');
   if (BaselToParisBtn) {
     const newBtn = BaselToParisBtn.cloneNode(true);
     BaselToParisBtn.parentNode.replaceChild(newBtn, BaselToParisBtn);
