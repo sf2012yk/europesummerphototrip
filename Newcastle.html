@@ -192,7 +192,7 @@ Newcastleの名所
 <h2 class="scroll fadeLeftSlide">
 Map
 </h2>
-<div class="street_map" id="mapNewcastle" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
+<div class="street_map" id="mapnewcastle" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
 <!-- フォトギャラリー -->
 <h2 class="scroll fadeLeftSlide">
 Photo Gallery
@@ -347,6 +347,8 @@ Europe Map
 <!-- 都市別専用のJS -->
 <script src="js/map/newcastle.js"></script>
 <!-- ※ここから下は共通 -->
+<!-- 空港アイコン -->
+<script src="js/icons/airport/airport.js"></script>
 <!-- 都市のアイコン(※現在の都市を除く) -->
 <script src="js/icons/cities/london.js"></script>
 <script src="js/icons/cities/cambridge.js"></script>
@@ -370,7 +372,7 @@ Europe Map
 <script src="js/icons/cities/vienna.js"></script>
 <!-- 名所アイコン（※現在の都市だけにする） -->
 <script src="js/icons/places/newcastle.js"></script>
-<!-- 駅アイコン -->
+<<!-- 駅アイコン -->
 <script src="js/icons/station/uk/lner.js"></script>
 <script src="js/icons/station/uk/gwr.js"></script>
 <script src="js/icons/station/uk/awc.js"></script>
@@ -397,6 +399,7 @@ Europe Map
 <script src="js/routes/GWR/london-plymouth.js"></script>
 <script src="js/routes/GWR/plymouth-penzance.js"></script>
 <script src="js/routes/GWR/windsorLine.js"></script>
+<script src="js/routes/GWR/heathrowLine.js"></script>
 <script src="js/routes/AWC/london-birmingham.js"></script>
 <script src="js/routes/AWC/birmingham-manchester.js"></script>
 <script src="js/routes/AWC/london-edinburgh.js"></script>
@@ -415,10 +418,14 @@ Europe Map
 <script src="js/routes/OBB/zurich-innsbruck.js"></script>
 <script src="js/routes/OBB/innsbruck-salzburg.js"></script>
 <script src="js/routes/OBB/salzburg-vienna.js"></script>
+<script src="js/routes/OBB/viennaairportline.js"></script>
 <script src="js/routes/SNCF/geneva-lyon.js"></script>
 <script src="js/routes/TGV/paris-lyon.js"></script>
 <script src="js/routes/TGV/paris-basel.js"></script>
 <script src="js/routes/TGV/lyon-marsellie.js"></script>
+<!-- 飛行機ルート -->
+<script src="js/routes/Flight/heathrow-geneva.js"></script>
+<script src="js/routes/Flight/vienna-heathrow.js"></script>
 <!-- ポップアップ操作 -->
 <script src="js/popup/popup.js"></script>
 <!-- コントロール -->
