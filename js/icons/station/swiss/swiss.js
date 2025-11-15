@@ -46,11 +46,11 @@
     <div class="next_card" id="BaselSBBToZurichCard">
     <p class="next_text">▶ Zurich（90km）</span>
     </div>
-    <div class="next_card" id="BaselSBBToBernCard">
-    <p class="next_text">▶ Bern（100km）</span>
+    <div class="next_card" id="BaselSBBToParisCard">
+    <p class="next_text">◀ Paris（600km）</span>
     </div>
     <div class="next_card" id="BaselSBBToCologneCard">
-    <p class="next_text">▶ Cologne（480km）</span>
+    <p class="next_text">▲ Cologne（480km）</span>
     </div>
     </div>
   </div>
