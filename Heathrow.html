@@ -368,32 +368,29 @@ Europe Map
 <!-- 音楽再生スクリプト -->
 <script>
 function startMusic() {
-const audio = document.getElementById('emirates');
-if (!audio) {
-console.warn("audio要素が見つかりません");
-return;
+  const audio = document.getElementById('emirates');
+  if (!audio) return;
+
+  // すでに再生中なら何もしない
+  if (!audio.paused) return;
+
+  audio.volume = 0;
+  audio.play().then(() => {
+    let volume = 0;
+    const fadeInterval = setInterval(() => {
+      if (volume < 1) {
+        volume += 0.05;
+        audio.volume = Math.min(volume, 1);
+      } else {
+        clearInterval(fadeInterval);
+      }
+    }, 200);
+  }).catch((e) => {
+    console.warn("音楽の再生に失敗しました:", e);
+  });
 }
 
-audio.volume = 0;
-audio.play().catch((e) => {
-console.warn("音楽の再生に失敗しました:", e);
-});
-
-let volume = 0;
-const fadeInterval = setInterval(() => {
-if (volume < 1) {
-volume += 0.05;
-audio.volume = Math.min(volume, 1);
-} else {
-clearInterval(fadeInterval);
-}
-}, 200);
-
-document.removeEventListener('click', startMusic);
-document.removeEventListener('keydown', startMusic);
-document.removeEventListener('scroll', startMusic);
-}
-
+// 毎回イベントリスナーを登録（更新後も有効）
 document.addEventListener('click', startMusic);
 document.addEventListener('keydown', startMusic);
 document.addEventListener('scroll', startMusic);
