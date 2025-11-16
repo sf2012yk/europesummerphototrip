@@ -357,6 +357,43 @@ Europe Map
 </div>
 </footer>
 
+<!-- 音楽プレイヤー -->
+<audio id="emirates" src="music/emirates.mp3" loop></audio>
+
+<!-- 音楽再生スクリプト -->
+<script>
+function startMusic() {
+const audio = document.getElementById('emirates');
+if (!audio) {
+console.warn("audio要素が見つかりません");
+return;
+}
+
+audio.volume = 0;
+audio.play().catch((e) => {
+console.warn("音楽の再生に失敗しました:", e);
+});
+
+let volume = 0;
+const fadeInterval = setInterval(() => {
+if (volume < 1) {
+volume += 0.05;
+audio.volume = Math.min(volume, 1);
+} else {
+clearInterval(fadeInterval);
+}
+}, 200);
+
+document.removeEventListener('click', startMusic);
+document.removeEventListener('keydown', startMusic);
+document.removeEventListener('scroll', startMusic);
+}
+
+document.addEventListener('click', startMusic);
+document.addEventListener('keydown', startMusic);
+document.addEventListener('scroll', startMusic);
+</script>
+
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
@@ -455,9 +492,5 @@ Europe Map
 <!-- コントロール -->
 <script src="js/control/zoom.js"></script>
 <script src="js/control/click.js"></script>
-<!-- 音楽再生 -->
-<audio id="emirates" src="music/emirates.mp3" loop></audio>
-<!-- 音楽を再生-->
-<script src="js/music/emirates.js"></script>
 </body>
 </html>
