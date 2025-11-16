@@ -165,9 +165,7 @@ var markerViennaAirport = L.marker([48.11851237806887, 16.566266743122807], {
 //  Dubai
     var popupContent = `
       <div class="popup_summer">
-    <a href="Dubai.html" 
-       data-lightbox="image" 
-       data-title="Dubai">
+    <a href="Dubai.html">
       <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMuyA6PtvVMNcsHFq5pBmUGW9BLRnIzrcVHprpIvRTyZDK3v28W9eCC4bdIGJ0Xh40CIce1YP4BoGizd8PCq5Ch5Vs4ETUuLwJcz-sPSebc8w6rMI_HhGCXdhq38qQWKDjafA11HVhSJcvLLGUkwg7xsg=w1216-h913-s-no-gm?authuser=0" alt="Dubai Airport">
     </a>
     <div class="popup_caption">
