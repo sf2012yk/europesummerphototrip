@@ -60,4 +60,48 @@ var marker = L.marker([46.494551269807005, 6.727661990211627], {
 
 
 
-//ここから下に掲載//
+//澄み渡った山頂でハイ、チーズ！
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPqeZ5rdN-7ruzWKVyhUaMceW_wgTzfIWxFjhuI5gLQQh2A0nLPWcz5uhVJ4sbQqGbr0TKrdGrQrKoEGWIQW6n1S6NbTOKaeIBh-YTDlU-W7n6DqphvjL7AHu7Wr19s-IBnD5E8Os6tYYdYW3ihqyaGjA=w1216-h913-s-no-gm?authuser=0" alt="場所名">
+    <a href="Hidden.html" class="popup_link">澄み渡った山頂でハイ、チーズ！</a>
+    <div class="popup_caption">
+    <p>
+    澄み渡った山頂でハイ、チーズ！
+    </p>
+    </div>
+  </div>
+`;
+var marker = L.marker([47.210341080084504, 11.452044198424705], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//SLを楽しむ学ラン少女
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPOkbaospIegFBkyINyxlkNvXuDPzgpIQkX-srx4XTovIBU7G-iJkVNE5Cb-XA4yg00qZv49UiJXypgzaQ-2C1cAbjIMCRtOKPTfWxmVW5c0n0SJDoLwA2wmL8UqncpKWazy7utwUl-fH3p_C7gpKXZPQ=w1216-h913-s-no-gm?authuser=0" alt="場所名">
+    <a href="Hidden.html" class="popup_link">SLを楽しむ学ラン少女</a>
+    <div class="popup_caption">
+    <p>
+    SLを楽しむ学ラン少女
+    </p>
+    </div>
+  </div>
+`;
+var marker = L.marker([50.434463914316396, -3.565016090145747], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
