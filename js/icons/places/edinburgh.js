@@ -28,7 +28,7 @@
 //1. エディンバラ城
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMNztFRjYBV9T-xjxtIAUFIoDf5EOeXuO5DWrb8-bfD2g6I-Ran0_QyGEQ5rWuPhi6sI-QS6mpPRm9PK5gdZi8RZwVh3UB90FXLe_15VXhX3tDlO0zvNEz3ZDM7imL4H25Rx9rgQAv-g60iUXVvYBml=w1159-h869-s-no-gm?authuser=0" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Edinburgh/EdhinburghCastle.JPG" alt="London">
     <a href="" class="popup_link">Edhinburgh Castle</a>
     <div class="popup_caption">
     <p>
@@ -45,5 +45,4 @@ var marker = L.marker([55.948444921561936, -3.2011290508602874], {
   autoPan: true,
   keepInView: true,
 })
-  .openPopup()
   .addTo(map);
