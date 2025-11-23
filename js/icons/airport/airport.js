@@ -17,7 +17,7 @@ className: "icon-airport"
     var popupContent = `
       <div class="popup_summer">
     <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOVA0lszW19T33CQSVnR3jkgabom6r_pQom9wzyj0W0bCJL0oKGwdAOs9mWv-LtYRiiHbcCNq0tkhS1-AeLwCiiYeqp5O_yq4jHa1UkrX21317okVCm-ryXcinGeJOAMw2_4QIM6dpwJRE2sI9qdXc9Uw=w1216-h913-s-no-gm?authuser=0" alt="Heathrow Terminal5">
+      <img class="popup_img" loading="eager" src="image/map/airport/Heathrow3.JPG" alt="Heathrow Terminal5">
     </a>
     <div class="popup_caption">
     <a href="Heathrow.html" class="popup_link">Heathrow Terminal3</a>
@@ -52,12 +52,11 @@ var markerHeathrowTerminal3 = L.marker([51.46896718671588, -0.4574958618544679],
 })
   .addTo(map);
 
-
 //  HeathrowTerminal5
     var popupContent = `
       <div class="popup_summer">
     <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPfjXvfkWlO54wlW6HbEc02M3bOtF5CApFJFjLzPLebQA9t14qtfcsA1hEWMTuZSSFP734n5xf7CUQIYEmioXWjnKBZ0mw3U3v3bWUyw0kS8E9U-J67z_0QCwfDCKFbHya1z-5g4HGS6NSUL8O7GR9jxQ=w1216-h913-s-no-gm?authuser=0" alt="Heathrow Terminal5">
+      <img class="popup_img" loading="eager" src="image/map/airport/Heathrow5.JPG" alt="Heathrow Terminal5">
     </a>
     <div class="popup_caption">
     <a href="Heathrow.html" class="popup_link">Heathrow Terminal5</a>
@@ -95,13 +94,13 @@ var markerHeathrowTerminal5 = L.marker([51.47259800120853, -0.4859364875464297],
 //  Geneva
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOm2vt8paVC9oT1CMYiFFFZY4rgzo_7RK0ET4XqINc52AvEXqrCej8eONv7STcbpureGwW7XX8Q1bfxD5gf3hQh60G1Z1B1Sr9DotCyBeQZwLN_MnHLFU_L2EAjiPW68iQsm1XAtOWu06EEafF_OeNuKg=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/airport/Geneve.JPG" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOm2vt8paVC9oT1CMYiFFFZY4rgzo_7RK0ET4XqINc52AvEXqrCej8eONv7STcbpureGwW7XX8Q1bfxD5gf3hQh60G1Z1B1Sr9DotCyBeQZwLN_MnHLFU_L2EAjiPW68iQsm1XAtOWu06EEafF_OeNuKg=w1216-h913-s-no-gm?authuser=0" alt="Geneva Airport">
+      <img class="popup_img" loading="eager" src="image/map/airport/Geneve.JPG" alt="Geneva Airport">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOm2vt8paVC9oT1CMYiFFFZY4rgzo_7RK0ET4XqINc52AvEXqrCej8eONv7STcbpureGwW7XX8Q1bfxD5gf3hQh60G1Z1B1Sr9DotCyBeQZwLN_MnHLFU_L2EAjiPW68iQsm1XAtOWu06EEafF_OeNuKg=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
+    <a href="image/map/airport/Geneve.JPG" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
     <p>
     Genevaの説明
     </p>
@@ -130,13 +129,13 @@ var markerGenevaAirport = L.marker([46.2314339144919, 6.10746786781946], {
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/airport/Vienna.JPG" 
        data-lightbox="image" 
        data-title="Vienna">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" alt="Vienna Airport">
+      <img class="popup_img" loading="eager" src="image/map/airport/Vienna.JPG" alt="Vienna Airport">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczM3kDWrKKBaiWp6BMbeY8vx3rfbajzxdyemkYgecEac49qEtKiQ7N7PS6sZ1AVebBbb26gzPCmUBpJHXhiF4MMHO6thENW3w0-2hDI60jD2T4PvAV4FhNHmjfhcReX2uS2wds-5p2OyXiZB-S0iaY6law=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Vienna Airport" class="popup_link">Vienna Airport</a>
+    <a href="image/map/airport/Vienna.JPG" data-lightbox="image" data-title="Vienna Airport" class="popup_link">Vienna Airport</a>
     <p>
     Viennaの説明
     </p>
@@ -166,7 +165,7 @@ var markerViennaAirport = L.marker([48.11851237806887, 16.566266743122807], {
     var popupContent = `
       <div class="popup_summer">
     <a href="Dubai.html">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMuyA6PtvVMNcsHFq5pBmUGW9BLRnIzrcVHprpIvRTyZDK3v28W9eCC4bdIGJ0Xh40CIce1YP4BoGizd8PCq5Ch5Vs4ETUuLwJcz-sPSebc8w6rMI_HhGCXdhq38qQWKDjafA11HVhSJcvLLGUkwg7xsg=w1216-h913-s-no-gm?authuser=0" alt="Dubai Airport">
+      <img class="popup_img" loading="eager" src="image/map/airport/Dubai.JPG" alt="Dubai Airport">
     </a>
     <div class="popup_caption">
     <a href="Dubai.html" class="popup_link">Dubai Airport</a>
