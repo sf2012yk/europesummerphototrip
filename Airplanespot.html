@@ -20,8 +20,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<!-- マーカーの色を変更するスクリプト -->
-<script src="js/leaflet.sprite.js"></script>
 <!-- FontawesomeのVersion6.7.2（最新） -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <!-- 国旗のcss -->
@@ -125,7 +123,7 @@ Europe Photo Best
 </div>
 </li> 
 <li class="header_item">
-<a href="#Best Views">Best Views</a>
+<a href="#Best Views"><span class="en">Best Photo</span><span class="ja">ベスト写真</span></a>
 </li>      
 </ul>
 </nav>
@@ -136,10 +134,44 @@ Europe Photo Best
 <span></span>
 </div>
 <nav class="globalMenuSp">
-<ul>
-<li><a href="index.html">Place list</a></li>
-<li><a href="index.html">Genre</a></li>
-<li><a href="index.html">Best Photo</a></li>
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html">Country</a>
+<ul class="megaMenu">
+<li>
+<a href="Uk.html"><span class="en">United Kingdom</span><span class="ja">イギリス</span></a>
+</li>
+<li>
+<a href="France.html"><span class="en">France</span><span class="ja">フランス</span></a>
+</li>
+<li>
+<a href="Belgium.html"><span class="en">Belgium</span><span class="ja">ベルギー</span></a>
+</li>
+<li>
+<a href="Netherlands.html"><span class="en">Netherlands</span><span class="ja">オランダ</span></a>
+</li>
+<li>
+<a href="Germany.html"><span class="en">Germany</span><span class="ja">ドイツ</span></a>
+</li>
+<li>
+<a href="Italy.html"><span class="en">Italy</span><span class="ja">イタリア</span></a>
+</li>
+<li>
+<a href="Switzerland.html"><span class="en">Switzerland</span><span class="ja">スイス</span></a>
+</li>
+<li>
+<a href="Austria.html"><span class="en">Austria</span><span class="ja">オーストリア</span></a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+  <a href="London.html" data-item="メイン都市">Main City</a>
+</li>
+<li class="megaMenu_item">
+  <a href="London.html" data-item="ジャンル">Genre</a>
+</li>
+<li class="megaMenu_item">
+  <a href="London.html" data-item="ベスト風景">Best Photo</a></li>
 </ul>
 </nav>
 </div>
@@ -148,10 +180,10 @@ Europe Photo Best
 <!-- TOP画像＋背景文字はここ --> 
 <div class="Top_image">
 <div>
-<img loading="eager" src="image/top/london.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
+<img loading="eager" src="image/top/airplanespot.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
 <div class="Top_caption scroll fadeLeftSlide">
-<h1>London</h1>
-<p>- City Infomation -</p>
+<h1>Heathrow Airport</h1>
+<p>- Airplane Spot -</p>
 </div>  
 </div>
 </div>
@@ -161,35 +193,28 @@ Europe Photo Best
 <!-- 導入の文章 -->
 <div class="Read_text">
 <h4>
-革新と伝統が融合する多文化国際都市
+都市の特徴
 </h4>
-<div class="text_font"> 
 <p class="mb_1em">
-UK、及びイングランドの首都であるロンドンは世界有数の文化的かつ国際的な都市であり、年間約2,800万人の観光客が訪れる。<br/>
-街の中心部にはテムズ川が流れており、それを囲うような形で街が形成される。<br/>
-市内では約380の言語が話されており、とても多くの人種が生活している。
+都市の説明
 </p>
 </div>
-</div>
-<!-- スポット情報（ロンドン） -->
+<!-- スポット情報 -->
 <h2 class="scroll fadeLeftSlide">
 Spot's
 </h2>
 <div class="uk_item_info_1" style="margin-bottom: 3em;">
 <div class="info_left_item">
-<img loading="lazy" src="image/place/London/Spot_1.jpg" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="image/place/Airplanespot/spot_1.JPG" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-Big Ben
+場所
 </h3>
 <div class="text_font"> 
 <p class="mb_1em">
-ロンドン、そしてUKの象徴といえばビッグベンである。1859年に、テムズ川沿いのウェストミンスター寺院の近くに建設された。<br/>
-高さ96メートルの時計塔からは独特の鐘の音が鳴り響き、一日に1秒たりとも時間を間違えることはない。<br/>
-ビッグベンには奇跡的なエピソードがある。第二次世界大戦当時、ロンドンは大きな戦災に見舞われ、近くにあったウェストミンスター寺院が被災してしまった。
-しかしビッグベンには大きな被害がなく、鐘は鳴り続けた。戦時下でもその大役を果たした時計塔は、英国のシンボルとして今も大切に使用されている。
+場所の説明
 </p>
 </div>
 </div>
@@ -197,86 +222,91 @@ Big Ben
 </div>
 <div class="uk_item_info_1" style="margin-bottom: 3em;">
 <div class="info_left_item">
-<img loading="lazy" src="image/place/London/Spot_2.JPG" alt="Spots_2" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="image/place/Airplanespot/spot_2.JPG" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-City of London
+場所
 </h3>
 <div class="text_font"> 
 <p class="mb_1em">
-ロンドンの南東部には巨大な金融街「シティ・オブ・ロンドン」があり、金融および専門サービスの中心地として機能しています。
-ロンドンの名の由来は、紀元1世紀に古代ローマ人によって、ロンディニウムという城壁と集落が作られたことにある。<br/>
-その中で「シティ・オブ・ロンドン」は、古代の遺産と現代の高層ビルが共存する、歴史と影響力のある金融街として発展した。この写真はセントポール大聖堂の屋上から撮影している。
+場所の説明
 </p>
 </div>
 </div>
 </div>
 </div>
-<!-- マップ（ロンドン） -->
+<!-- マップ-->
 <h2 class="scroll fadeLeftSlide">
 Map
 </h2>
-<div class="street_map" id="maplondon" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
-<!-- フォトギャラリー（ロンドン） -->
+<div class="street_map" id="heathrowspot" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
+<!-- フォトギャラリー -->
 <h2 class="scroll fadeLeftSlide">
 Photo Gallery
 </h2>
 <div class="photo_container">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_1.JPG" data-lightbox="image" data-title="<p class='title'>テムズ川からタワーブリッジ方向を見る。川は恐ろしいほどに濁っている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_1.JPG" alt="テムズ川" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_2.JPG" data-lightbox="image" data-title="<p class='title'>テムズ川にかかる跳開橋、タワーブリッジ。大型船が通る度に開く仕様となっている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_2.JPG" alt="タワーブリッジ" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+<a href="image/place/Airplanespot/Place_2.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_2.jpg" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_3.JPG" data-lightbox="image" data-title="<p class='title'>Oxford Streetでは国旗に加え、エリザベス女王2世の即位70周年を記念する祝賀旗が掲げられていた。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_3.JPG" alt="中心部_1" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</a>  
+<a href="image/place/Airplanespot/Place_3.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_3.jpg" alt="都市名3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_4.JPG" data-lightbox="image" data-title="<p class='title'>Holborn High Streetの一風景。歴史的建造物やオフィス、飲食店が混在する。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_4.JPG" alt="Holborn High Street"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />   
+<a href="image/place/Airplanespot/Place_4.JPG" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_4.JPG" alt="都市名4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_5.JPG" data-lightbox="image" data-title="<p class='title'>UK最大の老舗百貨店、ハロッズ。高級感あふれるチョコレートや紅茶などが人気だ。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_5.JPG" alt="ハロッズ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="image/place/Airplanespot/Place_5.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_5.jpg" alt="都市名5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_6.JPG" alt="ケンジントン宮殿"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="image/place/Airplanespot/Place_6.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_6.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_7.JPG" alt="ピカデリーサーカス_1"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="image/place/Airplanespot/Place_1.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_1.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_8.JPG" alt="ピカデリーサーカス_2"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="image/place/Airplanespot/Place_7.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_7.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_9.JPG" data-lightbox="image" data-title="<p class='title'>ビックベン直下の大通りは観光客や車、看板で溢れかえり、カオス感満載だ。</p><p class='text'>Day：2025/8/8</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_9.JPG" alt="ビッグベン"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
-</a>
+<a href="image/place/Airplanespot/Place_8.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_8.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="image/place/London/Place_10.JPG" data-lightbox="image" data-title="<p class='title'>セントパンクラス駅に停車する国際列車ユーロスター。フランス、ベルギー、オランダへの玄関口となっている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="image/place/London/Place_10.JPG" alt="セントパンクラス駅"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</a>   
+<a href="image/place/Airplanespot/Place_9.JPG" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_9.JPG" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_11.JPG" alt="ハイドパーク"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="image/place/Airplanespot/Place_10.JPG" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_10.JPG" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_12.JPG" alt="キングスクロス駅"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="image/place/Airplanespot/Place_11.JPG" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_11.JPG" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="image/place/London/Place_13.JPG" alt="ペリカン"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="image/place/Airplanespot/Place_12.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="image/place/Airplanespot/Place_12.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 </div>
 </div>
@@ -285,6 +315,16 @@ Photo Gallery
 Next Visit ?
 </h2>
 <div class="Visit_item_info">
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="London.html">
+<img loading="lazy" src="image/city/London_1.JPG" alt="London" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span class="en" style="margin-left: 15px;">London</span><span class="ja" style="margin-left: 15px;">ロンドン</span>
+</h4>
+</div>
+</a>
+</div>
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="York.html">
 <img loading="lazy" src="image/city/York_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
@@ -346,11 +386,81 @@ Next Visit ?
 </a>
 </div>
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Heathrow.html">
-<img loading="lazy" src="image/place/Heathrow/Place_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<a href="Lyon.html">
+<img loading="lazy" src="image/city/Lyon_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
-&#x2708; <span class="en" style="margin-left: 15px;">Heathrow</span><span class="ja" style="margin-left: 15px;">ヒースロー空港</span>
+<span class="flag-icon flag-icon-fr"></span><span class="en" style="margin-left: 15px;">Lyon</span><span class="ja" style="margin-left: 15px;">リヨン</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Amsterdam.html">
+<img loading="lazy" src="image/city/Amsterdam_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-nl"></span><span class="en" style="margin-left: 15px;">Amsterdam</span><span class="ja" style="margin-left: 15px;">アムステルダム</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Zurich.html">
+<img loading="lazy" src="image/city/Zurich_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Zurich</span><span class="ja" style="margin-left: 15px;">チューリッヒ</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Bern.html">
+<img loading="lazy" src="image/city/Bern_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Bern</span><span class="ja" style="margin-left: 15px;">ベルン</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Lausanne.html">
+<img loading="lazy" src="image/city/Lausanne_1.jpg" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Lausanne</span><span class="ja" style="margin-left: 15px;">ローザンヌ</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Geneva.html">
+<img loading="lazy" src="image/city/Geneve_1.jpg" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Geneve</span><span class="ja" style="margin-left: 15px;">ジュネーブ</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Vienna.html">
+<img loading="lazy" src="image/city/Vienna_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-at"></span><span class="en" style="margin-left: 15px;">Vienna</span><span class="ja" style="margin-left: 15px;">ウィーン</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Dubai.html">
+<img loading="lazy" src="image/city/Dubai_1.JPG" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ae"></span><span class="en" style="margin-left: 15px;">Dubai</span><span class="ja" style="margin-left: 15px;">ドバイ</span>
 </h4>
 </div>
 </a>
@@ -428,7 +538,7 @@ Genre
 Best Photo
 </h3>
 <h3>
-<a href="MapIndex.html">Europe Map</a>
+Europe Map
 </h3>
 </div>
 </div>
@@ -443,6 +553,7 @@ Best Photo
 </p>
 </div>
 </footer>
+
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
@@ -453,9 +564,9 @@ Best Photo
 <!-- ★オープンストリートマップ -->
 <!-- ユーティリティ関数（最初に読み込む） -->
 <script src="js/utils.js"></script>
-<!-- 都市別専用のJS -->
-<script src="js/map/london.js"></script>
 <!-- ※ここから下は共通 -->
+<!-- 都市名専用のJS -->
+<script src="js/map/heathrowspot.js"></script>
 <!-- 空港アイコン -->
 <script src="js/icons/airport/airport.js"></script>
 <!-- 名所アイコン -->
@@ -507,7 +618,6 @@ Best Photo
 <script src="js/routes/GWR/london-plymouth.js"></script>
 <script src="js/routes/GWR/plymouth-penzance.js"></script>
 <script src="js/routes/GWR/windsorLine.js"></script>
-<script src="js/routes/GWR/heathrowLine.js"></script>
 <script src="js/routes/AWC/london-birmingham.js"></script>
 <script src="js/routes/AWC/birmingham-manchester.js"></script>
 <script src="js/routes/AWC/london-edinburgh.js"></script>
@@ -526,13 +636,14 @@ Best Photo
 <script src="js/routes/OBB/zurich-innsbruck.js"></script>
 <script src="js/routes/OBB/innsbruck-salzburg.js"></script>
 <script src="js/routes/OBB/salzburg-vienna.js"></script>
-<script src="js/routes/OBB/viennaairportline.js"></script>
 <script src="js/routes/SNCF/geneva-lyon.js"></script>
 <script src="js/routes/TGV/paris-lyon.js"></script>
 <script src="js/routes/TGV/paris-basel.js"></script>
+<script src="js/routes/TGV/paris-marselie.js"></script>
 <script src="js/routes/TGV/lyon-marsellie.js"></script>
 <!-- 飛行機ルート -->
 <script src="js/routes/Flight/heathrow-geneva.js"></script>
+<script src="js/routes/Flight/heathrow-doha.js"></script>
 <script src="js/routes/Flight/heathrow-dubai.js"></script>
 <script src="js/routes/Flight/vienna-heathrow.js"></script>
 <!-- ポップアップ操作 -->
