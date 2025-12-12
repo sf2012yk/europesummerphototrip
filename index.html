@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- リンクするcss -->
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/font.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/speechBubble.css"> 
+
+<!-- オープンストリートマップのスクリプト -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- マーカーの色を変更するスクリプト -->
+<script src="assets/js/leaflet.sprite.js"></script>
+<!-- FontawesomeのVersion6.7.2（最新） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- 国旗のcss -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<!-- スライドのcss -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/slider.css">
+</head>
+<title>
+Europe Photo Best
+</title>
+
+<body>
+<!-- sectionのスタート -->
+<!-- ヘッダー -->
+<header>
+<!-- ヘッダー用コンテナ --> 
+<!-- containerのスタート -->
+<div class="container header_container">
+<!-- ヘッダーはここ --> 
+<div class="header-inner">
+<a href="index.html">
+<h1>
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span>Europe Summer Photo Trip
+</h1>
+</a>
+</div>
+<!-- サブメニューはここ --> 
+<nav class="header_nav">
+<ul class="header_list">
+<li class="header_item">
+<a>Country</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="pages/main/uk.html" target="_blank">United Kingdom</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/france.html" target="_blank">France</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/belgium.html" target="_blank">Belgium</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/netherlands.html" target="_blank">Netherlands</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/germany.html" target="_blank">Germany</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/italy.html" target="_blank">Italy</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/switzerland.html" target="_blank">Switzerland</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/main/austria.html" target="_blank">Austria</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a>Main City</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="pages/city/London.html" target="_blank">London</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/city/Paris.html" target="_blank">Paris</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/city/Amsterdam.html" target="_blank">Amsterdam</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/city/Cologne.html" target="_blank">Cologne</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/city/Vienna.html" target="_blank">Vienna</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/city/Bruges.html" target="_blank">Bruges</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="header_item">
+<a>Genre</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="pages/genre/trainstation.html" target="_blank">Train / Station</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/genre/foods.html" target="_blank">Foods</a>
+</li>
+<li class="megaMenu_item">
+<a href="pages/genre/nature.html" target="_blank">Nature</a>
+</li>
+</ul>
+</div>
+</li> 
+<li class="header_item">
+<a href="pages/bestphoto.html">Best Photo</a>
+</li>      
+</ul>
+</nav>
+<!-- スマホ専用ナビゲーション(Sp_navigation) -->
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="globalMenuSp">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a>Country</a>
+<ul class="megaMenu">
+<li>
+<a href="pages/main/uk.html">United Kingdom</a>
+</li>
+<li>
+<a href="pages/main/france.html">France</a>
+</li>
+<li>
+<a href="pages/main/belgium.html">Belgium</a>
+</li>
+<li>
+<a href="pages/main/netherlands.html">Netherlands</a>
+</li>
+<li>
+<a href="pages/main/germany.html">Germany</a>
+</li>
+<li>
+<a href="pages/main/italy.html">Italy</a>
+</li>
+<li>
+<a href="pages/main/switzerland.html">Switzerland</a>
+</li>
+<li>
+<a href="pages/main/austria.html">Austria</a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+<a>Main City</a>
+<ul class="megaMenu">
+<li>
+<a href="pages/city/London.html">London</a>
+</li>
+<li>
+<a href="pages/city/Paris.html">Paris</a>
+</li>
+<li>
+<a href="pages/city/Amsterdam.html">Amsterdam</a>
+</li>
+<li>
+<a href="pages/city/Geneva.html">Geneve</a>
+</li>
+<li>
+<a href="pages/city/Vienna.html">Vienna</a>
+</li>
+<li>
+<a href="pages/city/Bruges.html">Bruges</a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+<a>Genre</a>
+<ul class="megaMenu">
+<li>
+<a href="pages/genre/trainstation.html" target="_blank">Trains / Station</a>
+</li>
+<li>
+<a href="pages/genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li>
+<a href="pages/genre/foods.html" target="_blank">Food / Sweets</a>
+</li>
+<li>
+<a href="pages/genre/nature.html" target="_blank">Nature</a>
+</li>
+<li>
+<a href="pages/genre/nature.html" target="_blank">Art</a>
+</li>
+<li>
+<a href="pages/genre/flight.html" target="_blank">Flight</a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+<a>Best Photo</a>
+<ul class="megaMenu">
+<li>
+<a href="pages/map/MapIndex.html">Best Photo</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</header> 
+<section class="pagebody">
+<div class="Top_image">
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img id="top1" loading="eager" src="assets/image/top/top1.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</div>
+<div class="swiper-slide">
+<img id="top2" loading="eager" src="assets/image/top/top2.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</div>
+<div class="swiper-slide">
+<img id="top3" loading="eager" src="assets/image/top/top3.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>
+</div>
+<div class="swiper-slide">
+<img id="top4" loading="eager" src="assets/image/top/top4.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</div>
+<div class="swiper-slide">
+<img id="top5" loading="eager" src="assets/image/top/top5.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</div>
+<div class="swiper-slide">
+<img id="top6" loading="eager" src="assets/image/top/top6.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
+</div>
+<div class="title">
+<p class="read_1">
+Summer Destnations !
+</p>
+<p class="read_2">
+~ Wonderful journey in Europe ~
+</p>
+</div>
+</div>
+<!-- ページネーション（任意） -->
+<div class="swiper-pagination"></div>
+<!-- ナビゲーションボタン（任意） -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+<!-- containerのスタート -->
+<div class="container">
+<!-- エディタcssを適用する -->
+<div class="inner site_body editorcss">
+<div class="title" style="margin-bottom: 3em; font-weight: 400;">
+<p class="read_2">
+夏のヨーロッパ、写真で冒険してみませんか？<br>まるでその場にいるような風景が、あなたを待っています。<br>
+初めての人も、旅慣れた人も・・この機会にヨーロッパを散策してみましょう！
+</p>
+</div>
+<!-- City Index タブメニュー（クリックして切り替え）はここ -->
+<h2>
+Country
+</h2>
+<div class="flex scroll fadeRightSlide" style="margin-bottom: 2em;">
+<div class="flex_images" style="box-shadow: 10px 10px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" class="euk_fig" src="assets/image/index/uk.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto" loading="lazy"  style="vertical-align: middle;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb"></span><span class="en" style="margin-left: 15px;">United Kingdom</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Piccadilly Circus , London
+</p>
+</div>
+</a>
+</div>
+<div class="flex_images" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" src="assets/image/index/france.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-fr"></span><span class="en" style="margin-left: 15px;">France</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Tower Eiffel , Paris
+</p>
+</div>
+</a>
+</div>
+<div class="flex_images" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" src="assets/image/index/netherlands.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-nl"></span><span class="en" style="margin-left: 15px;">Netherlands</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Amsterdam Canal
+</p>
+</div>
+</a>
+</div>
+<div class="flex_images" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" src="assets/image/index/switzerland.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Switzerland</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Lake Geneva , Geneve
+</p>
+</div>
+</a>
+</div>
+<div class="flex_images" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" src="assets/image/index/austria.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-at"></span><span class="en" style="margin-left: 15px;">Austria</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Hofburg , Vienna  
+</p>
+</div>
+</a>
+</div>
+<div class="flex_images" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="pages/main/uk.html">
+<img loading="lazy" src="assets/image/index/belgium.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-be"></span><span class="en" style="margin-left: 15px;">Belgium</span><span class="ja" style="margin-left: 15px;">ベルギー</span>
+</h4>
+<p class="pin">
+<i class="fa-solid fa-map-marker-alt fa-lg"></i>Grote Markt , Bruges
+</p>
+</div>
+</a>
+</div>
+</div>
+<h2>
+Main City
+</h2>
+<div class="city_item_info scroll fadeRightSlide" style="margin-bottom: 0;">
+<div class="image_caption">
+<a href="pages/city/London.html">
+<h5><span class="flag-icon flag-icon-gb"></span><span class="en">London</span><span class="ja">ロンドン</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="pages/city/Paris.html">
+<h5><span class="flag-icon flag-icon-fr"></span><span class="en">Paris</span><span class="ja">パリ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="pages/city/Amsterdam.html">
+<h5><span class="flag-icon flag-icon-nl"></span><span class="en">Amsterdam</span><span class="ja">アムステルダム</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="pages/city/Geneve.html">
+<h5><span class="flag-icon flag-icon-ch"></span><span class="en">Geneve</span><span class="ja">ジュネーブ</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="pages/city/Vienna.html">
+<h5><span class="flag-icon flag-icon-at"></span><span class="en">Vienna</span><span class="ja">ウィーン</span></h5>
+</a>
+</div>
+<div class="image_caption">
+<a href="pages/city/Bruges.html">
+<h5><span class="flag-icon flag-icon-be"></span><span class="en">Bruges</span><span class="ja">ブルージュ</span></h5>
+</a>
+</div>
+</div>
+<div class="city_item_info scroll fadeLeftSlide">
+<a href="pages/map/MapIndex.html">
+<div class="Baner_image">
+<img loading="eager" src="assets/image/europe_map.jpg" alt="Distant View_1" class="map_image">
+</div>
+<div class="Baner_caption scroll fadeLeftSlide">
+<div class="best_align_1">
+<a class="best_link white best_style_1">Europe Map Index</a>
+</div>
+</div>  
+</a>
+</div>
+<h2>
+Genre
+</h2>
+<div class="genre_flex scroll fadeRightSlide" style="margin-bottom: 2em;">
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/train_station.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Trains / Station</p>
+</div>
+</figcaption>
+</div>
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/cathedral.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Cathedral</p>
+</div>
+</figcaption>
+</div>
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/food_sweets.jpg" alt="Food / Sweets"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Food / Sweets</p>
+</div>
+</figcaption>
+</div>
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/nature.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Nature</p>
+</div>
+</figcaption>
+</div>
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/art.jpg" alt="Art"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Art</p>
+</div>
+</figcaption>
+</div>
+<div class="flex_images" style="width: 48%;">
+<figcaption>
+<img loading="lazy" src="assets/image/index/flight.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Flight</p>
+</div>
+</figcaption>
+</div>
+</div>
+
+
+<h2>
+Best Photo
+</h2>
+<div class="flex_2">
+<div class="slideshow">
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_1.jpg" alt="1.レマン湖"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_2.JPG" alt="2.ドーバー海峡"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_3.JPG" alt="3.インスブルック"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_4.jpg" alt="4.セントパンクラス"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_5.JPG" alt="5.パリ"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_6.jpg" alt="6.コッツウォルズ"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_7.JPG" alt="7.シャモニー"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_8.jpg" alt="8.マルセイユ"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_1.jpg" alt="1.レマン湖"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_2.JPG" alt="2.ドーバー海峡"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_3.JPG" alt="3.インスブルック"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+<div class="best_images">
+<img loading="lazy" src="assets/image/index/bestphoto_4.jpg" alt="4.セントパンクラス"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+</div>
+</div>
+</div>  
+<!-- TOPに戻れる矢印（back_top) -->
+<div id="back_top">
+<a href="#top">
+<i class="fa-solid fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- フッター -->
+<footer>
+<div class="footer_upper">
+<div>
+<div class="footer_logo">
+<h2>
+Europe Summer Photo Trip
+</h2>
+</div>
+<div class="footer_flex">
+<div class="footer_menu">
+<h3>
+Country
+</h3>
+<div class="accordion_body">
+<ul>
+<li>
+<a href="pages/main/uk.html">United Kingdom</a>
+</li>
+<li>
+<a href="pages/main/france.html">France</a>
+</li>
+<li>
+<a href="pages/main/belgium.html">Belgium</a>
+</li>
+<li>
+<a href="pages/main/netherlands.html">Netherlands</a>
+</li>
+<li>
+<a href="pages/main/germany.html">Germany</a>
+</li>
+<li>
+<a href="pages/main/italy.html">Italy</a>
+</li>
+<li>
+<a href="pages/main/switzerland.html">Switzerland</a>
+</li>
+<li>
+<a href="pages/main/austria.html">Austria</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Main City
+</h3>
+<div class="accordion_body">
+<ul>
+<li>
+<a href="pages/city/London.html">London</a>
+</li>
+<li>
+<a href="pages/city/Paris.html">Paris</a>
+</li>
+<li>
+<a href="pages/city/Amsterdam.html">Amsterdam</a>
+</li>
+<li>
+<a href="pages/city/Geneva.html">Geneve</a>
+</li>
+<li>
+<a href="pages/city/Vienna.html">Vienna</a>
+</li>
+<li>
+<a href="pages/city/Bruges.html">Bruges</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Genre
+</h3>
+<div class="accordion_body">
+<ul>
+<li>
+<a href="pages/genre/trainstation.html" target="_blank">Trains / Station</a>
+</li>
+<li>
+<a href="pages/genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li>
+<a href="pages/genre/foods.html" target="_blank">Food / Sweets</a>
+</li>
+<li>
+<a href="pages/genre/nature.html" target="_blank">Nature</a>
+</li>
+<li>
+<a href="pages/genre/nature.html" target="_blank">Art</a>
+</li>
+<li>
+<a href="pages/genre/flight.html" target="_blank">Flight</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+<a href="pages/map/MapIndex.html">Best Photo</a>
+</h3>
+<h3>
+<a href="pages/map/MapIndex.html">Europe Map</a>
+</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer_copy">
+<p class="copy_light" style="color: aliceblue;">
+&copy;2019-2025 by Shinsaku Fujio PHOTO.All Rights Reserved.
+</p>
+</div>
+</footer>    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/megamenu.js"></script>
+</body>
+</html>
