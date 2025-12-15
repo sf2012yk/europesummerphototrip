@@ -430,10 +430,59 @@ display: grid;
 grid-template-columns: repeat(4, 4fr);
 padding: 0 15px 0;
 }
+.genre_container{
+margin: 0 auto 3em;
+gap: 10px;
+display: grid;
+grid-template-columns: repeat(5, 4fr);
+padding-top: 10px;
+}
 .flex_images_Visit{
-float: left;
 position: relative;
 margin-bottom: 30px;
+}
+
+/* 外側 → フェードと表示切替 */
+.genre_item_info {
+opacity: 0;
+visibility: hidden;
+position: absolute;
+width: 100%;
+transition: opacity .3s ease-out;
+}
+.genre_item_info.active {
+opacity: 1;
+visibility: visible;
+position: relative;
+}
+
+/* 内側 → ふわっと動く（translateY） */
+.fade_wrap {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+
+/* ← ふわっと演出（これが必要！）  /*  */
+opacity: 0;
+transform: translateY(18px);
+transition:
+opacity 1s cubic-bezier(.25,1,.25,1),
+transform 1s cubic-bezier(.25,1,.25,1);
+}
+.genre_item_info.active .fade_wrap {
+opacity: 1;
+transform: translateY(0);
+}
+.genre_left_item {
+width: 50%;
+position: relative;
+margin-bottom: 1em;
+}
+.genre_right_item {
+width: 49%;
+margin-bottom: 1em;
 }
 }
 
@@ -601,15 +650,61 @@ right: 7px;
 bottom: 80px;
 }
 .flex_images_Visit{
-float: left;
 position: relative;
-max-width: 47%;
-margin: 30px 10px 10px;
+max-width: 30.3%;
+margin: 10px;
 }
 .Visit_item_info{
 margin: 0 auto 3em;
 display: flex;
 flex-wrap: wrap;
+}
+.genre_container{
+margin: 0 auto 3em;
+display: flex;
+flex-wrap: wrap;
+}
+/* 外側 → フェードと表示切替 */
+.genre_item_info {
+opacity: 0;
+visibility: hidden;
+position: absolute;
+width: 100%;
+transition: opacity .3s ease-out;
+}
+.genre_item_info.active {
+opacity: 1;
+visibility: visible;
+position: relative;
+}
+
+/* 内側 → ふわっと動く（translateY） */
+.fade_wrap {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+
+/* ← ふわっと演出（これが必要！）  /*  */
+opacity: 0;
+transform: translateY(18px);
+transition:
+opacity 1s cubic-bezier(.25,1,.25,1),
+transform 1s cubic-bezier(.25,1,.25,1);
+}
+.genre_item_info.active .fade_wrap {
+opacity: 1;
+transform: translateY(0);
+}
+.genre_left_item {
+width: 90%;
+position: relative;
+margin: 0 auto 1em;
+}
+.genre_right_item {
+width: 90%;
+margin: 0 auto 1em;
 }
 }
 
