@@ -444,7 +444,6 @@ font-size: 1.2em;
 margin-bottom: 10px;
 font-weight: bold;
 }
-
 /* パソコンPC専用 */
 @media screen and (min-width: 1101px) {
 .flex {

@@ -10,10 +10,9 @@ height: 600px;
 }
 
 .LegendArea{
-position: absolute;
-width: 300px;
+width: 450px;
 background: rgba(255, 255, 255, 0.9);
-padding: 10px;
+padding: 20px 30px 20px;
 box-shadow: 0 0 1px rgba(0,0,0,0.3);
 z-index: 499;
 bottom: 0;
@@ -23,7 +22,6 @@ text-decoration: none;
 color: #0077b6;
 font-weight: bold;
 font-family: Austin News,georgia,times,serif;
-margin-bottom: 0.3em;
 display: block;
 }
 /* パソコンPC専用 */
@@ -32,6 +30,7 @@ display: block;
 display: grid;
 grid-template-columns: repeat(2, 1fr); /* 3列に分割 */
 gap: 10px;
+padding-top: 1em;
 }
 .flex_images_3{
 float: left;
@@ -120,6 +119,7 @@ display: block; /* 初期状態は非表示 */
 display: grid;
 grid-template-columns: repeat(2, 1fr); /* 3列に分割 */
 gap: 10px;
+padding-top: 1em;
 }
 .flex_images_3{
 float: left;
