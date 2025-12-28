@@ -39,6 +39,15 @@ const cityCenters = {
     paris: [48.8566, 2.3522]
 };
 
+
+// アニメーションオプション
+const flyOptions = {
+    animate: true,
+    duration: 1.2,        // 秒
+    easeLinearity: 0.2   // 緩急
+};
+
+
 // 国選択時：都市リスト更新
 countrySelect.addEventListener('change', () => {
     const selectedCountry = countrySelect.value;
@@ -53,20 +62,57 @@ countrySelect.addEventListener('change', () => {
         });
     }
 
-    // 国選択時はインデックスビューに戻す
-    map.setView([51.5297106343556, -0.1140554568335832], 10);
+    
+    // 現在位置と初期ビューの距離を計算
+    const currentCenter = map.getCenter();
+    const indexCenter = [51.5297106343556, -0.1140554568335832];
+    const distance = map.distance(currentCenter, indexCenter);
+
+
+    
+    // 距離に応じてduration調整（例：100,000で割る）
+    let duration = Math.min(Math.max(distance / 100000, 0.8), 3.0);
+
+    console.log(`戻す距離: ${distance}m, Duration: ${duration}s`);
+
+    map.flyTo(indexCenter, 10, {
+        duration: duration,
+        easeLinearity: 0.15
+    });
 });
 
 // 都市選択時：中心移動のみ
 citySelect.addEventListener('change', () => {
     const cityKey = citySelect.value;
     if (!cityKey) {
-        map.setView([51.5297106343556, -0.1140554568335832], 10);
+        
+     map.flyTo([51.5297106343556, -0.1140554568335832], 10, { duration: 1.2, easeLinearity: 0.15 });
         return;
+
     }
     const center = cityCenters[cityKey];
     if (center) {
-        map.setView(center, 12, { animate: true });
+        
+ const currentCenter = map.getCenter();
+
+        // 距離計算（メートル）
+        const distance = map.distance(currentCenter, center);
+
+        // durationを距離に応じて調整（例：距離が長いほど遅く）
+        // 基準：500kmで約2秒、100kmで約0.8秒
+        let duration = Math.min(Math.max(distance / 100000, 1.5), 3.0);
+        // ↑ 最小0.8秒、最大3秒に制限
+
+        
+        // ✅ ここでログ出力
+        console.log(`Distance: ${distance}m, Duration: ${duration}s`);
+
+
+        map.flyTo(center, 12, {
+            duration: duration,
+            easeLinearity: 0.15
+        });
+
     }
 });
 
