@@ -1,7 +1,7 @@
 .photo_container{
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 4em;
+margin-bottom: 3em;
 }
 
 
@@ -21,6 +21,36 @@ object-fit: cover;
 max-width: 800px;
 border-radius: 4px;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.page-strip {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+.page-btn {
+  min-width: 34px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.page-btn.active {
+  background: #222;
+  color: #fff;
+}
+.pager-arrow[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 
 
 /* パソコンPC専用 */

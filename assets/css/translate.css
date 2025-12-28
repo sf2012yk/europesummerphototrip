@@ -1,0 +1,60 @@
+
+/* Google翻訳の通知バーを非表示 */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+
+
+.skiptranslate iframe {
+  display: none !important;
+}
+
+
+/* バナー非表示後の余白をリセット */
+body {
+  top: 0 !important;
+}
+
+
+
+
+/* Google翻訳ウィジェットを非表示 */
+#google_translate_element .goog-te-gadget {
+  visibility: hidden;
+  height: 0;
+}
+
+
+@media (max-width: 1100px) {
+#google_translate_element {
+font-family: 'Helvetica', 'Arial', sans-serif;
+position: absolute;
+right: calc(25% - 20px);
+}
+}
+
+.lang-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.lang-button:hover {
+  background: #f5f5f5;
+}
+
+
+
+
+
+
