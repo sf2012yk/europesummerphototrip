@@ -1,10 +1,22 @@
 .photo_container{
+overflow: hidden; /* スライド領域を隠す */
 display: flex;
 flex-wrap: wrap;
 margin-bottom: 3em;
 }
-
-
+.photo_wrap .item {
+  display: block;
+}
+.photo_wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease; /* スライドアニメーション */
+}
+/* 横スライドする帯 */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 .item >img{
 vertical-align: top;
 border: 1px #fff;
@@ -35,20 +47,58 @@ border-radius: 4px;
   overflow-x: auto;
 }
 .page-btn {
-  min-width: 34px;
-  height: 30px;
-  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  background: #fff;
+  color: #333;
   cursor: pointer;
+  transition: all 0.25s ease;
 }
+
+.page-btn:hover {
+  background: #f0f0f0;
+}
+
 .page-btn.active {
   background: #222;
   color: #fff;
 }
+
+.pager-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pager-arrow:hover:not([disabled]) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+#prev.pager-arrow::before {
+  transform: rotate(-135deg);
+}
+
+#next.pager-arrow::before {
+  transform: rotate(45deg);
+}
+
+.pager-arrow:hover:not([disabled]) {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
 .pager-arrow[disabled] {
-  opacity: 0.5;
-  cursor: not-allowed;
+  opacity: 0.3;
+  cursor: default;
 }
 
 
@@ -60,6 +110,8 @@ display: grid;
 grid-template-columns: repeat(3, 4fr);
 grid-auto-flow: row dense;
 padding: 0 15px 0;
+width: 100%;
+flex-shrink: 0;
 }
 .country_photo_wrap {
 display: grid;
@@ -75,6 +127,8 @@ display: grid;
 grid-template-columns: repeat(2, 2fr);
 grid-auto-flow: row dense;
 padding: 0 15px 0;
+width: 100%;
+flex-shrink: 0;
 }
 .country_photo_wrap {
 display: grid;

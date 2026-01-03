@@ -1,0 +1,21 @@
+.item {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-card {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 10;
+}
+
+.item:hover .popup-card {
+  display: block;
+}
