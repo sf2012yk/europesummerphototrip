@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../../assets/css/home.css">
 <link rel="stylesheet" href="../../assets/css/common.css">
 <link rel="stylesheet" href="../../assets/css/photo.css">
+<link rel="stylesheet" href="../../assets/css/popupcard.css">
 <link rel="stylesheet" href="../../assets/css/leaflet_popup.css">
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
@@ -20,6 +21,8 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<!-- マーカーの色を変更するスクリプト -->
+<script src="../../assets/js/leaflet.sprite.js"></script>
 <!-- FontawesomeのVersion6.7.2（最新） -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <!-- 国旗のcss -->
@@ -226,10 +229,10 @@ Europe Photo Best
 <!-- TOP画像＋背景文字はここ --> 
 <div class="Top_image">
 <div>
-<img loading="eager" src="../../assets/image/top/geneve.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
+<img loading="eager" src="../../assets/image/top/livecam.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" style="vertical-align: middle;" />
 <div class="Top_caption scroll fadeLeftSlide">
-<h1>Geneva</h1>
-<p>- City Infomation -</p>
+<h1>Livecam on Youtube</h1>
+<p>- Heathrow Airport -</p>
 </div>  
 </div>
 </div>
@@ -245,85 +248,46 @@ Europe Photo Best
 都市の説明
 </p>
 </div>
-<!-- スポット情報 -->
-<h2 class="scroll fadeLeftSlide">
-Spot's
-</h2>
-<div class="uk_item_info_1" style="margin-bottom: 3em;">
-<div class="info_left_item">
-<img loading="lazy" src="../../assets/image/place/Geneve/Spot_1.jpg" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
-</div>
-<div class="info_right_item">
-<div class="text_side">
-<h3 class="city_title">
-噴水
-</h3>
-<div class="text_font"> 
-<p class="mb_1em">
-説明
-</p>
-</div>
-</div>
-</div>
-</div>
-<!-- マップ-->
-<h2 class="scroll fadeLeftSlide">
-Map
-</h2>
-<div class="street_map" id="mapgeneva" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
 <!-- フォトギャラリー -->
 <h2 class="scroll fadeLeftSlide">
 Photo Gallery
 </h2>
 <div class="photo_container">
+<div class="slider-track">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_1.JPG" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_1.JPG" alt="Geneva1" width="100%" height="auto">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_1.jpg" alt="都市名1" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<div class="popup-card">
+<h4>町の様子</h4>
+<p>Day：20yy/m/dd</p>
+</div>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_2.jpg" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420"  /> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_3.jpg" alt="都市名3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_2.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_2.jpg" alt="Geneva2" width="100%" height="auto"> 
-</a> 
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_4.jpg" alt="都市名4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_3.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_3.jpg" alt="Geneva1" width="100%" height="auto">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_5.jpg" alt="都市名5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_4.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_4.jpg" alt="Geneva2" width="100%" height="auto"> 
-</a> 
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_5.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_5.jpg" alt="Geneva1" width="100%" height="auto">
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_6.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_6.jpg" alt="Geneva2" width="100%" height="auto"> 
-</a> 
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_7.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_7.jpg" alt="Geneva1" width="100%" height="auto">
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_8.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_8.jpg" alt="Geneva1" width="100%" height="auto">
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Geneve/Place_9.jpg" data-lightbox="image" data-title="&lt;p class='title'&gt;町の様子&lt;/p&gt;&lt;p class='text'&gt;Day：20yy/m/dd&lt;/p&gt;">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Geneve/Place_9.jpg" alt="Geneva1" width="100%" height="auto">
-</a>
+<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_6.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"/> 
 </div>
 </div>
 </div>
+</div>
+<!-- ページネーション -->
+<nav class="pagination">
+<button id="prev" class="pager-arrow">←</button>
+<div id="page-strip" class="page-strip"></div>
+<button id="next" class="pager-arrow">→</button>
+</nav>
 <!-- 次はどこへ行きたい？ -->
 <h2 class="scroll fadeLeftSlide">
 Next Visit ?
@@ -617,9 +581,9 @@ Genre
 <!-- ★オープンストリートマップ -->
 <!-- ユーティリティ関数（最初に読み込む） -->
 <script src="../../assets/js/utils.js"></script>
-<!-- 都市別専用のJS -->
-<script src="../../assets/js/map/geneva.js"></script>
 <!-- ※ここから下は共通 -->
+<!-- 都市名専用のJS -->
+<script src="../../assets/js/map/heathrow.js"></script>
 <!-- 空港アイコン -->
 <script src="../../assets/js/icons/airport/airport.js"></script>
 <!-- 名所アイコン -->
@@ -701,8 +665,10 @@ Genre
 <script src="../../assets/js/routes/Flight/vienna-heathrow.js"></script>
 <!-- ポップアップ操作 -->
 <script src="../../assets/js/popup/popup.js"></script>
+<script src="../../assets/js/popup/popupcard.js"></script>
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
+<script src="../../assets/js/control/pagenation.js"></script>
 </body>
 </html>
