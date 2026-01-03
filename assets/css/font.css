@@ -56,7 +56,9 @@ font-family: Austin News,georgia,times,serif;
 }
 
 .caption{
-min-height: 40px; /* 高さを統一 */
+min-height: 45px; /* 高さを統一 */
+align-items: center; /* 垂直中央揃え */
+justify-content: center; /* 水平中央揃え（必要なら） */
 overflow: hidden;
 font-weight: bold;
 padding: 10px;
