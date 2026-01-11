@@ -271,12 +271,6 @@ font-family: Austin News, georgia, times, serif;
 }
 /* TOP画像のスタイル（Top_image） */
 /* 共通 */
-.Top_image{
-width: 100%;
-height: auto;
-position: relative;
-margin-bottom: 3em;
-}
 .Top_image::before{
 position: absolute;
 content: "";
@@ -287,11 +281,50 @@ height: 100%;
 background-color: rgba(128, 226, 200, 0.22);
 z-index: 100;
 }
-.Top_image img{
+.baner_container{
+position: relative;
+margin: 0 auto 4em;
+width: 90%;
+}
+
+/* PC専用（768px） */
+@media screen and (min-width: 768px) {
+body{
+top: 89px;
+}
+.Top_image{
+position: relative;
 width: 100%;
 height: auto;
-overflow: hidden;
-margin-top: 87px;
+margin-bottom: 3em;
+}
+}
+/* スマホ専用（767px） */
+@media screen and (max-width: 767px) {
+body{
+top: 107px;
+}
+.Top_image{
+position: relative;
+width: 100%;
+height: auto;
+margin-bottom: 3em;
+}
+.Top_image .read_1{
+font-size: clamp(22px, 6vw, 40px);
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+width: 1500px;
+text-align: left;
+z-index: 1000;
+text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
+}
+.Top_image .read_2{
+font-size: clamp(18px, 5vw, 32px);
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+text-align: left;
+}
 }
 
 /* TOPのテキストキャプション（Top_caption） */
@@ -391,22 +424,6 @@ position: fixed;
 right: 6%;
 bottom: 10%;
 }
-.Top_image .read_1{
-font-size: 3.5em;
-font-style: italic;
-color: #fff;
-font-family: Austin News,georgia,times,serif;
-width: 1500px;
-text-align: center;
-}
-.Top_image .read_2{
-font-size: 1.5em;
-font-style: italic;
-color: #fff;
-font-family: Austin News,georgia,times,serif;
-width: 1500px;
-text-align: center;
-}
 .Top_caption h1{
 font-family: Austin News,georgia,times,serif;
 font-weight: 500;
@@ -485,7 +502,6 @@ width: 49%;
 margin-bottom: 1em;
 }
 }
-
 /* SP専用（1100px以下）はここにまとめる */
 @media screen and (max-width: 1100px) {
 #pagebody {
@@ -649,11 +665,7 @@ position: fixed;
 right: 7px;
 bottom: 80px;
 }
-.flex_images_Visit{
-position: relative;
-max-width: 30.3%;
-margin: 10px;
-}
+
 .Visit_item_info{
 margin: 0 auto 3em;
 display: flex;
@@ -708,6 +720,17 @@ margin: 0 auto 1em;
 }
 }
 
+/* SP専用（768～1100px以下） */
+@media (min-width: 768px) and (max-width: 1100px) {
+.flex_images_Visit{
+position: relative;
+max-width: 30.3%;
+margin: 10px;
+}
+}
+
+
+
 /* sp用（767px以下）はここにまとめる */
 @media screen and (max-width: 767px) {
 #Sp_navigation ul li{
@@ -717,4 +740,22 @@ width: 50%;
 border-right: 0;
 }
 }
+
+/* SP専用（541～767px以下） */
+@media (min-width: 541px) and (max-width: 767px) {
+.flex_images_Visit{
+position: relative;
+max-width: 45%;
+margin: 10px;
+}
+}
+/* sp用（767px以下）はここにまとめる */
+@media screen and (max-width: 540px) {
+.flex_images_Visit {
+position: relative;
+max-width: 100%;
+margin: 10px;
+}
+}
+
 /* ▲▲▲全サイト共通で使用するcss（common）▲▲▲ */

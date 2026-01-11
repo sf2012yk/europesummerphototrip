@@ -28,11 +28,51 @@ background: linear-gradient(#ffffff, #ffffff);
 opacity: 0.4;
 }
 
+/* デフォルトでは非表示（PC用） */
+br.sp {
+display: none;
+}
+img.sp {
+display: none;
+}
+
+/* PCだけ表示（例：幅768px以下） */
+@media (min-width: 768px) {
+br.sp {
+display: none;
+}
+br.pc {
+display: inline;
+}
+img.pc{
+display: inline;
+}
+img.sp {
+display: none;
+}
+}
+
+/* スマホだけ表示（例：幅767px以下） */
+@media (max-width: 767px) {
+br.pc {
+display: none;
+}
+br.sp {
+display: inline;
+}
+img.pc{
+display: none;
+}
+img.sp {
+display: inline;
+}
+}
+
 .inline{
 display: inline-block;
 }
 .inner{
-max-width: 1100px;
+max-width: 100%;
 margin: 0 auto 0;
 }
 .mb_1em {
@@ -46,8 +86,11 @@ margin-bottom: 3em;
 }
 header{
 position: fixed;
+content: '';
+top: 0;
+left: 0;
 width: 100%;
-z-index: 9998;
+z-index: 209998;
 background-color: #F0F0F0;
 border-bottom: 0.1px solid #a1a1a1;
 box-shadow: 0 0 5px 0 rgba(211, 197, 197, 0.5);
@@ -111,13 +154,11 @@ transform: translateX(50px); ;
 .header_container {
 display: flex;
 align-items: center;
+max-width: 1200px;
+padding: 0 30px 0;
+margin: 0 auto 0;
 }
-.header-inner {
-width: 500px;
-padding: 30px 15px 30px 0;
-display: flex;
-justify-content: center;
-}
+
 
 .header-inner a{
 text-decoration: none;
@@ -280,6 +321,7 @@ filter: hue-rotate(100deg);
 float: left;
 position: relative;
 }
+
 .flex_images >a {
 text-decoration: none;
 }
@@ -308,6 +350,7 @@ text-align: left;
 font-weight: 400;
 text-shadow: none !important;
 font-size: 25px;
+font-family: Austin News, georgia, times, serif;
 }
 figcaption >.euk_th{
 display: inline-block;
@@ -326,6 +369,14 @@ border-radius: 2px;
 font-family: "Austin News", georgia, times, serif;
 font-size: 1em;
 }
+
+.caption h4 .en,
+.caption h4 .ja {
+  display: inline-block;
+  width: 100px; /* 英語・日本語どちらでも収まる幅 */
+  text-align: left; /* 左寄せ */
+}
+
 .flex_images h4 .ja{
 display: none;
 }
@@ -350,12 +401,6 @@ flex-flow: row-reverse wrap;
 justify-content: space-between;
 align-items: center;
 }
-.Top_image{
-width: 100%;
-height: auto;
-margin-bottom: 3em;
-}
-
 .Top_image .swiper-slide img{
 width: 100%;
 height: auto;
@@ -368,6 +413,7 @@ margin-top: 50px;
 /* 共通 */
 footer{
 font-family: Austin News, georgia, times, serif;
+width: 100%;
 }
 
 footer .footer_upper{
@@ -444,19 +490,25 @@ font-size: 1.2em;
 margin-bottom: 10px;
 font-weight: bold;
 }
+
 /* パソコンPC専用 */
-@media screen and (min-width: 1101px) {
+@media screen and (min-width: 768px) {
 .flex {
 gap: 20px;
 display: grid;
 grid-template-columns: repeat(2, 4fr);
 padding: 20px;
 }
+}
+/* パソコンPC専用 */
+@media screen and (min-width: 1101px) {
 .flex_images h4{
 font-family: "Austin News", georgia, times, serif;
-font-size: calc(13 / 750 * 100vw);
+font-size: 24px;
 color: black;
-margin-bottom: 0.5em;
+margin-bottom: 15px;
+display: flex;
+align-items: center;
 }
 .pagebody {
 width: 100%;
@@ -465,12 +517,8 @@ text-align: left;
 }
 .pagebody .container{
 max-width: 80%;
-margin: 0 auto;
-}
-.container {
-max-width: 1200px;
 padding: 0 30px 0;
-margin: 0 auto 0;
+margin: 0 auto;
 }
 .editorcss h2::before{
 content: '';
@@ -508,15 +556,6 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 width: 47%;
 margin-bottom: 1em;
 }
-
-.Top_image .title{
-position: absolute;
-padding-top: calc(540 / 1101 * 100vw);
-left: 50%;
-transform: translate(-50%,-50%);
-max-width: 80%;
-z-index: 9999;
-}
 .Top_image .swiper-slide img{
 width: 100%;
 height: auto;
@@ -548,10 +587,17 @@ float: left;
 position: relative;
 margin-bottom: 30px;
 }
+.flex_images_category{
+float: left;
+position: relative;
+width: 48%;
+margin-bottom: 30px;
+}
 #back_top{
 position: fixed;
 right: 7%;
 bottom: 13%;
+display: block;
 }
 .info_left_item {
 width: 45%;
@@ -620,12 +666,6 @@ opacity: 1;
 
 /* スマホSP専用（1）1099px以下 */
 @media screen and (max-width: 1100px) {
-.flex {
-gap: 10px;
-display: grid;
-grid-template-columns: repeat(2, 4fr);
-padding: 10px;
-}
 .flex_images{
 float: left;
 position: relative;
@@ -633,9 +673,14 @@ margin-bottom: 30px;
 }
 .flex_images h4{
 font-family: "Austin News", georgia, times, serif;
-font-size: calc(17 / 750 * 100vw);
+font-size: 25px;
 color: black;
 margin-bottom: 0.5em;
+}
+.flex_images_category{
+position: relative;
+max-width: 80%;
+margin: 0 auto 30px;
 }
 .country_items{
 background: linear-gradient(to right, #c2e9fb, #a1c4fd);
@@ -655,7 +700,6 @@ max-width: 100%;
 }
 .header-inner {
 max-width: 100%;
-margin: 0 3em 0;
 display: flex;
 justify-content: center;
 }
@@ -663,11 +707,12 @@ justify-content: center;
 z-index: 50;
 }
 body .container  {
-padding: 0 55px 5px 40px;
+padding: 0 15px;
 }
 .pagebody .container{
 max-width: 100%;
 margin: 0 auto;
+padding: 0 30px 0;
 }
 
 .container {
@@ -685,8 +730,8 @@ display: none;
 display : block;
 position: fixed;
 right : 40px;
-width : 60px;
-height: 42px;
+width : 50px;
+height: 40px;
 cursor: pointer;
 text-align: center;
 }
@@ -725,29 +770,24 @@ top: 16px;
 -moz-transform   : rotate(45deg);
 transform        : rotate(45deg);
 }
-.Top_image .title{
-position: absolute;
-padding-top: calc(420 / 750 * 100vw);
-left: 50%;
-transform: translate(-50%, -50%);
-max-width: 80%;
-z-index: 9999;
-}
+
 
 /* メニュー背景　*/
 nav.globalMenuSp {
 position: fixed;
-z-index : 2;
-top: 70px;
+z-index : 1999998;
+top: 88px;
 right: 0;
-width: 80vh;
-max-width: 300px;
+height: 100vh;
+width: min(92vw, 1100px);
+max-width: 400px;
 color: #fff;
 background:#F0F0F0;
 transform: translateX(100%);
 transition: all 0.6s;
 overflow: visible;
 font-family: Austin News, georgia, times, serif;
+line-height: 1.6;
 }
 
 /* クリックでjQueryで追加・削除 */
@@ -759,7 +799,7 @@ transform: translateX(0%);
 nav.globalMenuSp .megaMenu_list {
   list-style: none;
   margin: 0;
-  padding: .5rem 0;
+  padding: 1.5rem;
 }
 
 nav.globalMenuSp .megaMenu_item {
@@ -772,8 +812,8 @@ nav.globalMenuSp .megaMenu_item > a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .8rem 1rem;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: clamp(30px, 5vw, 30px);
     font-weight: 700;
     color: #000;
     text-decoration: none;
@@ -806,14 +846,23 @@ nav.globalMenuSp .megaMenu_item > .megaMenu {
     display: block; 
   }
 
+
+
+nav.globalMenuSp a {
+  font-size: clamp(18px, 4.5vw, 22px); /* 大きめ文字 */
+  font-weight: 600; /* 太字で視認性UP */
+  padding: 14px 16px; /* タップ領域を広げる */
+  display: block;
+}
+
+
 nav.globalMenuSp .megaMenu_item > .megaMenu >li >a {
+  font-size: clamp(16px, 4vw, 20px);
   text-decoration: none;
   color: #000;
   line-height: 2;
-  font-size: 16px;
-  padding: 0.9rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 500;
-  margin: 5px 0;
   border-bottom: 1px solid rgba(100, 100, 100, 0.0);
 }
 
@@ -852,6 +901,7 @@ letter-spacing: 2px;
 position: fixed;
 right: 7px;
 bottom: 100px;
+display: block;
 }
 .info_left_item {
 width: 80%;
@@ -878,3 +928,58 @@ text-align: center;
 }
 }
 
+/* パソコンPC専用 */
+@media screen and (min-width: 768px) {
+.header-inner {
+width: 500px;
+padding: 30px 15px 30px 0;
+display: flex;
+justify-content: center;
+}
+.Top_image .title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+max-width: 80%;
+z-index: 9999;
+}
+}
+
+
+/* スマホSP専用 767px以下 */
+@media screen and (max-width: 767px) {
+.flex {
+gap: 10px;
+display: grid;
+grid-template-columns: repeat(1, 4fr);
+padding: 10px;
+}
+.header-inner {
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+.Top_image .title{
+position: absolute;
+bottom: 0;
+left: 0;
+max-width: 80%;
+z-index: 9999;
+padding: 30px 20px;
+}
+.city_item_info .image_caption {
+width: 100%;
+position: relative;
+margin-bottom: 2em;
+overflow: hidden;
+}
+.flex_images_category{
+position: relative;
+max-width: 100%;
+margin: 0 auto 30px;
+}
+#back_top{
+display: none;
+}
+}
