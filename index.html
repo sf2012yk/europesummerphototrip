@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- リンクするcss -->
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/font.css">
 <link rel="stylesheet" href="assets/css/home.css">
-<link rel="stylesheet" href="assets/css/speechBubble.css"> 
+<link rel="stylesheet" href="assets/css/speechBubble.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/photo.css">
+<link rel="stylesheet" href="assets/css/search.css">
+<link rel="stylesheet" href="assets/css/maplegend.css">
+<link rel="stylesheet" href="assets/css/leaflet_popup.css">
+<link rel="stylesheet" href="assets/css/leaflet.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+
 
 <!-- オープンストリートマップのスクリプト -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<!-- マーカーの色を変更するスクリプト -->
-<script src="assets/js/leaflet.sprite.js"></script>
 <!-- FontawesomeのVersion6.7.2（最新） -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <!-- 国旗のcss -->
@@ -37,7 +44,7 @@ Europe Photo Best
 <div class="header-inner">
 <a href="index.html">
 <h1>
-<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span>Europe Summer Photo Trip
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span><br class="sp">Europe Summer <br class="sp">Photo Trip
 </h1>
 </a>
 </div>
@@ -101,7 +108,7 @@ Europe Photo Best
 </div>
 </li>
 <li class="header_item">
-<a>Genre</a>
+<a>Category</a>
 <div class="megaMenu">
 <ul class="megaMenu_list">
 <li class="megaMenu_item">
@@ -185,7 +192,7 @@ Europe Photo Best
 </ul>
 </li>
 <li class="megaMenu_item">
-<a>Genre</a>
+<a>Category</a>
 <ul class="megaMenu">
 <li>
 <a href="pages/genre/trainstation.html" target="_blank">Trains / Station</a>
@@ -221,40 +228,15 @@ Europe Photo Best
 </header> 
 <section class="pagebody">
 <div class="Top_image">
-<div class="swiper">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<img id="top1" loading="eager" src="assets/image/top/top1.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
-<div class="swiper-slide">
-<img id="top2" loading="eager" src="assets/image/top/top2.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
-<div class="swiper-slide">
-<img id="top3" loading="eager" src="assets/image/top/top3.jpg" alt="トップ画像" width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>
-</div>
-<div class="swiper-slide">
-<img id="top4" loading="eager" src="assets/image/top/top4.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
-<div class="swiper-slide">
-<img id="top5" loading="eager" src="assets/image/top/top5.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
-<div class="swiper-slide">
-<img id="top6" loading="eager" src="assets/image/top/top6.jpg" alt="トップ画像"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
+<img class="pc" loading="eager" src="assets/image/top/top1.jpg" alt="トップ画像" width="100%" height="auto"   />
+<img class="sp" loading="eager" src="assets/image/top/sp/top_sp.jpg" alt="トップ画像" width="100%" height="auto"   />
 <div class="title">
 <p class="read_1">
 Summer Destnations !
 </p>
 <p class="read_2">
-~ Wonderful journey in Europe ~
+~ journey in Europe ~
 </p>
-</div>
-</div>
-<!-- ページネーション（任意） -->
-<div class="swiper-pagination"></div>
-<!-- ナビゲーションボタン（任意） -->
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
 </div>
 </div>
 <!-- containerのスタート -->
@@ -277,7 +259,7 @@ Country
 <img loading="lazy" class="euk_fig" src="assets/image/index/uk.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto" loading="lazy"  style="vertical-align: middle;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-gb"></span><span class="en" style="margin-left: 15px;">United Kingdom</span>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">United Kingdom</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Piccadilly Circus , London
@@ -290,7 +272,7 @@ Country
 <img loading="lazy" src="assets/image/index/france.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-fr"></span><span class="en" style="margin-left: 15px;">France</span>
+<span class="flag-icon flag-icon-fr"></span><span style="margin-left: 15px;">France</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Tower Eiffel , Paris
@@ -303,7 +285,7 @@ Country
 <img loading="lazy" src="assets/image/index/netherlands.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-nl"></span><span class="en" style="margin-left: 15px;">Netherlands</span>
+<span class="flag-icon flag-icon-nl"></span><span style="margin-left: 15px;">Netherlands</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Amsterdam Canal
@@ -316,7 +298,7 @@ Country
 <img loading="lazy" src="assets/image/index/switzerland.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-ch"></span><span class="en" style="margin-left: 15px;">Switzerland</span>
+<span class="flag-icon flag-icon-ch"></span><span style="margin-left: 15px;">Switzerland</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Lake Geneva , Geneve
@@ -329,7 +311,7 @@ Country
 <img loading="lazy" src="assets/image/index/austria.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-at"></span><span class="en" style="margin-left: 15px;">Austria</span>
+<span class="flag-icon flag-icon-at"></span><span style="margin-left: 15px;">Austria</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Hofburg , Vienna  
@@ -342,7 +324,7 @@ Country
 <img loading="lazy" src="assets/image/index/belgium.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-be"></span><span class="en" style="margin-left: 15px;">Belgium</span><span class="ja" style="margin-left: 15px;">ベルギー</span>
+<span class="flag-icon flag-icon-be"></span><span style="margin-left: 15px;">Belgium</span>
 </h4>
 <p class="pin">
 <i class="fa-solid fa-map-marker-alt fa-lg"></i>Grote Markt , Bruges
@@ -386,23 +368,21 @@ Main City
 </a>
 </div>
 </div>
-<div class="city_item_info scroll fadeLeftSlide">
-<a href="pages/map/MapIndex.html">
-<div class="Baner_image">
-<img loading="eager" src="assets/image/europe_map.jpg" alt="Distant View_1" class="map_image">
+<h2>
+Europe Map
+</h2>
+<div class="baner_container">
+<img loading="lazy" src="assets/image/europe_map.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="Baner_caption"><div class="best_align_1"><a href="pages/map/MapIndex.html">
+</a><a class="best_link white best_style_1">>> Go to Map >></a>
 </div>
-<div class="Baner_caption scroll fadeLeftSlide">
-<div class="best_align_1">
-<a class="best_link white best_style_1">Europe Map Index</a>
 </div>
-</div>  
-</a>
 </div>
 <h2>
-Genre
+Category
 </h2>
 <div class="genre_flex scroll fadeRightSlide" style="margin-bottom: 2em;">
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/trainstation.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/train_station.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -412,7 +392,7 @@ Genre
 </figcaption>
 </a>
 </div>
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/cathedral.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/cathedral.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -422,7 +402,7 @@ Genre
 </figcaption>
 </a>
 </div>
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/foods.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/food_sweets.jpg" alt="Food / Sweets"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -432,7 +412,7 @@ Genre
 </figcaption>
 </a>
 </div>
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/nature.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/nature.JPG" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -442,7 +422,7 @@ Genre
 </figcaption>
 </a>
 </div>
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/art.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/art.jpg" alt="Art"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -452,7 +432,7 @@ Genre
 </figcaption>
 </a>
 </div>
-<div class="flex_images" style="width: 48%;">
+<div class="flex_images_category">
 <a href="pages/genre/flight.html">
 <figcaption>
 <img loading="lazy" src="assets/image/index/flight_1.jpg" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
@@ -508,12 +488,6 @@ Best Photo
 </div>
 </div>
 </div>  
-<!-- TOPに戻れる矢印（back_top) -->
-<div id="back_top">
-<a href="#top">
-<i class="fa-solid fa-chevron-up"></i>
-</a>
-</div>
 </div>
 </div>
 </section>
@@ -634,8 +608,18 @@ Genre
 </p>
 </div>
 </footer>    
+<!-- オープンストリートマップのスクリプト -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
+<!-- スワイプのスクリプト -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!-- ★オープンストリートマップ -->
+<!-- ユーティリティ関数（最初に読み込む） -->
+<script src="assets/js/utils.js"></script>
+<!-- ヨーロッパマップへの誘導 -->
+<script src="assets/js/mapindex/europemaps.js"></script>
+<!-- コントロール -->
 <script src="assets/js/slider.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/megamenu.js"></script>
