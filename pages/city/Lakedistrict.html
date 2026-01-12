@@ -21,8 +21,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<!-- マーカーの色を変更するスクリプト -->
-<script src="../../assets/js/leaflet.sprite.js"></script>
 <!-- FontawesomeのVersion6.7.2（最新） -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <!-- 国旗のcss -->
@@ -33,6 +31,7 @@
 Europe Photo Best
 </title>
 <body>
+<!-- sectionのスタート -->
 <!-- ヘッダー -->
 <header>
 <!-- ヘッダー用コンテナ --> 
@@ -224,16 +223,15 @@ Europe Photo Best
 </nav>
 </div>
 </header> 
-<!-- 本編 -->
 <section class="pagebody">
 <!-- TOP画像＋背景文字はここ --> 
 <div class="Top_image">
 <div>
-<img class="pc" loading="eager" src="../../assets/image/top/pc/london.jpg" alt="トップ画像" width="100%" height="auto"   />
-<img class="sp" loading="eager" src="../../assets/image/top/sp/london_sp.jpg" alt="トップ画像" width="100%" height="auto"   />
+<img class="pc" loading="eager" src="../../assets/image/top/pc/lakedistrict.jpg" alt="トップ画像" width="100%" height="auto"   />
+<img class="sp" loading="eager" src="../../assets/image/top/sp/lakedistrict_sp.jpg" alt="トップ画像" width="100%" height="auto"   />
 <div class="Top_caption scroll fadeLeftSlide">
-<h1>London</h1>
-<p>- City Infomation -</p>
+<h1>Lake district</h1>
+<p>- Nature Infomation -</p>
 </div>  
 </div>
 </div>
@@ -243,35 +241,28 @@ Europe Photo Best
 <!-- 導入の文章 -->
 <div class="text_side">
 <h4>
-革新と伝統が融合する多文化国際都市
+ナショナルトラスト運動、さきがけの地
 </h4>
-<div class="text_font"> 
 <p class="mb_1em">
-UK、及びイングランドの首都であるロンドンは世界有数の文化的かつ国際的な都市であり、年間約2,800万人の観光客が訪れる。<br/>
-街の中心部にはテムズ川が流れており、それを囲うような形で街が形成される。<br/>
-市内では約380の言語が話されており、とても多くの人種が生活している。
+湖水地方の説明
 </p>
 </div>
-</div>
-<!-- スポット情報（ロンドン） -->
+<!-- スポット情報 -->
 <h2 class="scroll fadeLeftSlide">
 Spot's
 </h2>
 <div class="uk_item_info_1" style="margin-bottom: 3em;">
 <div class="info_left_item">
-<img loading="lazy" src="../../assets/image/place/London/spot_1.jpg" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="../../assets/image/place/Lakedistrict/spot_1.jpg" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-Big Ben
+場所
 </h3>
 <div class="text_font"> 
 <p class="mb_1em">
-ロンドン、そしてUKの象徴といえばビッグベンである。1859年に、テムズ川沿いのウェストミンスター寺院の近くに建設された。<br/>
-高さ96メートルの時計塔からは独特の鐘の音が鳴り響き、一日に1秒たりとも時間を間違えることはない。<br/>
-ビッグベンには奇跡的なエピソードがある。第二次世界大戦当時、ロンドンは大きな戦災に見舞われ、近くにあったウェストミンスター寺院が被災してしまった。
-しかしビッグベンには大きな被害がなく、鐘は鳴り続けた。戦時下でもその大役を果たした時計塔は、英国のシンボルとして今も大切に使用されている。
+場所の説明
 </p>
 </div>
 </div>
@@ -279,97 +270,122 @@ Big Ben
 </div>
 <div class="uk_item_info_1" style="margin-bottom: 3em;">
 <div class="info_left_item">
-<img loading="lazy" src="../../assets/image/place/London/spot_2.jpg" alt="Spots_2" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="../../assets/image/place/Lakedistrict/spot_2.jpg" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-City of London
+場所
 </h3>
 <div class="text_font"> 
 <p class="mb_1em">
-ロンドンの南東部には巨大な金融街「シティ・オブ・ロンドン」があり、金融および専門サービスの中心地として機能している。
-ロンドンの名の由来は、紀元1世紀に古代ローマ人によって、ロンディニウムという城壁と集落が作られたことにある。<br/>
-その中で「シティ・オブ・ロンドン」は、古代の遺産と現代の高層ビルが共存する、歴史と影響力のある金融街として発展した。この写真はセントポール大聖堂の屋上から撮影している。
+場所の説明
 </p>
 </div>
 </div>
 </div>
 </div>
-<!-- フォトエリア -->
+<!-- マップ-->
+<h2 class="scroll fadeLeftSlide">
+Map
+</h2>
+<div class="street_map" id="maplakedistrict" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
+<!-- フォトギャラリー -->
 <h2 class="scroll fadeLeftSlide">
 Photo Gallery
 </h2>
-<!-- フォトギャラリー -->
 <div class="photo_container">
 <div class="slider-track">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_1.jpg" data-lightbox="image" data-title="<p class='title'>テムズ川からタワーブリッジ方向を見る。川は恐ろしいほどに濁っている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_1.jpg" alt="テムズ川" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Lakedistrict/place_1.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_1.jpg" alt="都市名1" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_2.jpg" data-lightbox="image" data-title="<p class='title'>テムズ川にかかる跳開橋、タワーブリッジ。大型船が通る度に開く仕様となっている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_2.jpg" alt="タワーブリッジ" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+<a href="../../assets/image/place/Lakedistrict/place_2.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_2.jpg" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_3.jpg" data-lightbox="image" data-title="<p class='title'>Oxford Streetでは国旗に加え、エリザベス女王2世の即位70周年を記念する祝賀旗が掲げられていた。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_3.jpg" alt="中心部_1" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</a>  
+<a href="../../assets/image/place/Lakedistrict/place_3.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_3.jpg" alt="都市名3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_4.jpg" data-lightbox="image" data-title="<p class='title'>Holborn High Streetの一風景。歴史的建造物やオフィス、飲食店が混在する。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_4.jpg" alt="Holborn High Street"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />   
+<a href="../../assets/image/place/Lakedistrict/place_4.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_4.jpg" alt="都市名4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_5.jpg" data-lightbox="image" data-title="<p class='title'>UK最大の老舗百貨店、ハロッズ。高級感あふれるチョコレートや紅茶などが人気だ。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_5.jpg" alt="ハロッズ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="../../assets/image/place/Lakedistrict/place_5.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_5.jpg" alt="都市名5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_6.jpg" alt="ケンジントン宮殿"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_6.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_6.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_7.jpg" alt="ピカデリーサーカス_1"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_8.jpg" alt="ピカデリーサーカス_2"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_9.jpg" alt="ビッグベン"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="../../assets/image/place/Lakedistrict/place_7.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_7.jpg" alt="都市名3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_10.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</a>   
+<a href="../../assets/image/place/Lakedistrict/place_8.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_8.jpg" alt="都市名4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_11.jpg" data-lightbox="image" data-title="<p class='title'>ビックベン直下の大通りは観光客や車、看板で溢れかえり、カオス感満載だ。</p><p class='text'>Day：2025/8/8</p>"></a>
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_11.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="../../assets/image/place/Lakedistrict/place_9.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_9.jpg" alt="都市名5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_12.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_10.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_10.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_13.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_11.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_11.jpg" alt="都市名3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_14.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_12.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_12.jpg" alt="都市名4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_15.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_13.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_13.jpg" alt="都市名5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_16.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_14.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_14.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_17.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_15.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_15.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_18.jpg" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Lakedistrict/place_16.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_16.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/place/Lakedistrict/place_17.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_17.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/place/Lakedistrict/place_18.jpg" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Lakedistrict/place_18.jpg" alt="都市名6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 </div>
 </div>
@@ -380,15 +396,9 @@ Photo Gallery
 <div id="page-strip" class="page-strip"></div>
 <button id="next" class="pager-arrow">→</button>
 </nav>
-
-<!-- マップ（ロンドン） -->
-<h2 class="scroll fadeLeftSlide">
-Map
-</h2>
-<div class="street_map" id="maplondon" style="width: 100%; height: 600px; margin-bottom: 4em;"></div>
 <!-- 次はどこへ行きたい？ -->
 <h2 class="scroll fadeLeftSlide">
-Where to Next ?
+Next Visit ?
 </h2>
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
@@ -555,16 +565,6 @@ Where to Next ?
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-nl"></span><span style="margin-left: 15px;">Amsterdam</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Bruges.html">
-<img loading="lazy" src="../../assets/image/city/bruges.jpg" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-be"></span><span style="margin-left: 15px;">Bruges</span>
 </h4>
 </div>
 </a>
@@ -790,6 +790,7 @@ Genre
 </p>
 </div>
 </footer>
+
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
@@ -800,9 +801,9 @@ Genre
 <!-- ★オープンストリートマップ -->
 <!-- ユーティリティ関数（最初に読み込む） -->
 <script src="../../assets/js/utils.js"></script>
-<!-- 都市別 -->
-<script src="../../assets/js/map/london.js"></script>
 <!-- ※ここから下は共通 -->
+<!-- 都市名専用のJS -->
+<script src="../../assets/js/map/lakedistrict.js"></script>
 <!-- 空港アイコン -->
 <script src="../../assets/js/icons/airport/airport.js"></script>
 <!-- 名所アイコン -->
