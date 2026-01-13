@@ -2,7 +2,7 @@
 overflow: hidden; /* スライド領域を隠す */
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 3em;
+margin-bottom: 1em;
 }
 .photo_wrap .item {
   display: block;
@@ -39,7 +39,7 @@ border-radius: 4px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-bottom: 3em;
 }
 .page-strip {
   display: flex;

@@ -36,37 +36,7 @@ img.sp {
 display: none;
 }
 
-/* PCだけ表示（例：幅768px以下） */
-@media (min-width: 768px) {
-br.sp {
-display: none;
-}
-br.pc {
-display: inline;
-}
-img.pc{
-display: inline;
-}
-img.sp {
-display: none;
-}
-}
 
-/* スマホだけ表示（例：幅767px以下） */
-@media (max-width: 767px) {
-br.pc {
-display: none;
-}
-br.sp {
-display: inline;
-}
-img.pc{
-display: none;
-}
-img.sp {
-display: inline;
-}
-}
 
 .inline{
 display: inline-block;
@@ -90,7 +60,7 @@ content: '';
 top: 0;
 left: 0;
 width: 100%;
-z-index: 209998;
+z-index: 9997;
 background-color: #F0F0F0;
 border-bottom: 0.1px solid #a1a1a1;
 box-shadow: 0 0 5px 0 rgba(211, 197, 197, 0.5);
@@ -491,6 +461,22 @@ margin-bottom: 10px;
 font-weight: bold;
 }
 
+/* スマホだけ表示（例：幅768px以下） */
+@media (max-width: 768px) {
+br.pc {
+display: none;
+}
+br.sp {
+display: block;
+}
+img.pc{
+display: none;
+}
+img.sp {
+display: block;
+}
+}
+
 /* パソコンPC専用 */
 @media screen and (min-width: 768px) {
 .flex {
@@ -499,7 +485,93 @@ display: grid;
 grid-template-columns: repeat(2, 4fr);
 padding: 20px;
 }
+.info_left_item {
+width: 45%;
+position: relative;
+margin-bottom: 1em;
 }
+.info_right_item {
+width: 52%;
+}
+}
+
+/* スマホSP専用 768px以下 */
+@media screen and (max-width: 768px) {
+.flex {
+gap: 10px;
+display: grid;
+grid-template-columns: repeat(1, 4fr);
+padding: 10px;
+}
+.header-inner {
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+.Top_image .title{
+position: absolute;
+bottom: 40%;
+left: 0;
+max-width: 80%;
+z-index: 9999;
+padding: 30px 20px;
+}
+.city_item_info .image_caption {
+width: 100%;
+position: relative;
+margin-bottom: 2em;
+overflow: hidden;
+}
+.flex_images_category{
+position: relative;
+max-width: 100%;
+margin: 0 auto 30px;
+}
+.info_left_item {
+width: 90%;
+margin: 0 auto 25px;
+position: relative;
+}
+.info_right_item {
+width: 90%;
+margin: 0 auto 1em;
+}
+#back_top{
+display: none;
+}
+}
+/* スマホ専用（768px） */
+@media screen and (max-width: 768px) {
+h1 {
+font-size: 22px;
+font-weight: 600;
+font-family: Austin News, georgia, times, serif;
+}
+.pagebody .container{
+max-width: 100%;
+margin: 0 auto;
+padding: 0 30px 0;
+}
+}
+
+
+/* PCだけ表示（例：幅768px以上） */
+@media (min-width: 768px) {
+br.sp {
+display: none;
+}
+br.pc {
+display: block;
+}
+img.pc{
+display: block;
+}
+img.sp {
+display: none;
+}
+}
+
+
 /* パソコンPC専用 */
 @media screen and (min-width: 1101px) {
 .flex_images h4{
@@ -543,7 +615,6 @@ font-size: 25px;
 text-align: center;
 }
 .text_side{
-width: 90%;
 margin: 0 auto 2em;
 }
 .country_items{
@@ -599,15 +670,7 @@ right: 7%;
 bottom: 13%;
 display: block;
 }
-.info_left_item {
-width: 45%;
-position: relative;
-margin-bottom: 1em;
-}
-.info_right_item {
-width: 54%;
-margin-bottom: 1em;
-}
+
 .country_left_item{
 width: 40%;
 position: relative;
@@ -698,11 +761,6 @@ justify-content: space-between;
 align-items: center;
 max-width: 100%;
 }
-.header-inner {
-max-width: 100%;
-display: flex;
-justify-content: center;
-}
 .pagebody {
 z-index: 50;
 }
@@ -712,9 +770,8 @@ padding: 0 15px;
 .pagebody .container{
 max-width: 100%;
 margin: 0 auto;
-padding: 0 30px 0;
+padding: 0 20px 0;
 }
-
 .container {
 width: 100%;
 margin: 0;
@@ -776,7 +833,7 @@ transform        : rotate(45deg);
 nav.globalMenuSp {
 position: fixed;
 z-index : 1999998;
-top: 88px;
+top: 106px;
 right: 0;
 height: 100vh;
 width: min(92vw, 1100px);
@@ -903,15 +960,6 @@ right: 7px;
 bottom: 100px;
 display: block;
 }
-.info_left_item {
-width: 80%;
-margin: 0 auto 25px;
-position: relative;
-}
-.info_right_item {
-width: 100%;
-margin-bottom: 1em;
-}
 .country_left_item {
 width: 60%;
 margin: 0 auto 3em;
@@ -946,40 +994,3 @@ z-index: 9999;
 }
 }
 
-
-/* スマホSP専用 767px以下 */
-@media screen and (max-width: 767px) {
-.flex {
-gap: 10px;
-display: grid;
-grid-template-columns: repeat(1, 4fr);
-padding: 10px;
-}
-.header-inner {
-padding: 10px;
-display: flex;
-justify-content: center;
-}
-.Top_image .title{
-position: absolute;
-bottom: 0;
-left: 0;
-max-width: 80%;
-z-index: 9999;
-padding: 30px 20px;
-}
-.city_item_info .image_caption {
-width: 100%;
-position: relative;
-margin-bottom: 2em;
-overflow: hidden;
-}
-.flex_images_category{
-position: relative;
-max-width: 100%;
-margin: 0 auto 30px;
-}
-#back_top{
-display: none;
-}
-}
