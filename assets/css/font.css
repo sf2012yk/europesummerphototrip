@@ -56,7 +56,8 @@ font-family: Austin News,georgia,times,serif;
 .caption_index{
 height: 85px !important; /* 高さを統一 */
 }
-.caption, .caption_index{
+.caption, 
+.caption_index{
 height: 51.6px; /* 高さを統一 */
 align-items: center; /* 垂直中央揃え */
 justify-content: center; /* 水平中央揃え（必要なら） */
@@ -66,9 +67,20 @@ padding: 15px;
 background-color: #fff;
 font-family: Austin News, georgia, times, serif;
 }
+.caption_cc {
+height: 90px;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+font-weight: bold;
+padding: 15px;
+background-color: #fff;
+font-family: Austin News, georgia, times, serif;
+}
 
 .caption.white p,
-.caption_index.white p{
+.caption_index.white p,
+.caption_cc p{
 font-family: Austin News, georgia, times, serif;
 font-size: 14px;
 letter-spacing: 0.8px;
@@ -76,15 +88,9 @@ font-weight: bold;
 color: #000;
 padding-left: 5px;
 }
-.caption >.pin,
-.caption_index >.pin{
-font-family: "Font Awesome 5";
-font-weight: bold;
-font-size: 18px;
-color: #000;
-}
-.caption >.credit
-.caption_index >.credit{
+.caption >.credit,
+.caption_index >.credit,
+.caption_cc >.credit{
 font-family: "Font Awesome 5";
 font-size: 0.9em;
 }
@@ -106,6 +112,11 @@ font-size: 22px;
 font-weight: 600;
 font-family: Austin News, georgia, times, serif;
 }
+.read_2{
+color: #000;
+font-size: 1.1em;
+font-family: Austin News, georgia, times, serif;
+}
 }
 /* パソコンPC専用 */
 @media (min-width: 768px) and (max-width: 1100px) {
@@ -116,6 +127,12 @@ font-family: Austin News,georgia,times,serif;
 }
 .text_font{
 line-height: 1.4;
+}
+.read_2{
+color: #000;
+font-size: 18px;
+text-align: center;
+font-family: Austin News, georgia, times, serif;
 }
 }
 
@@ -156,10 +173,10 @@ font-family: Austin News,georgia,times,serif;
 }
 .editorcss h2{
 font-size: 2.5em;
-margin-bottom: 1em;
+margin-bottom: 40px;
 position: relative;
 line-height: 1.8;
-padding-left: 15px;
+padding-left: 30px;
 font-family: Austin News,georgia,times,serif;
 }
 .common_main h2::before{
@@ -209,7 +226,7 @@ font-size: 2em;
 margin-bottom: 1em;
 position: relative;
 line-height: 1.8;
-padding-left: 15px;
+padding-left: 25px;
 font-family: Austin News,georgia,times,serif;
 }
 .Read{
@@ -224,10 +241,5 @@ position: relative;
 line-height: 1.8;
 padding-left: 15px;
 font-family: Austin News,georgia,times,serif;
-}
-.read_2{
-color: #000;
-font-size: 0.88em;
-font-family: Austin News, georgia, times, serif;
 }
 }

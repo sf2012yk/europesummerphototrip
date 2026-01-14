@@ -2,7 +2,7 @@
 overflow: hidden; /* スライド領域を隠す */
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 1em;
+margin-bottom: 3em;
 }
 .photo_wrap .item {
   display: block;
@@ -107,7 +107,7 @@ border-radius: 4px;
 @media screen and (min-width: 1101px){
 .photo_wrap{
 display: grid;
-grid-template-columns: repeat(3, 4fr);
+grid-template-columns: repeat(2, 4fr);
 grid-auto-flow: row dense;
 padding: 0 15px 0;
 width: 100%;
@@ -115,7 +115,7 @@ flex-shrink: 0;
 }
 .country_photo_wrap {
 display: grid;
-grid-template-columns: repeat(2, 2fr);
+grid-template-columns: repeat(3, 2fr);
 grid-auto-flow: row dense;
 padding: 0 15px 0;
 }
