@@ -17,7 +17,7 @@ const pageStrip = document.getElementById("page-strip");
 
 // PCは9枚、スマホは6枚
 function getItemsPerPage() {
-  return window.innerWidth <= 1100 ? 6 : 9;
+  return window.innerWidth <= 1100 ? 6 : 6;
 }
 
 // -----------------------------
