@@ -285,7 +285,7 @@ z-index: 100;
 .Top_caption{
 position: absolute;
 right: 0%;
-top: 42%;
+top: 37.2%;
 left: 0%;
 z-index: 10;
 padding-top: 20px;
@@ -407,6 +407,19 @@ color: #fff;
 font-family: Austin News,georgia,times,serif;
 text-align: left;
 }
+.Top_caption{
+position: absolute;
+right: 0%;
+top: 42.7%;
+left: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+z-index: 110;
+}
 .Top_caption h1 {
 font-family: Austin News, georgia, times, serif;
 font-weight: 500;
@@ -435,6 +448,19 @@ position: relative;
 width: 100%;
 height: auto;
 margin-bottom: 3em;
+}
+.Top_caption{
+position: absolute;
+right: 0%;
+top: 37.2%;
+left: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+z-index: 110;
 }
 }
 
