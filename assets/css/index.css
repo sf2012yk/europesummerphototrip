@@ -363,6 +363,7 @@ display: flex;
 flex-flow: row wrap;
 justify-content: space-between;
 align-items: center;
+margin-bottom: 2em;
 }
 .uk_item_info_2 {
 display: flex;
@@ -497,6 +498,22 @@ width: 52%;
 
 /* スマホSP専用 768px以下 */
 @media screen and (max-width: 768px) {
+nav.globalMenuSp {
+position: fixed;
+z-index : 1999998;
+top: 106px;
+right: 0;
+height: 100vh;
+width: min(85vw, 1100px);
+max-width: 400px;
+color: #fff;
+background:#F0F0F0;
+transform: translateX(100%);
+transition: all 0.6s;
+overflow: visible;
+font-family: Austin News, georgia, times, serif;
+line-height: 1.6;
+}
 .flex {
 gap: 10px;
 display: grid;
@@ -541,6 +558,15 @@ display: none;
 }
 /* スマホ専用（768px） */
 @media screen and (max-width: 768px) {
+.hamburger {
+display : block;
+position: fixed;
+right : 25px;
+width : 50px;
+height: 40px;
+cursor: pointer;
+text-align: center;
+}
 .pagebody .container{
 max-width: 100%;
 margin: 0 auto;
@@ -782,15 +808,6 @@ width: 33.3%;
 .header_nav{
 display: none;
 }
-.hamburger {
-display : block;
-position: fixed;
-right : 40px;
-width : 50px;
-height: 40px;
-cursor: pointer;
-text-align: center;
-}
 .hamburger span {
 display : block;
 position: absolute;
@@ -829,22 +846,7 @@ transform        : rotate(45deg);
 
 
 /* メニュー背景　*/
-nav.globalMenuSp {
-position: fixed;
-z-index : 1999998;
-top: 106px;
-right: 0;
-height: 100vh;
-width: min(92vw, 1100px);
-max-width: 400px;
-color: #fff;
-background:#F0F0F0;
-transform: translateX(100%);
-transition: all 0.6s;
-overflow: visible;
-font-family: Austin News, georgia, times, serif;
-line-height: 1.6;
-}
+
 
 /* クリックでjQueryで追加・削除 */
 nav.globalMenuSp.active {
@@ -913,7 +915,7 @@ nav.globalMenuSp a {
 
 
 nav.globalMenuSp .megaMenu_item > .megaMenu >li >a {
-  font-size: clamp(16px, 4vw, 20px);
+  font-size: clamp(18px, 4vw, 24px);
   text-decoration: none;
   color: #000;
   line-height: 2;
@@ -973,6 +975,31 @@ z-index: 9999;
 
 /* スマホ一部 */
 @media (min-width: 768px) and (max-width: 1100px) {
+nav.globalMenuSp {
+position: fixed;
+z-index : 1999998;
+top: 88.6px;
+right: 0;
+height: 100vh;
+width: min(85vw, 1100px);
+max-width: 400px;
+color: #fff;
+background:#F0F0F0;
+transform: translateX(100%);
+transition: all 0.6s;
+overflow: visible;
+font-family: Austin News, georgia, times, serif;
+line-height: 1.6;
+}
+.hamburger {
+display : block;
+position: fixed;
+right : 40px;
+width : 50px;
+height: 40px;
+cursor: pointer;
+text-align: center;
+}
 .city_item_info{
 width: 90%;
 margin: 0 auto 3em;

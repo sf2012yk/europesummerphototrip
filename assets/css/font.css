@@ -45,6 +45,11 @@ margin-bottom: 20px;
 font-family: Austin News, georgia, times, serif;
 font-size: 1.3em;
 }
+.city_title{
+margin-bottom: 20px;
+font-family: Austin News, georgia, times, serif;
+font-size: 1.3em;
+}
 .editorcss h5{
 font-size: 1.5em;
 margin-bottom: 1em;
@@ -52,6 +57,15 @@ position: relative;
 line-height: 1.8;
 padding-left: 15px;
 font-family: Austin News,georgia,times,serif;
+}
+.text_font p{
+font-family: Austin News, georgia, times, serif;
+font-size: 1.1em;
+}
+
+.text_side .text_font p{
+font-family: Austin News, georgia, times, serif;
+font-size: 1.1em;
 }
 .caption_index{
 height: 85px !important; /* 高さを統一 */
@@ -173,7 +187,7 @@ font-family: Austin News,georgia,times,serif;
 }
 .editorcss h2{
 font-size: 2.5em;
-margin-bottom: 40px;
+margin-bottom: 20px;
 position: relative;
 line-height: 1.8;
 padding-left: 30px;
