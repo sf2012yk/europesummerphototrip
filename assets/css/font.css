@@ -20,6 +20,9 @@ color: #F0F0F0;
 font-size: 1.1em;
 color: #F0F0F0;
 }
+.text_side{
+margin-bottom: 2.5em;
+}
 .map-marker a{
 font-size: 20px;
 color: #000000;
