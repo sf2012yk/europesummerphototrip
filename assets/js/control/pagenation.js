@@ -15,7 +15,7 @@ const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const pageStrip = document.getElementById("page-strip");
 
-// PCは9枚、スマホは6枚
+// PC・スマホともに6枚
 function getItemsPerPage() {
   return window.innerWidth <= 1100 ? 6 : 6;
 }
@@ -128,16 +128,31 @@ container.addEventListener("mousemove", (e) => {
   const perPage = getItemsPerPage();
   const totalPages = Math.ceil(items.length / perPage);
 
-  if (Math.abs(diffX) > 50) {
-    if (diffX < 0 && currentPage < totalPages) {
-      currentPage++;
+ 
+if (Math.abs(diffX) > 50) {
+    if (diffX < 0) {
+      // 右にスワイプ → 次へ
+      const perPage = getItemsPerPage();
+      const totalPages = Math.ceil(items.length / perPage);
+
+      if (currentPage < totalPages) {
+        currentPage++;
+      } else {
+        currentPage = 1; // ← 最後なら1に戻す
+      }
       update();
-    } else if (diffX > 0 && currentPage > 1) {
-      currentPage--;
+    } else if (diffX > 0) {
+      // 左にスワイプ → 前へ
+      if (currentPage > 1) {
+        currentPage--;
+      } else {
+        currentPage = totalPages; // ← 最初なら最後へ飛ばす（循環）
+      }
       update();
     }
     isDragging = false;
-  }
+}
+
 });
 
 container.addEventListener("mouseup", () => {
@@ -166,15 +181,28 @@ container.addEventListener("touchmove", (e) => {
   const totalPages = Math.ceil(items.length / perPage);
 
   if (Math.abs(diffX) > 50) {
-    if (diffX < 0 && currentPage < totalPages) {
-      currentPage++;
+    if (diffX < 0) {
+      // 右にスワイプ → 次へ
+      const perPage = getItemsPerPage();
+      const totalPages = Math.ceil(items.length / perPage);
+
+      if (currentPage < totalPages) {
+        currentPage++;
+      } else {
+        currentPage = 1; // ← 最後なら1に戻す
+      }
       update();
-    } else if (diffX > 0 && currentPage > 1) {
-      currentPage--;
+    } else if (diffX > 0) {
+      // 左にスワイプ → 前へ
+      if (currentPage > 1) {
+        currentPage--;
+      } else {
+        currentPage = totalPages; // ← 最初なら最後へ飛ばす（循環）
+      }
       update();
     }
     isSwiping = false;
-  }
+}
 });
 
 container.addEventListener("touchend", () => {
@@ -188,3 +216,45 @@ window.addEventListener("resize", () => {
   createPages();
   update();
 });
+
+
+// -----------------------------
+// 自動スクロール（3秒ごと）
+// -----------------------------
+let autoScroll = setInterval(() => {
+  const perPage = getItemsPerPage();
+  const totalPages = Math.ceil(items.length / perPage);
+
+  if (currentPage < totalPages) {
+    currentPage++;
+  } else {
+    currentPage = 1; // 最後まで行ったら先頭に戻る
+  }
+
+  update();
+}, 3000); // 3秒
+
+//手動操作したとき、スクロールを止める
+function stopAutoScroll() {
+  clearInterval(autoScroll);
+}
+
+function startAutoScroll() {
+  autoScroll = setInterval(() => {
+    const perPage = getItemsPerPage();
+    const totalPages = Math.ceil(items.length / perPage);
+
+    if (currentPage < totalPages) {
+      currentPage++;
+    } else {
+      currentPage = 1;
+    }
+    update();
+  }, 3000);
+}
+
+// マウス・タッチ操作を検知して停止
+container.addEventListener("mousedown", stopAutoScroll);
+container.addEventListener("mouseup", startAutoScroll);
+container.addEventListener("touchstart", stopAutoScroll);
+container.addEventListener("touchend", startAutoScroll);
