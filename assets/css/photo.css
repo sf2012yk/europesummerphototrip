@@ -15,7 +15,7 @@ margin-bottom: 3em;
 /* 横スライドする帯 */
 .slider-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
 }
 .item >img{
 vertical-align: top;
@@ -161,7 +161,7 @@ flex-shrink: 0;
 @media screen and (max-width: 540px) {
     .photo_wrap {
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(2, 2fr);
         grid-auto-flow: row dense;
         padding: 0 15px 0;
         width: 100%;

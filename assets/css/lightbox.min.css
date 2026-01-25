@@ -21,9 +21,9 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-dataContainer:after{content:"";display:table;clear:both}
 .lb-data{padding:0 4px;color:#ccc}
 .lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}
-.lb-data .lb-caption .title{font-size:15px;font-weight:700;line-height:16px; margin-bottom: 5px;}
-.lb-data .lb-caption .text{font-size:13px; line-height:13px; margin-bottom: 10px;}
+.lb-data .lb-caption .title{font-size:15px;font-weight:700;line-height:16px; margin-bottom: 5px; font-family: Austin News, georgia, times, serif;}
+.lb-data .lb-caption .text{font-size:13px; line-height:13px; margin-bottom: 10px; font-family: Austin News, georgia, times, serif;}
 .lb-data .lb-caption a{color:#4ae}
-.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}
+.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;font-family: Austin News, georgia, times, serif;color:#999}
 .lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../image/close.png) top right no-repeat;text-align:right;outline:0;opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
 .lb-data .lb-close:hover{cursor:pointer;opacity:1}
