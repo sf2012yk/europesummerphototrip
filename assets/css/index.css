@@ -448,6 +448,7 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
 align-content: space-between;
+padding: 10px;
 }
 .country_tag_info{
 display: flex;
@@ -478,14 +479,6 @@ display: block;
 
 /* パソコンPC専用 */
 @media screen and (min-width: 768px) {
-.flex {
-gap: 30px;
-display: grid;
-grid-template-columns: repeat(2, 4fr);
-padding: 20px;
-width: 90%;
-margin: 0 auto 0;
-}
 .info_left_item {
 width: 45%;
 position: relative;
@@ -691,7 +684,7 @@ margin-bottom: 30px;
 .flex_images_category{
 float: left;
 position: relative;
-width: 48%;
+width: 49%;
 margin-bottom: 30px;
 }
 #back_top{
@@ -766,7 +759,7 @@ margin-bottom: 30px;
 }
 .flex_images h4{
 font-family: "Austin News", georgia, times, serif;
-font-size: 23px;
+font-size: 21px;
 color: black;
 margin-bottom: 0.5em;
 }
@@ -1029,6 +1022,25 @@ position: relative;
 position: relative;
 max-width: 80%;
 margin: 0 auto 30px;
+}
+}
+/* スマホ一部 */
+@media (min-width: 768px) and (max-width: 1250px) {
+.flex {
+gap: 30px;
+display: grid;
+grid-template-columns: repeat(2, 4fr);
+padding: 20px;
+}
+}
+/* パソコンPC専用 */
+@media screen and (min-width: 1250px) {
+.flex {
+gap: 30px;
+display: grid;
+grid-template-columns: repeat(3, 4fr);
+padding: 20px;
+margin: 0 auto 0;
 }
 }
 

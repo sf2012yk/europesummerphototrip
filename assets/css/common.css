@@ -4,7 +4,7 @@
 /* 全体で常に使用するスタイル(*) */
 body{
 box-sizing: border-box;
-font-family:'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+font-family: Austin News, georgia, times, serif;
 position: relative;
 width: 100%;
 min-height: 100vh;
@@ -318,7 +318,6 @@ text-decoration: none;
 .flex_images_Visit {
 position: relative;
 max-width: 100%;
-margin: 10px;
 }
 }
 
@@ -410,7 +409,7 @@ text-align: left;
 .Top_caption{
 position: absolute;
 right: 0%;
-top: 42.7%;
+top: 35%;
 left: 0%;
 z-index: 10;
 padding-top: 20px;
@@ -619,8 +618,10 @@ flex-wrap: wrap;
 }
 .genre_container{
 margin: 0 auto 3em;
-display: flex;
-flex-wrap: wrap;
+gap: 10px;
+display: grid;
+grid-template-columns: repeat(2, 4fr);
+padding-top: 10px;
 }
 /* 外側 → フェードと表示切替 */
 .genre_item_info {
