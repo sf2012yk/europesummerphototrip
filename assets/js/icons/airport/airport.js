@@ -17,7 +17,7 @@ className: "icon-airport"
     var popupContent = `
       <div class="popup_summer">
     <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/Heathrow3.JPG" alt="Heathrow Terminal5">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/heathrow3.webp" alt="Heathrow Terminal5">
     </a>
     <div class="popup_caption">
     <a href="Heathrow.html" class="popup_link">Heathrow Terminal3</a>
@@ -56,7 +56,7 @@ var markerHeathrowTerminal3 = L.marker([51.46896718671588, -0.4574958618544679],
     var popupContent = `
       <div class="popup_summer">
     <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/Heathrow5.JPG" alt="Heathrow Terminal5">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/heathrow5.webp" alt="Heathrow Terminal5">
     </a>
     <div class="popup_caption">
     <a href="Heathrow.html" class="popup_link">Heathrow Terminal5</a>
@@ -97,7 +97,7 @@ var markerHeathrowTerminal5 = L.marker([51.47259800120853, -0.4859364875464297],
     <a href="image/map/airport/Geneve.jpg" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/Geneve.jpg" alt="Geneva Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/geneve.webp" alt="Geneva Airport">
     </a>
     <div class="popup_caption">
     <a href="image/map/airport/Geneve.jpg" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
@@ -132,7 +132,7 @@ var markerGenevaAirport = L.marker([46.2314339144919, 6.10746786781946], {
     <a href="image/map/airport/Vienna.JPG" 
        data-lightbox="image" 
        data-title="Vienna">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/Vienna.JPG" alt="Vienna Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/vienna.webp" alt="Vienna Airport">
     </a>
     <div class="popup_caption">
     <a href="image/map/airport/Vienna.JPG" data-lightbox="image" data-title="Vienna Airport" class="popup_link">Vienna Airport</a>
@@ -165,7 +165,7 @@ var markerViennaAirport = L.marker([48.11851237806887, 16.566266743122807], {
     var popupContent = `
       <div class="popup_summer">
     <a href="Dubai.html">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/Dubai.JPG" alt="Dubai Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/dubai.webp" alt="Dubai Airport">
     </a>
     <div class="popup_caption">
     <a href="Dubai.html" class="popup_link">Dubai Airport</a>
