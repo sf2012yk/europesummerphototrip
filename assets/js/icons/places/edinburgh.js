@@ -15,26 +15,6 @@
 const greenIconEdinburgh = L.layerGroup().addTo(map);
 
 
-//1. エディンバラ城
-    var popupContent = `
-    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Edinburgh/EdhinburghCastle.JPG" alt="London">
-    <a href="" class="popup_link">Edhinburgh Castle</a>
-    <div class="popup_caption">
-    <p>
-    エディンバラ城の説明
-    </p>
-    </div>
-  </div>
-`;
-var markerEdinburghCastle = L.marker([55.948444921561936, -3.2011290508602874], {
-  icon: placeIcon
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-})
 
 // グループに入れる（ここが重要）
 // 配列にまとめて一括追加

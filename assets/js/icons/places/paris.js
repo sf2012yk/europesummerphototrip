@@ -18,7 +18,7 @@ const greenIconParis = L.layerGroup().addTo(map);
 //2. ルーヴル美術館：
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/MuseeduLouvre.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_6.webp" alt="London">
     <a href="" class="popup_link">Musée du Louvre</a>
     <div class="popup_caption">
     <p>
@@ -39,7 +39,7 @@ var markerLouvre = L.marker([48.86073376214778, 2.3368960594008947], {
 //3. オルセー美術館：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/MuseedOrsay.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_1.webp" alt="London">
     <a href="" class="popup_link">Musée d'Orsay</a>
     <div class="popup_caption">
     <p>
@@ -60,7 +60,7 @@ var markerOrsay = L.marker([48.85999527293635, 2.3258635817008706], {
 //4. シャンゼリゼ通り：
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/LesChampsElysees.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_2.webp" alt="London">
     <a href="" class="popup_link">Les Champs-Élysées</a>
     <div class="popup_caption">
     <p>
@@ -81,7 +81,7 @@ var markerChamps = L.marker([48.86839189844828, 2.311803413640931], {
 //5. サンシャペル教会：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/Saintechapelle.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_18.webp" alt="London">
     <a href="" class="popup_link">Sainte chapelle</a>
     <div class="popup_caption">
     <p>
@@ -102,7 +102,7 @@ var markerSaintechapelle = L.marker([48.855496246891526, 2.3444696106274336], {
 //6. ノートルダム大聖堂：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/NotreDame.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_18.webp" alt="London">
     <a href="" class="popup_link">Notre Dame</a>
     <div class="popup_caption">
     <p>
@@ -123,7 +123,7 @@ var markerNotreDame = L.marker([48.85314552856817, 2.34942260162728], {
 //7. ラ・フランス・ルネサンス：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/LaFranceRenaissante.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_8.webp" alt="London">
     <a href="Paris.html" class="popup_link">La France Renaissante</a>
     <div class="popup_caption">
     <p>
@@ -144,7 +144,7 @@ var markerLaFranceRenaissante = L.marker([48.85575045929262, 2.2878532272863383]
 //8. ウィンストン・チャーチル像：
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/WinstonChurchill.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_12.webp" alt="London">
     <a href="Paris.html" class="popup_link">Winston Churchill</a>
     <div class="popup_caption">
     <p>
@@ -165,7 +165,7 @@ var markerWinstonChurchill = L.marker([48.86532309516195, 2.313994628998788], {
 //8. ルクセンブルク公園：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/place/Paris/LuxemburgPark.jpg" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/Paris/place_10.webp" alt="London">
     <a href="Paris.html" class="popup_link">Luxemburg Park</a>
     <div class="popup_caption">
     <p>
