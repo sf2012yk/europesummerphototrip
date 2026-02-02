@@ -14,8 +14,9 @@
 //ロンドンマラソンする、体操服全力少女
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/Spot_1.jpg" alt="ロンドンマラソンする、体操服全力少女">
-    <a href="../hidden/Hidden.html" class="popup_link">ロンドンマラソンする<br/>体操服全力少女</a>
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_13.webp" alt="ロンドンマラソンする、体操服全力少女">
+    ロンドンマラソンする<br/>体操服全力少女</a>
     <div class="popup_caption">
     <p>
     場所の説明
@@ -37,8 +38,8 @@ var marker = L.marker([51.501073829838674, -0.127194699081446], {
 //ワイン畑でほほ笑む少女
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/hidden/Hidden_2.jpg" alt="場所名">
-    <a href="../hidden/Hidden.html" class="popup_link">ワイン畑でほほ笑む少女</a>
+      <img class="popup_img" loading="eager" src="image/hidden/hidden_2.webp" alt="場所名">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">ワイン畑でほほ笑む少女</a>
     <div class="popup_caption">
     <p>
     ワイン畑でほほ笑む少女
@@ -62,8 +63,8 @@ var marker = L.marker([46.494551269807005, 6.727661990211627], {
 //澄み渡った山頂でハイ、チーズ！
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/Hidden_8.JPG" alt="場所名">
-    <a href="../hidden/Hidden.html" class="popup_link">澄み渡った山頂でハイ、チーズ！</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_4.webp" alt="場所名">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">澄み渡った山頂でハイ、チーズ！</a>
     <div class="popup_caption">
     <p>
     澄み渡った山頂でハイ、チーズ！
@@ -85,8 +86,8 @@ var marker = L.marker([47.210341080084504, 11.452044198424705], {
 //SLを楽しむ学ラン少女
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/Hiddenicon_1.jpg" alt="場所名">
-    <a href="../hidden/Hidden.html" class="popup_link">SLを楽しむ学ラン少女</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hiddenicon_1.webp" alt="場所名">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">SLを楽しむ学ラン少女</a>
     <div class="popup_caption">
     <p>
     SLを楽しむ学ラン少女
