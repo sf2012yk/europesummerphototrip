@@ -29,13 +29,13 @@
 // ES01 Amsterdam Centraal駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/Amsterdam.JPG" 
+    <a href="../../assets/image/map/station/amsterdam.webp" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Amsterdam.JPG" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/amsterdam.webp" alt="Brussel Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Amsterdam.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
+    <a href="../../assets/image/map/station/amsterdam.webp" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
     <p>
     アムステルダム駅の説明
     </p>

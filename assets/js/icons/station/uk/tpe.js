@@ -29,13 +29,13 @@
 //  Leeds
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Leeds.JPG" 
+    <a href="../../assets/image/map/station/leeds.webp" 
        data-lightbox="image" 
        data-title="Leeds">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Leeds.JPG" alt="Leeds Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/leeds.webp" alt="Leeds Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Leeds.JPG" data-lightbox="image" data-title="Leeds Station" class="popup_link">Leeds Station</a>
+    <a href="../../assets/image/map/station/leeds.webp" data-lightbox="image" data-title="Leeds Station" class="popup_link">Leeds Station</a>
     <p>
     リーズ駅の説明
     </p>

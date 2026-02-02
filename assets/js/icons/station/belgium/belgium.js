@@ -29,13 +29,13 @@
 //  Brussel
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Brussel.JPG" 
+    <a href="../../assets/image/map/station/brussel.webp" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Brussel.JPG" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/brussel.webp" alt="Brussel Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Brussel Station</a>
+    <a href="../../assets/image/map/station/brussel.webp" data-lightbox="image" data-title="Brussel Station" class="popup_link">Brussel Station</a>
     <p>
     ブリュッセル駅の説明
     </p>
@@ -68,13 +68,13 @@ var markerBrussel = L.marker([50.83545522369974, 4.334752425478581], {
 // ES01 Antwerp_Central駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/Brussel.JPG" 
+    <a href="../../assets/image/map/station/brussel.webp" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Brussel.JPG" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/brussel.webp" alt="Brussel Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
+    <a href="../../assets/image/map/station/brussel.webp" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
     <p>
     アントワープ駅の説明
     </p>
@@ -106,13 +106,13 @@ var markerAntwerp= L.marker([51.216646870247864, 4.42102673560588], {
 // DB01 Liège_Guillemins駅：
     var popupContent = `
     <div class="popup_summer">
-    <a href="../../assets/image/map/station/Brussel.JPG" 
+    <a href="../../assets/image/map/station/brussel.webp" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Brussel.JPG" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/brussel.webp" alt="Brussel Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Liège Guillemins Station</a>
+    <a href="../../assets/image/map/station/brussel.webp" data-lightbox="image" data-title="Brussel Station" class="popup_link">Liège Guillemins Station</a>
     <p>
     リエージュ駅の説明
     </p>

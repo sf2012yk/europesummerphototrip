@@ -29,13 +29,13 @@
   // AW_01 Euston駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Euston.JPG" 
+    <a href="../../assets/image/map/station/euston.webp" 
        data-lightbox="image" 
        data-title="Euston">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Euston.JPG" alt="Euston Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/euston.webp" alt="Euston Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Euston.JPG" data-lightbox="image" data-title="Euston Station" class="popup_link">Euston Station</a>
+    <a href="../../assets/image/map/station/euston.webp" data-lightbox="image" data-title="Euston Station" class="popup_link">Euston Station</a>
     <p>
     ロンドン市内では一見目立たないターミナル駅。バーミンガム・マンチェスター方面への列車が発着する。
     </p>
@@ -68,13 +68,13 @@ var markerEuston = L.marker([51.52831505242004, -0.13468317401621938], {
 // GW_06 Birmingham New Street駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Birmingham.JPG" 
+    <a href="../../assets/image/map/station/birmingham.webp" 
        data-lightbox="image" 
        data-title="Birmingham New Street">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Birmingham.JPG" alt="Birmingham New Street Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/birmingham.webp" alt="Birmingham New Street Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Birmingham.JPG" data-lightbox="image" data-title="Birmingham New Street Station" class="popup_link">Birmingham Station</a>
+    <a href="../../assets/image/map/station/birmingham.webp" data-lightbox="image" data-title="Birmingham New Street Station" class="popup_link">Birmingham Station</a>
     <p>
     バーミンガムの代表駅。
     </p>
@@ -108,13 +108,13 @@ var markerBirmingham = L.marker([52.47781931496408, -1.89936569926818], {
 //  Manchester
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/ManchesterPiccadilly.JPG" 
+    <a href="../../assets/image/map/station/manchesterpiccadilly.webp" 
        data-lightbox="image" 
        data-title="Manchester">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/ManchesterPiccadilly.JPG" alt="Manchester Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/manchesterpiccadilly.webp" alt="Manchester Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/ManchesterPiccadilly.JPG" data-lightbox="image" data-title="Manchester Station" class="popup_link">Manchester Piccadilly</a>
+    <a href="../../assets/image/map/station/manchesterpiccadilly.webp" data-lightbox="image" data-title="Manchester Station" class="popup_link">Manchester Piccadilly</a>
     <p>
     マンチェスター・ピカデリー駅の説明
     </p>
@@ -147,13 +147,13 @@ var markerManchester = L.marker([53.477308627188506, -2.2299399620126628], {
 //  Preston
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Preston.JPG" 
+    <a href="../../assets/image/map/station/preston.webp" 
        data-lightbox="image" 
        data-title="Preston">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Preston.JPG" alt="Preston Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/preston.webp" alt="Preston Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Preston.JPG" data-lightbox="image" data-title="Preston Station" class="popup_link">Preston Station</a>
+    <a href="../../assets/image/map/station/preston.webp" data-lightbox="image" data-title="Preston Station" class="popup_link">Preston Station</a>
     <p>
     駅の説明
     </p>
@@ -179,13 +179,13 @@ var markerPreston = L.marker([53.755888528479566, -2.7073275847086293], {
 //  Carlisle
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Carlisle.JPG" 
+    <a href="../../assets/image/map/station/carlisle.webp" 
        data-lightbox="image" 
        data-title="Carlisle">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Carlisle.JPG" alt="Carlisle Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/carlisle.webp" alt="Carlisle Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Carlisle.JPG" data-lightbox="image" data-title="Carlisle Station" class="popup_link">Carlisle Station</a>
+    <a href="../../assets/image/map/station/carlisle.webp" data-lightbox="image" data-title="Carlisle Station" class="popup_link">Carlisle Station</a>
     <p>
     駅の説明
     </p>

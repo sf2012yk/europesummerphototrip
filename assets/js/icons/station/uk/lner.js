@@ -30,13 +30,13 @@
 //  King's Cross
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/KingsCross.JPG" 
+    <a href="../../assets/image/map/station/kingscross.webp" 
        data-lightbox="image" 
        data-title="King's Cross">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/KingsCross.JPG" alt="King's Cross Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/kingscross.webp" alt="King's Cross Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/KingsCross.JPG" data-lightbox="image" data-title="King's Cross Station" class="popup_link">King's Cross Station</a>
+    <a href="../../assets/image/map/station/kingscross.webp" data-lightbox="image" data-title="King's Cross Station" class="popup_link">King's Cross Station</a>
     <p>
     King's Cross駅の説明
     </p>
@@ -105,13 +105,13 @@ var markerPeterborough = L.marker([52.57388879556104, -0.24981606095851133], {
   //  York
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/York.JPG" 
+    <a href="../../assets/image/map/station/york.webp" 
        data-lightbox="image" 
        data-title="York">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/York.JPG" alt="York Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/york.webp" alt="York Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/York.JPG" data-lightbox="image" data-title="York Station" class="popup_link">York Station</a>
+    <a href="../../assets/image/map/station/york.webp" data-lightbox="image" data-title="York Station" class="popup_link">York Station</a>
     <p>
     UK中央部、ヨークシャー地方の代表駅。
     </p>
@@ -146,13 +146,13 @@ var markerYork = L.marker([53.95668456824942, -1.0946599488952553], {
 //  Darlington
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Darlington.JPG" 
+    <a href="../../assets/image/map/station/darlington.webp" 
        data-lightbox="image" 
        data-title="Darlington">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Darlington.JPG" alt="Darlington Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/darlington.webp" alt="Darlington Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Darlington.JPG" data-lightbox="image" data-title="Darlington Station" class="popup_link">Darlington Station</a>
+    <a href="../../assets/image/map/station/darlington.webp" data-lightbox="image" data-title="Darlington Station" class="popup_link">Darlington Station</a>
     <p>
     駅の説明
     </p>
@@ -185,13 +185,13 @@ var markerDarlington = L.marker([54.521126434342825, -1.5460040570133933], {
 //  Durham
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Durham.JPG" 
+    <a href="../../assets/image/map/station/durham.webp" 
        data-lightbox="image" 
        data-title="Durham">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Durham.JPG" alt="Durham Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/durham.webp" alt="Durham Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Durham.JPG" data-lightbox="image" data-title="Durham Station" class="popup_link">Durham Station</a>
+    <a href="../../assets/image/map/station/durham.webp" data-lightbox="image" data-title="Durham Station" class="popup_link">Durham Station</a>
     <p>
     駅の説明
     </p>
@@ -223,13 +223,13 @@ var markerDurham = L.marker([54.77983780775699, -1.5814880478633844], {
 //  Newcastle
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Newcastle.JPG" 
+    <a href="../../assets/image/map/station/newcastle.webp" 
        data-lightbox="image" 
        data-title="Newcastle">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Newcastle.JPG" alt="Newcastle Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/newcastle.webp" alt="Newcastle Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Newcastle.JPG" data-lightbox="image" data-title="Newcastle Station" class="popup_link">Newcastle Station</a>
+    <a href="../../assets/image/map/station/newcastle.webp" data-lightbox="image" data-title="Newcastle Station" class="popup_link">Newcastle Station</a>
     <p>
     駅の説明
     </p>
@@ -265,13 +265,13 @@ var markerNewcastle = L.marker([54.96814759160355, -1.6176357599706133], {
   //  Edinburgh
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Edinburgh.JPG" 
+    <a href="../../assets/image/map/station/edinburgh.webp" 
        data-lightbox="image" 
        data-title="Edinburgh">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Edinburgh.JPG" alt="Edinburgh Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/edinburgh.webp" alt="Edinburgh Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Edinburgh.JPG" data-lightbox="image" data-title="Edinburgh Station" class="popup_link">Edinburgh Station</a>
+    <a href="../../assets/image/map/station/edinburgh.webp" data-lightbox="image" data-title="Edinburgh Station" class="popup_link">Edinburgh Station</a>
     <p>
     駅の説明
     </p>

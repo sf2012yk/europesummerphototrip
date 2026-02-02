@@ -29,13 +29,13 @@
 //  Aachen
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Archen.JPG" 
+    <a href="../../assets/image/map/station/archen.webp" 
        data-lightbox="image" 
        data-title="Aachen">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Archen.JPG" alt="Aachen Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/archen.webp" alt="Aachen Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Archen.JPG" data-lightbox="image" data-title="Aachen Station" class="popup_link">Aachen Station</a>
+    <a href="../../assets/image/map/station/archen.webp" data-lightbox="image" data-title="Aachen Station" class="popup_link">Aachen Station</a>
     <p>
     駅の説明
     </p>
@@ -66,13 +66,13 @@ var markerAachen = L.marker([50.767679838672564, 6.090875981954147], {
 //  Cologne
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Cologne.JPG" 
+    <a href="../../assets/image/map/station/cologne.webp" 
        data-lightbox="image" 
        data-title="Cologne">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Cologne.JPG" alt="Cologne Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/cologne.webp" alt="Cologne Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Cologne.JPG" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
+    <a href="../../assets/image/map/station/cologne.webp" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
     <p>
     駅の説明
     </p>

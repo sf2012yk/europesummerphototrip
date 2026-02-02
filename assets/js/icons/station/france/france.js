@@ -29,13 +29,13 @@
 // LGV01 Paris Gare de Lyon駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/ParisLyon.jpg" 
+    <a href="../../assets/image/map/station/parislyon.webp" 
        data-lightbox="image" 
        data-title="ParisLyon">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/ParisLyon.jpg" alt="Paris Lyon Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/parislyon.webp" alt="Paris Lyon Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/ParisLyon.jpg" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
+    <a href="../../assets/image/map/station/parislyon.webp" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
     <p>
     パリリヨン駅について
     </p>
@@ -69,13 +69,13 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     var popupContent = `
 
     <div class="popup_summer">
-    <a href="../../assets/image/map/station/LyonPartDieu.jpg" 
+    <a href="../../assets/image/map/station/lyonpartdieu.webp" 
        data-lightbox="image" 
        data-title="Lyon Part Dieu">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/LyonPartDieu.jpg" alt="Lyon Part Dieu Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/lyonpartdieu.webp" alt="Lyon Part Dieu Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/LyonPartDieu.jpg" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
+    <a href="../../assets/image/map/station/lyonpartdieu.webp" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
     <p>
     リヨン・パールデュー駅について
     </p>
@@ -108,13 +108,13 @@ var markerPartDieu = L.marker([45.7603030076784, 4.860375801911088], {
 //  Marseille
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Marseille.JPG" 
+    <a href="../../assets/image/map/station/marseille.webp" 
        data-lightbox="image" 
        data-title="Marseille">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Marseille.JPG" alt="Marseille Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/marseille.webp" alt="Marseille Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Marseille.JPG" data-lightbox="image" data-title="Marseille Station" class="popup_link">Marseille Station</a>
+    <a href="../../assets/image/map/station/marseille.webp" data-lightbox="image" data-title="Marseille Station" class="popup_link">Marseille Station</a>
     <p>
     駅の説明
     </p>

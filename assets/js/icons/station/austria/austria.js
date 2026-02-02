@@ -29,13 +29,13 @@
 //  Vienna Airport
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/ViennaAirport.jpg" 
+    <a href="../../assets/image/map/station/viennaAirport.webp" 
        data-lightbox="image" 
        data-title="ViennaAirport">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/ViennaAirport.jpg" alt="Vienna Airport Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/viennaAirport.webp" alt="Vienna Airport Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/ViennaAirport.jpg" data-lightbox="image" data-title="Vienna Airport Station" class="popup_link">Vienna Airport Station</a>
+    <a href="../../assets/image/map/station/viennaAirport.webp" data-lightbox="image" data-title="Vienna Airport Station" class="popup_link">Vienna Airport Station</a>
     <p>
     駅の説明
     </p>
@@ -61,13 +61,13 @@ var markerFlughafenWien = L.marker([48.120983101278604, 16.563218852576007], {
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Vienna.jpg" 
+    <a href="../../assets/image/map/station/vienna.webp" 
        data-lightbox="image" 
        data-title="Vienna">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Vienna.jpg" alt="Vienna Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/vienna.webp" alt="Vienna Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Vienna.jpg" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
+    <a href="../../assets/image/map/station/vienna.webp" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
     <p>
     駅の説明
     </p>
@@ -100,13 +100,13 @@ var markerViennaCentral = L.marker([48.18500525586605, 16.377671700808875], {
 //  Salzburg
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Salzburg.JPG" 
+    <a href="../../assets/image/map/station/salzburg.webp" 
        data-lightbox="image" 
        data-title="Salzburg">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Salzburg.JPG" alt="Salzburg Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/salzburg.webp" alt="Salzburg Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Salzburg.JPG" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
+    <a href="../../assets/image/map/station/salzburg.webp" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
     <p>
     駅の説明
     </p>
@@ -136,13 +136,13 @@ var markerSalzburg = L.marker([47.812680660648525, 13.045783626953863], {
 //  Innsbruck
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/Innsbruck.JPG" 
+    <a href="../../assets/image/map/station/innsbruck.webp" 
        data-lightbox="image" 
        data-title="Innsbruck">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/Innsbruck.JPG" alt="Innsbruck Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/innsbruck.webp" alt="Innsbruck Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/Innsbruck.JPG" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
+    <a href="../../assets/image/map/station/innsbruck.webp" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
     <p>
     駅の説明
     </p>

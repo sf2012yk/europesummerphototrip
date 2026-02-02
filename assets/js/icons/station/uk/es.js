@@ -31,13 +31,13 @@
 //  St Pancras
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/StPancrass.JPG" 
+    <a href="../../assets/image/map/station/stPancrass.webp" 
        data-lightbox="image" 
        data-title="St Pancras">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/StPancrass.JPG" alt="St Pancras Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/stPancrass.webp" alt="St Pancras Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/StPancrass.JPG" data-lightbox="image" data-title="St Pancras Station" class="popup_link">St Pancras Station</a>
+    <a href="../../assets/image/map/station/stPancrass.webp" data-lightbox="image" data-title="St Pancras Station" class="popup_link">St Pancras Station</a>
     <p>
     駅の説明
     </p>
