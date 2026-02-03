@@ -285,7 +285,12 @@ Image Gallery
 </div>
 </div>
 </div>
-
+<!-- ページネーション -->
+<nav class="pagination">
+<button id="prev" class="pager-arrow">←</button>
+<div id="page-strip" class="page-strip"></div>
+<button id="next" class="pager-arrow">→</button>
+</nav>
 <!-- マップ-->
 <h2 class="scroll fadeLeftSlide">
 Map
@@ -333,8 +338,10 @@ Live Camera (@FlightFocus365)
 </div>
 <!-- 次はどこへ行きたい？ -->
 <h2 class="scroll fadeLeftSlide">
-Next Visit ?
+Where to Next ?
 </h2>
+<div class="Visit_wrapper">
+<button class="Visit_nav Visit_prev" aria-label="前へ">❮</button>
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="London.html">
@@ -605,6 +612,8 @@ Next Visit ?
 </a>
 </div>
 </div>
+<button class="Visit_nav Visit_next" aria-label="次へ">❯</button>
+</div>
 </div>
 </div>
 </section>
@@ -822,5 +831,7 @@ Genre
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
+<script src="../../assets/js/control/pagenation.js"></script>
+<script src="../../assets/js/control/nextvisit.js"></script>
 </body>
 </html>
