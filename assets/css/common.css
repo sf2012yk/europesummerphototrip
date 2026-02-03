@@ -295,27 +295,11 @@ text-align: center;
 background-color: rgba(0, 0, 0, 0.3);
 z-index: 110;
 }
-.flex_images_Visit a{
-font-weight: bold;
-font-size: 1.2em;
-color: #000000;
-text-decoration: none;
-}
-.flex_images_Visit h4 .ja{
-display: none;
-}
-.flex_images_Visit h4:hover .en{
-display: none;
-text-decoration: none;
-}
-.flex_images_Visit h4:hover .ja{
-display: inline;
-text-decoration: none;
-}
+
 
 /* スマホ用（540px以下）はここにまとめる */
 @media screen and (max-width: 540px) {
-.flex_images_Visit {
+.flex_images_categoryindex {
 position: relative;
 max-width: 100%;
 margin-bottom: 30px;
@@ -324,9 +308,8 @@ margin-bottom: 30px;
 
 /* スマホ専用（541～768px以下） */
 @media (min-width: 541px) and (max-width: 768px) {
-.flex_images_Visit{
+.flex_images_categoryindex{
 position: relative;
-max-width: 45%;
 margin: 10px;
 }
 }
@@ -353,9 +336,8 @@ position: relative;
 margin: 0 auto 4em;
 width: 90%;
 }
-.flex_images_Visit{
+.flex_images_categoryindex{
 position: relative;
-max-width: 30.3%;
 margin: 10px;
 }
 .pagebody .container{
@@ -629,7 +611,6 @@ padding-top: 10px;
 opacity: 0;
 visibility: hidden;
 position: absolute;
-width: 100%;
 transition: opacity .3s ease-out;
 }
 .genre_item_info.active {
@@ -756,13 +737,6 @@ font-family: Austin News,georgia,times,serif;
 font-size: 2.5em;
 text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
-.Visit_item_info{
-margin: 0 auto 3em;
-gap: 10px;
-display: grid;
-grid-template-columns: repeat(3, 4fr);
-padding: 0 15px 0;
-}
 .genre_container{
 margin: 0 auto 3em;
 gap: 10px;
@@ -770,9 +744,41 @@ display: grid;
 grid-template-columns: repeat(5, 4fr);
 padding-top: 10px;
 }
-.flex_images_Visit{
+.flex_images_categoryindex{
 position: relative;
 margin-bottom: 30px;
+}
+/* 外枠：ボタンを重ねるためのラッパー */
+.Visit_wrapper {
+  position: relative;
+}
+/* 外枠：ボタンを重ねるためのラッパー */
+.Visit_wrapper {
+  position: relative;
+}
+/* 矢印ボタン */
+.Visit_nav {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 36px;
+height: 36px;
+border-radius: 50%;
+border: none;
+background: rgba(255,255,255,0.85);
+box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+cursor: pointer;
+display: grid;
+place-items: center;
+font-size: 20px;
+z-index: 10;
+}
+
+.Visit_prev { left: 0; }
+.Visit_next { right: 0; }
+
+.Visit_nav:hover {
+background: #fff;
 }
 
 /* 外側 → フェードと表示切替 */
@@ -780,7 +786,6 @@ margin-bottom: 30px;
 opacity: 0;
 visibility: hidden;
 position: absolute;
-width: 100%;
 transition: opacity .3s ease-out;
 }
 .genre_item_info.active {
