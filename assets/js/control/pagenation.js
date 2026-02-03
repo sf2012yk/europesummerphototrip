@@ -17,7 +17,7 @@ const pageStrip = document.getElementById("page-strip");
 
 // PC・スマホともに6枚
 function getItemsPerPage() {
-  return window.innerWidth <= 1100 ? 6 : 6;
+  return window.innerWidth <= 1100 ? 6 : 9;
 }
 
 // -----------------------------
