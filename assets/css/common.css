@@ -210,6 +210,11 @@ display: none;
 
 /* 主要都市ボックスのスタイル（city_item_info）/*
 /* 共通 */
+.street_map{
+width: 100%;
+height: 450px; 
+margin-bottom: 4em;
+} 
 .city_box_image{
 transition: all 1.1s;
 } 
