@@ -207,6 +207,10 @@ background: #eee;
 #Toggle{
 display: none;
 } 
+.large-separator {
+    border-bottom: 1px solid #d8d8d8;
+    margin: 40px 0;   /* 上下だけ余白 */
+}
 
 /* 主要都市ボックスのスタイル（city_item_info）/*
 /* 共通 */

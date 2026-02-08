@@ -113,9 +113,11 @@ border-radius: 4px;
 margin: 0 auto 3em;
 display: flex;
 flex-wrap: nowrap;
-overflow: hidden;
+overflow-x: scroll;   /* ← これが最重要 */
+overflow-y: hidden;
 gap: 12px;
 padding-bottom: 10px;
+scroll-behavior: smooth; /* ← さらに滑らかに */
 }
 .flex_images_Visit{
 position: relative;
