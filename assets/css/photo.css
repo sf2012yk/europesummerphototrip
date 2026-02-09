@@ -109,22 +109,32 @@ border-radius: 4px;
   cursor: default;
 }
 
-.Visit_item_info{
+.Visit_item_info {
 margin: 0 auto 3em;
 display: flex;
 flex-wrap: nowrap;
-overflow-x: scroll;   /* ← これが最重要 */
+overflow-x: auto;
 overflow-y: hidden;
-gap: 12px;
-padding-bottom: 10px;
-scroll-behavior: smooth; /* ← さらに滑らかに */
+padding: 0;
+cursor: grab;
+scroll-behavior: smooth;
+/* ここを追加：スクロールバー非表示 */
+-ms-overflow-style: none;   /* IE & Edge */
+scrollbar-width: none;      /* Firefox */
 }
-.flex_images_Visit{
+.Visit_item_info::-webkit-scrollbar {
+display: none;              /* Chrome / Safari */
+}
+.Visit_item_info.dragging { 
+  cursor: grabbing; 
+}
+.flex_images_Visit {
 position: relative;
-flex: 0 0 calc((100% - 24px) / 3); 
+flex: 0 0 calc((100% - 24px) / 3);
+margin-right: 12px;  /* gap と同じ見た目 */
 border-radius: 10px;
 overflow: hidden;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .flex_images_Visit a{
 font-weight: bold;
@@ -142,6 +152,7 @@ display: block;
 /* 外枠：ボタンを重ねるためのラッパー */
 .Visit_wrapper {
   position: relative;
+  padding: 0 12px;
 }
 /* 矢印ボタン */
 .Visit_nav {

@@ -543,7 +543,7 @@ position: relative;
 }
 .info_right_item {
 width: 90%;
-margin: 0 auto 1em;
+margin: 0 auto 0;
 }
 #back_top{
 display: none;
