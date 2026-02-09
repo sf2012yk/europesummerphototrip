@@ -1,148 +1,112 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  document.querySelectorAll(".Visit_wrapper").forEach((wrapper) => {
+  document.querySelectorAll(".Visit_wrapper").forEach(wrapper => {
 
     const container = wrapper.querySelector(".Visit_item_info");
-    const prevBtn = wrapper.querySelector(".Visit_prev");
-    const nextBtn = wrapper.querySelector(".Visit_next");
+    const cards     = wrapper.querySelectorAll(".flex_images_Visit");
+    const prevBtn   = wrapper.querySelector(".Visit_prev");
+    const nextBtn   = wrapper.querySelector(".Visit_next");
 
-    if (!container || !prevBtn || !nextBtn) return;
+    if (!container || cards.length === 0) return;
 
-    /* -----------------------------
-       ① perPage（表示枚数）
-    ----------------------------- */
-    function getPerPage() {
+    /*----------------------------------
+      見える枚数（あなたのロジックをそのまま使用）
+    ----------------------------------*/
+    function getPageSize() {
       const w = window.innerWidth;
-      return 1;
+      if (w <= 541)  return 1;
+      if (w <= 1100) return 2;
+      return 3;
     }
 
-    let perPage = getPerPage();
-
-    /* -----------------------------
-       ② gap を CSS から取得
-    ----------------------------- */
-    function getGap() {
-      const style = window.getComputedStyle(container);
-      return parseInt(style.columnGap || style.gap || 12);
+    /*----------------------------------
+      ★ 1カードの実幅を取得（ズレゼロの要）
+    ----------------------------------*/
+    function getCardStep() {
+      const card = cards[0];
+      const style = window.getComputedStyle(card);
+      const marginRight = parseFloat(style.marginRight);
+      return card.getBoundingClientRect().width + marginRight;
     }
 
-    /* -----------------------------
-       ③ 1ステップの移動量
-    ----------------------------- */
-    function getStep() {
-      const item = container.querySelector(".flex_images_Visit");
-      if (!item) return 260 * perPage;
-
-      const itemWidth = item.getBoundingClientRect().width;
-      return (itemWidth + getGap()) * perPage;
+    /*----------------------------------
+      ★ 本当のページ幅
+         container ではなく
+         「カード幅×ページ枚数」
+    ----------------------------------*/
+    function getPageWidth() {
+      return getCardStep() * getPageSize();
     }
 
-    /* -----------------------------
-       ④ 矢印の有効/無効
-    ----------------------------- */
-    function updateArrows() {
-      const maxScroll = container.scrollWidth - container.clientWidth;
-
-      prevBtn.classList.toggle("disabled", container.scrollLeft <= 0);
-      nextBtn.classList.toggle("disabled", container.scrollLeft >= maxScroll - 2);
+    function getTotalPages() {
+      return Math.ceil(cards.length / getPageSize());
     }
 
-    /* -----------------------------
-       ⑤ ボタン操作（スナップなし）
-    ----------------------------- */
-    prevBtn.addEventListener("click", () => {
-      container.scrollBy({ left: -getStep(), behavior: "smooth" });
-      setTimeout(updateArrows, 300);
-    });
+    let currentPage = 0;
 
-    nextBtn.addEventListener("click", () => {
-      container.scrollBy({ left: getStep(), behavior: "smooth" });
-      setTimeout(updateArrows, 300);
-    });
+    function goTo(page) {
+      const total = getTotalPages();
+      currentPage = Math.max(0, Math.min(page, total - 1));
 
-    /* -----------------------------
-       ⑥ ドラッグ / スワイプ
-    ----------------------------- */
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    let moved = false;
-
-    function startDrag(pageX) {
-      isDown = true;
-      moved = false;
-      container.classList.add("dragging");
-      startX = pageX - container.offsetLeft;
-      scrollLeft = container.scrollLeft;
-    }
-
-    function moveDrag(pageX) {
-      if (!isDown) return;
-      const x = pageX - container.offsetLeft;
-      const walk = (x - startX) * 1.2;
-      if (Math.abs(walk) > 5) moved = true;
-      container.scrollLeft = scrollLeft - walk;
-    }
-
-    function endDrag() {
-      isDown = false;
-      container.classList.remove("dragging");
-      snapToPage();
-      setTimeout(updateArrows, 300);
-    }
-
-    // マウス
-    container.addEventListener("mousedown", (e) => {
-      startDrag(e.pageX);
-      e.preventDefault();
-    });
-
-    container.addEventListener("mousemove", (e) => moveDrag(e.pageX));
-    container.addEventListener("mouseup", endDrag);
-    container.addEventListener("mouseleave", () => { isDown = false; });
-
-    // タッチ
-    container.addEventListener("touchstart", (e) => {
-      startDrag(e.touches[0].pageX);
-    }, { passive: true });
-
-    container.addEventListener("touchmove", (e) => {
-      moveDrag(e.touches[0].pageX);
-    }, { passive: true });
-
-    container.addEventListener("touchend", endDrag);
-
-    /* -----------------------------
-       ⑦ スナップ処理（ドラッグ時のみ）
-    ----------------------------- */
-    function snapToPage() {
-      const item = container.querySelector(".flex_images_Visit");
-      if (!item) return;
-
-      const itemWidth = item.getBoundingClientRect().width + getGap();
-      const current = container.scrollLeft;
-
-      const index = Math.round(current / itemWidth);
-      const page = Math.floor(index / perPage);
-
-      const target = page * itemWidth * perPage;
+      const target = getPageWidth() * currentPage;
 
       container.scrollTo({
         left: target,
         behavior: "smooth"
       });
+
+      updateArrows();
     }
 
-    /* -----------------------------
-       ⑧ リサイズ対応
-    ----------------------------- */
+    function updateArrows() {
+      const total = getTotalPages();
+      prevBtn.classList.toggle("disabled", currentPage <= 0);
+      nextBtn.classList.toggle("disabled", currentPage >= total - 1);
+    }
+
+    prevBtn.addEventListener("click", () => goTo(currentPage - 1));
+    nextBtn.addEventListener("click", () => goTo(currentPage + 1));
+
+    /*----------------------------------
+      スワイプ操作（そのまま）
+    ----------------------------------*/
+    let isDown = false;
+    let startX = 0;
+    const threshold = 50;
+
+    function startDrag(x) {
+      isDown = true;
+      startX = x;
+    }
+    function moveDrag(x) {
+      if (!isDown) return;
+      const diff = x - startX;
+      if (Math.abs(diff) > threshold) {
+        if (diff < 0) goTo(currentPage + 1);
+        else          goTo(currentPage - 1);
+        isDown = false;
+      }
+    }
+    function endDrag() {
+      isDown = false;
+    }
+
+    container.addEventListener("mousedown", e => startDrag(e.clientX));
+    container.addEventListener("mousemove", e => moveDrag(e.clientX));
+    container.addEventListener("mouseup", endDrag);
+    container.addEventListener("mouseleave", endDrag);
+
+    container.addEventListener("touchstart", e => startDrag(e.touches[0].clientX), { passive: true });
+    container.addEventListener("touchmove",  e => moveDrag(e.touches[0].clientX), { passive: true });
+    container.addEventListener("touchend", endDrag);
+
     window.addEventListener("resize", () => {
-      perPage = getPerPage();
-      snapToPage();
-      updateArrows();
+      currentPage = Math.min(currentPage, getTotalPages() - 1);
+      goTo(currentPage);
     });
 
     updateArrows();
-  });
+    goTo(0);
 
+  });
 });
