@@ -21,8 +21,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<!-- マーカーの色を変更するスクリプト -->
-<script src="../../assets/js/leaflet.sprite.js"></script>
 <!-- FontawesomeのVersion6.7.2（最新） -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <!-- 国旗のcss -->
@@ -33,6 +31,7 @@
 Europe Photo Best
 </title>
 <body>
+<!-- sectionのスタート -->
 <!-- ヘッダー -->
 <header>
 <!-- ヘッダー用コンテナ --> 
@@ -224,15 +223,14 @@ Europe Photo Best
 </nav>
 </div>
 </header> 
-<!-- 本編 -->
 <section class="pagebody">
 <!-- TOP画像＋背景文字はここ --> 
 <div class="Top_image">
 <div>
-<img class="pc" loading="eager" src="../../assets/image/top/pc/london.webp" alt="トップ画像" width="100%" height="auto"   />
-<img class="sp" loading="eager" src="../../assets/image/top/sp/london_sp.webp" alt="トップ画像" width="100%" height="auto"   />
+<img class="pc" loading="eager" src="../../assets/image/top/pc/peterborough.webp" alt="トップ画像" width="100%" height="auto"   />
+<img class="sp" loading="eager" src="../../assets/image/top/sp/peterborough_sp.webp" alt="トップ画像" width="100%" height="auto"   />
 <div class="Top_caption scroll fadeLeftSlide">
-<h1>London</h1>
+<h1>Peterborough</h1>
 <p>- City Infomation -</p>
 </div>  
 </div>
@@ -242,144 +240,64 @@ Europe Photo Best
 <div class="site_body editorcss">
 <!-- 導入の文章 -->
 <div class="text_side">
-<h3 class="city_title">
-～革新と伝統が融合する多文化国際都市～
-</h3>
-<div class="text_font"> 
-<p>
-革新と伝統が穏やかに共存する、多文化都市・ロンドン。<br/>
-街の中心をゆったりと流れるテムズ川の周囲には、歴史ある建物と新しい景観が重なり合っている。<br/>
-歩くたびに多様な表情を見せる、魅力あふれる都市だ。<br/>
+<h4>
+都市の特徴
+</h4>
+<p class="mb_1em">
+都市の説明
 </p>
 </div>
-</div>
-<!-- フォトエリア -->
-<h2 class="scroll fadeLeftSlide border">
+<!-- フォトギャラリー -->
+<h2 class="scroll fadeLeftSlide">
 Image Gallery
 </h2>
-<!-- フォトギャラリー -->
 <div class="photo_container">
 <div class="slider-track">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_1.webp" data-lightbox="image" data-title="<p class='title'>テムズ川からタワーブリッジ方向を見る。川は恐ろしいほどに濁っている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_1.webp" alt="テムズ川" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Peterborough/place_1.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_1.webp" alt="都市名1" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_2.webp" data-lightbox="image" data-title="<p class='title'>テムズ川にかかる跳開橋、タワーブリッジ。大型船が通る度に開く仕様となっている。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_2.webp" alt="タワーブリッジ" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+<a href="../../assets/image/place/Peterborough/place_2.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_2.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_3.webp" data-lightbox="image" data-title="<p class='title'>Oxford Streetでは国旗に加え、エリザベス女王2世の即位70周年を記念する祝賀旗が掲げられていた。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_3.webp" alt="中心部_1" width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</a>  
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_4.webp" data-lightbox="image" data-title="<p class='title'>Holborn High Streetの一風景。歴史的建造物やオフィス、飲食店が混在する。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_4.webp" alt="Holborn High Street"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />   
+<a href="../../assets/image/place/Peterborough/place_3.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_3.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_5.webp" data-lightbox="image" data-title="<p class='title'>UK最大の老舗百貨店、ハロッズ。高級感あふれるチョコレートや紅茶などが人気だ。</p><p class='text'>Day：2022/8/7</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_5.webp" alt="ハロッズ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
-</a>
+<a href="../../assets/image/place/Peterborough/place_4.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_4.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_6.webp" alt="ケンジントン宮殿"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Peterborough/place_5.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_5.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_7.webp" alt="ピカデリーサーカス_1"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
+<a href="../../assets/image/place/Peterborough/place_6.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_6.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_8.webp" alt="ピカデリーサーカス_2"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Peterborough/place_7.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_7.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_9.webp" alt="ビッグベン"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  </a>
+<a href="../../assets/image/place/Peterborough/place_8.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_8.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_10.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/London/place_11.webp" data-lightbox="image" data-title="<p class='title'>ビックベン直下の大通りは観光客や車、看板で溢れかえり、カオス感満載だ。</p><p class='text'>Day：2025/8/8</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_11.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_12.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_13.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_14.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_15.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_16.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_17.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_18.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_19.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_20.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_21.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_22.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_23.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_24.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_25.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_26.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_27.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_28.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_29.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_30.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_31.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_32.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_33.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_34.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_35.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/London/place_36.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
+<a href="../../assets/image/place/Peterborough/place_9.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
+<img loading="lazy" class="item-img" src="../../assets/image/place/Peterborough/place_9.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+</a> 
 </div>
 </div>
 </div>
@@ -390,29 +308,27 @@ Image Gallery
 <div id="page-strip" class="page-strip"></div>
 <button id="next" class="pager-arrow">→</button>
 </nav>
-<!-- マップ（ロンドン） -->
+<!-- マップ-->
 <h2 class="scroll fadeLeftSlide">
 Map
 </h2>
-<div class="street_map" id="maplondon"></div>
+<div class="street_map" id="mappeterborough"></div>
 <!-- スポット -->
 <h2 class="scroll fadeLeftSlide">
 Spots
 </h2>
 <div class="uk_item_info_1">
 <div class="info_left_item">
-<img loading="lazy" src="../../assets/image/spots/london/spot_1.webp" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="../../assets/image/spots/peterborough/spot_1.webp" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-Big Ben
+名所1
 </h3>
 <div class="text_font"> 
 <p>
-ビックベンは、英国議会に隣接するロンドンの象徴的な時計塔。<br/>
-細かな装飾と高さのあるシルエットが街並みによく映える。<br/>
-周囲の建築と組み合わせた景観が特徴的。
+説明<br/>説明
 </p>
 </div>
 </div>
@@ -420,17 +336,16 @@ Big Ben
 </div>
 <div class="uk_item_info_1">
 <div class="info_left_item">
-<img loading="lazy" src="../../assets/image/spots/london/spot_2.webp" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
+<img loading="lazy" src="../../assets/image/spots/peterborough/spot_2.webp" alt="Spots_1" width="100%" height="auto" class="alignnone size-full wp-image-189420" />
 </div>
 <div class="info_right_item">
 <div class="text_side">
 <h3 class="city_title">
-City of London
+名所2
 </h3>
 <div class="text_font"> 
 <p>
-近代的なビル群と中世の街並みが調和するロンドンの中心地。<br/>
-金融街として発展しつつも、古い建物や静かな路地も点在している。
+説明<br/>説明
 </p>
 </div>
 </div>
@@ -446,39 +361,12 @@ Where to Next ?
 <button class="Visit_nav Visit_prev" aria-label="前へ">❮</button>
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Windsor.html">
-<img loading="lazy" src="../../assets/image/city/windsor.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<a href="London.html">
+<img loading="lazy" src="../../assets/image/city/london.webp" alt="London" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Windsor</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Heathrow.html">
-<img loading="lazy" src="../../assets/image/city/heathrow.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-&#9992; <span style="margin-left: 15px;">Heathrow</span>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">London</span>
 </h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Oxford.html">
-<img loading="lazy" src="../../assets/image/city/oxford.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Oxford</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Cotswolds.html">
-<img loading="lazy" src="../../assets/image/city/cotswolds.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Cotswolds</span></h4>
 </div>
 </a>
 </div>
@@ -488,33 +376,6 @@ Where to Next ?
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Bristol</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Dover.html">
-<img loading="lazy" src="../../assets/image/city/dover.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Dover</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Peterborough.html">
-<img loading="lazy" src="../../assets/image/city/peterborough.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Peterborough</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Cambridge.html">
-<img loading="lazy" src="../../assets/image/city/cambridge.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Cambridge</span></h4>
 </div>
 </a>
 </div>
@@ -548,11 +409,41 @@ Where to Next ?
 </a>
 </div>
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Newcastle.html">
+<img loading="lazy" src="../../assets/image/city/newcastle.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Newcastle</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Durham.html">
 <img loading="lazy" src="../../assets/image/city/durham.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Durham</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Edinburgh.html">
+<img loading="lazy" src="../../assets/image/city/edinburgh.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Edinburgh</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Plymouth.html">
+<img loading="lazy" src="../../assets/image/city/plymouth.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Plymouth</span>
 </h4>
 </div>
 </a>
@@ -573,6 +464,166 @@ Where to Next ?
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">Lake district</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Yorkshiredales.html">
+<img loading="lazy" src="../../assets/image/city/yorkshiredales.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px; font-size: 0.9em;">Yorkshire dales</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Paris.html">
+<img loading="lazy" src="../../assets/image/city/paris.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-fr"></span><span style="margin-left: 15px;">Paris</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Lyon.html">
+<img loading="lazy" src="../../assets/image/city/lyon.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-fr"></span><span style="margin-left: 15px;">Lyon</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Marseille.html">
+<img loading="lazy" src="../../assets/image/city/marseille.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-fr"></span><span style="margin-left: 15px;">Marseille</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Amsterdam.html">
+<img loading="lazy" src="../../assets/image/city/amsterdam.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-nl"></span><span style="margin-left: 15px;">Amsterdam</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Bruges.html">
+<img loading="lazy" src="../../assets/image/city/bruges.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-be"></span><span style="margin-left: 15px;">Bruges</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Cologne.html">
+<img loading="lazy" src="../../assets/image/city/cologne.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-de"></span><span style="margin-left: 15px;">Cologne</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Zurich.html">
+<img loading="lazy" src="../../assets/image/city/zurich.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span style="margin-left: 15px;">Zurich</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Bern.html">
+<img loading="lazy" src="../../assets/image/city/bern.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span style="margin-left: 15px;">Bern</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Lausanne.html">
+<img loading="lazy" src="../../assets/image/city/lausanne.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span style="margin-left: 15px;">Lausanne</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Geneva.html">
+<img loading="lazy" src="../../assets/image/city/geneve.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ch"></span><span style="margin-left: 15px;">Geneve</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Vienna.html">
+<img loading="lazy" src="../../assets/image/city/vienna.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-at"></span><span style="margin-left: 15px;">Vienna</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Salzburg.html">
+<img loading="lazy" src="../../assets/image/city/salzburg.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-at"></span><span style="margin-left: 15px;">Salzburg</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Innsbruck.html">
+<img loading="lazy" src="../../assets/image/city/innsbruck.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-at"></span><span style="margin-left: 15px;">Innsbruck</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Heathrow.html">
+<img loading="lazy" src="../../assets/image/city/heathrow.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+&#9992; <span style="margin-left: 15px;">Heathrow</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Dubai.html">
+<img loading="lazy" src="../../assets/image/city/dubai.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-ae"></span><span style="margin-left: 15px;">Dubai</span>
 </h4>
 </div>
 </a>
@@ -678,6 +729,12 @@ Where to Next ?
 <button class="Visit_nav Visit_next" aria-label="次へ">❯</button>
 </div>
 </div>
+</div>
+<!-- TOPに戻れる矢印（back_top) -->
+<div id="back_top">
+<a href="#top">
+<i class="fa-solid fa-chevron-up"></i>
+</a>
 </div>
 </section>
 <!-- フッター -->
@@ -797,6 +854,7 @@ Genre
 </p>
 </div>
 </footer>
+
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
@@ -807,9 +865,9 @@ Genre
 <!-- ★オープンストリートマップ -->
 <!-- ユーティリティ関数（最初に読み込む） -->
 <script src="../../assets/js/utils.js"></script>
-<!-- 都市別 -->
-<script src="../../assets/js/map/london.js"></script>
 <!-- ※ここから下は共通 -->
+<!-- 都市名専用のJS -->
+<script src="../../assets/js/map/peterborough.js"></script>
 <!-- 空港アイコン -->
 <script src="../../assets/js/icons/airport/airport.js"></script>
 <!-- 名所アイコン -->
