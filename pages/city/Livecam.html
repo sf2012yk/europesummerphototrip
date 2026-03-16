@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
 <link rel="stylesheet" href="../../assets/css/speechBubble.css">
+<link rel="stylesheet" href="../../assets/css/livecam.css">
 <!-- リンクするjs -->
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <!-- オープンストリートマップのスクリプト -->
@@ -252,13 +253,18 @@ Europe Photo Best
 </div>
 <!-- フォトギャラリー -->
 <h2 class="scroll fadeLeftSlide">
-Imagee Gallery
+Image Gallery
 </h2>
 <div class="photo_container">
 <div class="slider-track">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_1.webp" alt="都市名1" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Livecam/place_1.webp"
+data-caption="朝日をバックに<br>British Airways <br>Manchester - London <br>A321<br>(@FlightFocus365)">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Livecam/place_1.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
 <img loading="lazy" class="item-img" src="../../assets/image/place/Livecam/place_2.webp" alt="都市名2" width="100%" height="auto"  class="alignnone size-full wp-image-189420"  /> 
@@ -368,6 +374,14 @@ Imagee Gallery
 </div>
 </div>
 </div>
+<!-- ここにライトボックスを追加 -->
+<div id="livecam_box" class="livecam_box">
+  <span class="livecam_box_close">&times;</span>
+  <img class="livecam_box_img" src="" alt="">
+  <div class="livecam_caption"></div>
+</div>
+
+
 <!-- ページネーション -->
 <nav class="pagination">
 <button id="prev" class="pager-arrow">←</button>
@@ -972,5 +986,6 @@ Genre
 <script src="../../assets/js/control/click.js"></script>
 <script src="../../assets/js/control/pagenation.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
+<script src="../../assets/js/control/livecam.js"></script>
 </body>
 </html>
