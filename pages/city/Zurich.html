@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- リンクするcss -->
-<link rel="stylesheet" href="../../assets/css/lightbox.min.css">
 <link rel="stylesheet" href="../../assets/css/index.css">
 <link rel="stylesheet" href="../../assets/css/font.css">
 <link rel="stylesheet" href="../../assets/css/home.css">
@@ -14,6 +13,7 @@
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
 <link rel="stylesheet" href="../../assets/css/speechBubble.css">
+<link rel="stylesheet" href="../../assets/css/livecam.css">
 <!-- リンクするjs -->
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <!-- オープンストリートマップのスクリプト -->
@@ -255,35 +255,65 @@ Image Gallery
 <div class="photo_container">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_1.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_1.webp" alt="zurich1" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Zurich/place_1.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_1.webp"
+    alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_2.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_2.webp" alt="zurich2" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
-</a> 
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_3.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_3.webp" alt="zurich3" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Zurich/place_2.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_2.webp"
+    alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_4.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_4.webp" alt="zurich4" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
-</a> 
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_5.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_5.webp" alt="zurich5" width="100%" height="auto"   class="alignnone size-full wp-image-189420"/>
+<a href="../../assets/image/place/Zurich/place_3.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_3.webp"
+    alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Zurich/place_6.webp" data-lightbox="image" data-title="<p class='title'>町の様子</p><p class='text'>Day：20yy/m/dd</p>">
-<img loading="lazy" class="item-img" src="../../assets/image/place/Zurich/place_6.webp" alt="zurich6" width="100%" height="auto"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  /> 
+<a href="../../assets/image/place/Zurich/place_4.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_4.webp"
+    alt="都市名1" width="100%" height="auto"/>
 </a> 
 </div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/place/Zurich/place_5.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_5.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/place/Zurich/place_6.webp"
+data-caption="チューリッヒのの街並み">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/place/Zurich/place_6.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+</div>
+</div>
+<!-- ここにライトボックスを追加 -->
+<div id="livecam_box" class="livecam_box">
+  <span class="livecam_box_close">&times;</span>
+  <div class="livecam_inner">
+<div class="livecam_img_wrapper">
+  <span class="livecam_prev">&#10094;</span>
+  <img class="livecam_box_img" src="" alt="">
+  <span class="livecam_next">&#10095;</span>
+  </div>
+  <div class="livecam_caption"></div>
 </div>
 </div>
 <!-- ページネーション -->
@@ -899,5 +929,6 @@ Genre
 <script src="../../assets/js/control/click.js"></script>
 <script src="../../assets/js/control/pagenation.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
+<script src="../../assets/js/control/livecam.js"></script>
 </body>
 </html>
