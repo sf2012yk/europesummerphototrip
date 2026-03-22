@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- リンクするcss -->
-<link rel="stylesheet" href="../../assets/css/lightbox.min.css">
 <link rel="stylesheet" href="../../assets/css/index.css">
 <link rel="stylesheet" href="../../assets/css/font.css">
 <link rel="stylesheet" href="../../assets/css/home.css">
@@ -14,6 +13,7 @@
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
 <link rel="stylesheet" href="../../assets/css/speechBubble.css">
+<link rel="stylesheet" href="../../assets/css/livecam.css">
 <!-- リンクするjs -->
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <!-- オープンストリートマップのスクリプト -->
@@ -263,17 +263,17 @@ Image Gallery
 <img class="item-img" src="../../assets/image/place/Paris/place_2.webp" alt="ベルサイユ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420"/>    
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Paris/place_3.webp" data-lightbox="image" data-title="<p class='title'>パリオリンピック旗と凱旋門。次にこの光景が見られるのは100年後だろうか。</p><p class='text'>Day：2024/8/15</p>">
+<a href="../../assets/image/place/Paris/place_3.webp" data-caption="パリオリンピック旗と凱旋門。<br>次にこの光景が見られるのは100年後だろうか。">
 <img class="item-img" src="../../assets/image/place/Paris/place_3.webp" alt="凱旋門"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
 </a> 
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Paris/place_4.webp" data-lightbox="image" data-title="<p class='title'>ルーブル美術館の中でも超人気のモナリザ。いざとなったらDS越しに撮影しよう。</p><p class='text'>Day：2024/8/14</p>">
+<a href="../../assets/image/place/Paris/place_4.webp" data-caption="ルーブル美術館の中でも超人気のモナリザ。<br>いざとなったらDS越しに撮影しよう。">
 <img class="item-img" src="../../assets/image/place/Paris/place_4.webp" alt="モナリザ"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
 </a>  
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Paris/place_5.webp" data-lightbox="image" data-title="<p class='title'>近年はそれなりに暑い、夏のパリ。道から噴き出すスプリンクラーが気持ちよさそうだ。</p><p class='text'>Day：2024/8/14</p>">
+<a href="../../assets/image/place/Paris/place_5.webp" data-caption="近年はそれなりに暑い、夏のパリ。<br>道から噴き出すスプリンクラーが気持ちよさそうだ。">
 <img class="item-img" src="../../assets/image/place/Paris/place_5.webp" alt="ルクセンブルク地区"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />  
 </a>
 </div>
@@ -287,7 +287,7 @@ Image Gallery
 <img class="item-img" src="../../assets/image/place/Paris/place_8.webp" alt="エッフェル塔"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/place/Paris/place_9.webp" data-lightbox="image" data-title="<p class='title'>近年はそれなりに暑い、夏のパリ。道から噴き出すスプリンクラーが気持ちよさそうだ。</p><p class='text'>Day：2024/8/14</p>">
+<a href="../../assets/image/place/Paris/place_9.webp" data-caption="都市名">
 <img class="item-img" src="../../assets/image/place/Paris/place_9.webp" alt="ルーブルアート"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" /> 
 </a> 
 </div>
@@ -319,6 +319,18 @@ Image Gallery
 <img class="item-img" src="../../assets/image/place/Paris/place_18.webp" alt="場所"  width="100%" height="auto"  class="alignnone size-full wp-image-189420" />    
 </div>
 </div>
+</div>
+</div>
+<!-- ここにライトボックスを追加 -->
+<div id="livecam_box" class="livecam_box">
+  <span class="livecam_box_close">&times;</span>
+  <div class="livecam_inner">
+<div class="livecam_img_wrapper">
+  <span class="livecam_prev">&#10094;</span>
+  <img class="livecam_box_img" src="" alt="">
+  <span class="livecam_next">&#10095;</span>
+  </div>
+  <div class="livecam_caption"></div>
 </div>
 </div>
 <!-- ページネーション -->
@@ -875,7 +887,6 @@ Genre
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="../../assets/js/lightbox.min.js"></script>
 <script src="../../assets/js/index.js"></script>
 <script src="../../assets/js/megamenu.js"></script>
 <!-- ユーティリティ関数（最初に読み込む） -->
@@ -969,5 +980,6 @@ Genre
 <script src="../../assets/js/control/click.js"></script>
 <script src="../../assets/js/control/pagenation.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
+<script src="../../assets/js/control/livecam.js"></script>
 </body>
 </html>
