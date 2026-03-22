@@ -1,3 +1,8 @@
+/* 開くとき */
+.livecam_box.open {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
 /* フェードイン用アニメーション */
 @keyframes fadeIn {
   from {
@@ -10,27 +15,61 @@
   }
 }
 
+/* 閉じるとき */
+.livecam_box.close {
+  animation: fadeOut 0.25s ease-out forwards;
+}
+
+/* フェードアウト */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+
+
+
+
+/* ライトボックス全体 */
 .livecam_box {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 99999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9); /* 白背景 */
+  background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* ← 追加：縦並びにする */
-  animation: fadeIn 0.25s ease-out; /* ← 追加 */
+  flex-direction: column;
+  animation: fadeIn 0.25s ease-out;
 }
 
+/* 画像 */
 .livecam_box_img {
-  max-width: 80%;
-  max-height: 50%;
+  max-width: 70vw;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  border: 4px solid #fff;
+  transition: opacity 0.3s ease;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
+.livecam_box_img.show {
+  opacity: 1;
+}
+
+/* 閉じるボタン */
 .livecam_box_close {
   position: absolute;
   top: 20px;
@@ -39,13 +78,79 @@
   cursor: pointer;
   color: #333;
 }
+
+/* キャプション */
 .livecam_caption {
-  margin-top: 20px;
+  width: 100%;
+  max-width: 70vw;
   font-size: 16px;
-  color: #333;
-  text-align: center;
+  color: #f0f0f0;
   line-height: 1.6;
-  max-width: 80%;
   opacity: 0;
-  animation: fadeIn 0.4s ease-out 0.1s forwards; /* ← 文章もふんわり */
+  animation: fadeIn 0.4s ease-out 0.1s forwards;
+  margin-top: 12px;
+  word-break: break-word;
+}
+
+/* 画像コンテナ（矢印の基準） */
+.livecam_inner {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh; /* ← ここが最重要！ */
+  justify-content: flex-start;
+}
+
+.livecam_img_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 矢印（画像の内側固定） */
+.livecam_prev,
+.livecam_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #eee;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.livecam_prev { left: 0px; }
+.livecam_next { right: 0px; }
+
+.livecam_prev:hover,
+.livecam_next:hover {
+  opacity: 1;
+}
+
+/* スマホ調整 */
+@media (max-width: 767px) {
+
+  .livecam_prev,
+  .livecam_next {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .livecam_prev { left: 0px; }
+  .livecam_next { right: 0px; }
+
+  /* 画像 */
+.livecam_box_img {
+  max-width: 90vw;
+}
+/* キャプション */
+.livecam_caption {
+  max-width: 90vw;
+}
 }
