@@ -54,8 +54,8 @@
 
 /* 画像 */
 .livecam_box_img {
-  max-width: 70vw;
-  max-height: 60vh;
+  max-width: 75vw;
+  max-height: 65vh;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -98,7 +98,7 @@
   display: flex !important;
   align-items: center;
   flex-direction: column;
-  height: 75vh; /* ← ここが最重要！ */
+  height: 80vh; /* ← ここが最重要！ */
   justify-content: flex-start;
 }
 
