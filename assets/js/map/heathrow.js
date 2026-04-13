@@ -1,7 +1,7 @@
 
 var map = L.map('mapheathrow', {center: [51.46683619237497, -0.4631505587077417],
        zoom: 13.4,
-        minZoom: 5,
+        minZoom: 7,
         maxZoom: 14,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止
@@ -9,8 +9,8 @@ var map = L.map('mapheathrow', {center: [51.46683619237497, -0.4631505587077417]
         boxZoom: false,          // ボックスズーム禁止
         keyboard: false,          // キーボード操作禁止
         maxBounds: [
-    [23.0, -10.0], // 南西端（モロッコ沖〜スペイン南部）
-    [60.0, 57.0]   // 北東端（ポーランド〜ドバイ）
+      [35.0, -10.0], // 南西端（モロッコ沖〜スペイン南部）
+    [60.0, 30.0]   // 北東端（ポーランド〜ウクライナ西部）
   ],
   maxBoundsViscosity: 1.0
 
