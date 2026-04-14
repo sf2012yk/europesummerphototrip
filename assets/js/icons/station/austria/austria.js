@@ -170,3 +170,39 @@ var markerInnsbruck = L.marker([47.26253050680029, 11.40060390583582], {
   keepInView: true,
 })
   .addTo(map);
+
+
+  //  Vienna
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="image/map/airport/Vienna.JPG" 
+       data-lightbox="image" 
+       data-title="Vienna">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/vienna.webp" alt="Vienna Airport">
+    </a>
+    <div class="popup_caption">
+    <a href="image/map/airport/Vienna.JPG" data-lightbox="image" data-title="Vienna Airport" class="popup_link">Vienna Airport</a>
+    <p>
+    Viennaの説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Airport</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="ViennaToGenevaCard">
+    <p class="next_text">&#x2708; Geneva（800km）</span>
+    </div>
+    <div class="next_card" id="ViennaToHeathrowCard">
+    <p class="next_text">&#x2708; London（1200km）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerViennaAirport = L.marker([48.11851237806887, 16.566266743122807], {
+  icon: stationIcon 
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
