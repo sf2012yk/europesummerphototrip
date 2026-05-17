@@ -1,7 +1,7 @@
- //主要駅（station）アイコン：
+//主要駅（station）アイコン：
     var stationIcon = L.icon({
-    iconUrl: "image/icon/train.png",
-    iconRetinaUrl:"image/icon/train@2x.png",
+    iconUrl: "../../assets/image/icon/train.png",
+    iconRetinaUrl:"../../assets/image/icon/train@2x.png",
     shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize:     [40, 40], // アイコンのサイズ
     shadowSize:   [41, 25], // size of the shadow
@@ -13,8 +13,8 @@
 
      //通過駅等（station_2）アイコン：
     var station_2_Icon = L.icon({
-    iconUrl: "image/icon/train_2.png",
-    iconRetinaUrl:"image/icon/train_2@2x.png",
+    iconUrl: "../../assets/image/icon/train_2.png",
+    iconRetinaUrl:"../../assets/image/icon/train_2@2x.png",
     shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize:     [40, 40], // アイコンのサイズ
     shadowSize:   [41, 25], // size of the shadow
@@ -22,19 +22,6 @@
     shadowAnchor: [16, 28],  // the same for the shadow
     popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
     className: "icon-station_2"
-    });
-
-      //画像なし駅（station_3）アイコン：
-    var station_3_Icon = L.icon({
-    iconUrl: "image/icon/train_3.png",
-    iconRetinaUrl:"image/icon/train_3@2x.png",
-    shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
-    iconSize:     [40, 40], // アイコンのサイズ
-    shadowSize:   [41, 25], // size of the shadow
-    iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
-    shadowAnchor: [16, 28],  // the same for the shadow
-    popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
-    className: "icon-station_3"
     });
 
 
