@@ -68,41 +68,6 @@ var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
   .addTo(map);
 
 
-// GW_01 Paddington空港専用
-    var popupContent = `
-     <div class="popup_summer">
-    <a href="../../assets/image/map/station/paddington_airport.webp" 
-       data-lightbox="image" 
-       data-title="Paddington">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/paddington_airport.webp" alt="Paddington Station">
-    </a>
-    <div class="popup_caption">
-    <a href="../../assets/image/map/station/paddington_airport.webp" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington (&#x2708; Access)</a>
-    <p>
-    ヴィクトリア様式の美しい駅舎を持つ、ロンドン西部のターミナル駅。パディントン駅からロンドン・ヒースロー空港へ直接アクセスすることが可能だ。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="goToHeathrowTerminal3Card">
-    <p class="next_text">&#x2708; Terminal3 (23km)</span>
-    </div>
-    <div class="next_card" id="goToHeathrowTerminal5Card">
-    <p class="next_text">&#x2708; Terminal5 (25km)</span>
-    </div>
-    </div>
-  </div>
-`;
-var markerPaddingtonLHR = L.marker([51.51820949995243, -0.1781408423165258], {
-  icon: stationIcon
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-})
-  .addTo(map);
-  
 //  Slough
     var popupContent = `
       <div class="popup_summer">
@@ -427,81 +392,6 @@ var markerPlymouth = L.marker([50.3776674014801, -4.144099241952264], {
 `;
 var markerPenzance = L.marker([50.12204180137364, -5.532390786439714], {
   icon: stationIcon //途中駅はstation_2_Iconで切り替え
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-})
-  .addTo(map);
-
-//  HeathrowTerminal3
-    var popupContent = `
-      <div class="popup_summer">
-    <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/heathrow3.webp" alt="Heathrow Terminal5">
-    </a>
-    <div class="popup_caption">
-    <a href="Heathrow.html" class="popup_link">Heathrow Terminal3</a>
-    <p>
-    ヒースロー空港第3ターミナル。ここからは主に長距離国際線が発着。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Airport</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="HeathrowToViennaCard">
-    <p class="next_text">&#x2708; Vienna（1200km）</span>
-    </div>
-    <div class="next_card" id="HeathrowToRomeCard">
-    <p class="next_text">&#x2708; Rome（1400km）</span>
-    </div>
-    <div class="next_card" id="HeathrowTerminal3ToPaddingtonCard">
-    <p class="next_text">London City（23km）</span>
-    </div>
-    </div>
-  </div>
-`;
-var markerHeathrowTerminal3 = L.marker([51.46896718671588, -0.4574958618544679], {
-  icon: stationIcon 
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-})
-  .addTo(map);
-
-//  HeathrowTerminal5
-    var popupContent = `
-      <div class="popup_summer">
-    <a href="Heathrow.html">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/heathrow5.webp" alt="Heathrow Terminal5">
-    </a>
-    <div class="popup_caption">
-    <a href="Heathrow.html" class="popup_link">Heathrow Terminal5</a>
-    <p>
-    ヒースロー空港第5ターミナルの説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Airport</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="HeathrowToParisCard">
-    <p class="next_text">&#x2708; Paris（400km）</span>
-    </div>
-    <div class="next_card" id="HeathrowToAmsterdamCard">
-    <p class="next_text">&#x2708; Amsterdam（400km）</span>
-    </div>
-    <div class="next_card" id="HeathrowToGenevaCard">
-    <p class="next_text">&#x2708; Geneva（600km）</span>
-    </div>
-    <div class="next_card" id="HeathrowTerminal5ToPaddingtonCard">
-    <p class="next_text">London City（25km）</span>
-    </div>
-    </div>
-  </div>
-`;
-var markerHeathrowTerminal5 = L.marker([51.47259800120853, -0.4859364875464297], {
-  icon: stationIcon 
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
