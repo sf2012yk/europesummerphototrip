@@ -66,13 +66,13 @@ var markerMilano = L.marker([45.486022373628984, 9.20430169797116], {
 //  ベルガモ駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/bergamo.webp" 
        data-lightbox="image" 
        data-title="Bergamo">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Bergamo Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/bergamo.webp" alt="Bergamo Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Bergamo Station" class="popup_link">Bergamo Station</a>
+    <a href="../../assets/image/map/station/bergamo.webp" data-lightbox="image" data-title="Bergamo Station" class="popup_link">Bergamo Station</a>
     <p>
     駅の説明
     </p>
@@ -91,7 +91,7 @@ var markerMilano = L.marker([45.486022373628984, 9.20430169797116], {
     </div>
   </div>
 `;
-var markerBergamo = L.marker([駅の座標], {
+var markerBergamo = L.marker([45.69027744975528, 9.675127904942757], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -104,13 +104,13 @@ var markerBergamo = L.marker([駅の座標], {
 //  ブレシア駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/brescia.webp" 
        data-lightbox="image" 
        data-title="Brescia">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Brescia Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/brescia.webp" alt="Brescia Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Brescia Station" class="popup_link">Brescia Station</a>
+    <a href="../../assets/image/map/station/brescia.webp" data-lightbox="image" data-title="Brescia Station" class="popup_link">Brescia Station</a>
     <p>
     駅の説明
     </p>
@@ -129,7 +129,7 @@ var markerBergamo = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerBrescia = L.marker([45.53216810616962, 10.212877398712628], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -142,13 +142,13 @@ var marker駅名 = L.marker([駅の座標], {
 //  ペスキエーラデルガルーダ駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/peschiera.webp" 
        data-lightbox="image" 
        data-title="Peschiera">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Peschiera Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/peschiera.webp" alt="Peschiera Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Peschiera Station" class="popup_link">Peschiera Station</a>
+    <a href="../../assets/image/map/station/peschiera.webp" data-lightbox="image" data-title="Peschiera Station" class="popup_link">Peschiera Station</a>
     <p>
     駅の説明
     </p>
@@ -167,7 +167,7 @@ var marker駅名 = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerPeschiera = L.marker([45.43832702879209, 10.702334192700855], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -180,13 +180,13 @@ var marker駅名 = L.marker([駅の座標], {
 //  ベローナ駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/verona.webp" 
        data-lightbox="image" 
        data-title="Verona">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Verona Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/verona.webp" alt="Verona Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Verona Station" class="popup_link">Verona Station</a>
+    <a href="../../assets/image/map/station/verona.webp" data-lightbox="image" data-title="Verona Station" class="popup_link">Verona Station</a>
     <p>
     駅の説明
     </p>
@@ -205,7 +205,7 @@ var marker駅名 = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerVerona = L.marker([45.428597030990964, 10.981918606991616], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -218,13 +218,13 @@ var marker駅名 = L.marker([駅の座標], {
 //  ベネチア・サンタルチア駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/venezia_santalucia.webp" 
        data-lightbox="image" 
-       data-title="駅名">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="駅名 Station">
+       data-title="Venezia">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/venezia_santalucia.webp" alt="Venezia Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="駅名 Station" class="popup_link">駅名 Station</a>
+    <a href="../../assets/image/map/station/venezia_santalucia.webp" data-lightbox="image" data-title="Venezia Station" class="popup_link">Venezia Station</a>
     <p>
     駅の説明
     </p>
@@ -243,7 +243,7 @@ var marker駅名 = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerVeneziaSL = L.marker([45.44134690329801, 12.320284034940498], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -256,13 +256,13 @@ var marker駅名 = L.marker([駅の座標], {
 //  フェラーラ駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/ferrara.webp" 
        data-lightbox="image" 
        data-title="駅名">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="駅名 Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/ferrara.webp" alt="Ferrara Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="駅名 Station" class="popup_link">駅名 Station</a>
+    <a href="../../assets/image/map/station/ferrara.webp" data-lightbox="image" data-title="Ferrara Station" class="popup_link">Ferrara Station</a>
     <p>
     駅の説明
     </p>
@@ -281,7 +281,7 @@ var marker駅名 = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerFerrara = L.marker([44.84278732679243, 11.60368909440825], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -294,13 +294,13 @@ var marker駅名 = L.marker([駅の座標], {
   //  ボローニャ駅
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="../../assets/image/map/station/bologna.webp" 
        data-lightbox="image" 
-       data-title="駅名">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="駅名 Station">
+       data-title="Bologna">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/bologna.webp" alt="Bologna Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="駅名 Station" class="popup_link">駅名 Station</a>
+    <a href="../../assets/image/map/station/bologna.webp" data-lightbox="image" data-title="Bologna Station" class="popup_link">Bologna Station</a>
     <p>
     駅の説明
     </p>
@@ -319,7 +319,7 @@ var marker駅名 = L.marker([駅の座標], {
     </div>
   </div>
 `;
-var marker駅名 = L.marker([駅の座標], {
+var markerBologna = L.marker([44.50625199262663, 11.342946531828515], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
