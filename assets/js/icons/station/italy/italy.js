@@ -220,11 +220,11 @@ var markerVerona = L.marker([45.428597030990964, 10.981918606991616], {
       <div class="popup_summer">
     <a href="../../assets/image/map/station/venezia_santalucia.webp" 
        data-lightbox="image" 
-       data-title="Venezia">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/venezia_santalucia.webp" alt="Venezia Station">
+       data-title="Venezia Santa Lucia">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/venezia_santalucia.webp" alt="Venezia Santa Lucia">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/venezia_santalucia.webp" data-lightbox="image" data-title="Venezia Station" class="popup_link">Venezia Station</a>
+    <a href="../../assets/image/map/station/venezia_santalucia.webp" data-lightbox="image" data-title="Venezia Santa Lucia" class="popup_link">Venezia Santa Lucia</a>
     <p>
     駅の説明
     </p>
@@ -243,7 +243,7 @@ var markerVerona = L.marker([45.428597030990964, 10.981918606991616], {
     </div>
   </div>
 `;
-var markerVeneziaSL = L.marker([45.44134690329801, 12.320284034940498], {
+var markerVeneziaSantaLucia = L.marker([45.44134690329801, 12.320284034940498], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
@@ -321,6 +321,310 @@ var markerFerrara = L.marker([44.84278732679243, 11.60368909440825], {
 `;
 var markerBologna = L.marker([44.50625199262663, 11.342946531828515], {
   icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+ //  フィレンツェ駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/firenze.webp" 
+       data-lightbox="image" 
+       data-title="Bologna">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/firenze.webp" alt="Firenze Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/firenze.webp" data-lightbox="image" data-title="Firenze Station" class="popup_link">Firenze Station</a>
+    <p>
+    駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerFirenze = L.marker([43.776672747755704, 11.247826497426637], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Orvieto駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/orvieto.webp" 
+       data-lightbox="image" 
+       data-title="Bologna">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/orvieto.webp" alt="Orvieto Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/orvieto.webp" data-lightbox="image" data-title="Orvieto Station" class="popup_link">Orvieto Station</a>
+    <p>
+    駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerOrvieto = L.marker([42.72404732095011, 12.126645649350241], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  roma_tiburtina駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/roma_tiburtina.webp" 
+       data-lightbox="image" 
+       data-title="Roma Tiburtina">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/roma_tiburtina.webp" alt="Roma Tiburtina Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/roma_tiburtina.webp" data-lightbox="image" data-title="Roma Tiburtina Station" class="popup_link">Roma Tiburtina Station</a>
+    <p>
+    駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerRomaTiburtina = L.marker([41.91137876844585, 12.53091769172978], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  roma_termini駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/roma_termini.webp" 
+       data-lightbox="image" 
+       data-title="Roma Termini">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/roma_termini.webp" alt="Roma Termini Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/roma_termini.webp" data-lightbox="image" data-title="Roma Termini Station" class="popup_link">Roma Termini Station</a>
+    <p>
+    ローマ・テルミニ駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerRomaTermini = L.marker([41.90087073150933, 12.502142953698526], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  ナポリ駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/napoli.webp" 
+       data-lightbox="image" 
+       data-title="Napoli">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/napoli.webp" alt="Napoli Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/napoli.webp" data-lightbox="image" data-title="Napoli Station" class="popup_link">Napoli Station</a>
+    <p>
+    ナポリ駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerNapoli = L.marker([40.8529073790409, 14.273130614605218], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  venezia_mestre駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/venezia_mestre.webp" 
+       data-lightbox="image" 
+       data-title="Venezia Mestre">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/venezia_mestre.webp" alt="Venezia Mestre Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/venezia_mestre.webp" data-lightbox="image" data-title="Venezia Mestre Station" class="popup_link">Venezia Mestre Station</a>
+    <p>
+    Venezia Mestre駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerVeneziaMestre = L.marker([45.48203809284769, 12.231620771052933], {
+  icon: station_2_Icon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  padova駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/padova.webp" 
+       data-lightbox="image" 
+       data-title="Padova">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/padova.webp" alt="Padova Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/padova.webp" data-lightbox="image" data-title="Padova Station" class="popup_link">Padova Station</a>
+    <p>
+    Padova駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerPadova = L.marker([45.417981388217086, 11.880603803267935], {
+  icon: station_2_Icon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  vicenza駅
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="../../assets/image/map/station/vicenza.webp" 
+       data-lightbox="image" 
+       data-title="Vicenza">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/vicenza.webp" alt="Vicenza Station">
+    </a>
+    <div class="popup_caption">
+    <a href="../../assets/image/map/station/vicenza.webp" data-lightbox="image" data-title="Vicenza Station" class="popup_link">Vicenza Station</a>
+    <p>
+    Vicenza駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="駅名ToA駅Card">
+    <p class="next_text">▶ A駅（aakm）</span>
+    </div>
+    <div class="next_card" id="駅名ToB駅Card">
+    <p class="next_text">▶ B駅（bbkm）</span>
+    </div>
+    <div class="next_card" id="駅名ToC駅Card">
+    <p class="next_text">▶ C駅（cckm）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerVicenza = L.marker([45.5409930564181, 11.538794841267709], {
+  icon: station_2_Icon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
