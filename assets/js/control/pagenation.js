@@ -17,7 +17,7 @@ const pageStrip = document.getElementById("page-strip");
 
 // PC・スマホともに6枚
 function getItemsPerPage() {
-  return window.innerWidth <= 1100 ? 6 : 9;
+  return window.innerWidth <= 1100 ? 6 : 6;
 }
 
 // -----------------------------
@@ -165,48 +165,34 @@ container.addEventListener("mouseleave", () => {
 
 //スマホのタッチイベント
 let startX = 0;
-let isSwiping = false;
 
 container.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
-  isSwiping = true;
 });
 
 container.addEventListener("touchmove", (e) => {
-  if (!isSwiping) return;
-  const currentX = e.touches[0].clientX;
-  const diffX = currentX - startX;
+  // スクロール干渉を防ぐ
+  e.preventDefault();
+}, { passive: false });
+
+container.addEventListener("touchend", (e) => {
+  const endX = e.changedTouches[0].clientX;
+  const diffX = endX - startX;
+
+  if (Math.abs(diffX) < 50) return; // スワイプ閾値
 
   const perPage = getItemsPerPage();
   const totalPages = Math.ceil(items.length / perPage);
 
-  if (Math.abs(diffX) > 50) {
-    if (diffX < 0) {
-      // 右にスワイプ → 次へ
-      const perPage = getItemsPerPage();
-      const totalPages = Math.ceil(items.length / perPage);
+  if (diffX < 0) {
+    // 右スワイプ → 次へ
+    currentPage = currentPage < totalPages ? currentPage + 1 : 1;
+  } else {
+    // 左スワイプ → 前へ
+    currentPage = currentPage > 1 ? currentPage - 1 : totalPages;
+  }
 
-      if (currentPage < totalPages) {
-        currentPage++;
-      } else {
-        currentPage = 1; // ← 最後なら1に戻す
-      }
-      update();
-    } else if (diffX > 0) {
-      // 左にスワイプ → 前へ
-      if (currentPage > 1) {
-        currentPage--;
-      } else {
-        currentPage = totalPages; // ← 最初なら最後へ飛ばす（循環）
-      }
-      update();
-    }
-    isSwiping = false;
-}
-});
-
-container.addEventListener("touchend", () => {
-  isSwiping = false;
+  update();
 });
 
 window.addEventListener("resize", () => {

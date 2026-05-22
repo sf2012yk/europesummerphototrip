@@ -96,9 +96,24 @@ document.addEventListener("DOMContentLoaded", function () {
     container.addEventListener("mouseup", endDrag);
     container.addEventListener("mouseleave", endDrag);
 
-    container.addEventListener("touchstart", e => startDrag(e.touches[0].clientX), { passive: true });
-    container.addEventListener("touchmove",  e => moveDrag(e.touches[0].clientX), { passive: true });
-    container.addEventListener("touchend", endDrag);
+    container.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    container.addEventListener("touchmove", e => {
+      e.preventDefault(); // ← スクロール干渉を止める
+    }, { passive: false });
+
+    container.addEventListener("touchend", e => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = endX - startX;
+
+      if (Math.abs(diff) > 50) {
+        if (diff < 0) goTo(currentPage + 1);
+        else          goTo(currentPage - 1);
+      }
+    });
+
 
     window.addEventListener("resize", () => {
       currentPage = Math.min(currentPage, getTotalPages() - 1);
