@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     container.addEventListener("touchstart", e => startDrag(e.touches[0].clientX), { passive: true });
     container.addEventListener("touchmove",  e => moveDrag(e.touches[0].clientX), { passive: true });
     container.addEventListener("touchend", endDrag);
+
     window.addEventListener("resize", () => {
       currentPage = Math.min(currentPage, getTotalPages() - 1);
       goTo(currentPage);
