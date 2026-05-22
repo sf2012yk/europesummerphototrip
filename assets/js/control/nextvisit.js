@@ -95,43 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
     container.addEventListener("mousemove", e => moveDrag(e.clientX));
     container.addEventListener("mouseup", endDrag);
     container.addEventListener("mouseleave", endDrag);
-
-    let startX = 0;
-    let startY = 0;
-    let isScrolling = undefined;
-
-    container.addEventListener("touchstart", e => {
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      isScrolling = undefined;
-    }, { passive: true });
-
-    container.addEventListener("touchmove", e => {
-      const dx = e.touches[0].clientX - startX;
-      const dy = e.touches[0].clientY - startY;
-
-      // まだ方向が決まっていない場合、判定する
-      if (isScrolling === undefined) {
-        isScrolling = Math.abs(dy) > Math.abs(dx);
-      }
-
-      // 横方向の動きが大きい → スワイプとして扱う
-      if (!isScrolling) {
-        e.preventDefault(); // ← 横スワイプ時のみ発動
-      }
-    }, { passive: false });
-
-    container.addEventListener("touchend", e => {
-      const dx = e.changedTouches[0].clientX - startX;
-
-      if (Math.abs(dx) > 50) {
-        if (dx < 0) goTo(currentPage + 1);
-        else        goTo(currentPage - 1);
-      }
-    });
-
-
-
+    container.addEventListener("touchstart", e => startDrag(e.touches[0].clientX), { passive: true });
+    container.addEventListener("touchmove",  e => moveDrag(e.touches[0].clientX), { passive: true });
+    container.addEventListener("touchend", endDrag);
     window.addEventListener("resize", () => {
       currentPage = Math.min(currentPage, getTotalPages() - 1);
       goTo(currentPage);
