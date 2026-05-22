@@ -17,7 +17,7 @@ const pageStrip = document.getElementById("page-strip");
 
 // PC・スマホともに6枚
 function getItemsPerPage() {
-  return window.innerWidth <= 1100 ? 6 : 6;
+  return 6;
 }
 
 // -----------------------------
@@ -26,6 +26,8 @@ function getItemsPerPage() {
 function createPages() {
   const itemsPerPage = getItemsPerPage();
   const totalPages = Math.ceil(items.length / itemsPerPage);
+
+  track.innerHTML = "";
 
   for (let i = 0; i < totalPages; i++) {
     const page = document.createElement("div");
@@ -79,7 +81,6 @@ function updateArrows() {
   nextBtn.disabled = currentPage === Math.ceil(items.length / perPage);
 }
 
-
 // -----------------------------
 // 全体更新
 // -----------------------------
@@ -107,12 +108,13 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-
 // 初期化
 createPages();
 update();
 
-//PCのタッチイベント
+// =============================
+// PCのドラッグ（そのまま）
+// =============================
 let isDragging = false;
 let startX_pc = 0;
 
@@ -128,31 +130,23 @@ container.addEventListener("mousemove", (e) => {
   const perPage = getItemsPerPage();
   const totalPages = Math.ceil(items.length / perPage);
 
- 
-if (Math.abs(diffX) > 50) {
+  if (Math.abs(diffX) > 50) {
     if (diffX < 0) {
-      // 右にスワイプ → 次へ
-      const perPage = getItemsPerPage();
-      const totalPages = Math.ceil(items.length / perPage);
-
       if (currentPage < totalPages) {
         currentPage++;
       } else {
-        currentPage = 1; // ← 最後なら1に戻す
+        currentPage = 1;
       }
-      update();
-    } else if (diffX > 0) {
-      // 左にスワイプ → 前へ
+    } else {
       if (currentPage > 1) {
         currentPage--;
       } else {
-        currentPage = totalPages; // ← 最初なら最後へ飛ばす（循環）
+        currentPage = totalPages;
       }
-      update();
     }
+    update();
     isDragging = false;
-}
-
+  }
 });
 
 container.addEventListener("mouseup", () => {
@@ -163,19 +157,42 @@ container.addEventListener("mouseleave", () => {
   isDragging = false;
 });
 
-//スマホのタッチイベント
+// =============================
+// スマホのスワイプ
+// =============================
 let startX = 0;
+let startY = 0;
+let isScrolling; // true:縦スクロール / false:横スワイプ
 
 container.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-});
+  const t = e.touches[0];
+  startX = t.clientX;
+  startY = t.clientY;
+  isScrolling = undefined;
+}, { passive: true });
 
 container.addEventListener("touchmove", (e) => {
-  // スクロール干渉を防ぐ
-  e.preventDefault();
+  const t = e.touches[0];
+  const dx = t.clientX - startX;
+  const dy = t.clientY - startY;
+
+  // まだ方向が決まっていないときだけ判定
+  if (isScrolling === undefined) {
+    isScrolling = Math.abs(dy) > Math.abs(dx);
+  }
+
+  // 横方向の動きが優勢なときだけ、ブラウザのスクロールを止める
+  if (isScrolling === false) {
+    e.preventDefault();
+  }
 }, { passive: false });
 
 container.addEventListener("touchend", (e) => {
+  if (isScrolling) {
+    // 縦スクロールだった場合は何もしない
+    return;
+  }
+
   const endX = e.changedTouches[0].clientX;
   const diffX = endX - startX;
 
@@ -195,11 +212,9 @@ container.addEventListener("touchend", (e) => {
   update();
 });
 
+// リサイズ時
 window.addEventListener("resize", () => {
-  // ページを作り直す
-  track.innerHTML = "";
-  currentPage = 1;
   createPages();
+  // 今のページ番号は維持したまま位置だけ再計算
   update();
 });
-
