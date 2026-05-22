@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll(".Visit_wrapper").forEach(wrapper => {
 
@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     container.addEventListener("mousemove", e => moveDrag(e.clientX));
     container.addEventListener("mouseup", endDrag);
     container.addEventListener("mouseleave", endDrag);
+
     container.addEventListener("touchstart", e => startDrag(e.touches[0].clientX), { passive: true });
     container.addEventListener("touchmove",  e => moveDrag(e.touches[0].clientX), { passive: true });
     container.addEventListener("touchend", endDrag);
