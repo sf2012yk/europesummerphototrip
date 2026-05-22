@@ -148,7 +148,6 @@ width: 100%;
 aspect-ratio: 4 / 3;   /* ← これだけで4:3固定 */
 object-fit: cover;           /* 縦横比ばらつきを吸収 */
 display: block;
-pointer-events: none;
 }
 /* 外枠：ボタンを重ねるためのラッパー */
 .Visit_wrapper {
