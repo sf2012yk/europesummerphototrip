@@ -96,23 +96,40 @@ document.addEventListener("DOMContentLoaded", function () {
     container.addEventListener("mouseup", endDrag);
     container.addEventListener("mouseleave", endDrag);
 
+    let startX = 0;
+    let startY = 0;
+    let isScrolling = undefined;
+
     container.addEventListener("touchstart", e => {
       startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      isScrolling = undefined;
     }, { passive: true });
 
     container.addEventListener("touchmove", e => {
-      e.preventDefault(); // ← スクロール干渉を止める
+      const dx = e.touches[0].clientX - startX;
+      const dy = e.touches[0].clientY - startY;
+
+      // まだ方向が決まっていない場合、判定する
+      if (isScrolling === undefined) {
+        isScrolling = Math.abs(dy) > Math.abs(dx);
+      }
+
+      // 横方向の動きが大きい → スワイプとして扱う
+      if (!isScrolling) {
+        e.preventDefault(); // ← 横スワイプ時のみ発動
+      }
     }, { passive: false });
 
     container.addEventListener("touchend", e => {
-      const endX = e.changedTouches[0].clientX;
-      const diff = endX - startX;
+      const dx = e.changedTouches[0].clientX - startX;
 
-      if (Math.abs(diff) > 50) {
-        if (diff < 0) goTo(currentPage + 1);
-        else          goTo(currentPage - 1);
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) goTo(currentPage + 1);
+        else        goTo(currentPage - 1);
       }
     });
+
 
 
     window.addEventListener("resize", () => {
