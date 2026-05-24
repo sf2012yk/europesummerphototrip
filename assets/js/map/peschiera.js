@@ -1,5 +1,5 @@
 
-var map = L.map('mapPeschiera', {center: [45.439592922093574, 10.697341742616992],
+var map = L.map('mappeschiera', {center: [45.439592922093574, 10.697341742616992],
         zoom: 13.4,
         minZoom: 7,
         maxZoom: 14,
