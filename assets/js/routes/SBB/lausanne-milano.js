@@ -1,9 +1,39 @@
 // 鉄道ルート 
 const LausanneToMilano = [46.51675788314949, 6.6288213303053105];
+const Pully = [46.51098451504778, 6.659677527967272];
+const Lutry = [46.50403912124629, 6.69009937449187];
+const VilletteVD  = [46.495348838279824, 6.707344469401375];
+const Rivaz  = [46.47420482437829, 6.7843884566316355];
+const Vevey  = [46.46321047178358, 6.843248003191649];
+const Clarens  = [46.44283708496331, 6.895531047280673];
+const Montreux  = [46.43590356840814, 6.910570690645356];
+const Villeneuve  = [46.39833316564707, 6.927098169486366];
+const StMaurice  = [46.21632187131059, 7.001772705889716];
+const Evionnaz  = [46.169066928614996, 7.025390167964637];
+const Vernayaz  = [46.13858372008134, 7.038207165325086];
+const LesFumeaux_SBB  = [46.1106882343534, 7.06507406047831];
+const Martigny  = [46.105900936513464, 7.078692627190813];
+const LeVisionnaire21  = [46.112769312215015, 7.097023711400027];
+const CharratFully  = [46.12680929864091, 7.126270933222569];
+const Saxon  = [46.14947579946755, 7.17331150255788];
+const IKEARiddes  = [46.16644702044799, 7.209015151193008];
+const Riddes   = [46.17255448999414, 7.2175982200255575];
+const Conthey  = [46.21604019948911, 7.305114859684318];
+const Sion  = [46.22725106367704, 7.3591934749801];
+const Leuk  = [46.311986756759154, 7.6435429687608645];
+const Visp  = [46.29412803462574, 7.881670091950186];
+const Brig  = [46.31968998136736, 7.988050753981661];
+const Domodossola  = [46.11570207760195, 8.296629496888169];
+const Stresa  = [45.88478349246493, 8.530878104978058];
+const Gallarate  = [45.65989311332792, 8.798565537186887];
 const Centrale_NELS = [45.49380541011251, 9.211797676557616];
 const MilanofromLausanne = [45.486022373628984, 9.20430169797116];
 
 // ルート
 const SBB_LausanneToMilano = L.polyline
-([LausanneToMilano,Centrale_NELS,
+([LausanneToMilano,Pully,Lutry,VilletteVD,Rivaz,Vevey,Clarens,
+  Montreux,Villeneuve,StMaurice,Evionnaz,Vernayaz,LesFumeaux_SBB,
+  Martigny,LeVisionnaire21,CharratFully,Saxon,IKEARiddes,Riddes,Conthey,
+  Sion,Leuk,Visp,Brig,Domodossola,Stresa,Gallarate,
+  Centrale_NELS,
   MilanofromLausanne], { color: '#000000' }).addTo(map);
