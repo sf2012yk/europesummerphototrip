@@ -11,20 +11,22 @@
     className: "icon-hidden"
     });
 
+// Hiddenアイコン用 LayerGroup を作成してマップに追加
+const FlowerIconHidden = L.layerGroup().addTo(map);
 
-//1 ミラノにて
+//1 Milano
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_1.webp" alt="場所名">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">ミラノにて</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_1.webp" alt="Milano">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Milano</a>
     <div class="popup_caption">
     <p>
-    ミラノにて
+    Milano
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([45.46408517581762, 9.1893503474083], {
+var markerGirl1 = L.marker([45.46408517581762, 9.1893503474083], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -35,20 +37,20 @@ var marker = L.marker([45.46408517581762, 9.1893503474083], {
   .openPopup()
   .addTo(map);
 
-//2 ローマの少女
+//2 Rome
     var popupContent = `
     <div class="popup_summer">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_2.webp" alt="ローマの少女">
-    ローマの少女</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_2.webp" alt="Rome">
+    Rome</a>
     <div class="popup_caption">
     <p>
-    場所の説明
+    Rome
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([41.89501247191476, 12.482844272597719], {
+var markerGirl2 = L.marker([41.89501247191476, 12.482844272597719], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -59,19 +61,19 @@ var marker = L.marker([41.89501247191476, 12.482844272597719], {
   .openPopup()
   .addTo(map);
 
-//3シーフード
+//3 St Ives
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="場所名">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">シーフード</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="St Ives">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">St Ives</a>
     <div class="popup_caption">
     <p>
-    シーフード
+    St Ives
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([50.2152235572057, -5.477994454332828], {
+var markerGirl3 = L.marker([50.2152235572057, -5.477994454332828], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -82,19 +84,19 @@ var marker = L.marker([50.2152235572057, -5.477994454332828], {
   .openPopup()
   .addTo(map);
 
-//4噴水の雨でアイスをどうぞ
+//4 Geneve
     var popupContent = `
     <div class="popup_summer">
       <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_4.webp" alt="場所名">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">噴水の雨でアイスをどうぞ</a>
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Geneve</a>
     <div class="popup_caption">
     <p>
-    噴水の雨でアイスをどうぞ
+    Geneve
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([46.20899547593764, 6.150054768882521], {
+var markerGirl4 = L.marker([46.20899547593764, 6.150054768882521], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -107,19 +109,19 @@ var marker = L.marker([46.20899547593764, 6.150054768882521], {
 
 
 
-//5 SLを楽しむ少女
+//5 Paignton
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_5.webp" alt="場所名">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">SLを楽しむ少女</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_5.webp" alt="Paignton">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Paignton</a>
     <div class="popup_caption">
     <p>
-    SLを楽しむ少女
+    Paignton
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([50.434463914316396, -3.565016090145747], {
+var markerGirl5 = L.marker([50.434463914316396, -3.565016090145747], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -132,19 +134,19 @@ var marker = L.marker([50.434463914316396, -3.565016090145747], {
 
 
 
-//6ベルサイユの庭にて
+//6 Versilles
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_6.webp" alt="場所名">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">ベルサイユの庭にて</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_6.webp" alt="Versilles">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Versilles</a>
     <div class="popup_caption">
     <p>
-    ベルサイユの庭にて
+    Versilles
     </p>
     </div>
   </div>
 `;
-var marker = L.marker([48.80535950888077, 2.1181667141239684], {
+var markerGirl6 = L.marker([48.80535950888077, 2.1181667141239684], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -154,6 +156,167 @@ var marker = L.marker([48.80535950888077, 2.1181667141239684], {
 })
   .openPopup()
   .addTo(map);
+
+//7 Napoli
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_7.webp" alt="Napoli">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Napoli</a>
+    <div class="popup_caption">
+    <p>
+    Napoli
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl7 = L.marker([40.84368802246872, 14.239639123541316], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//8 Oxford
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_8.webp" alt="Oxford">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Oxford</a>
+    <div class="popup_caption">
+    <p>
+    Oxford
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl8 = L.marker([51.7537210831604, -1.2543842026933025], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//9 York
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_9.webp" alt="York">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">York</a>
+    <div class="popup_caption">
+    <p>
+    York
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl9 = L.marker([53.96014500154549, -1.079987217374704], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//10 Dover
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_10.webp" alt="Dover">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Dover</a>
+    <div class="popup_caption">
+    <p>
+    Dover
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl10 = L.marker([51.13443900496527, 1.3541171777634533], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//11 London
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_11.webp" alt="London">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">London</a>
+    <div class="popup_caption">
+    <p>
+    London
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl11 = L.marker([51.50107508251143, -0.1271312262745719], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+
+//12 Vienna
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_12.webp" alt="Vienna">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Vienna</a>
+    <div class="popup_caption">
+    <p>
+    Vienna
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl12 = L.marker([48.23473238246301, 16.412434059414803], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+// グループに入れる（ここが重要）
+// 配列にまとめて一括追加
+[markerGirl1,markerGirl2,markerGirl3,markerGirl4,markerGirl5,markerGirl6,
+ markerGirl7,markerGirl8,markerGirl9,markerGirl10,markerGirl11,markerGirl12
+].forEach(m => FlowerIconHidden.addLayer(m));
+
+const HIDE_ZOOM_Flower = 13;  // 例：ズーム13未満で非表示
+
+//  ズームに応じた表示/非表示
+function updateFlowerVisibility() {
+  const z = map.getZoom();
+  if (z < HIDE_ZOOM_Flower) {
+    if (map.hasLayer(FlowerIconHidden)) map.removeLayer(FlowerIconHidden);
+  } else {
+    if (!map.hasLayer(FlowerIconHidden)) map.addLayer(FlowerIconHidden);
+  }
+}
+
+// 初期反映＆イベント登録
+updateFlowerVisibility();
+map.on('zoomend', updateFlowerVisibility);
 
 
 
