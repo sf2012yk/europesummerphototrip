@@ -63,12 +63,9 @@ font-size: 1.1em;
 font-family: Austin News, georgia, times, serif;
 font-size: 1.1em;
 }
-.caption_index{
-height: 85px !important; /* 高さを統一 */
-}
 .caption, 
 .caption_index{
-height: 51.6px; /* 高さを統一 */
+height: 60px; /* 高さを統一 */
 align-items: center; /* 垂直中央揃え */
 justify-content: center; /* 水平中央揃え（必要なら） */
 overflow: hidden;
