@@ -25,7 +25,7 @@ const greenIconLondon = L.layerGroup().addTo(map);
     ビッグベンの説明
     </p>
     <p>
-    <a href="https://bigbentime.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Detail</a>  
+    <a class="popup_link" href="https://bigbentime.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
     </p>
     </div>
   </div>
@@ -49,7 +49,7 @@ var markerBigBen = L.marker([51.50077691418779, -0.12451506657134913], {
     ハロッズの説明
     </p>
     <p>
-    <a href="https://www.harrods.com/en-gb/c/plan-your-visit" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Detail (Official)</a>  
+    <a class="popup_link" href="https://www.harrods.com/en-gb/c/plan-your-visit" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"> ▶ Official Site</a>  
     </p>
     </div>
   </div>
@@ -74,7 +74,7 @@ var markerHarrods = L.marker([51.499405205079945, -0.16349647802672979], {
     リージェントストリートの説明
     </p>
     <p>
-    <a href="https://www.regentstreetonline.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Detail (Official)</a>  
+    <a class="popup_link" href="https://www.regentstreetonline.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
     </p>
     </div>
   </div>
@@ -98,7 +98,7 @@ var markerRegentStreet = L.marker([51.51006617010329, -0.1377072473857915], {
     ロンドン金融街の説明
     </p>
     <p>
-    <a href="https://www.cityoflondon.gov.uk/things-to-do" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Detail (Official)</a>  
+    <a class="popup_link" href="https://www.cityoflondon.gov.uk/things-to-do" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
     </p>
     </div>
   </div>
@@ -135,7 +135,7 @@ var markerNationalGallery = L.marker([51.50886781788075, -0.12835044530862647], 
 
 // グループに入れる（ここが重要）
 // 配列にまとめて一括追加
-[markerBigBen,markerHarrods,,markerRegentStreet,markerCityofLondon,
+[markerBigBen,markerHarrods,markerRegentStreet,markerCityofLondon,
 markerNationalGallery
 ].forEach(m => greenIconLondon.addLayer(m));
 
