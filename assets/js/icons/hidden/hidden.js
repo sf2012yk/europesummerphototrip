@@ -37,10 +37,10 @@ var markerGirl1 = L.marker([45.46408517581762, 9.1893503474083], {
   .openPopup()
   .addTo(map);
 
-//2 St Ives
+//3 St Ives
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_2.webp" alt="St Ives">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="St Ives">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">St Ives</a>
     <div class="popup_caption">
     <p>
@@ -60,10 +60,10 @@ var markerGirl2 = L.marker([50.2152235572057, -5.477994454332828], {
   .openPopup()
   .addTo(map);
 
-//3 York
+//9 York
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="York">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_9.webp" alt="York">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">York</a>
     <div class="popup_caption">
     <p>
@@ -84,10 +84,10 @@ var markerGirl3 = L.marker([53.96014500154549, -1.079987217374704], {
   .addTo(map);
 
 
-//4 London
+//8 London
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_4.webp" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_8.webp" alt="London">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">London</a>
     <div class="popup_caption">
     <p>
@@ -107,10 +107,10 @@ var markerGirl4 = L.marker([51.50107508251143, -0.1271312262745719], {
   .openPopup()
   .addTo(map);
 
-//5 Paignton
+//4 Paignton
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_5.webp" alt="Paignton">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_4.webp" alt="Paignton">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">Paignton</a>
     <div class="popup_caption">
     <p>
@@ -132,10 +132,10 @@ var markerGirl5 = L.marker([50.434463914316396, -3.565016090145747], {
 
 
 
-//6 Versilles
+//11 Versilles
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_6.webp" alt="Versilles">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_11.webp" alt="Versilles">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">Versilles</a>
     <div class="popup_caption">
     <p>
