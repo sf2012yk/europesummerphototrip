@@ -1,7 +1,7 @@
 
 var map = L.map('maproma', {center: [41.90087073150933, 12.502142953698526],
         zoom: 13.4,
-        minZoom: 7,
+        minZoom: 4,
         maxZoom: 14,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止

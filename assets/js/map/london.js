@@ -1,7 +1,7 @@
 // ロンドン
 var map = L.map('maplondon', {center: [51.51066089388474, -0.11054466987584811],
         zoom: 13.4,
-        minZoom: 5,
+        minZoom: 4,
         maxZoom: 14,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止
