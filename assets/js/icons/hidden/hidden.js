@@ -37,19 +37,20 @@ var markerGirl1 = L.marker([45.46408517581762, 9.1893503474083], {
   .openPopup()
   .addTo(map);
 
-//3 St Ives
+
+//3 Venezia
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="St Ives">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">St Ives</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_3.webp" alt="Venezia">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Versilles</a>
     <div class="popup_caption">
     <p>
-    St Ives
+    Venezia
     </p>
     </div>
   </div>
 `;
-var markerGirl2 = L.marker([50.2152235572057, -5.477994454332828], {
+var markerGirl6 = L.marker([45.43164467707329, 12.328893822131244], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -60,10 +61,33 @@ var markerGirl2 = L.marker([50.2152235572057, -5.477994454332828], {
   .openPopup()
   .addTo(map);
 
-//9 York
+//6 Firenze
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_9.webp" alt="York">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_6.webp" alt="Firenze">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Firenze</a>
+    <div class="popup_caption">
+    <p>
+    Firenze
+    </p>
+    </div>
+  </div>
+`;
+var markerGirl2 = L.marker([43.771581499524146, 11.253314433855746], {
+  icon: hiddenIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .openPopup()
+  .addTo(map);
+
+//10 York
+    var popupContent = `
+    <div class="popup_summer">
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_10.webp" alt="York">
     <a href="../../pages/hidden/Hidden.html" class="popup_link">York</a>
     <div class="popup_caption">
     <p>
@@ -84,19 +108,19 @@ var markerGirl3 = L.marker([53.96014500154549, -1.079987217374704], {
   .addTo(map);
 
 
-//8 London
+//5 Roma
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_8.webp" alt="London">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">London</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_7.webp" alt="Roma">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Roma</a>
     <div class="popup_caption">
     <p>
-    London
+    Roma
     </p>
     </div>
   </div>
 `;
-var markerGirl4 = L.marker([51.50107508251143, -0.1271312262745719], {
+var markerGirl4 = L.marker([41.90111713832574, 12.479905240280791], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -130,21 +154,19 @@ var markerGirl5 = L.marker([50.434463914316396, -3.565016090145747], {
   .openPopup()
   .addTo(map);
 
-
-
-//11 Versilles
+//8 Lausanne
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_11.webp" alt="Versilles">
-    <a href="../../pages/hidden/Hidden.html" class="popup_link">Versilles</a>
+      <img class="popup_img" loading="eager" src="../../assets/image/hidden/hidden_8.webp" alt="Lausanne">
+    <a href="../../pages/hidden/Hidden.html" class="popup_link">Lausanne</a>
     <div class="popup_caption">
     <p>
-    Versilles
+    Lausanne
     </p>
     </div>
   </div>
 `;
-var markerGirl6 = L.marker([48.80535950888077, 2.1181667141239684], {
+var markerGirl7 = L.marker([46.49559822445002, 6.722850547266377], {
   icon: hiddenIcon
 })
   .bindPopup(popupContent, {
@@ -158,7 +180,7 @@ var markerGirl6 = L.marker([48.80535950888077, 2.1181667141239684], {
 
 // グループに入れる（ここが重要）
 // 配列にまとめて一括追加
-[markerGirl1,markerGirl2,markerGirl3,markerGirl4,markerGirl5,markerGirl6
+[markerGirl1,markerGirl2,markerGirl3,markerGirl4,markerGirl5,markerGirl6,markerGirl7
 ].forEach(m => FlowerIconHidden.addLayer(m));
 
 const HIDE_ZOOM_Flower = 13;  // 例：ズーム13未満で非表示
