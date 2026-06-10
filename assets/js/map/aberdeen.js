@@ -2,7 +2,7 @@
 var map = L.map('mapaberdeen', {center: [57.148081711279254, -2.0954185993895065],
         zoom: 13.4,
         minZoom: 7,
-        maxZoom: 14,
+        maxZoom: 17,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止
         doubleClickZoom: false,  // ダブルクリックズーム禁止
