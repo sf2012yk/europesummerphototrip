@@ -25,6 +25,20 @@ margin-bottom: 3em;
     object-fit: cover;
 }
 
+.flex_look {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.look_images {
+width: 33%;
+transition: transform 0.3s ease;
+padding: 5px;
+}
+
 .item >img{
 vertical-align: top;
 border: 1px #fff;
@@ -182,26 +196,6 @@ background: #fff;
   opacity: 0.3;
   pointer-events: none;
 }
-
-.flex_look {
-    width: 100%;
-    margin-bottom: 2em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.look_images {
-width: 33%;
-transition: transform 0.3s ease;
-padding: 5px;
-}
-
-
-
-
-
-
 
 /* パソコンPC専用 */
 @media screen and (min-width: 1101px){
