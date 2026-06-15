@@ -183,6 +183,23 @@ background: #fff;
   pointer-events: none;
 }
 
+.flex_look {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.look_images {
+width: 33%;
+transition: transform 0.3s ease;
+padding: 5px;
+}
+
+
+
+
 
 
 
@@ -224,6 +241,11 @@ color:none;
 position:absolute;
 top:-0.5em;
 left:-0.5em;
+}
+.look_images {
+width: 49.9%;
+transition: transform 0.3s ease;
+padding: 5px;
 }
 }
 
