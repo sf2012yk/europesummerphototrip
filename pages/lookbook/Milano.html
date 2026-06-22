@@ -255,11 +255,17 @@ Europe Photo Best
 <h2 class="scroll fadeLeftSlide border">
 Image Gallery
 </h2>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+  <button class="time-btn active" data-target="morning">Morning</button>
+  <button class="time-btn" data-target="afternoon">Afternoon</button>
+  <button class="time-btn" data-target="evening">Evening</button>
+</div>
 <!-- フォトギャラリー -->
 <div class="photo_container">
-<div class="slider-track">
+<!-- morning -->
+<div class="gallery-block" id="morning">
 <div class="photo_wrap">
-<!-- afternoon -->
 <div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/lookbook/milano/afternoon/look_1.webp"
 data-caption="Robin">
@@ -268,6 +274,11 @@ data-caption="Robin">
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
+</div>
+</div>
+<!-- afternoon -->
+<div class="gallery-block" id="afternoon" style="display:none;">
+<div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/lookbook/milano/afternoon/look_2.webp"
 data-caption="Robin">
@@ -285,14 +296,6 @@ data-caption="Robin">
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/milano/afternoon/look_3_1.webp"
-data-caption="Robin">
-<img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/milano/afternoon/look_3_1.webp"
-    alt="都市名1" width="100%" height="auto"/>
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/lookbook/milano/afternoon/look_4.webp"
 data-caption="Robin">
 <img loading="lazy" class="item-img"
@@ -300,6 +303,35 @@ data-caption="Robin">
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/milano/afternoon/look_5.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/milano/afternoon/look_5.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/milano/afternoon/look_6.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/milano/afternoon/look_6.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/milano/afternoon/look_7.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/milano/afternoon/look_7.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+</div>
+</div>
+<!-- evening -->
+<div class="gallery-block" id="evening" style="display:none;">
+<div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/lookbook/milano/evening/look_1.webp"
 data-caption="Robin">
@@ -323,12 +355,6 @@ data-caption="Robin">
   <div class="livecam_caption"></div>
 </div>
 </div>
-<!-- ページネーション -->
-<nav class="pagination">
-<button id="prev" class="pager-arrow">←</button>
-<div id="page-strip" class="page-strip"></div>
-<button id="next" class="pager-arrow">→</button>
-</nav>
 <!-- マップ（ロンドン） -->
 <h2 class="scroll fadeLeftSlide">
 Map
@@ -376,7 +402,7 @@ Special Facts
 </h2>
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="../lookbook/Paris.html">
+<a href="../lookbook/uk_vacation_1.html">
 <img loading="lazy" src="../../assets/image/lookbook/uksummer_1/look_3_1.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
@@ -507,6 +533,7 @@ Genre
 </div>
 </footer>
 <!-- オープンストリートマップのスクリプト -->
+<script src="../../assets/js/control/lookbooktab.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -624,7 +651,6 @@ Genre
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
-<script src="../../assets/js/control/pagenation.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
 <script src="../../assets/js/control/livecam.js"></script>
 </body>
