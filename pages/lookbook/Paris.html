@@ -248,63 +248,79 @@ Europe Photo Best
 </p>
 </div>
 <!-- フォトギャラリー -->
-<h2 class="scroll fadeLeftSlide">
+<!-- フォトエリア -->
+<h2 class="scroll fadeLeftSlide border">
 Image Gallery
 </h2>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+  <button class="time-btn active" data-target="morning">Morning</button>
+  <button class="time-btn" data-target="afternoon">Afternoon</button>
+  <button class="time-btn" data-target="evening">Evening</button>
+</div>
+<!-- フォトギャラリー -->
 <div class="photo_container">
-<div class="slider-track">
+<!-- morning -->
+<div class="gallery-block" id="morning">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_1.webp"
+<a href="../../assets/image/lookbook/paris/morning/look_1.webp"
 data-caption="Robin">
 <img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_1.webp"
+    src="../../assets/image/lookbook/paris/morning/look_1.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+</div>
+</div>
+<!-- afternoon -->
+<div class="gallery-block" id="afternoon" style="display:none;">
+<div class="photo_wrap">
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/paris/afternoon/look_1.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/paris/afternoon/look_1.webp"
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_2.webp"
+<a href="../../assets/image/lookbook/paris/afternoon/look_2.webp"
 data-caption="Robin">
 <img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_2.webp"
+    src="../../assets/image/lookbook/paris/afternoon/look_2.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+</div>
+</div>
+<!-- evening -->
+<div class="gallery-block" id="evening" style="display:none;">
+<div class="photo_wrap">
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/paris/evening/look_1.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/paris/evening/look_1.webp"
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_3.webp"
+<a href="../../assets/image/lookbook/paris/evening/look_2.webp"
 data-caption="Robin">
 <img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_3.webp"
+    src="../../assets/image/lookbook/paris/evening/look_2.webp"
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
 <div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_4.webp"
+<a href="../../assets/image/lookbook/paris/evening/look_3.webp"
 data-caption="Robin">
 <img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_4.webp"
+    src="../../assets/image/lookbook/paris/evening/look_3.webp"
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_5.webp"
-data-caption="Robin">
-<img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_5.webp"
-    alt="都市名1" width="100%" height="auto"/>
-</a>
-</div>
-<div class="item item-c5r2 item-c5r2-md">
-<a href="../../assets/image/lookbook/paris/look_6.webp"
-data-caption="Robin">
-<img loading="lazy" class="item-img"
-    src="../../assets/image/lookbook/paris/look_6.webp"
-    alt="都市名1" width="100%" height="auto"/>
-</a>
-</div>
-
-
-
 </div>
 </div>
 </div>
@@ -320,12 +336,6 @@ data-caption="Robin">
   <div class="livecam_caption"></div>
 </div>
 </div>
-<!-- ページネーション -->
-<nav class="pagination">
-<button id="prev" class="pager-arrow">←</button>
-<div id="page-strip" class="page-strip"></div>
-<button id="next" class="pager-arrow">→</button>
-</nav>
 <!-- マップ-->
 <h2 class="scroll fadeLeftSlide">
 Map
@@ -338,7 +348,7 @@ City Holidays
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="../lookbook/London.html">
-<img loading="lazy" src="../../assets/image/lookbook/london/afternoon/look_2.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<img loading="lazy" src="../../assets/image/lookbook/london/evening/look_4.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-gb"></span><span style="margin-left: 15px;">London</span>
@@ -348,7 +358,7 @@ City Holidays
 </div>
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="../lookbook/Paris.html">
-<img loading="lazy" src="../../assets/image/lookbook/paris/look_5.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<img loading="lazy" src="../../assets/image/lookbook/paris/morning/look_1.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
 <div class="caption white">
 <h4>
 <span class="flag-icon flag-icon-fr"></span><span style="margin-left: 15px;">Paris</span>
@@ -622,7 +632,7 @@ Genre
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
-<script src="../../assets/js/control/pagenation.js"></script>
+<script src="../../assets/js/control/lookbooktab.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
 <script src="../../assets/js/control/livecam.js"></script>
 </body>
