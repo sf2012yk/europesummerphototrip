@@ -30,7 +30,7 @@ margin-bottom: 3em;
   grid-template-columns: repeat(6, 2fr);
   grid-auto-flow: row dense;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .time-btn {
@@ -179,7 +179,7 @@ border-radius: 4px;
 .Visit_item_info {
 margin: 0 auto 3em;
 display: grid;
-grid-template-columns: repeat(3, 2fr);
+grid-template-columns: repeat(4, 2fr);
 grid-auto-flow: row dense;
 width: 100%;
 flex-wrap: nowrap;
@@ -258,7 +258,7 @@ padding: 5px;
   grid-template-columns: repeat(5, 2fr);
   grid-auto-flow: row dense;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 }
 
@@ -269,7 +269,7 @@ padding: 5px;
   grid-template-columns: repeat(4, 2fr);
   grid-auto-flow: row dense;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 .photo_wrap{
 display: grid;
@@ -299,7 +299,7 @@ flex: 0 0 100%;
   grid-template-columns: repeat(2, 2fr);
   grid-auto-flow: row dense;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 .photo_wrap {
   display: grid;
