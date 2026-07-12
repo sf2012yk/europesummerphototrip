@@ -12,17 +12,25 @@ margin-bottom: 3em;
   flex-wrap: nowrap;
   transition: transform 0.5s ease; /* スライドアニメーション */
 }
-/* 横スライドする帯 */
-.slider-track {
-  display: flex;
-  transition: transform 1s ease;
-}
 
-/* 画像を枠にフィットさせる */
-.photo_wrap .item-img {
+/* 通常のアイテム共通設定 */
+.item {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    overflow: hidden;
+}
+
+.item-img {
+    width: 100%;
+    height: 100%;
+    /* 画像の比率が崩れないようにカバーします */
+    object-fit: cover; 
+}
+/* aタグがdivと同じサイズになるように広げます */
+.item > a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .time-buttons {
@@ -211,10 +219,48 @@ display: block;
 @media screen and (min-width: 1101px){
 .photo_wrap{
 display: grid;
-grid-template-columns: repeat(3, 4fr);
+grid-template-columns: repeat(3, 1fr);
 grid-auto-flow: row dense;
+grid-auto-rows: minmax(min-content, max-content); 
 width: 100%;
 flex-shrink: 0;
+}
+/* 1列目の【等幅・横長画像（4:3）】用の指定 */
+/* 3列グリッドの1マス分（span 1）に素直に収めます */
+.item-normal-landscape {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 4 / 3; /* 比率を4:3にロック */
+}
+/* 左側の【縦長画像（3:4）】用の指定 */
+/* 横幅1マス分、縦幅2マス分をブち抜きます */
+.item-portrait {
+    grid-column: span 1;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4; /* 比率を3:4にロック */
+}
+
+/* 右側の【横長画像（4:3）】用の指定 */
+/* 横幅2マス分、縦幅1マス分を使います */
+.item-landscape {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 8 / 2; /* 比率を8:3にロック */
+}
+/* 中央に配置する【縦長画像（3:4）】用の指定 */
+/* 3列グリッドの「真ん中（2列目）」に強制配置し、縦2マス分ブち抜きます */
+.item-center-portrait {
+    grid-column: 2 / 3; /* 2列目に固定 */
+    grid-row: span 2;
+    aspect-ratio: 3 / 4; /* 比率を3:4にロック */
+}
+
+/* その左右を固める【横長画像】用の指定 */
+/* 1マスの枠に素直に収め、2枚ずつ縦に綺麗に並べるための設定です */
+.item-side-landscape {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 4 / 3; /* ここも本来の4:3の美しさが活きます！ */
 }
 .country_photo_wrap {
 display: grid;
