@@ -251,10 +251,15 @@ Europe Photo Best
 <h2 class="scroll fadeLeftSlide">
 Image Gallery
 </h2>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+  <button class="time-btn active" data-target="City_Centre">City Centre</button>
+  <button class="time-btn" data-target="Tab2">Tab2</button>
+</div>
 <div class="photo_container">
-<div class="slider-track">
+<!-- City_Centre-->
+<div class="gallery-block" id="City_Centre">
 <div class="photo_wrap">
-<!-- summer_vacaion -->
 <div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/lookbook/history/look_1.webp"
 data-caption="Robin">
@@ -279,8 +284,81 @@ data-caption="Robin">
     alt="都市名1" width="100%" height="auto"/>
 </a>
 </div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_4.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_4.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_5.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_5.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_6.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_6.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_7.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_7.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_8.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_8.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_8_1.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_8_1.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_9.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_9.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_10.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_10.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-c5r2 item-c5r2-md">
+<a href="../../assets/image/lookbook/history/look_10_1.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/history/look_10_1.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
 </div>
 </div>
+</div>
+
 </div>
 <!-- ここにライトボックスを追加 -->
 <div id="livecam_box" class="livecam_box">
@@ -294,12 +372,6 @@ data-caption="Robin">
   <div class="livecam_caption"></div>
 </div>
 </div>
-<!-- ページネーション -->
-<nav class="pagination">
-<button id="prev" class="pager-arrow">←</button>
-<div id="page-strip" class="page-strip"></div>
-<button id="next" class="pager-arrow">→</button>
-</nav>
 <!-- マップ-->
 <h2 class="scroll fadeLeftSlide">
 Map
@@ -622,7 +694,8 @@ Genre
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
-<script src="../../assets/js/control/pagenation.js"></script>
+<script src="../../assets/js/control/lookbooktab.js"></script>
+<script src="../../assets/js/control/visittab.js"></script>
 <script src="../../assets/js/control/nextvisit.js"></script>
 <script src="../../assets/js/control/livecam.js"></script>
 </body>
