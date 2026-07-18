@@ -65,60 +65,6 @@ background-color: #F0F0F0;
 border-bottom: 0.1px solid #a1a1a1;
 box-shadow: 0 0 5px 0 rgba(211, 197, 197, 0.5);
 }
-.scroll {
-opacity: 0;
-} 
-.fadeInDown {
-animation-name: fadeInDown;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-} 
-@keyframes fadeInDown{
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-transform: translate(0);
-}
-} 
-.updown {
-transform: translateY(-50px);
-} 
-.fadeLeftSlide {
-animation-name: fadeLeftSlide;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-} 
-@keyframes fadeLeftSlide{
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-transform: translate(0);
-}
-} 
-.fadeLeftSlide {
-transform: translateX(-50px);
-} 
-.fadeRightSlide {
-animation-name: fadeRightSlide;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-} 
-@keyframes fadeRightSlide{
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-transform: translate(0);
-}
-} 
-.fadeRightSlide {
-transform: translateX(50px); ;
-} 
 /*  ヘッダーのスタイル（header-inner） */
 /* 共通 */
 .header_container {
