@@ -11,9 +11,22 @@ document.querySelectorAll('.time-btn').forEach(btn => {
       block.style.display = (block.id === target) ? 'block' : 'none';
     });
 
-    // ページネーションをリセット
+    // ★ フェードを再発火させる処理
+    const activeBlock = document.getElementById(target);
+    const imgs = activeBlock.querySelectorAll('img');
+
+    // ① loaded を外す
+    imgs.forEach(img => img.classList.remove('loaded'));
+
+    // ② 少し遅らせて loaded を付ける（描画後に発火させるため）
+    setTimeout(() => {
+      imgs.forEach(img => img.classList.add('loaded'));
+    }, 50);
+
+    // ページネーション（必要なら）
     currentPage = 1;
     createPages();
     update();
   });
 });
+
