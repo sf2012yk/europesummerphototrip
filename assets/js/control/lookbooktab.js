@@ -4,18 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (firstBtn) {
     firstBtn.click();
-
-    const target = firstBtn.dataset.target;
-    const activeBlock = document.getElementById(target);
-    const imgs = activeBlock.querySelectorAll('img');
-
-    activeBlock.offsetHeight;
-
-    setTimeout(() => {
-      imgs.forEach(img => img.classList.add('loaded'));
-    }, 50);
   }
 });
+
 
 
 
