@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (firstBtn) {
     const target = firstBtn.dataset.target;
     const activeBlock = document.getElementById(target);
-    const items = activeBlock.querySelectorAll('.flex_images_Visit');
 
+    activeBlock.classList.add('active'); // ← 初期表示
+
+    const items = activeBlock.querySelectorAll('.flex_images_Visit');
     setTimeout(() => {
       items.forEach(item => item.classList.add('loaded'));
     }, 50);
 
-    // 初期カテゴリブロックを記録
     window._lastCategoryBlock = firstBtn.closest('.mb_2em');
   }
 
@@ -19,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.time-btn_visit').forEach(btn => {
     btn.addEventListener('click', () => {
 
-      // 今押したカテゴリブロック（UK or EU）
       const currentCategoryBlock = btn.closest('.mb_2em');
       const previousCategoryBlock = window._lastCategoryBlock || null;
 
@@ -27,13 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.time-btn_visit').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // ギャラリー切り替え
+      // ギャラリー切り替え（display:none → active クラス）
       const target = btn.dataset.target;
       document.querySelectorAll('.gallery-block_visit').forEach(block => {
-        block.style.display = (block.id === target) ? 'block' : 'none';
+        if (block.id === target) {
+          block.classList.add('active');
+        } else {
+          block.classList.remove('active');
+        }
       });
 
-      // ★ フェード再発火
+      // フェード再発火
       const activeBlock = document.getElementById(target);
       const items = activeBlock.querySelectorAll('.flex_images_Visit');
 
@@ -44,17 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // ★ カテゴリが変わったときだけスクロール位置を調整
       if (previousCategoryBlock && previousCategoryBlock !== currentCategoryBlock) {
-
-        // 押したタブの親ブロックの位置へ戻す
         const blockTop = currentCategoryBlock.offsetTop;
-
         window.scrollTo({
           top: blockTop - 10,
           behavior: 'smooth'
         });
       }
 
-      // 今回のカテゴリブロックを記録
       window._lastCategoryBlock = currentCategoryBlock;
 
     });
