@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- リンクするcss -->
 <link rel="stylesheet" href="../../assets/css/index.css">
+<link rel="stylesheet" href="../../assets/css/lightbox.css">
 <link rel="stylesheet" href="../../assets/css/font.css">
 <link rel="stylesheet" href="../../assets/css/home.css">
 <link rel="stylesheet" href="../../assets/css/common.css">
@@ -13,7 +14,6 @@
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
 <link rel="stylesheet" href="../../assets/css/speechBubble.css">
-<link rel="stylesheet" href="../../assets/css/livecam.css">
 <!-- リンクするjs -->
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <!-- オープンストリートマップのスクリプト -->
@@ -314,31 +314,43 @@ Map
 <h2 class="scroll fadeLeftSlide">
 Scenic Journeys
 </h2>
-<div class="Visit_item_info">
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<div class="genre_flex scroll fadeRightSlide" style="margin-bottom: 2em;">
+<div class="flex_images_category">
 <a href="../lookbook/uk_vacation_1.html">
-<img loading="lazy" src="../../assets/image/lookbook/uksummer_1/look_2.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">London to Cornwall</span>
-</h4>
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/uksummer_1/look_2.webp" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>London to Cornwall</p>
 </div>
+</figcaption>
 </a>
 </div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<div class="flex_images_category">
 <a href="../lookbook/Edinburgh.html">
-<img loading="lazy" src="../../assets/image/lookbook/edinburgh/afternoon/look_1.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 15px;">Edinburgh Travel</span>
-</h4>
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/edinburgh/afternoon/look_1.webp" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Edinburgh Travel</p>
 </div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="pages/genre/foods.html">
+<figcaption>
+<img loading="lazy" src="assets/image/index/food_sweets.webp" alt="Edinburgh Travel"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Edinburgh Travel</p>
+</div>
+</figcaption>
 </a>
 </div>
 </div>
-<h2 class="scroll fadeLeftSlide">
-Category
-</h2>
+<!-- カテゴリ　-->
+<div class="time-buttons">
+ <button class="time-btn_visit active" data-target="Category"><span style="margin-left: 10px;">Category</span></button>   
+</div>
+<div class="gallery-block_visit" id="Category">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="../hidden/CityHolidays.html">
@@ -369,6 +381,7 @@ Category
 </h4>
 </div>
 </a>
+</div>
 </div>
 </div>
 </div>
@@ -496,6 +509,7 @@ Genre
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="../../assets/js/control/lightbox.js"></script>
 <script src="../../assets/js/index.js"></script>
 <script src="../../assets/js/megamenu.js"></script>
 <!-- ★オープンストリートマップ -->
@@ -610,7 +624,7 @@ Genre
 <!-- コントロール -->
 <script src="../../assets/js/control/zoom.js"></script>
 <script src="../../assets/js/control/click.js"></script>
-<script src="../../assets/js/control/nextvisit.js"></script>
-<script src="../../assets/js/control/livecam.js"></script>
+<script src="../../assets/js/control/lookbooktab.js"></script>
+<script src="../../assets/js/control/visittab.js"></script>
 </body>
 </html>
