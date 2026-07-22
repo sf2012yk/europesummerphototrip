@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- リンクするcss -->
 <link rel="stylesheet" href="../../assets/css/index.css">
+<link rel="stylesheet" href="../../assets/css/lightbox.css">
 <link rel="stylesheet" href="../../assets/css/font.css">
 <link rel="stylesheet" href="../../assets/css/home.css">
 <link rel="stylesheet" href="../../assets/css/common.css">
@@ -13,7 +14,6 @@
 <link rel="stylesheet" href="../../assets/css/leaflet.css">
 <link rel="stylesheet" href="../../assets/css/all.min.css">
 <link rel="stylesheet" href="../../assets/css/speechBubble.css">
-<link rel="stylesheet" href="../../assets/css/livecam.css">
 <!-- リンクするjs -->
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <!-- オープンストリートマップのスクリプト -->
@@ -251,8 +251,15 @@ Europe Photo Best
 <h2 class="scroll fadeLeftSlide">
 Image Gallery
 </h2>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+  <button class="time-btn active" data-target="Milano_Area_1">Area1</button>
+  <button class="time-btn" data-target="Milano_Area_2">Area2</button>
+  <button class="time-btn" data-target="Milano_Area_3">Area3</button>
+</div>
 <div class="photo_container">
-<div class="slider-track">
+<!-- Milano_Area_1 -->
+<div class="gallery-block" id="Milano_Area_1">
 <div class="photo_wrap">
 <div class="item item-c5r2 item-c5r2-md">
 <a href="../../assets/image/place/Milano/place_1.webp" data-caption="Milano">
@@ -348,285 +355,9 @@ Spots
 <h2 class="scroll fadeLeftSlide">
 Where to Next ?
 </h2>
-<!-- United Kingdom -->
-<div class="mb_2em">
-<h3 class="scroll fadeLeftSlide">
-<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 10px;">United Kingdom</span>
-</h3>
-<!-- 切り替えタブ -->
-<div class="time-buttons">
-<button class="time-btn_visit active" data-target="UK_SouthEast"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">South East</span></button>
-<button class="time-btn_visit" data-target="UK_SouthWest"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">South West</span></button>
-<button class="time-btn_visit" data-target="UK_Central"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">Central</span></button>
-<button class="time-btn_visit" data-target="UK_North"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">North</span></button>
-<button class="time-btn_visit" data-target="Scotland"><span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 10px;">Scotland</span></button>
-</div>
-<!-- SouthEast（サブ） -->
-<div class="gallery-block_visit" id="UK_SouthEast">
-<div class="Visit_item_info" >
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="London.html">
-<img loading="lazy" src="../../assets/image/city/london.webp" alt="London" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">London</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Dover.html">
-<img loading="lazy" src="../../assets/image/city/dover.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Dover</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Windsor.html">
-<img loading="lazy" src="../../assets/image/city/windsor.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Windsor</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Oxford.html">
-<img loading="lazy" src="../../assets/image/city/oxford.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Oxford</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Cotswolds.html">
-<img loading="lazy" src="../../assets/image/city/cotswolds.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Cotswolds</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Peterborough.html">
-<img loading="lazy" src="../../assets/image/city/peterborough.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Peterborough</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Cambridge.html">
-<img loading="lazy" src="../../assets/image/city/cambridge.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Cambridge</span></h4>
-</div>
-</a>
-</div>
-</div>
-</div>
-<!-- SouthWest（サブ） -->
-<div class="gallery-block_visit" id="UK_SouthWest" style="display:none;">
-<div class="Visit_item_info" >
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Bristol.html">
-<img loading="lazy" src="../../assets/image/city/bristol.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Bristol</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Exeter.html">
-<img loading="lazy" src="../../assets/image/city/exeter.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Exeter</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Paignton.html">
-<img loading="lazy" src="../../assets/image/city/paignton.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Paignton</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Dartmouth.html">
-<img loading="lazy" src="../../assets/image/city/dartmouth.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Dartmouth</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Plymouth.html">
-<img loading="lazy" src="../../assets/image/city/plymouth.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Plymouth</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Penzance.html">
-<img loading="lazy" src="../../assets/image/city/penzance.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Penzance</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Stives.html">
-<img loading="lazy" src="../../assets/image/city/stives.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">St Ives</span>
-</h4>
-</div>
-</a>
-</div>
-</div>
-</div>
-<!-- Central（サブ） -->
-<div class="gallery-block_visit" id="UK_Central" style="display:none;">
-<div class="Visit_item_info" >
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Manchester.html">
-<img loading="lazy" src="../../assets/image/city/manchester.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Manchester</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Birmingham.html">
-<img loading="lazy" src="../../assets/image/city/birmingham.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Birmingham</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Liverpool.html">
-<img loading="lazy" src="../../assets/image/city/liverpool.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Liverpool</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="York.html">
-<img loading="lazy" src="../../assets/image/city/york.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">York</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Yorkshiredales.html">
-<img loading="lazy" src="../../assets/image/city/yorkshiredales.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Yorkshiredales</span>
-</h4>
-</div>
-</a>
-</div>
-</div>
-</div>
-<!-- North（サブ） -->
-<div class="gallery-block_visit" id="UK_North" style="display:none;">
-<div class="Visit_item_info" >
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Durham.html">
-<img loading="lazy" src="../../assets/image/city/durham.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Durham</span></h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Newcastle.html">
-<img loading="lazy" src="../../assets/image/city/newcastle.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Newcastle</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Lakedistrict.html">
-<img loading="lazy" src="../../assets/image/city/lakedistrict.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Lake district</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Carlisle.html">
-<img loading="lazy" src="../../assets/image/city/carlisle.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Carlisle</span>
-</h4>
-</div>
-</a>
-</div>
-</div>
-</div>
-<!-- Scotland（サブ） -->
-<div class="gallery-block_visit" id="Scotland" style="display:none;">
-<div class="Visit_item_info" >
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Edinburgh.html">
-<img loading="lazy" src="../../assets/image/city/edinburgh.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 15px;">Edinburgh</span>
-</h4>
-</div>
-</a>
-</div>
-<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<a href="Aberdeen.html">
-<img loading="lazy" src="../../assets/image/city/aberdeen.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
-<div class="caption white">
-<h4>
-<span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 15px;">Aberdeen</span>
-</h4>
-</div>
-</a>
-</div>
-</div>
-</div>
-</div>
 <!-- Europe Union -->
-<div class="mb_2em">
-<h3 class="scroll fadeLeftSlide">
+<div class= "mb_2em" id="eu-title">
+<h3 class="scroll fadeLeftSlide" >
 <span class="flag-icon flag-icon-eu"></span><span style="margin-left: 10px;">Europe Union</span>
 </h3>
 <!-- 切り替えタブ -->
@@ -635,14 +366,14 @@ Where to Next ?
   <button class="time-btn_visit" data-target="Belgium"><span class="flag-icon flag-icon-be"></span><span style="margin-left: 10px;">Belgium</span></button>
   <button class="time-btn_visit" data-target="Netherlands"><span class="flag-icon flag-icon-nl"></span><span style="margin-left: 10px;">Netherlands</span></button>
   <button class="time-btn_visit" data-target="Switzerland"><span class="flag-icon flag-icon-ch"></span><span style="margin-left: 10px;">Switzerland</span></button>
-  <button class="time-btn_visit" data-target="Italy_North"><span class="flag-icon flag-icon-it"></span><span style="margin-left: 10px;">Italy（North）</span></button>
+  <button class="time-btn_visit active" data-target="Italy_North"><span class="flag-icon flag-icon-it"></span><span style="margin-left: 10px;">Italy（North）</span></button>
   <button class="time-btn_visit" data-target="Italy_South"><span class="flag-icon flag-icon-it"></span><span style="margin-left: 10px;">Italy（South）</span></button>
   <button class="time-btn_visit" data-target="Vatican"><span class="flag-icon flag-icon-va"></span><span style="margin-left: 10px;">Vatican</span></button>
   <button class="time-btn_visit" data-target="Germany"><span class="flag-icon flag-icon-de"></span><span style="margin-left: 10px;">Germany</span></button>
   <button class="time-btn_visit" data-target="Austria"><span class="flag-icon flag-icon-at"></span><span style="margin-left: 10px;">Austria</span></button>
 </div>
 <!-- France -->
-<div class="gallery-block_visit" id="France" style="display:none;">
+<div class="gallery-block_visit" id="France">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Paris.html">
@@ -687,7 +418,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Belgium -->
-<div class="gallery-block_visit" id="Belgium" style="display:none;">
+<div class="gallery-block_visit" id="Belgium">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Bruges.html">
@@ -702,7 +433,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Netherlands -->
-<div class="gallery-block_visit" id="Netherlands" style="display:none;">
+<div class="gallery-block_visit" id="Netherlands">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Amsterdam.html">
@@ -727,7 +458,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Switzerland -->
-<div class="gallery-block_visit" id="Switzerland" style="display:none;">
+<div class="gallery-block_visit" id="Switzerland">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Bern.html">
@@ -812,7 +543,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Italy North -->
-<div class="gallery-block_visit" id="Italy_North" style="display:none;">
+<div class="gallery-block_visit" id="Italy_North">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Milano.html">
@@ -897,7 +628,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Italy South -->
-<div class="gallery-block_visit" id="Italy_South" style="display:none;">
+<div class="gallery-block_visit" id="Italy_South">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Firenze.html">
@@ -952,7 +683,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Vatican -->
-<div class="gallery-block_visit" id="Vatican" style="display:none;">
+<div class="gallery-block_visit" id="Vatican">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Vatican.html">
@@ -967,7 +698,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Germany -->
-<div class="gallery-block_visit" id="Germany" style="display:none;">
+<div class="gallery-block_visit" id="Germany">
 <div class="Visit_item_info">
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Cologne.html">
@@ -982,7 +713,7 @@ Where to Next ?
 </div>
 </div>
 <!-- Austria -->
-<div class="gallery-block_visit" id="Austria" style="display:none;">
+<div class="gallery-block_visit" id="Austria">
 <div class="Visit_item_info" >
 <div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <a href="Vienna.html">
@@ -1017,6 +748,283 @@ Where to Next ?
 </div>
 </div>
 </div>
+<!-- United Kingdom -->
+<div class= "mb_2em" id="uk-title">
+<h3 class="scroll fadeLeftSlide" >
+<span class="flag-icon flag-icon-gb"></span><span style="margin-left: 10px;">United Kingdom</span>
+</h3>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+<button class="time-btn_visit" data-target="UK_SouthEast"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">South East</span></button>
+<button class="time-btn_visit" data-target="UK_SouthWest"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">South West</span></button>
+<button class="time-btn_visit" data-target="UK_Central"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">Central</span></button>
+<button class="time-btn_visit" data-target="UK_North"><span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 10px;">North</span></button>
+<button class="time-btn_visit" data-target="Scotland"><span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 10px;">Scotland</span></button>
+</div>
+<!-- SouthEast（サブ） -->
+<div class="gallery-block_visit" id="UK_SouthEast">
+<div class="Visit_item_info" >
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="London.html">
+<img loading="lazy" src="../../assets/image/city/london.webp" alt="London" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">London</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Dover.html">
+<img loading="lazy" src="../../assets/image/city/dover.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Dover</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Windsor.html">
+<img loading="lazy" src="../../assets/image/city/windsor.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Windsor</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Oxford.html">
+<img loading="lazy" src="../../assets/image/city/oxford.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Oxford</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Cotswolds.html">
+<img loading="lazy" src="../../assets/image/city/cotswolds.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Cotswolds</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Peterborough.html">
+<img loading="lazy" src="../../assets/image/city/peterborough.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Peterborough</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Cambridge.html">
+<img loading="lazy" src="../../assets/image/city/cambridge.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Cambridge</span></h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- SouthWest（サブ） -->
+<div class="gallery-block_visit" id="UK_SouthWest">
+<div class="Visit_item_info" >
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Bristol.html">
+<img loading="lazy" src="../../assets/image/city/bristol.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Bristol</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Exeter.html">
+<img loading="lazy" src="../../assets/image/city/exeter.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Exeter</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Paignton.html">
+<img loading="lazy" src="../../assets/image/city/paignton.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Paignton</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Dartmouth.html">
+<img loading="lazy" src="../../assets/image/city/dartmouth.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Dartmouth</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Plymouth.html">
+<img loading="lazy" src="../../assets/image/city/plymouth.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Plymouth</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Penzance.html">
+<img loading="lazy" src="../../assets/image/city/penzance.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Penzance</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Stives.html">
+<img loading="lazy" src="../../assets/image/city/stives.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">St Ives</span>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- Central（サブ） -->
+<div class="gallery-block_visit" id="UK_Central">
+<div class="Visit_item_info" >
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Manchester.html">
+<img loading="lazy" src="../../assets/image/city/manchester.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Manchester</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Birmingham.html">
+<img loading="lazy" src="../../assets/image/city/birmingham.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Birmingham</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Liverpool.html">
+<img loading="lazy" src="../../assets/image/city/liverpool.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Liverpool</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="York.html">
+<img loading="lazy" src="../../assets/image/city/york.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">York</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Yorkshiredales.html">
+<img loading="lazy" src="../../assets/image/city/yorkshiredales.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Yorkshiredales</span>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- North（サブ） -->
+<div class="gallery-block_visit" id="UK_North">
+<div class="Visit_item_info" >
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Durham.html">
+<img loading="lazy" src="../../assets/image/city/durham.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Durham</span></h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Newcastle.html">
+<img loading="lazy" src="../../assets/image/city/newcastle.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Newcastle</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Lakedistrict.html">
+<img loading="lazy" src="../../assets/image/city/lakedistrict.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Lake district</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Carlisle.html">
+<img loading="lazy" src="../../assets/image/city/carlisle.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-eng"></span><span style="margin-left: 15px;">Carlisle</span>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- Scotland（サブ） -->
+<div class="gallery-block_visit" id="Scotland">
+<div class="Visit_item_info" >
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Edinburgh.html">
+<img loading="lazy" src="../../assets/image/city/edinburgh.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 15px;">Edinburgh</span>
+</h4>
+</div>
+</a>
+</div>
+<div class="flex_images_Visit" style="box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<a href="Aberdeen.html">
+<img loading="lazy" src="../../assets/image/city/aberdeen.webp" alt="トップ画像" class="alignnone size-full wp-image-189420" width="100%" height="auto" style="vertical-align: middle;;">
+<div class="caption white">
+<h4>
+<span class="flag-icon flag-icon-gb-sct"></span><span style="margin-left: 15px;">Aberdeen</span>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+
 </div>
 <!-- 次はどこへ行きたい？ end -->
 </div>
@@ -1135,7 +1143,7 @@ Genre
 
 <div class="footer_copy">
 <p class="copy_light" style="color: aliceblue;">
-&copy;2019-2025 by Shinsaku Fujio PHOTO.All Rights Reserved.
+&copy;2019-2026 by Shinsaku Fujio PHOTO.All Rights Reserved.
 </p>
 </div>
 </footer>
@@ -1144,6 +1152,7 @@ Genre
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="../../assets/js/control/lightbox.js"></script>
 <script src="../../assets/js/index.js"></script>
 <script src="../../assets/js/megamenu.js"></script>
 <!-- ★オープンストリートマップ -->
@@ -1258,7 +1267,5 @@ Genre
 <script src="../../assets/js/control/click.js"></script>
 <script src="../../assets/js/control/lookbooktab.js"></script>
 <script src="../../assets/js/control/visittab.js"></script>
-<script src="../../assets/js/control/nextvisit.js"></script>
-<script src="../../assets/js/control/livecam.js"></script>
 </body>
 </html>
