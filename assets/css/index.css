@@ -163,6 +163,57 @@ list-style: none;
 .opacity{
 opacity: 0.4;
 }
+.fadeInDown {
+animation-name: fadeInDown;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+} 
+@keyframes fadeInDown{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+transform: translate(0);
+}
+} 
+.updown {
+transform: translateY(-50px);
+} 
+.fadeLeftSlide {
+animation-name: fadeLeftSlide;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+} 
+@keyframes fadeLeftSlide{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+transform: translate(0);
+}
+} 
+.fadeLeftSlide {
+transform: translateX(-50px);
+} 
+.fadeRightSlide {
+animation-name: fadeRightSlide;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+} 
+@keyframes fadeRightSlide{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+transform: translate(0);
+}
+} 
+.fadeRightSlide {
+transform: translateX(50px); ;
+} 
 .city_item_info ul{
 list-style: none;
 margin-left: 1em;
