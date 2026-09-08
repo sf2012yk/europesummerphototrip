@@ -26,43 +26,6 @@
     className: "icon-station_2"
     });
 
-//  Aachen
-    var popupContent = `
-      <div class="popup_summer">
-    <a href="../../assets/image/map/station/archen.webp" 
-       data-lightbox="image" 
-       data-title="Aachen">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/archen.webp" alt="Aachen Station">
-    </a>
-    <div class="popup_caption">
-    <a href="../../assets/image/map/station/archen.webp" data-lightbox="image" data-title="Aachen Station" class="popup_link">Aachen Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="AachenToCologneCard">
-    <p class="next_text">▶ Cologne（50km）</span>
-    </div>
-    <div class="next_card" id="AachenToLiegeCard">
-    <p class="next_text">◀ Liege（40km）</span>
-    </div>
-    </div>
-  </div>
-`;
-var markerAachen = L.marker([50.767679838672564, 6.090875981954147], {
-  icon: station_2_Icon //途中駅はstation_2_Iconで切り替え
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-})
-  .addTo(map);
-
-
-
 //  Cologne
     var popupContent = `
       <div class="popup_summer">
@@ -73,23 +36,11 @@ var markerAachen = L.marker([50.767679838672564, 6.090875981954147], {
     </a>
     <div class="popup_caption">
     <a href="../../assets/image/map/station/cologne.webp" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="CologneToBrusselCard">
-    <p class="next_text">◀ Brussel（230km）</span>
-    </div>
-    <div class="next_card" id="CologneToBaselCard">
-    <p class="next_text">▼ Basel（480km）</span>
-    </div>
     </div>
   </div>
 `;
 var markerCologne = L.marker([50.94325481600945, 6.9585388293166295], {
-  icon: stationIcon //途中駅はstation_2_Iconで切り替え
+  icon: stationIcon //途中駅はstation_2_Iconで
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -98,33 +49,21 @@ var markerCologne = L.marker([50.94325481600945, 6.9585388293166295], {
 })
   .addTo(map);
 
-//  Mannheim
+//  Flughafen
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="" 
        data-lightbox="image" 
-       data-title="Mannheim">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Mannheim Station">
+       data-title="Flughafen">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/flughafen.webp" alt="Flughafen">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Mannheim Station" class="popup_link">Mannheim Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="MannheimToCologneCard">
-    <p class="next_text">▶ Cologne（250km）</span>
-    </div>
-    <div class="next_card" id="MannheimToKarlsruheCard">
-    <p class="next_text">▶ Karlsruhe（60km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Frankfurt Station" class="popup_link">Flughafen (Airport)</a>
     </div>
   </div>
 `;
-var markerMannheim = L.marker([49.47968211722923, 8.467507974305194], {
-  icon: station_2_Icon 
+var markerFlughafen = L.marker([50.05293131033702, 8.570193641183682], {
+  icon: stationIcon //途中駅はstation_2_Iconで
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -133,33 +72,22 @@ var markerMannheim = L.marker([49.47968211722923, 8.467507974305194], {
 })
   .addTo(map);
 
-//  Karlsruhe
+
+//  Frankfurt
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="" 
        data-lightbox="image" 
-       data-title="Karlsruhe">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Karlsruhe Station">
+       data-title="Frankfurt">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/frankfurt.webp" alt="Frankfurt Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Karlsruhe Station" class="popup_link">Karlsruhe Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="KarlsruheToMannheimCard">
-    <p class="next_text">▶ Mannheim（60km）</span>
-    </div>
-    <div class="next_card" id="KarlsruheToOffenburgCard">
-    <p class="next_text">▶ Offenburg（60km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Frankfurt Station" class="popup_link">Frankfurt Station</a>
     </div>
   </div>
 `;
-var markerKarlsruhe = L.marker([48.993787878225646, 8.402638200453167], {
-  icon: station_2_Icon 
+var markerFrankfurt = L.marker([50.10686863147775, 8.662539152027437], {
+  icon: stationIcon //途中駅はstation_2_Iconで
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -168,33 +96,21 @@ var markerKarlsruhe = L.marker([48.993787878225646, 8.402638200453167], {
 })
   .addTo(map);
 
-//  Offenburg
+  //  nurnberg
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="" 
        data-lightbox="image" 
-       data-title="Offenburg">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Offenburg Station">
+       data-title="Nurnberg">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/nurnberg.webp" alt="Nurnberg Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Offenburg Station" class="popup_link">Offenburg Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="OffenburgToKarlsruheCard">
-    <p class="next_text">▶ Karlsruhe（60km）</span>
-    </div>
-    <div class="next_card" id="OffenburgToFreiburgCard">
-    <p class="next_text">▶ Freiburg（60km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Nurnberg Station" class="popup_link">Nurnberg Station</a>
     </div>
   </div>
 `;
-var markerOffenburg = L.marker([48.476674609387295, 7.946440305878149], {
-  icon: station_2_Icon 
+var markerNurnberg = L.marker([49.44567847015998, 11.081854166258191], {
+  icon: stationIcon //途中駅はstation_2_Iconで
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -203,33 +119,21 @@ var markerOffenburg = L.marker([48.476674609387295, 7.946440305878149], {
 })
   .addTo(map);
 
-//  Freiburg
+ //  Wurzburg
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="" 
        data-lightbox="image" 
-       data-title="Freiburg">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Freiburg Station">
+       data-title="Wurzburg">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/wurzburg.webp" alt="Wurzburg Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Freiburg Station" class="popup_link">Freiburg Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="FreiburgToOffenburgCard">
-    <p class="next_text">▶ Offenburg（60km）</span>
-    </div>
-    <div class="next_card" id="FreiburgToBaselCard">
-    <p class="next_text">▶ Basel（50km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Wurzburg Station" class="popup_link">Wurzburg Station</a>
     </div>
   </div>
 `;
-var markerFreiburg = L.marker([47.99764397378909, 7.841209835361019], {
-  icon: station_2_Icon 
+var markerWurzburg = L.marker([49.80211087604598, 9.935629793264921], {
+  icon: stationIcon //途中駅はstation_2_Iconで
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
