@@ -379,3 +379,26 @@ var markerVicenza = L.marker([45.5409930564181, 11.538794841267709], {
   keepInView: true,
 })
   .addTo(map);
+
+//  Fiumicino
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Vicenza">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/vicenza.webp" alt="Fiumicino">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Fiumicino" class="popup_link">Roma Fiumicino Airport</a>
+    </div>
+  </div>
+`;
+var markerFiumicino = L.marker([41.79398762260918, 12.251412147828841], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
