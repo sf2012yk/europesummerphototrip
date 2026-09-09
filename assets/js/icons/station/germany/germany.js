@@ -362,6 +362,52 @@ var markerWurzburg = L.marker([49.80211087604598, 9.935629793264921], {
 })
   .addTo(map);
 
+//  Steinach
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Steinach">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/steinach.webp" alt="Steinach Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Steinach Station" class="popup_link">Steinach Station</a>
+    </div>
+  </div>
+`;
+var markerSteinach = L.marker([49.453067020424825, 10.27350498954168], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Rothenburg
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Rothenburg">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/rothenburg.webp" alt="Rothenburg Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Rothenburg Station" class="popup_link">Rothenburg Station</a>
+    </div>
+  </div>
+`;
+var markerRothenburg = L.marker([49.376815204696996, 10.190905200749793], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 //  Bamberg
     var popupContent = `
       <div class="popup_summer">
