@@ -161,7 +161,7 @@ var markerGeneva = L.marker([46.20996053976771, 6.141703085164053], {
     <a href="" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/geneve.webp" alt="Geneva Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/airport/genevegva.webp" alt="Geneva Airport">
     </a>
     <div class="popup_caption">
     <a href="" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
