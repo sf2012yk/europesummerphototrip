@@ -13,44 +13,17 @@
     className: "icon-station"
     });
 
-     //通過駅等（station_2）アイコン：
-    var station_2_Icon = L.icon({
-    iconUrl: "../../assets/image/icon/train_2.png",
-    iconRetinaUrl:"../../assets/image/icon/train_2@2x.png",
-    shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
-    iconSize:     [40, 40], // アイコンのサイズ
-    shadowSize:   [41, 25], // size of the shadow
-    iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
-    shadowAnchor: [16, 28],  // the same for the shadow
-    popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
-    className: "icon-station_2"
-    });
 
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/vienna.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Vienna">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/vienna.webp" alt="Vienna Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/vienna.webp" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="ViennaToSalzburgCard">
-    <p class="next_text">◀ Salzburg（320km）</span>
-    </div>
-    <div class="next_card" id="ViennaToFlughafenWienCard">
-    <p class="next_text">&#x2708; Airport（17km）</span>
-    </div>
-    <div class="next_card" id="ViennaToVeneziaCard">
-    <p class="next_text">▼ Venezia（670km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
     </div>
   </div>
 `;
@@ -68,25 +41,13 @@ var markerViennaCentral = L.marker([48.18500525586605, 16.377671700808875], {
 //  Salzburg
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/salzburg.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Salzburg">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/salzburg.webp" alt="Salzburg Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/salzburg.webp" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="SalzburgToViennaCard">
-    <p class="next_text">▶ Vienna（300km）</span>
-    </div>
-    <div class="next_card" id="SalzburgToInnsbruckCard">
-    <p class="next_text">◀ Innsbruck（190km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
     </div>
   </div>
 `;
@@ -104,28 +65,13 @@ var markerSalzburg = L.marker([47.812680660648525, 13.045783626953863], {
 //  Innsbruck
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/innsbruck.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Innsbruck">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/innsbruck.webp" alt="Innsbruck Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/innsbruck.webp" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="InnsbruckToSalzburgCard">
-    <p class="next_text">▶ Salzburg（190km）</span>
-    </div>
-    <div class="next_card" id="InnsbruckToZurichCard">
-    <p class="next_text">◀ Zurich（280km）</span>
-    </div>
-    <div class="next_card" id="InnsbruckToVeronaCard">
-    <p class="next_text">▼ Verona（240km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
     </div>
   </div>
 `;

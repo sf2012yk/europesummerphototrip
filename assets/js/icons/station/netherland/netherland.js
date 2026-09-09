@@ -13,44 +13,16 @@
     className: "icon-station"
     });
 
-     //通過駅等（station_2）アイコン：
-    var station_2_Icon = L.icon({
-    iconUrl: "../../assets/image/icon/train_2.png",
-    iconRetinaUrl:"../../assets/image/icon/train_2@2x.png",
-    shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
-    iconSize:     [40, 40], // アイコンのサイズ
-    shadowSize:   [41, 25], // size of the shadow
-    iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
-    shadowAnchor: [16, 28],  // the same for the shadow
-    popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
-    className: "icon-station_2"
-    });
-
 // ES01 Amsterdam Centraal駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/amsterdam.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/amsterdam.webp" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/amsterdam.webp" alt="Amsterdam Centraal">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/amsterdam.webp" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
-    <p>
-    アムステルダム駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="BrusselToStPancrasCard">
-    <p class="next_text">◀ London（370km）</span>
-    </div>
-    <div class="next_card" id="BrusselToAntwerpCard">
-    <p class="next_text">▲ Antwerp（50km）</span>
-    </div>
-    <div class="next_card" id="BrusselToCologneCard">
-    <p class="next_text">▶ Cologne（230km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Amsterdam Centraal" class="popup_link">Amsterdam Centraal</a>
     </div>
   </div>
 `;

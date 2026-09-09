@@ -1,8 +1,3 @@
-// Icons module
-
-// 追加するページ
-const targetLayer = window.parisMap || window.londonMap || window.indexMap || window.manchesterMap;
-
   //主要駅（station）アイコン：
     var stationIcon = L.icon({
     iconUrl: "../../assets/image/icon/train.png",
@@ -16,44 +11,16 @@ const targetLayer = window.parisMap || window.londonMap || window.indexMap || wi
     className: "icon-station"
     });
 
-     //通過駅等（station_2）アイコン：
-    var station_2_Icon = L.icon({
-    iconUrl: "../../assets/image/icon/train_2.png",
-    iconRetinaUrl:"../../assets/image/icon/train_2@2x.png",
-    shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
-    iconSize:     [40, 40], // アイコンのサイズ
-    shadowSize:   [41, 25], // size of the shadow
-    iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
-    shadowAnchor: [16, 28],  // the same for the shadow
-    popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
-    className: "icon-station_2"
-    });
-
 // GW_01 Paddington駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/paddington.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Paddington">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/paddington.webp" alt="Paddington Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/paddington.webp" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
-    <p>
-    ヴィクトリア様式の美しい駅舎を持つ、ロンドン西部のターミナル駅。映画『パディントン』の舞台として知られている。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="PaddingtonToWindsorCard">
-    <p class="next_text">◀ Windsor (35km)</span>
-    </div>
-    <div class="next_card" id="goToBristolCard">
-    <p class="next_text">◀ Bristol (190km)</span>
-    </div>
-    <div class="next_card" id="goToPlymouthCard">
-    <p class="next_text">◀ Plymouth (360km)</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Paddington Station" class="popup_link">London Paddington</a>
     </div>
   </div>
 `;
@@ -71,33 +38,18 @@ var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
 //  Slough
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/slough.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Slough">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/slough.webp" alt="Slough Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/slough.webp" data-lightbox="image" data-title="Slough Station" class="popup_link">Slough Station</a>
-    <p>
-    Slough駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="SloughToLondonCard">
-    <p class="next_text">▶ London（30km）</span>
-    </div>
-    <div class="next_card" id="SloughToReadingCard">
-    <p class="next_text">◀ Reading（27km）</span>
-    </div>
-    <div class="next_card" id="SloughToWindsorCard">
-    <p class="next_text">▼ Windsor（5km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Slough Station" class="popup_link">Slough Station</a>
     </div>
   </div>
 `;
 var markerSlough = L.marker([51.511845860102135, -0.591373216810744], {
-  icon: station_2_Icon //途中駅はstation_2_Iconで切り替え
+  icon: stationIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -109,30 +61,18 @@ var markerSlough = L.marker([51.511845860102135, -0.591373216810744], {
 //  Windsor
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/windsor.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Windsor">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/windsor.webp" alt="Windsor Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/windsor.webp" data-lightbox="image" data-title="Windsor Station" class="popup_link">Windsor Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="WindsorToPaddingtonCard">
-    <p class="next_text">▶ London（35km）</span>
-    </div>
-    <div class="next_card" id="WindsorToSloughCard">
-    <p class="next_text">▲ Slough（5km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Windsor Station" class="popup_link">Windsor Station</a>
     </div>
   </div>
 `;
 var markerWindsor = L.marker([51.48317195088449, -0.6100296685527282], {
-  icon: stationIcon //途中駅はstation_2_Iconで切り替え
+  icon: stationIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -145,33 +85,18 @@ var markerWindsor = L.marker([51.48317195088449, -0.6100296685527282], {
 //  GW_03 Reading駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/reading.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Reading">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/reading.webp" alt="Reading Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/reading.webp" data-lightbox="image" data-title="Reading Station" class="popup_link">Reading Station</a>
-    <p>
-    レディング駅は実質乗換専用駅。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="RedingToPaddingtonCard">
-    <p class="next_text">▶ London（57km）</span>
-    </div>
-    <div class="next_card" id="RedingToBathSpaCard">
-    <p class="next_text">◀ Bath（120km）</span>
-    </div>
-    <div class="next_card" id="RedingToPlymouthCard">
-    <p class="next_text">▼ Plymouth（300km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Reading Station" class="popup_link">Reading Station</a>
     </div>
   </div>
 `;
 var markerReading = L.marker([51.45934668763566, -0.9732287208600584], {
-  icon: station_2_Icon
+  icon: stationIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -185,28 +110,13 @@ var markerReading = L.marker([51.45934668763566, -0.9732287208600584], {
 //  GWR Bath Spa
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/bathspa.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Bath Spa">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/bathspa.webp" alt="Bath Spa Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/bathspa.webp" data-lightbox="image" data-title="Bath Spa Station" class="popup_link">Bath Spa Station</a>
-    <p>
-    Bath Spaの説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="BathSpaToBristolCard">
-    <p class="next_text">◀ Bristol（20km）</span>
-    </div>
-    <div class="next_card" id="BathSpaToReadingCard">
-    <p class="next_text">▶ Reading（115km）</span>
-    </div>
-    <div class="next_card" id="BathSpaToPaddingtonCard">
-    <p class="next_text">▶ London（170km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Bath Spa Station" class="popup_link">Bath Spa Station</a>
     </div>
   </div>
 `;
@@ -224,28 +134,13 @@ var markerBathSpa = L.marker([51.37779463871984, -2.3569100502506695], {
 // GW_06 Bristol_Temple_Meads駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/bristol.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Bristol Temple Meads">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/bristol.webp" alt="Bristol Temple Meads Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/bristol.webp" data-lightbox="image" data-title="Bristol Temple Meads Station" class="popup_link">Bristol Temple Meads Station</a>
-    <p>
-    ブリストルの代表駅。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card">
-    <p class="next_text">▲ Birmingham（150km）</span>
-    </div>
-    <div class="next_card" id="BristoltoPaddingtonCard">
-    <p class="next_text">▶ London（192km）</span>
-    </div>
-    <div class="next_card">
-    <p class="next_text">▼ Plymouth（200km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Bristol Temple Meads Station" class="popup_link">Bristol Temple Meads Station</a>
     </div>
   </div>
 `;
@@ -263,16 +158,16 @@ var markerBristol = L.marker([51.44953427862961, -2.5807735188100613], {
 // GW_06 Taunton駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/taunton.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Taunton Station">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/taunton.webp" alt="Paddington Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/taunton.webp" alt="Taunton Station">
     </a>
-    <a href="../../assets/image/map/station/taunton.webp" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
+    <a href="" data-lightbox="image" data-title="Paddington Station" class="popup_link">Taunton Station</a>
   </div>
 `;
 var marker = L.marker([51.02331377215021, -3.1035371321110854], {
-  icon: station_2_Icon
+  icon: stationIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
@@ -285,12 +180,12 @@ var marker = L.marker([51.02331377215021, -3.1035371321110854], {
 // GW_06 Exeter St Davids駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/exeter.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Exeter St Davids Station">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/exeter.webp" alt="Exeter St Davids Station">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/exeter.webp" alt="Exeter St Davids">
     </a>
-    <a href="../../assets/image/map/station/exeter.webp" data-lightbox="image" data-title="Exeter St Davids Station" class="popup_link">Exeter St Davids Station</a>
+    <a href="" data-lightbox="image" data-title="Exeter St Davids" class="popup_link">Exeter St Davids</a>
   </div>
 `;
 var marker = L.marker([50.7294333305537, -3.543730040076946], {
@@ -307,12 +202,12 @@ var marker = L.marker([50.7294333305537, -3.543730040076946], {
 // GW_06 Dawlish駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/dawlish.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Dawlish Station">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/dawlish.webp" alt="Dawlish Station">
     </a>
-    <a href="../../assets/image/map/station/dawlish.webp" data-lightbox="image" data-title="Dawlish Station" class="popup_link">Dawlish Station</a>
+    <a href="" data-lightbox="image" data-title="Dawlish Station" class="popup_link">Dawlish Station</a>
   </div>
 `;
 var marker = L.marker([50.58064708288686, -3.4645937602425056], {
@@ -331,25 +226,13 @@ var marker = L.marker([50.58064708288686, -3.4645937602425056], {
     var popupContent = `
 
      <div class="popup_summer">
-    <a href="../../assets/image/map/station/plymouth.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Plymouth Station">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/plymouth.webp" alt="Plymouth Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/plymouth.webp" data-lightbox="image" data-title="Plymouth Station" class="popup_link">Plymouth Station</a>
-    <p>
-    プリマスの代表駅。
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="PlymouthToPaddingtonCard">
-    <p class="next_text">▶ London（360km）</span>
-    </div>
-    <div class="next_card" id="goToPenzanceFromPlymouth">
-    <p class="next_text">◀ Penzance（140km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Plymouth Station" class="popup_link">Plymouth Station</a>
     </div>
   </div>
 `;
@@ -368,25 +251,13 @@ var markerPlymouth = L.marker([50.3776674014801, -4.144099241952264], {
     var popupContent = `
     
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/penzance.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Penzance">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/penzance.webp" alt="Penzance Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/penzance.webp" data-lightbox="image" data-title="Penzance Station" class="popup_link">Penzance Station</a>
-    <p>
-    駅の説明
-    </p>
-    </div>
-    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
-    <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="PenzanceToPlymouthCard">
-    <p class="next_text">▶ Plymouth（140km）</span>
-    </div>
-    <div class="next_card" id="PenzanceToStIvesCard">
-    <p class="next_text">▶ StIves（17km）</span>
-    </div>
+    <a href="" data-lightbox="image" data-title="Penzance Station" class="popup_link">Penzance Station</a>
     </div>
   </div>
 `;
