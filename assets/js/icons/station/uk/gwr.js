@@ -34,6 +34,75 @@ var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
 })
   .addTo(map);
 
+// GW_01 Paddington駅：
+    var popupContent = `
+     <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Paddington">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/paddington.webp" alt="Paddington Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Paddington Station" class="popup_link">London Paddington</a>
+    </div>
+  </div>
+`;
+var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+// Terminal3
+    var popupContent = `
+     <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Paddington">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/paddington.webp" alt="Terminal3">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Terminal3" class="popup_link">Heathrow Terminal3</a>
+    </div>
+  </div>
+`;
+var markerTerminal3 = L.marker([51.47028371585865, -0.4590508896992913], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+// Terminal5
+    var popupContent = `
+     <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Paddington">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/paddington.webp" alt="Terminal5">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Terminal5" class="popup_link">Heathrow Terminal5</a>
+    </div>
+  </div>
+`;
+var markerTerminal5 = L.marker([51.47259800120853, -0.4859364875464297], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 
 //  Slough
     var popupContent = `
