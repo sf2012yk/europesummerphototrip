@@ -13,16 +13,40 @@
     className: "icon-station"
     });
 
+
+//  Aachen
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Aachen">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/archen.webp" alt="Aachen Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Aachen Station" class="popup_link">Aachen Station</a>
+    </div>
+  </div>
+`;
+var markerAachen = L.marker([50.7678795377554, 6.091237760548998], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 //  Cologne
     var popupContent = `
       <div class="popup_summer">
-    <a href="../../assets/image/map/station/cologne.webp" 
+    <a href="" 
        data-lightbox="image" 
        data-title="Cologne">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/cologne.webp" alt="Cologne Station">
     </a>
     <div class="popup_caption">
-    <a href="../../assets/image/map/station/cologne.webp" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
+    <a href="" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
     </div>
   </div>
 `;
@@ -83,6 +107,52 @@ var markerFrankfurt = L.marker([50.10686863147775, 8.662539152027437], {
 })
   .addTo(map);
 
+//  Mannheim
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Mannheim">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/mannheim.webp" alt="Mannheim Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Mannheim Station" class="popup_link">Mannheim Station</a>
+    </div>
+  </div>
+`;
+var markerMannheim = L.marker([49.479305335121516, 8.46936677662873], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Darmstadt
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Darmstadt">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/darmstadt.webp" alt="Darmstadt Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Darmstadt Station" class="popup_link">Darmstadt Station</a>
+    </div>
+  </div>
+`;
+var markerDarmstadt = L.marker([49.87228696869196, 8.62988492872985], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 //  Heidelberg
     var popupContent = `
       <div class="popup_summer">
@@ -106,6 +176,75 @@ var markerHeidelberg = L.marker([49.40372754662851, 8.675195233717874], {
 })
   .addTo(map);
 
+//  Karlsruhe
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Karlsruhe">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/karlsruhe.webp" alt="Karlsruhe Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Karlsruhe Station" class="popup_link">Karlsruhe Station</a>
+    </div>
+  </div>
+`;
+var markerKarlsruhe = L.marker([48.99331884774764, 8.401167393215417], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Offenburg
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Offenburg">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/offenburg.webp" alt="Offenburg Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Offenburg Station" class="popup_link">Offenburg Station</a>
+    </div>
+  </div>
+`;
+var markerOffenburg = L.marker([48.47655767254982, 7.9462587196330565], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Freiburg
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Freiburg">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/freiburg.webp" alt="Freiburg Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Freiburg Station" class="popup_link">Freiburg Station</a>
+    </div>
+  </div>
+`;
+var markerFreiburg = L.marker([47.99654898035383, 7.840288363806337], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 //  Idstein
     var popupContent = `
       <div class="popup_summer">
@@ -120,6 +259,29 @@ var markerHeidelberg = L.marker([49.40372754662851, 8.675195233717874], {
   </div>
 `;
 var markerIdstein = L.marker([50.216138494058946, 8.257264943558555], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Hanau
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Hanau">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/hanau.webp" alt="Hanau Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Hanau Station" class="popup_link">Hanau Station</a>
+    </div>
+  </div>
+`;
+var markerHanau = L.marker([50.1210760384029, 8.927999051019844], {
   icon: stationIcon
 })
   .bindPopup(popupContent, {
