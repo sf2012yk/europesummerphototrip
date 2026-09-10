@@ -14,6 +14,30 @@
     });
 
 
+//  Vienna Airport
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Vienna Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/viennaairportt.webp" alt="Vienna Airport">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Vienna Airport Station" class="popup_link">Vienna Airport</a>
+    </div>
+  </div>
+`;
+var markerViennaAirport = L.marker([48.120983101278604, 16.563218852576007], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
