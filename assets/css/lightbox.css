@@ -61,12 +61,37 @@
   object-fit: contain;
   opacity: 0;
   border: 4px solid #fff;
-  transition: opacity 0.3s ease;
+  transform: scale(0.97);
+  transition: opacity .25s ease, transform .25s ease;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .livecam_box_img.show {
   opacity: 1;
+  transform: scale(1);
+}
+
+/* 画像コンテナ（矢印の基準） */
+.livecam_inner {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  /* 画面サイズに応じた最大の高さをあらかじめ確保（これがブレ防止の壁になります） */
+  height: 75vh; 
+  margin: 0;
+
+   /* ★追加：このエリア自体のクリック判定を「透明（すり抜け）」にする */
+  pointer-events: none; 
+}
+
+/* 画像ラッパー、矢印、キャプションなど「中身」はクリックできるように戻す */
+.livecam_img_wrapper,
+.livecam_caption,
+.livecam_prev,
+.livecam_next {
+  /* ★追加：すり抜けを解除し、画像や矢印、文字はちゃんとタップできるようにする */
+  pointer-events: auto; 
 }
 
 /* 閉じるボタン */
@@ -92,19 +117,12 @@
   word-break: break-word;
 }
 
-/* 画像コンテナ（矢印の基準） */
-.livecam_inner {
-  position: relative;
-  display: flex !important;
-  align-items: center;
-  flex-direction: column;
-  height: 80vh; /* ← ここが最重要！ */
-  justify-content: flex-start;
-}
+
 
 .livecam_img_wrapper {
   position: relative;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -125,8 +143,14 @@
   z-index: 10;
 }
 
-.livecam_prev { left: 0px; }
-.livecam_next { right: 0px; }
+.livecam_prev {
+  left: 0;
+  transform: translate(-100%, -50%); /* 横方向に自分のサイズ分だけ左に外す */
+}
+.livecam_next {
+  right: 0;
+  transform: translate(100%, -50%); /* 横方向に自分のサイズ分だけ右に外す */
+}
 
 .livecam_prev:hover,
 .livecam_next:hover {
@@ -141,10 +165,17 @@
     font-size: 22px;
     padding-left: 10px;
     padding-right: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
   }
-  .livecam_prev { left: 0px; }
-  .livecam_next { right: 0px; }
-
+  .livecam_prev {
+    left: 10px; /* 画像の左端から少し内側に */
+    transform: translate(0, -50%); /* 位置調整をリセット */
+  }
+    .livecam_next {
+    right: 10px; /* 画像の右端から少し内側に */
+    transform: translate(0, -50%); /* 位置調整をリセット */
+  }
   /* 画像 */
 .livecam_box_img {
   max-width: 90vw;
