@@ -1,0 +1,17 @@
+// 始発 終着 
+const Changi = [1.357498138269599, 103.98833398368646];
+const Expo = [1.3345579726459842, 103.96136801576067];
+const Tanahmerah  = [1.3272411492366385, 103.94652956758296];
+const Bedok = [1.3239492885951718, 103.92947251911056];
+const Kembangan = [1.3209245626833115, 103.91291792500475];
+const Eunos = [1.3197102856460283, 103.90279965449089];
+const PayaLebar = [1.3179672427823708, 103.89223865650693];
+const Aljunied = [1.3163797946234608, 103.88288311147964];
+const Kallang = [1.3114672797235063, 103.87132815503222];
+const Lavender = [1.3072263473929866, 103.86293052950894];
+const Bugis_EW = [1.300501193271015, 103.85610157289547];
+
+// ルートポリライン
+const EW_singapore = L.polyline
+([Changi,Expo,Tanahmerah,Bedok,Kembangan,Eunos,PayaLebar,Aljunied,Kallang,Lavender,Bugis_EW
+], { color: '#000000' }).addTo(map);
