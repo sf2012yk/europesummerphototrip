@@ -1,7 +1,7 @@
 
 var map = L.map('mapsingapore', {center: [1.3015926288549389, 103.8569463075493],
         zoom: 13.4,
-        minZoom: 10,
+        minZoom: 5,
         maxZoom: 14,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止
