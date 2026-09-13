@@ -1,7 +1,9 @@
- //主要駅（station）アイコン：
+// Icons module
+
+//主要駅（station）アイコン：
     var stationIcon = L.icon({
-    iconUrl: "image/icon/train.png",
-    iconRetinaUrl:"image/icon/train@2x.png",
+    iconUrl: "../../assets/image/icon/train.png",
+    iconRetinaUrl:"../../assets/image/icon/train@2x.png",
     shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize:     [40, 40], // アイコンのサイズ
     shadowSize:   [41, 25], // size of the shadow
