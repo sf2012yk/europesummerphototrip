@@ -84,3 +84,26 @@ var markerMarseille = L.marker([43.303077109875375, 5.3805544238165535], {
   keepInView: true,
 })
   .addTo(map);
+
+//  Charles de Gaulle Airport
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Charles de Gaulle Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/cdg.webp" alt="Charles de Gaulle Airport Station">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Charles de Gaulle Airport Station" class="popup_link">Charles de Gaulle Terminal 2</a>
+    </div>
+  </div>
+`;
+var markerCharlesdeGaulleAirport = L.marker([49.0048525524923, 2.570804097237211], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
