@@ -15,32 +15,52 @@ links.forEach((link, index) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     currentIndex = index;
-    showImage();
+    
+    // 開くときは先にコンテナを表示させてから画像をセットする
     lightbox.style.display = 'flex';
     lightbox.classList.add('open');
+    showImage();
   });
 });
 
-
+// ★ ここを大幅に修正しました
 function showImage() {
   const link = links[currentIndex];
   const newSrc = link.getAttribute('href');
 
-  // いったん透明に
-  lightboxImg.classList.remove('show');
+  // 1. すでに画像が表示されている場合（矢印クリック時など）は、まずフェードアウト
+  if (lightboxImg.classList.contains('show')) {
+    lightboxImg.classList.remove('show');
+    
+    // CSSの transition (.25s) が終わるのを待ってから中身を切り替える
+    setTimeout(() => {
+      updateLightboxContent(newSrc, link.dataset.caption);
+    }, 250); 
+  } else {
+    // 初めてライトボックスを開くときは待たずに即時セット
+    updateLightboxContent(newSrc, link.dataset.caption);
+  }
+}
 
-  // 画像切り替え
-  lightboxImg.src = newSrc;
-  caption.innerHTML = link.dataset.caption || "";
+// 画像とキャプションの中身を書き換えてフェードインさせる共通関数
+function updateLightboxContent(src, captionText) {
+  lightboxImg.src = src;
+  caption.innerHTML = captionText || "";
 
-  // ★ ここが最重要：次のフレームで show を付ける
-  requestAnimationFrame(() => {
+  // 画像の読み込み完了を待ってから、確実に次のフレームでshowを付与
+  lightboxImg.onload = () => {
     requestAnimationFrame(() => {
       lightboxImg.classList.add('show');
     });
-  });
-}
+  };
 
+  // キャッシュ対策：すでに読み込み完了している場合は手動でshowを付ける
+  if (lightboxImg.complete) {
+    requestAnimationFrame(() => {
+      lightboxImg.classList.add('show');
+    });
+  }
+}
 
 // 前へ
 LiveprevBtn.addEventListener('click', () => {
@@ -54,30 +74,19 @@ LivenextBtn.addEventListener('click', () => {
   showImage();
 });
 
-// 閉じる
-closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-// 背景クリックで閉じる
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = 'none';
-  }
-});
-
 // 閉じる（スムーズなフェードアウト）
 function closeLightbox() {
   lightbox.classList.remove('open');
   lightbox.classList.add('close');
+  lightboxImg.classList.remove('show'); // 閉じるときに画像も一緒にフェードアウトさせる
 
-  // アニメーション終了後に display:none
   setTimeout(() => {
     lightbox.style.display = 'none';
     lightbox.classList.remove('close');
-  }, 250); // ← fadeOut と同じ時間
+  }, 250);
 }
 
+// ※重複していた closeBtn.addEventListener('click', closeLightbox); は1つにまとめました
 closeBtn.addEventListener('click', closeLightbox);
 
 lightbox.addEventListener('click', (e) => {
