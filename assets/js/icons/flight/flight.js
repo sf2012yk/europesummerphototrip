@@ -1,0 +1,59 @@
+ //空港アイコン：
+    var airportIcon = L.icon({
+    iconUrl: "image/icon/flight.png",
+    iconRetinaUrl:"image/icon/flight@2x.png",
+    shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize:     [40, 40], // アイコンのサイズ
+    shadowSize:   [41, 25], // size of the shadow
+    iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [16, 28],  // the same for the shadow
+    popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
+    className: "icon-station"
+    });
+
+
+//  Dubai
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Dubai Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/dubai.webp" alt="Dubai Airport">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Dubai Airport" class="popup_link">Dubai Airport</a>
+    </div>
+  </div>
+`;
+var markerDubai = L.marker([25.251227093649398, 55.36661696513273], {
+  icon: airportIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
+//  Doha
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="" 
+       data-lightbox="image" 
+       data-title="Doha">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/doha.webp" alt="Doha Airport">
+    </a>
+    <div class="popup_caption">
+    <a href="" data-lightbox="image" data-title="Doha Airport" class="popup_link">Doha Airport</a>
+    </div>
+  </div>
+`;
+var airportDoha = L.marker([25.267483125982892, 51.618988253293935], {
+  icon: stationIcon
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', 
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
