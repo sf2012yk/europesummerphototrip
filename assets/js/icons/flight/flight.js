@@ -1,14 +1,14 @@
  //空港アイコン：
     var airportIcon = L.icon({
-    iconUrl: "image/icon/flight.png",
-    iconRetinaUrl:"image/icon/flight@2x.png",
+    iconUrl: "../../assets/image/icon/flight.png",
+    iconRetinaUrl:"../../assets/image/icon/flight@2x.png",
     shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize:     [40, 40], // アイコンのサイズ
     shadowSize:   [41, 25], // size of the shadow
     iconAnchor:   [13, 41], // point of the icon which will correspond to marker's location
     shadowAnchor: [16, 28],  // the same for the shadow
     popupAnchor:  [0, -30], // point from which the popup should open relative to the iconAnchor
-    className: "icon-station"
+    className: "icon-flight"
     });
 
 
@@ -49,7 +49,7 @@ var markerDubai = L.marker([25.251227093649398, 55.36661696513273], {
   </div>
 `;
 var airportDoha = L.marker([25.267483125982892, 51.618988253293935], {
-  icon: stationIcon
+  icon: airportIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', 
