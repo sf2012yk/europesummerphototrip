@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- リンクするcss -->
+<link rel="stylesheet" href="../../assets/css/index.css">
+<link rel="stylesheet" href="../../assets/css/lightbox.css">
+<link rel="stylesheet" href="../../assets/css/font.css">
+<link rel="stylesheet" href="../../assets/css/home.css">
+<link rel="stylesheet" href="../../assets/css/common.css">
+<link rel="stylesheet" href="../../assets/css/photo.css">
+<link rel="stylesheet" href="../../assets/css/leaflet_popup.css">
+<link rel="stylesheet" href="../../assets/css/leaflet.css">
+<link rel="stylesheet" href="../../assets/css/all.min.css">
+<link rel="stylesheet" href="../../assets/css/speechBubble.css">
+<!-- リンクするjs -->
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<!-- オープンストリートマップのスクリプト -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<!-- FontawesomeのVersion6.7.2（最新） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- 国旗のcss -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<title>
+Europe Photo Best
+</title>
+<body>
+<!-- sectionのスタート -->
+<!-- ヘッダー -->
+<header>
+<!-- ヘッダー用コンテナ --> 
+<!-- containerのスタート -->
+<div class="container header_container">
+<!-- ヘッダーはここ --> 
+<div class="header-inner">
+<a href="../../index.html">
+<h1>
+<span class="flag-icon flag-icon-eu"></span> <span class="flag-icon flag-icon-gb" style="margin-right: 15px;"></span><br class="sp">Europe Summer <br class="sp">Photo Trip
+</h1>
+</a>
+</div>
+<!-- サブメニュー --> 
+<nav class="header_nav">
+<ul class="header_list">
+<li class="header_item">
+<a href="../../index.html">Best Photo</a>
+</li>  
+<li class="header_item">
+<a>Main City</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="London.html" target="_blank">London</a>
+</li>
+<li class="megaMenu_item">
+<a href="Paris.html" target="_blank">Paris</a>
+</li>
+<li class="megaMenu_item">
+<a href="Amsterdam.html" target="_blank">Amsterdam</a>
+</li>
+<li class="megaMenu_item">
+<a href="Roma.html" target="_blank">Roma</a>
+</li>
+<li class="megaMenu_item">
+<a href="Frankfurt.html" target="_blank">Frankfurt</a>
+</li>
+<li class="megaMenu_item">
+<a href="Vienna.html" target="_blank">Vienna</a>
+</li>
+</ul>
+</div>
+</li> 
+<li class="header_item">
+<a>Themes</a>
+<div class="megaMenu">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a href="../genre/trainstation.html" target="_blank">Train / Station</a>
+</li>
+<li class="megaMenu_item">
+<a href="../genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li class="megaMenu_item">
+<a href="../genre/foods.html" target="_blank">Foods</a>
+</li>
+<li class="megaMenu_item">
+<a href="../genre/nature.html" target="_blank">Nature</a>
+</li>
+<li>
+<a href="../genre/art.html" target="_blank">Art</a>
+</li>
+<li>
+<a href="../hidden/Lookbook.html" target="_blank">A European Holiday</a>
+</li>
+</ul>
+</div>
+</li> 
+</ul>
+</nav>
+<!-- スマホ専用ナビゲーション(Sp_navigation) -->
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<!-- スマホメニュー -->
+<nav class="globalMenuSp">
+<ul class="megaMenu_list">
+<li class="megaMenu_item">
+<a>Best Photo</a>
+<ul class="megaMenu">
+<li>
+<a href="../../index.html">Best Photo</a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+<a>Main City</a>
+<ul class="megaMenu">
+<li>
+<a href="London.html">London</a>
+</li>
+<li>
+<a href="Paris.html">Paris</a>
+</li>
+<li>
+<a href="Amsterdam.html">Amsterdam</a>
+</li>
+<li>
+<a href="Roma.html">Roma</a>
+</li>
+<li>
+<a href="Frankfurt.html">Frankfurt</a>
+</li>
+<li>
+<a href="Vienna.html">Vienna</a>
+</li>
+</ul>
+</li>
+<li class="megaMenu_item">
+<a>Themes</a>
+<ul class="megaMenu">
+<li>
+<a href="../genre/trainstation.html" target="_blank">Trains / Station</a>
+</li>
+<li>
+<a href="../genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li>
+<a href="../genre/foods.html" target="_blank">Food / Sweets</a>
+</li>
+<li>
+<a href="../genre/nature.html" target="_blank">Nature</a>
+</li>
+<li>
+<a href="../genre/art.html" target="_blank">Art</a>
+</li>
+<li>
+<a href="../hidden/Lookbook.html" target="_blank">A European Holiday</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</header>  
+<section class="pagebody">
+<!-- TOP画像＋背景文字はここ --> 
+<div class="Top_image">
+<div>
+<img class="pc" loading="eager" src="../../assets/image/top/pc/rothenburg.webp" alt="トップ画像" width="100%" height="auto"   />
+<img class="sp" loading="eager" src="../../assets/image/top/sp/rothenburg_sp.webp" alt="トップ画像" width="100%" height="auto"   />
+<div class="Top_caption scroll fadeLeftSlide">
+<h1>Germany</h1>
+<p>- A European Holidays -</p>
+</div>  
+</div>
+</div>
+<div class="container">
+<!-- エディタcssを適用する -->
+<div class="site_body editorcss">
+<!-- 導入の文章 -->
+<!-- フォトギャラリー -->
+<h2 class="scroll fadeLeftSlide">
+Image Gallery
+</h2>
+<!-- 切り替えタブ -->
+<div class="time-buttons">
+  <button class="time-btn active" data-target="CityCentre">City Centre</button>
+</div>
+<div class="photo_container">
+<div class="gallery-block" id="CityCentre">
+<div class="photo_wrap">
+<!-- summer_vacaion -->
+<div class="item item-side-landscape">
+<a href="../../assets/image/lookbook/germany/germany_6.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_6.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-center-portrait">
+<a href="../../assets/image/lookbook/germany/germany_5_1.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_5.jpg"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-side-landscape">
+<a href="../../assets/image/lookbook/germany/germany_3.jpg"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_3.jpg"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-side-landscape">
+<a href="../../assets/image/lookbook/germany/germany_11.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_11.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-side-landscape">
+<a href="../../assets/image/lookbook/germany/germany_4.jpg"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_4.jpg"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-normal-landscape">
+<a href="../../assets/image/lookbook/germany/germany_10.jpg"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_10.jpg"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-normal-landscape">
+<a href="../../assets/image/lookbook/germany/germany_2.webp"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_2.webp"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+<div class="item item-normal-landscape">
+<a href="../../assets/image/lookbook/germany/germany_7.jpg"
+data-caption="Robin">
+<img loading="lazy" class="item-img"
+    src="../../assets/image/lookbook/germany/germany_7.jpg"
+    alt="都市名1" width="100%" height="auto"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- ここにライトボックスを追加 -->
+<div id="livecam_box" class="livecam_box">
+  <span class="livecam_box_close">&times;</span>
+  <div class="livecam_inner">
+<div class="livecam_img_wrapper">
+  <span class="livecam_prev">&#10094;</span>
+  <img class="livecam_box_img" src="" alt="">
+  <span class="livecam_next">&#10095;</span>
+  </div>
+  <div class="livecam_caption"></div>
+</div>
+</div>
+<!-- マップ-->
+<h2 class="scroll fadeLeftSlide">
+Map
+</h2>
+<div class="street_map" id="mapfrankfurt"></div>
+<!-- 次はどこへ行きたい？ -->
+<h2 class="scroll fadeLeftSlide">
+Where to Next ?
+</h2>
+<div class="genre_flex scroll fadeRightSlide" style="margin-bottom: 2em;">
+<div class="flex_images_category">
+<a href="../lookbook/UK.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/uk/london_5.webp" alt="トップ画像"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>United Kingdom</p>
+</div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="../lookbook/Italy.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/italy/italy_3.webp" alt="Edinburgh Travel"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Italy</p>
+</div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="../lookbook/France.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/france/france_1.webp" alt="France Vacation"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>France</p>
+</div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="../lookbook/Germany.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/germany/germany_8.jpg" alt="EU Vacation 2023"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Germany</p>
+</div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="../lookbook/Swiss.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/swiss/swiss_11.webp" alt="EU Vacation 2023"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Switzerland</p>
+</div>
+</figcaption>
+</a>
+</div>
+<div class="flex_images_category">
+<a href="../lookbook/Singapore.html">
+<figcaption>
+<img loading="lazy" src="../../assets/image/lookbook/singapore/singapore_2.jpg" alt="EU Vacation 2023"  class="alignnone size-full wp-image-189420" width="100%" height="auto"  style="vertical-align: middle;" />
+<div class="theme">
+<p>Singapore</p>
+</div>
+</figcaption>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- フッター -->
+<footer>
+<div class="footer_upper">
+<div>
+<div class="footer_logo">
+<h2>
+Europe Summer Photo Trip
+</h2>
+</div>
+<div class="footer_flex">
+<div class="footer_menu">
+<h3>
+<a href="../../index.html">Best Photo</a>
+</h3>
+</div>
+<div class="footer_menu">
+<h3>
+Main City
+</h3>
+<div class="accordion_body">
+<ul>
+<li>
+<a href="London.html">London</a>
+</li>
+<li>
+<a href="Paris.html">Paris</a>
+</li>
+<li>
+<a href="Amsterdam.html">Amsterdam</a>
+</li>
+<li>
+<a href="Roma.html">Roma</a>
+</li>
+<li>
+<a href="Frankfurt.html">Frankfurt</a>
+</li>
+<li>
+<a href="Vienna.html">Vienna</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_menu">
+<h3>
+Themes
+</h3>
+<div class="accordion_body">
+<ul>
+<li>
+<a href="../genre/trainstation.html" target="_blank">Trains / Station</a>
+</li>
+<li>
+<a href="../genre/cathedral.html" target="_blank">Cathedral</a>
+</li>
+<li>
+<a href="../genre/foods.html" target="_blank">Food / Sweets</a>
+</li>
+<li>
+<a href="../genre/nature.html" target="_blank">Nature</a>
+</li>
+<li>
+<a href="../genre/art.html" target="_blank">Art</a>
+</li>
+<li>
+<a href="../hidden/Lookbook.html" target="_blank">A European Holiday</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_copy">
+<p class="copy_light" style="color: aliceblue;">
+&copy;2019-2026 by SF PHOTO.All Rights Reserved.
+</p>
+</div>
+</footer> 
+<!-- オープンストリートマップのスクリプト -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="../../assets/js/control/lightbox.js"></script>
+<script src="../../assets/js/index.js"></script>
+<script src="../../assets/js/megamenu.js"></script>
+<script src="../../assets/js/utils.js"></script>
+<script src="../../assets/js/map/frankfurt.js"></script>
+<script src="../../assets/js/icons/hidden/hidden.js"></script>
+<!-- ※ここから下は共通 -->
+<!-- 空港アイコン -->
+<script src="../../assets/js/icons/flight/flight.js"></script>
+<script src="../../assets/js/icons/flight/flightview.js"></script>
+<!-- 名所アイコン -->
+<script src="../../assets/js/icons/places/london.js"></script>
+<script src="../../assets/js/icons/places/cambridge.js"></script>
+<script src="../../assets/js/icons/places/ely.js"></script>
+<script src="../../assets/js/icons/places/birmingham.js"></script>
+<script src="../../assets/js/icons/places/manchester.js"></script>
+<script src="../../assets/js/icons/places/york.js"></script>
+<script src="../../assets/js/icons/places/durham.js"></script>
+<script src="../../assets/js/icons/places/newcastle.js"></script>
+<script src="../../assets/js/icons/places/edinburgh.js"></script>
+<script src="../../assets/js/icons/places/bristol.js"></script>
+<script src="../../assets/js/icons/places/plymouth.js"></script>
+<script src="../../assets/js/icons/places/paris.js"></script>
+<script src="../../assets/js/icons/places/lyon.js"></script>
+<script src="../../assets/js/icons/places/marselie.js"></script>
+<script src="../../assets/js/icons/places/geneva.js"></script>
+<script src="../../assets/js/icons/places/lausanne.js"></script>
+<script src="../../assets/js/icons/places/basel.js"></script>
+<script src="../../assets/js/icons/places/zurich.js"></script>
+<script src="../../assets/js/icons/places/innsbruck.js"></script>
+<script src="../../assets/js/icons/places/salzburg.js"></script>
+<script src="../../assets/js/icons/places/vienna.js"></script>
+<!-- 駅車窓アイコン -->
+<script src="../../assets/js/icons/station/uk/lner.js"></script>
+<script src="../../assets/js/icons/station/uk/gwr.js"></script>
+<script src="../../assets/js/icons/station/uk/awc.js"></script>
+<script src="../../assets/js/icons/station/uk/es.js"></script>
+<script src="../../assets/js/icons/station/uk/tpe.js"></script>
+<script src="../../assets/js/icons/station/uk/scr.js"></script>
+<script src="../../assets/js/icons/station/uk/gnh.js"></script>
+<script src="../../assets/js/icons/station/france/france.js"></script>
+<script src="../../assets/js/icons/station/belgium/belgium.js"></script>
+<script src="../../assets/js/icons/station/netherland/netherland.js"></script>
+<script src="../../assets/js/icons/station/swiss/swiss.js"></script>
+<script src="../../assets/js/icons/station/austria/austria.js"></script>
+<script src="../../assets/js/icons/station/germany/germany.js"></script>
+<script src="../../assets/js/icons/station/italy/italy.js"></script>
+<script src="../../assets/js/icons/station/singapore/singapore.js"></script>
+<script src="../../assets/js/icons/trainview/germany.js"></script>
+<!-- 鉄道ルート -->
+<script src="../../assets/js/routes/LNER/london-york.js"></script>
+<script src="../../assets/js/routes/LNER/york-newcastle.js"></script>
+<script src="../../assets/js/routes/LNER/newcastle-edinburgh.js"></script>
+<script src="../../assets/js/routes/GNH/london-cambridge.js"></script>
+<script src="../../assets/js/routes/GRA/peterborough-cambridge.js"></script>
+<script src="../../assets/js/routes/XCC/peterborough-birmingham.js"></script>
+<script src="../../assets/js/routes/XCC/birmingham-bristol.js"></script>
+<script src="../../assets/js/routes/XCC/bristol-plymouth.js"></script>
+<script src="../../assets/js/routes/GWR/london-bristol.js"></script>
+<script src="../../assets/js/routes/GWR/london-plymouth.js"></script>
+<script src="../../assets/js/routes/GWR/plymouth-penzance.js"></script>
+<script src="../../assets/js/routes/GWR/windsorLine.js"></script>
+<script src="../../assets/js/routes/GWR/heathrowLine.js"></script>
+<script src="../../assets/js/routes/AWC/london-birmingham.js"></script>
+<script src="../../assets/js/routes/AWC/birmingham-manchester.js"></script>
+<script src="../../assets/js/routes/AWC/london-edinburgh.js"></script>
+<script src="../../assets/js/routes/SCR/edinburgh-aberdeen.js"></script>
+<script src="../../assets/js/routes/TPE/york-leeds.js"></script>
+<script src="../../assets/js/routes/TPE/leeds-manchester.js"></script>
+<script src="../../assets/js/routes/NTH/leeds-carlisle.js"></script>
+<script src="../../assets/js/routes/NTH/newcastle-carlisle.js"></script>
+<script src="../../assets/js/routes/NTH/manchester-windermere.js"></script>
+<script src="../../assets/js/routes/ES/london-brussel.js"></script>
+<script src="../../assets/js/routes/ES/brussel-amsterdam.js"></script>
+<script src="../../assets/js/routes/ICE/brussel-cologne.js"></script>
+<script src="../../assets/js/routes/ICE/cologne-basel.js"></script>
+<script src="../../assets/js/routes/DB/frankfurtairportline.js"></script>
+<script src="../../assets/js/routes/DB/frankfurt-montabaur.js"></script>
+<script src="../../assets/js/routes/DB/frankfurt-heidelberg.js"></script>
+<script src="../../assets/js/routes/DB/manheim-heidelberg.js"></script>
+<script src="../../assets/js/routes/DB/frankfurt-munich.js"></script>
+<script src="../../assets/js/routes/DB/hanau-fulda.js"></script>
+<script src="../../assets/js/routes/DB/hanau-darmstadt.js"></script>
+<script src="../../assets/js/routes/DB/munich-obb.js"></script>
+<script src="../../assets/js/routes/DB/nurnberg-berlin.js"></script>
+<script src="../../assets/js/routes/DB/nurnberg-wels.js"></script>
+<script src="../../assets/js/routes/DB/wurzburg-rothenburg.js"></script>
+<script src="../../assets/js/routes/DB/leipzig-dresden.js"></script>
+<script src="../../assets/js/routes/DB/berlin-hamburg.js"></script>
+<script src="../../assets/js/routes/DB/berlin-amsterdam.js"></script>
+<script src="../../assets/js/routes/DB/hamburg-lubeck.js"></script>
+<script src="../../assets/js/routes/DB/hamburg-cologne.js"></script>
+<script src="../../assets/js/routes/DB/hamburg-wurzburg.js"></script>
+<script src="../../assets/js/routes/DB/lubeck-luneburg.js"></script>
+<script src="../../assets/js/routes/SBB/basel-zurich.js"></script>
+<script src="../../assets/js/routes/SBB/zurich-geneva.js"></script>
+<script src="../../assets/js/routes/SBB/lausanne-milano.js"></script>
+<script src="../../assets/js/routes/OBB/zurich-innsbruck.js"></script>
+<script src="../../assets/js/routes/OBB/innsbruck-salzburg.js"></script>
+<script src="../../assets/js/routes/OBB/salzburg-vienna.js"></script>
+<script src="../../assets/js/routes/OBB/viennaairportline.js"></script>
+<script src="../../assets/js/routes/SNCF/geneva-lyon.js"></script>
+<script src="../../assets/js/routes/TGV/brussel-cdg.js"></script>
+<script src="../../assets/js/routes/TGV/paris-lyon.js"></script>
+<script src="../../assets/js/routes/TGV/paris-basel.js"></script>
+<script src="../../assets/js/routes/TGV/lyon-marsellie.js"></script>
+<script src="../../assets/js/routes/ITFS/zurich-milano.js"></script>
+<script src="../../assets/js/routes/ITFS/milano-verona.js"></script>
+<script src="../../assets/js/routes/ITFS/milano-bologna.js"></script>
+<script src="../../assets/js/routes/ITFS/verona-venezia.js"></script>
+<script src="../../assets/js/routes/ITFS/verona-bologna.js"></script>
+<script src="../../assets/js/routes/ITFS/verona-innsbruck.js"></script>
+<script src="../../assets/js/routes/ITFS/venezia-vienna.js"></script>
+<script src="../../assets/js/routes/ITFS/bologna-venezia.js"></script>
+<script src="../../assets/js/routes/ITFS/bologna-firenze.js"></script>
+<script src="../../assets/js/routes/ITFS/firenze-roma.js"></script>
+<script src="../../assets/js/routes/ITFS/roma-napoli.js"></script>
+<script src="../../assets/js/routes/ITFS/roma-fiumicino.js"></script>
+<script src="../../assets/js/routes/SQ/eastwest.js"></script>
+<script src="../../assets/js/routes/SQ/downtown.js"></script>
+<script src="../../assets/js/routes/SQ/singapore-london.js"></script>
+<script src="../../assets/js/routes/SQ/singapore-frankfurt.js"></script>
+<script src="../../assets/js/routes/SQ/singapore-dubai.js"></script>
+<script src="../../assets/js/routes/SQ/singapore-doha.js"></script>
+<script src="../../assets/js/routes/SQ/dubai-roma.js"></script>
+<script src="../../assets/js/routes/SQ/doha-geneva.js"></script>
+<!-- ポップアップ操作 -->
+<script src="../../assets/js/popup/popup.js"></script>
+<!-- コントロール -->
+<script src="../../assets/js/control/zoom.js"></script>
+<script src="../../assets/js/control/click.js"></script>
+<script src="../../assets/js/control/lookbooktab.js"></script>
+<script src="../../assets/js/control/visittab.js"></script>
+</body>
+</html>
