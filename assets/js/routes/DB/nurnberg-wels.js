@@ -1,9 +1,47 @@
 // 始発 終着 
 const NurnbergOBB = [49.44567847015998, 11.081854166258191];
+const DurrenhofOBB = [49.44758465488264, 11.097410000944423];
+const Frankenstadion = [49.430849992515014, 11.129990947489468];
+const Feucht = [49.38211838518462, 11.203303612987336];
+const FeuchtOst = [49.3761671525981, 11.220169343145667];
+const Polling = [49.28859257245416, 11.41225108936912];
+const Neumarkt = [49.27310434573649, 11.456834812045765];
+const Batzhausen = [49.191399631492544, 11.592884880869578];
+const Parsberg = [49.164522075646296, 11.722742401687215];
+const Mausheim = [49.119837741725206, 11.76861645483715];
+const Deuerling = [49.041592556499474, 11.914921029421699];
+const Etterzhausen = [49.03096182329405, 11.976037639237916];
+const Regensburg = [49.01172017565398, 12.09861953095942];
+const Burgweinting = [48.99064749815877, 12.14648570907128];
+const Obertraubling = [48.96759647582502, 12.170072327025814];
+const Sunching = [48.884198294331355, 12.35666030946079];
+const Radldorf = [48.87482220420416, 12.442742512635988];
+const RadldorfOst = [48.87394066659169, 12.458671475872736];
+const StraubingWest = [48.8783938474551, 12.553600739076254];
+const Straubing = [48.87687246560764, 12.573918768055096];
+const StraubingOst = [48.876251521945555, 12.588724561668766];
+const Sautorn = [48.7953842380513, 12.830537604692104];
+const Plattling = [48.77946510171273, 12.864118061805693];
+const Passau = [48.57378261806022, 13.4514349424022];
+const Wernstein = [48.50694096078936, 13.457962050505257];
+const Scharding = [48.463780628518826, 13.4425048603539];
+const TaufkirchenPram = [48.406790138813214, 13.522345800180906];
+const Andorf = [48.36974760530712, 13.565692169297787];
+const Riedau = [48.30448615549002, 13.626542944763237];
+const Hohenerlach = [48.28355955223795, 13.62169669739154];
+const Hausruckkreis = [48.271267845441585, 13.724816849540174];
+const Schllberg  = [48.223907097032345, 13.868220206533097];
+const BadSchallerbach = [48.228688710080874, 13.92216184626967];
 const WelsOBB  = [48.16636798232817, 14.02726211324162];
 
 
 // ルートポリライン
 const NUWE = L.polyline
-([NurnbergOBB,WelsOBB
+([NurnbergOBB,DurrenhofOBB,Frankenstadion,Feucht,FeuchtOst,Polling,
+Neumarkt,Batzhausen,Parsberg,Mausheim,Deuerling,Etterzhausen,
+Regensburg,Burgweinting,Obertraubling,Sunching,Radldorf,RadldorfOst,StraubingWest,
+Straubing,StraubingOst,Sautorn,Plattling,
+Passau,Wernstein,Scharding,TaufkirchenPram,Andorf,Riedau,
+Hohenerlach,Hausruckkreis,Schllberg,BadSchallerbach,
+WelsOBB
 ], { color: '#000000' }).addTo(map);
