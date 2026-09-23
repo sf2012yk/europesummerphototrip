@@ -1,6 +1,7 @@
 // 始発 終着 
 const Frankfurt = [50.10686863147775, 8.662539152027437];
 const FrankfurtSud = [50.0992673680849, 8.686263160957893];
+const offenbachview_1 = [50.10441692679249, 8.722690959782076];
 const Kaiserlei  = [50.10529953438095, 8.740498911956232];
 const Muhlheim  = [50.11917042618482, 8.83780394398759];
 const Hanau  = [50.1210760384029, 8.927999051019844];
@@ -48,13 +49,13 @@ const Munich = [48.14066779898462, 11.557672139486796];
 
 // ルートポリライン
 const FRMU = L.polyline
-([Frankfurt,FrankfurtSud,Kaiserlei,Muhlheim,
+([Frankfurt,FrankfurtSud,offenbachview_1,Kaiserlei,Muhlheim,
 Hanau,Grosauheim,Groskrotzenburg,Kahl,Dettingen,Ruckersbacher,Kleinostheim,Aschaffenburg_W,
 Aschaffenburg,Goldbach,Laufach,Heigenbrucken,Wiesthal,
 Lohr,Nantenbach,Wiesenfeld,RohrbachJC_MU,Lichteiche_MU,Leinach_MU,Veitshochheim_MU,Moltkeruh_MU,
 Wurzburg_MU,Rottendorf,Dettelbach,Buchbrunn,Kitzingen,Mainbernheim,
 Iphofen,Hellmitzheim,MarktBibart,NeustadtAisch,Emskirchen,Siegelsdorf,Burgfarrnbach,Unterfurberg,
-Furth_MU,Rothenburger_MU
-Nurnberg_MU,IngolstadtJC,IngolstadtNorth
+Furth_MU,Rothenburger_MU,
+Nurnberg_MU,IngolstadtJC,IngolstadtNorth,
 Ingolstadt,Munich
 ], { color: '#000000' }).addTo(map);
