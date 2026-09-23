@@ -18,7 +18,7 @@
     <a href="" 
        data-lightbox="image" 
        data-title="Dubai Airport">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/dubai.webp" alt="Dubai Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/singapore/dubai.webp" alt="Dubai Airport">
     </a>
     <div class="popup_caption">
     <a href="" data-lightbox="image" data-title="Dubai Airport" class="popup_link">Dubai Airport</a>
@@ -41,7 +41,7 @@ var markerDubai = L.marker([25.251227093649398, 55.36661696513273], {
     <a href="" 
        data-lightbox="image" 
        data-title="Doha">
-      <img class="popup_img" loading="eager" src="../../assets/image/map/station/doha.webp" alt="Doha Airport">
+      <img class="popup_img" loading="eager" src="../../assets/image/map/station/singapore/doha.webp" alt="Doha Airport">
     </a>
     <div class="popup_caption">
     <a href="" data-lightbox="image" data-title="Doha Airport" class="popup_link">Doha Airport</a>

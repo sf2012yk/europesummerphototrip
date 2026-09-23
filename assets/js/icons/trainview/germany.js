@@ -1,7 +1,7 @@
 //ドイツ画像
     var train_view_Icon = L.icon({
-    iconUrl: "image/icon/train_view.png",
-    iconRetinaUrl:"image/icon/train_view@2x.png",
+    iconUrl: "../../assets/image/icon/train_view.png",
+    iconRetinaUrl:"../../assets/image/icon/train_view@2x.png",
     shadowUrl: "https://esm.sh/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize:     [40, 40], // アイコンのサイズ
     shadowSize:   [41, 25], // size of the shadow
@@ -66,7 +66,7 @@ var markerhamburg_1 = L.marker([駅の座標], {
 
 ].forEach(m => trainviewIconGermany.addLayer(m));
 
-const Train_View_Germany = 13;  // 例：ズーム11未満で非表示
+const Train_View_Germany = 13;  // 例：ズーム13未満で非表示
 
 //  ズームに応じた表示/非表示
 function updateTrainviewGermanyVisibility() {
