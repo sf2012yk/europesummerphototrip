@@ -66,7 +66,7 @@ var markerGreese_1 = L.marker([36.59475534625677, 24.252851596287783], {
 [markerSuez,markerGreese_1
 ].forEach(m => FlightViewIcon.addLayer(m));
 
-const HIDE_ZOOM_Flight = 13;  // 例：ズーム12.5未満で非表示
+const HIDE_ZOOM_Flight = 6;  // 例：ズーム6未満で非表示
 
 //  ズームに応じた表示/非表示
 function updateFlightViewIconsVisibility() {

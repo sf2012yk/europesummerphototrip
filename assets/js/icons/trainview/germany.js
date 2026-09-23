@@ -66,7 +66,7 @@ var markerhamburg_1 = L.marker([駅の座標], {
 
 ].forEach(m => trainviewIconGermany.addLayer(m));
 
-const Train_View_Germany = 13;  // 例：ズーム13未満で非表示
+const Train_View_Germany = 6;  // 例：ズーム56未満で非表示
 
 //  ズームに応じた表示/非表示
 function updateTrainviewGermanyVisibility() {
