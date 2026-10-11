@@ -9,8 +9,8 @@ var map = L.map('mapfrankfurt', {
   boxZoom: false,
   keyboard: false,
   maxBounds: [
-    [35.0, -10.0],
-    [60.0, 30.0]
+     [0.1, -10.0], // 南西端（モロッコ沖〜スペイン南部）
+    [60.0, 110.0]   // 北東端（ポーランド〜ウクライナ西部）
   ],
   maxBoundsViscosity: 1.0
 });
