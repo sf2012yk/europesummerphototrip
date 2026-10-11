@@ -1,10 +1,58 @@
 // 始発 終着 
-const Hamburg_CL = [53.55296409369695, 10.00679677815908];
+const Harburg_CL = [53.45611017986802, 9.991375573657754];
+const RoyalElbtaxiHarburg_CL = [53.44001720003109, 10.011354118800506];
+const Hittfeld = [53.40367828274979, 9.974532570074327];
+const Klecken = [53.36745784414583, 9.92928661291558];
+const Buchholz = [53.32407441120964, 9.871683528464871];
+const Sprotze = [53.30941997111722, 9.812113660593091];
+const Tostedt = [53.27196677304861, 9.731604475250219];
+const Konigsmoor = [53.2309280785895, 9.642984732121935];
+const Lauenbruck = [53.196908749973026, 9.563313286595829];
+const Scheesel = [53.16627078527418, 9.497300900405788];
+const RotenburgWumme = [53.11241503868044, 9.390012540624907];
+const Waffensen = [53.10250916909906, 9.311083682911908];
+const Sottrum = [53.1012892527245, 9.25030191689549];
+const Hemelberg = [53.09975752642453, 9.182453042556784];
+const Ottersberg = [53.09684451331834, 9.13339304802014];
+const Nadah = [53.095019143675664, 9.101222687638552];
+const Sagehorn = [53.082322095092636, 9.007745226177727];
+const Oberneuland = [53.087194149077796, 8.93751521502647];
+const BremenOst = [53.09678079740266, 8.885376826637456];
+const Weidedamm = [53.10331083436724, 8.819926907031101];
+const Bremen = [53.083465701400385, 8.812872060742821];
+const Hemelingen = [53.054500152142865, 8.88684645566925];
+const Dreye = [53.01642243823515, 8.8690691855443];
+const Kirchweyhe = [52.98398214115943, 8.847138689487055];
+const Barrien = [52.94675483149834, 8.818462220864827];
+const Syke = [52.916404451859364, 8.809673575312875];
+const Bramstedt = [52.8713741130515, 8.785628910893246];
+const Bassum = [52.84740880403727, 8.739859511125667];
+const Twistringen = [52.79155960102711, 8.644077093408113];
+const Drentwede = [52.74156516346942, 8.575018244305884];
+const Barnstorf = [52.70784892984859, 8.510924513836978];
+const Barnstorf_s = [52.69843536312317, 8.49847906425402];
+const Dreeke = [52.67702765432848, 8.478454259496273];
+const Spreckel = [52.62888795082925, 8.417253987311717];
+const SanktHulfe = [52.61348227932475, 8.390102193394851];
+const Diepholz = [52.60446538001787, 8.380145833728486];
+const DiepholzerBruchhutte = [52.54512992417135, 8.382986787102363];
+const Burlage = [52.522968255519324, 8.379887527547236];
+const Marl = [52.4770163503328, 8.369696238116443];
+const Lemforde = [52.46011333427216, 8.361387085645015];
+const Dielingen = [52.44431002016471, 8.342904654895458];
+const Meyerhofen = [52.41810444226076, 8.326575912908268];
+const Bohmte = [52.36078511056522, 8.307105717154998];
+const HalleGartlage = [52.28175510673743, 8.068362169035193];
 const Osnabruck_CL = [52.27292343189692, 8.06134045215591];
-const Cologne_CL = [50.94325481600945, 6.9585388293166295];
 
 
 // ルートポリライン
 const HBCL = L.polyline
-([Hamburg_CL,Osnabruck_CL,Cologne_CL
+([Harburg_CL,RoyalElbtaxiHarburg_CL,Hittfeld,Klecken,
+Buchholz,Sprotze,Tostedt,Konigsmoor,Lauenbruck,Scheesel,RotenburgWumme,
+Waffensen,Sottrum,Hemelberg,Ottersberg,Nadah,Sagehorn,Oberneuland,BremenOst,Weidedamm,
+Bremen,Hemelingen,Dreye,Kirchweyhe,Barrien,Syke,Bramstedt,
+Bassum,Twistringen,Drentwede,Barnstorf,Barnstorf_s,Dreeke,Spreckel,SanktHulfe,
+Diepholz,DiepholzerBruchhutte,Burlage,Marl,Lemforde,Dielingen,Meyerhofen,Bohmte,HalleGartlage,
+Osnabruck_CL
 ], { color: '#000000' }).addTo(map);
