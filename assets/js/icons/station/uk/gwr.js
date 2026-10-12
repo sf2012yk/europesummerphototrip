@@ -60,13 +60,13 @@ var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
 // Terminal3
     var popupContent = `
      <div class="popup_summer">
-    <a href="" 
+    <a href="../../pages/city/Heathrow.html" 
        data-lightbox="image" 
        data-title="Paddington">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/heathrow3.webp" alt="Terminal3">
     </a>
     <div class="popup_caption">
-    <a href="" data-lightbox="image" data-title="Terminal3" class="popup_link">Heathrow Terminal3</a>
+    <a href="../../pages/city/Heathrow.html" data-lightbox="image" data-title="Terminal3" class="popup_link">Heathrow Terminal3</a>
     </div>
   </div>
 `;
@@ -83,13 +83,13 @@ var markerTerminal3 = L.marker([51.47028371585865, -0.4590508896992913], {
 // Terminal5
     var popupContent = `
      <div class="popup_summer">
-    <a href="" 
+    <a href="../../pages/city/Heathrow.html" 
        data-lightbox="image" 
        data-title="Paddington">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/heathrow5.webp" alt="Terminal5">
     </a>
     <div class="popup_caption">
-    <a href="" data-lightbox="image" data-title="Terminal5" class="popup_link">Heathrow Terminal5</a>
+    <a href="../../pages/city/Heathrow.html" data-lightbox="image" data-title="Terminal5" class="popup_link">Heathrow Terminal5</a>
     </div>
   </div>
 `;
