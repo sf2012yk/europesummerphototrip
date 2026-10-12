@@ -63,13 +63,13 @@ var markerCologne = L.marker([50.94325481600945, 6.9585388293166295], {
 //  Flughafen
     var popupContent = `
       <div class="popup_summer">
-    <a href="" 
+    <a href="../../pages/city/Flughafen.html" 
        data-lightbox="image" 
        data-title="Flughafen">
       <img class="popup_img" loading="eager" src="../../assets/image/map/station/flughafen.webp" alt="Flughafen">
     </a>
     <div class="popup_caption">
-    <a href="" data-lightbox="image" data-title="Frankfurt Station" class="popup_link">Flughafen (Airport)</a>
+    <a href="../../pages/city/Flughafen.html" data-lightbox="image" data-title="Frankfurt Station" class="popup_link">Flughafen (Airport)</a>
     </div>
   </div>
 `;
@@ -330,7 +330,7 @@ var markerSeligenstadt = L.marker([50.041556133124594, 8.967509066294852], {
   </div>
 `;
 var markerNurnberg = L.marker([49.44567847015998, 11.081854166258191], {
-  icon: stationIcon //途中駅はstation_2_Iconで
+  icon: stationIcon
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
