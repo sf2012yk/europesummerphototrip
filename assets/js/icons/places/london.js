@@ -15,19 +15,11 @@
 // 4) 緑アイコン用 LayerGroup を作成してマップに追加
 const greenIconLondon = L.layerGroup().addTo(map);
 
-//3. ビッグベン：
+// Big Ben
     var popupContent = `
      <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/place/London/place_11.webp" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/London/street/img01.webp" alt="street_img01">
     <a href="" class="popup_link">Big Ben</a>
-    <div class="popup_caption">
-    <p style="margin-bottom: 1em!important;">
-    ビッグベンの説明
-    </p>
-    <p>
-    <a class="popup_link" href="https://bigbentime.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
-    </p>
-    </div>
   </div>
 `;
 var markerBigBen = L.marker([51.50077691418779, -0.12451506657134913], {
@@ -39,19 +31,11 @@ var markerBigBen = L.marker([51.50077691418779, -0.12451506657134913], {
   keepInView: true,
 });
 
-//4. ハロッズ：
+//Harrods UK
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/place/London/place_5.webp" alt="London">
-    <a class="popup_link">"Harrods" Depart</a>
-    <div class="popup_caption">
-    <p style="margin-bottom: 1em!important;">
-    ハロッズの説明
-    </p>
-    <p>
-    <a class="popup_link" href="https://www.harrods.com/en-gb/c/plan-your-visit" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"> ▶ Official Site</a>  
-    </p>
-    </div>
+      <img class="popup_img" loading="eager" src="../../assets/image/place/London/history/img05.webp" alt="history_img05">
+    <a href="" class="popup_link">Harrods UK</a>
   </div>
 `;
 var markerHarrods = L.marker([51.499405205079945, -0.16349647802672979], {
@@ -64,67 +48,14 @@ var markerHarrods = L.marker([51.499405205079945, -0.16349647802672979], {
 });
 
 
-//8. リージェントストリート
+//Regent Street
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/place/London/place_10.webp" alt="London">
+      <img class="popup_img" loading="eager" src="../../assets/image/place/London/street/img05.webp" alt="street_img05">
     <a href="" class="popup_link">Regent Street</a>
-    <div class="popup_caption">
-    <p style="margin-bottom: 1em!important;">
-    リージェントストリートの説明
-    </p>
-    <p>
-    <a class="popup_link" href="https://www.regentstreetonline.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
-    </p>
-    </div>
   </div>
 `;
-var markerRegentStreet = L.marker([51.51006617010329, -0.1377072473857915], {
-  icon: placeIcon
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-});
-
-//9. ロンドン金融街
-    var popupContent = `
-    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/place/London/place_12.webp" alt="London">
-    <a href="" class="popup_link">City of London</a>
-    <div class="popup_caption">
-    <p style="margin-bottom: 1em!important;">
-    ロンドン金融街の説明
-    </p>
-    <p>
-    <a class="popup_link" href="https://www.cityoflondon.gov.uk/things-to-do" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">▶ Official Site</a>  
-    </p>
-    </div>
-  </div>
-`;
-var markerCityofLondon = L.marker([51.511691684514645, -0.084411793538647], {
-  icon: placeIcon
-})
-  .bindPopup(popupContent, {
-  className: 'popup_wrapper', // ← ここで外側にクラスを追加
-  autoPan: true,
-  keepInView: true,
-});
-
-//10. ナショナルギャラリー
-    var popupContent = `
-     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="../../assets/image/place/London/place_12.webp" alt="London">
-    <a href="" class="popup_link">National Gallery</a>
-    <div class="popup_caption">
-    <p>
-    ナショナルギャラリーの説明
-    </p>
-    </div>
-  </div>
-`;
-var markerNationalGallery = L.marker([51.50886781788075, -0.12835044530862647], {
+var markerRegent = L.marker([51.51006617010329, -0.1377072473857915], {
   icon: placeIcon
 })
   .bindPopup(popupContent, {
@@ -135,8 +66,7 @@ var markerNationalGallery = L.marker([51.50886781788075, -0.12835044530862647], 
 
 // グループに入れる（ここが重要）
 // 配列にまとめて一括追加
-[markerBigBen,markerHarrods,markerRegentStreet,markerCityofLondon,
-markerNationalGallery
+[markerBigBen,markerHarrods,markerRegent
 ].forEach(m => greenIconLondon.addLayer(m));
 
 const HIDE_ZOOM_London = 11;  // 例：ズーム11未満で非表示
